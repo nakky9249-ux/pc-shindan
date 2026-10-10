@@ -1,8 +1,8 @@
 {
-  "source": "Rakuten Ichiba Item Search API",
-  "status": "not_configured",
+  "source": "Kakaku.com search links",
+  "status": "reference_only",
   "updatedAt": null,
   "currency": "JPY",
-  "priceNote": "価格自動取得を有効にするには、GitHub Actions Secretsに楽天APIのアプリIDとアクセスキーを登録してください。",
+  "priceNote": "価格.comの検索結果へリンクします。実売価格の自動取得・サイト内反映は未対応です。構成合計にはサイト内の参考価格を使用します。",
   "items": []
 }
