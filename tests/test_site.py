@@ -82,6 +82,11 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn('<nav aria-label="メインナビゲーション">', self.html)
         self.assertIn('name="description"', self.html)
 
+    def test_diagnosis_and_news_disclose_limits(self):
+        self.assertIn("FPSはゲーム内設定・解像度・場面・ドライバーなどで変動し", self.html)
+        self.assertIn("一部の配信元を取得できませんでした。", self.html)
+        self.assertIn("価格.comの実売価格を自動取得した値ではありません", self.html)
+
     def test_recommendation_catalog_has_eleven_unique_presets(self):
         preset_ids = re.findall(r"\{id:'([^']+)'", self.html)
         self.assertEqual(11, len(preset_ids), f"Expected 11 PC presets, found {len(preset_ids)}.")
