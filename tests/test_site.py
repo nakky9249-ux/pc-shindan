@@ -153,7 +153,7 @@ class SiteSmokeTests(unittest.TestCase):
         root = ET.parse(sitemap).getroot()
         namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
         urls = {node.text for node in root.findall("sm:url/sm:loc", namespace)}
-        for page in ["", "about.html", "privacy.html", "affiliate.html", "contact.html"]:
+        for page in ["", "about.html", "privacy.html", "affiliate.html", "contact.html", "upgrade-guide.html"]:
             expected = "https://pc-lab-tech.github.io/pc-shindan/" + page
             with self.subTest(page=page or "index.html"):
                 self.assertIn(expected, urls)
@@ -230,8 +230,18 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn("参考価格", self.html)
         self.assertIn("各ショップの公式サイトで実売価格を比較します", self.html)
 
+    def test_upgrade_guide_is_published_and_linked(self):
+        guide_path = ROOT / "upgrade-guide.html"
+        self.assertTrue(guide_path.is_file(), "Missing original PC upgrade guide.")
+        guide = guide_path.read_text(encoding="utf-8")
+        for phrase in ["どのパーツを交換すればいい？", "CPU", "GPU", "メモリ", "互換性", "通常の公式サイトへのリンク"]:
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase, guide)
+        self.assertIn('href="./upgrade-guide.html"', self.html)
+        self.assertIn("https://pc-lab-tech.github.io/pc-shindan/upgrade-guide.html", (ROOT / "sitemap.xml").read_text(encoding="utf-8"))
+
     def test_local_page_links_resolve(self):
-        pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html"]]
+        pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html", "upgrade-guide.html"]]
         for path in pages:
             html = path.read_text(encoding="utf-8")
             for href in re.findall(r"""href=["']([^"']+)["']""", html):
