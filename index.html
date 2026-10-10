@@ -15,6 +15,7 @@
     <meta property="og:title" content="PCラボ｜PC構成診断・パーツ比較">
     <meta property="og:description" content="予算と用途から自分に合うPCを探そう。構成診断、パーツ比較、互換性チェック、PCニュース。">
     <meta property="og:url" content="https://nakky9249-ux.github.io/pc-shindan/">
+    <meta property="og:site_name" content="PCラボ">
     <title>PCラボ｜あなたに最適なPCが見つかる</title>
     <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +26,13 @@
     <style>
         .skip-link{position:absolute;left:1rem;top:-100px;z-index:2000;padding:.75rem 1rem;background:var(--card-bg);color:var(--text-main);border:2px solid var(--accent-cyan);border-radius:var(--radius-md);font-weight:700}
         .skip-link:focus{top:1rem}
+        :focus-visible{outline:3px solid var(--accent-cyan);outline-offset:3px}
+        .news-tools{display:grid;gap:.4rem;margin:.2rem 0 1rem}
+        .news-tools label{font-size:.82rem;font-weight:700}
+        .news-tools input{width:100%;min-width:0;padding:.75rem .85rem;border:1px solid var(--card-border);border-radius:9px;background:#0d1422;color:var(--text-main);font:inherit}
+        .news-tools input::placeholder{color:#94a3b8}
+        .news-count{font-size:.78rem;color:var(--text-muted);margin:0}
+        .news-empty{padding:1rem;border:1px dashed var(--card-border);border-radius:10px;color:var(--text-muted);font-size:.88rem}
 
         /* ==========================================================================
            デザインコンセプト：ダークテーマ / 横長カード / 3列レイアウト / ネオンアクセント
@@ -677,7 +685,7 @@
                     <div class="step-number">3</div>
                     <div class="step-info">
                         <h4>構成チェック・購入</h4>
-                        <p>おすすめ構成を確認し、各ショップの公式サイトで最新価格をチェックします。</p>
+                        <p>おすすめ構成を確認し、各ショップの公式サイトで実売価格を比較します。</p>
                     </div>
                 </div>
             </div>
@@ -883,6 +891,11 @@
                 <!-- 最新PCニュース -->
                 <div class="sidebar-widget">
                     <h3 class="widget-title"><i class="fa-solid fa-newspaper"></i> 最新PCニュース</h3>
+                    <div class="news-tools">
+                        <label for="news-search">ニュースを検索</label>
+                        <input id="news-search" type="search" placeholder="キーワード・配信元で絞り込む" autocomplete="off" aria-describedby="auto-news-count">
+                        <p class="news-count" id="auto-news-count" role="status" aria-live="polite">ニュースを読み込み中…</p>
+                    </div>
                     <div class="horizontal-card-list" id="auto-news-list">
                         <div class="horizontal-card">
                             <div class="horizontal-info">
@@ -1225,65 +1238,82 @@
                     const link = article && (article.url || article.link);
                     return !!article && typeof article.title === 'string' && article.title.trim() &&
                         typeof link === 'string' && /^https?:\/\//i.test(link);
-                }).slice(0, 8);
+                }).slice(0, 12);
+                const search = document.getElementById('news-search');
+                const count = document.getElementById('auto-news-count');
+                const renderNews = () => {
+                    const query = (search?.value || '').trim().toLocaleLowerCase('ja-JP');
+                    const filtered = validArticles.filter(article =>
+                        [article.title, article.source, article.summary].some(value =>
+                            typeof value === 'string' && value.toLocaleLowerCase('ja-JP').includes(query))
+                    );
+                    list.replaceChildren();
+                    if (!filtered.length) {
+                        const empty = document.createElement('p');
+                        empty.className = 'news-empty';
+                        empty.textContent = query ? '一致する記事がありません。別のキーワードを試してください。' : '現在表示できるニュースはありません。';
+                        list.append(empty);
+                    }
+                    filtered.forEach(article => {
+                        const link = article.url || article.link;
+                        const card = document.createElement('a');
+                        card.className = 'horizontal-card';
+                        card.href = link;
+                        card.target = '_blank';
+                        card.rel = 'noopener noreferrer';
+                        card.setAttribute('aria-label', article.title + '（' + (article.source || 'PCニュース') + '、新しいタブで開く）');
+                        const thumbnail = document.createElement('div');
+                        thumbnail.className = 'news-thumb';
+                        thumbnail.setAttribute('aria-hidden', 'true');
+                        const thumbnailFallback = document.createElement('span');
+                        thumbnailFallback.className = 'news-thumb-fallback';
+                        thumbnailFallback.textContent = '📰';
+                        thumbnail.append(thumbnailFallback);
+                        if (typeof article.image === 'string' && /^https?:\/\//i.test(article.image)) {
+                            const image = document.createElement('img');
+                            image.src = article.image;
+                            image.alt = '';
+                            image.loading = 'lazy';
+                            image.decoding = 'async';
+                            image.addEventListener('error', () => image.hidden = true, { once: true });
+                            thumbnail.append(image);
+                        }
+                        const info = document.createElement('div');
+                        info.className = 'horizontal-info';
+                        const meta = document.createElement('div');
+                        meta.className = 'horizontal-meta';
+                        const date = document.createElement('span');
+                        date.textContent = formatNewsDate(article.date);
+                        const category = document.createElement('span');
+                        category.textContent = article.source || 'PCニュース';
+                        meta.append(date, category);
+                        const title = document.createElement('div');
+                        title.className = 'horizontal-title';
+                        title.textContent = article.title;
+                        info.append(meta, title);
+                        if (typeof article.summary === 'string' && article.summary.trim()) {
+                            const summary = document.createElement('p');
+                            summary.className = 'news-summary';
+                            summary.textContent = article.summary.trim();
+                            info.append(summary);
+                        }
+                        card.append(thumbnail, info);
+                        list.append(card);
+                    });
+                    if (count) count.textContent = '表示中 ' + filtered.length + ' / ' + validArticles.length + ' 件';
+                };
                 if (!validArticles.length) {
                     list.replaceChildren();
-                    status.textContent = '表示できるニュース記事がありません。RSS設定を確認してください。';
+                    const empty = document.createElement('p');
+                    empty.className = 'news-empty';
+                    empty.textContent = '表示できるニュース記事がありません。RSS設定を確認してください。';
+                    list.append(empty);
+                    if (count) count.textContent = '記事 0 件';
+                    status.textContent = 'RSSから記事を取得できていません。';
                     return;
                 }
-
-                list.replaceChildren();
-                validArticles.forEach(article => {
-                    const link = article.url || article.link;
-
-                    const card = document.createElement('a');
-                    card.className = 'horizontal-card';
-                    card.href = link;
-                    card.target = '_blank';
-                    card.rel = 'noopener noreferrer';
-
-                    const thumbnail = document.createElement('div');
-                    thumbnail.className = 'news-thumb';
-                    thumbnail.setAttribute('aria-hidden', 'true');
-                    const thumbnailFallback = document.createElement('span');
-                    thumbnailFallback.className = 'news-thumb-fallback';
-                    thumbnailFallback.textContent = '📰';
-                    thumbnail.append(thumbnailFallback);
-                    if (typeof article.image === 'string' && /^https?:\/\//i.test(article.image)) {
-                        const image = document.createElement('img');
-                        image.src = article.image;
-                        image.alt = '';
-                        image.loading = 'lazy';
-                        image.decoding = 'async';
-                        image.addEventListener('error', () => image.hidden = true, { once: true });
-                        thumbnail.append(image);
-                    }
-
-                    const info = document.createElement('div');
-                    info.className = 'horizontal-info';
-
-                    const meta = document.createElement('div');
-                    meta.className = 'horizontal-meta';
-                    const date = document.createElement('span');
-                    date.textContent = formatNewsDate(article.date);
-                    const category = document.createElement('span');
-                    category.textContent = article.source || 'PCニュース';
-                    meta.append(date, category);
-
-                    const title = document.createElement('div');
-                    title.className = 'horizontal-title';
-                    title.textContent = article.title;
-
-                    info.append(meta, title);
-                    if (typeof article.summary === 'string' && article.summary.trim()) {
-                        const summary = document.createElement('p');
-                        summary.className = 'news-summary';
-                        summary.textContent = article.summary.trim();
-                        info.append(summary);
-                    }
-                    card.append(thumbnail, info);
-                    list.append(card);
-                });
+                search?.addEventListener('input', renderNews);
+                renderNews();
                 status.textContent = 'RSSから取得した記事です。'+(updatedAt ? ' 最終更新：'+formatNewsDate(updatedAt)+'（日本時間）' : '')+' 詳細・正確性はリンク先の元記事で確認してください。';
             } catch (error) {
                 status.textContent = 'ニュース自動取得は未設定、またはまだ初回更新前です。設定ガイドを確認してください。';
