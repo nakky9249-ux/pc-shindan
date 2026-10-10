@@ -58,7 +58,7 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertEqual([], unsafe, f"New-tab links need rel='noopener noreferrer': {unsafe}")
 
     def test_inline_javascript_syntax(self):
-        scripts = re.findall(r"<script\\b[^>]*>([\\s\\S]*?)</script\\s*>", self.html, re.IGNORECASE)
+        scripts = re.findall(r"<script\b[^>]*>([\s\S]*?)</script\s*>", self.html, re.IGNORECASE)
         self.assertTrue(scripts, "No inline script found.")
         for index, script in enumerate(scripts):
             with tempfile.NamedTemporaryFile("w", suffix=".js", encoding="utf-8") as file:
@@ -70,10 +70,10 @@ class SiteSmokeTests(unittest.TestCase):
                     text=True,
                     check=False,
                 )
-            self.assertEqual(0, result.returncode, f"Inline script {index + 1} has a syntax error:\\n{result.stderr}")
+            self.assertEqual(0, result.returncode, f"Inline script {index + 1} has a syntax error:\n{result.stderr}")
 
     def test_recommendation_catalog_has_eleven_unique_presets(self):
-        preset_ids = re.findall(r"\\{id:'([^']+)'", self.html)
+        preset_ids = re.findall(r"\{id:'([^']+)'", self.html)
         self.assertEqual(11, len(preset_ids), f"Expected 11 PC presets, found {len(preset_ids)}.")
         self.assertEqual(len(preset_ids), len(set(preset_ids)), "Recommendation preset IDs must be unique.")
         self.assertIn("window.pcShindanApplyBuild", self.html)
