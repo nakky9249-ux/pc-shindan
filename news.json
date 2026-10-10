@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-10-10T06:52:52.028038+00:00",
+  "updated_at": "2026-10-10T07:10:31.504133+00:00",
   "articles": [
+    {
+      "title": "【本日みつけたお買い得品】Mac向け5Kモニターが2万1,836円引き。Amazonでセール中",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147349.html",
+      "summary": "Amazonで、ベンキューの27型から31.5型までのモニターがセール価格で販売されている。いずれもMac向けで、27型5Kの「MA270S」は、直近価格から2万1,836円引きの15万9,800円で販売中だ。",
+      "source": "PC Watch",
+      "date": "2026-10-10T07:01:02+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/349/02.jpg"
+    },
     {
       "title": "「プロセカ」，ハイドレンジアをリズムゲーム楽曲に追加。3DMVも公開",
       "url": "https://www.4gamer.net/games/476/G047609/20261009047/",
@@ -126,8 +134,7 @@
       "url": "https://www.4gamer.net/games/048/G104870/20261008026/",
       "summary": "10月3日と4日に開催された「OSAKAINDIEGAMESSUMMIT2026」にて，専門学校HAL大阪の学生らが制作するPC向けアクションゲーム「▽△Slash（トライスラッシュ）」のデモ版が出展されていた。半妖半人の少女が妖怪たちを圧倒的暴力で斬り伏せる，極上の疾走感が味わえるタイトルだ。",
       "source": "4Gamer",
-      "date": "2026-10-10T00:30:00+00:00",
-      "image": "https://www.4gamer.net/games/048/G104870/20261008026/SS/001.jpg"
+      "date": "2026-10-10T00:30:00+00:00"
     },
     {
       "title": "Core i5-1235Uや16GBメモリ搭載の13.3型「VAIO」が45,000円、中古品がML COMPUTERSでセール",
@@ -464,13 +471,6 @@
       "summary": "データ分析用のダッシュボードや、プレゼン用のちょっとした説明動画も、Claudeに依頼するだけで作れるようになった。Anthropicは10月8日、Claudeの新機能として「Claude Dashboards」および「Claude Motion」を発表した。前者は有料プラン向けに、後者はTeamおよびEnterpriseプラン向けにそれぞれベータ版で提供している。",
       "source": "PC Watch",
       "date": "2026-10-09T05:28:52+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】老舗「澤井珈琲」のドリップパック型インスタントコーヒーが3,091円引き",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147058.html",
-      "summary": "Amazonにおいて、老舗コーヒー専門店「澤井珈琲」のドリップパック型インスタントコーヒー「澤井珈琲 ドリップコーヒー ドリップパック ルナブレンド 50袋(8g)」が直近価格から3,091円引きとなる3,086円で販売されている。1杯あたりの価格は約62円。",
-      "source": "PC Watch",
-      "date": "2026-10-09T03:02:44+00:00"
     }
   ],
   "feed_count": 3,
