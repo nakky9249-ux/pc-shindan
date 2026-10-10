@@ -19,7 +19,7 @@ OUTPUT = ROOT / "news.json"
 MAX_PER_FEED = 30
 MAX_TOTAL = 120
 MAX_BYTES = 4_000_000
-USER_AGENT = "PCShindanRSSBot/1.1 (+https://github.com/nakky9249-ux/pc-shindan)"
+USER_AGENT = "PCShindanRSSBot/1.2 (+https://github.com/pc-lab-tech/pc-shindan)"
 
 def local_name(tag):
     """Return a namespace-independent lowercase XML element name."""
