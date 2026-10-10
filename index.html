@@ -1193,14 +1193,11 @@
                 </svg>`;
                 return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
             };
-            // 確認済みの個別商品ページ以外は、Google検索ではなく価格.com内の検索結果へ案内する。
+            // 個別の商品ページで構成を確認できた場合だけ販売リンクを表示する。
+            // 検索結果や仕様違いの製品を「同スペック」と誤認させない。
             const exactBuildListings = {
-                'budget-am5': {url:'https://www.suruga-ya.jp/product/detail/145999424?tenpo_cd=400568', label:'販売ページを見る', note:'掲載情報では Ryzen 5 7500F / RTX 5060 / メモリ32GB / SSD 1TB。価格・在庫・仕様は購入前に販売ページで再確認してください。'},
-                'fhd-balanced': {url:'https://www.suruga-ya.jp/product/detail/145999424?tenpo_cd=400568', label:'販売ページを見る', note:'主要パーツが近い販売品へのリンクです。構成表と完全一致するとは限らないため、購入前に各仕様を確認してください。'},
-                'wqhd-value': {url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga7g70b6bfdw101dec', label:'販売ページを見る', note:'掲載情報では Ryzen 7 9700X / RTX 5070 / メモリ32GB / SSD 2TB。価格・在庫は販売ページで再確認してください。'},
-                '4k-gaming': {url:'https://www.tsukumo.co.jp/bto/pc/game/2026/GE7A-L261BH.html', label:'販売ページを見る', note:'掲載情報では Ryzen 7 9800X3D / RTX 5080 / メモリ32GB / SSD 2TB。価格・在庫は販売ページで再確認してください。'}
+                'wqhd-value': {url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga7g70b6bfdw101dec', label:'メーカー公式の販売ページ', note:'掲載仕様：Ryzen 7 9700X / RTX 5070 / メモリ32GB / SSD 2TB。購入前に価格・在庫・仕様を再確認してください。'}
             };
-            const getBuildShopUrl = p => exactBuildListings[p.id]?.url || ('https://kakaku.com/search_results/'+encodeURIComponent(p.cpu+' '+p.gpu+' '+p.ram+' '+p.ssd+' ゲーミングPC')+'/');
             const renderRecommendations=(category='all', query='')=>{
                 const grid=el('recommendation-grid');grid.replaceChildren();
                 const normalizedQuery=query.trim().toLocaleLowerCase('ja');
@@ -1229,8 +1226,8 @@
                     const costList=document.createElement('ul');build.rows.forEach(([label,item])=>{const li=document.createElement('li');li.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+'円';costList.append(li);});breakdown.append(costList);
                     const button=document.createElement('button');button.type='button';button.className='option-btn';button.style.cssText='display:block;width:100%;text-align:center;margin-top:1rem';button.textContent='この構成をシミュレーターに反映';button.addEventListener('click',()=>{window.pcShindanApplyBuild(p.id);button.textContent='反映しました ✓';setTimeout(()=>button.textContent='この構成をシミュレーターに反映',1800);});
                     const listing=exactBuildListings[p.id];
-                    const buyLink=document.createElement('a');buyLink.className='recommend-buy-link';buyLink.href=getBuildShopUrl(p);buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.textContent=(listing?.label||'同じスペックの販売品を検索')+' ';const buyIcon=document.createElement('i');buyIcon.className='fa-solid fa-arrow-up-right-from-square';buyIcon.setAttribute('aria-hidden','true');buyLink.append(buyIcon);
-                    const buyNote=document.createElement('p');buyNote.className='recommend-buy-note';buyNote.textContent=listing?.note||('価格.com内で近い構成を検索します。検索結果は完全一致を保証しません。CPU・GPU・メモリ・SSDと合計価格を購入前に確認してください。');
+                    const buyLink=document.createElement('a');buyLink.className='recommend-buy-link';buyLink.href=listing?.url||'#';buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.textContent=(listing?.label||'販売ページ未確認')+' ';if(listing){const buyIcon=document.createElement('i');buyIcon.className='fa-solid fa-arrow-up-right-from-square';buyIcon.setAttribute('aria-hidden','true');buyLink.append(buyIcon);}else{buyLink.removeAttribute('href');buyLink.removeAttribute('target');buyLink.setAttribute('aria-disabled','true');buyLink.style.cssText='display:block;width:100%;margin-top:.55rem;padding:.75rem .8rem;border-radius:9px;background:#202938;color:#cbd5e1;font-size:.86rem;font-weight:700;text-align:center;cursor:default';}
+                    const buyNote=document.createElement('p');buyNote.className='recommend-buy-note';buyNote.textContent=listing?.note||('この構成と一致する販売ページを確認できていないため、外部サイトへのリンクは掲載していません。CPU・GPU・メモリ・SSDの仕様は上に記載しています。購入先が確認できたら追加します。');
                     card.append(visual,badge,title,price,desc,list,breakdown,button,buyLink,buyNote);grid.append(card);
                 });
             };
