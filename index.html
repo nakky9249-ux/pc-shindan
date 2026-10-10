@@ -746,6 +746,7 @@
                     <div class="builder-actions">
                         <button class="primary" id="builder-save" type="button">構成を保存</button>
                         <button id="builder-copy" type="button">構成をコピー</button>
+                        <button id="builder-load" type="button">保存した構成を読み込む</button>
                         <button id="builder-reset" type="button">初期構成に戻す</button>
                     </div>
                     <p class="builder-small">表示額は参考概算です。価格.comの実売価格を自動取得したものではありません。各パーツの「価格.comで価格確認」リンクから販売価格・送料・在庫を確認してください。実売価格・在庫・対応BIOS・ケース寸法・電源端子は購入前に販売店とメーカー公式仕様で確認してください。</p>
@@ -766,54 +767,17 @@
 
                 <!-- 3列構成: 人気のおすすめプリセット -->
                 <section id="recommend" style="margin-top: 2.5rem;">
-                    <h2 class="section-title"><i class="fa-solid fa-fire"></i> 定番のおすすめPC構成</h2>
-                    <div class="cards-3col">
-                        <!-- カード 1 -->
-                        <div class="recommend-card">
-                            <div>
-                                <span class="badge">コスパ重視</span>
-                                <h3>エントリー・ゲーミング</h3>
-                                <div class="price">約 110,000 円</div>
-                                <ul>
-                                    <li><strong>CPU:</strong> Ryzen 5 5600</li>
-                                    <li><strong>GPU:</strong> RTX 3060 / RX 6600</li>
-                                    <li><strong>RAM:</strong> 16GB</li>
-                                    <li><strong>用途:</strong> FHD60〜120FPS</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="option-btn" style="display:block; text-align:center;">詳細を見る</a>
-                        </div>
-                        <!-- カード 2 -->
-                        <div class="recommend-card">
-                            <div>
-                                <span class="badge" style="background: rgba(59, 130, 246, 0.2); color: var(--accent-blue);">一番人気</span>
-                                <h3>スタンダード・アッパー</h3>
-                                <div class="price">約 165,000 円</div>
-                                <ul>
-                                    <li><strong>CPU:</strong> Core i5-14400F</li>
-                                    <li><strong>GPU:</strong> RTX 4060 Ti 8GB</li>
-                                    <li><strong>RAM:</strong> 16GB / 32GB</li>
-                                    <li><strong>用途:</strong> FHD240FPS / 配信</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="option-btn" style="display:block; text-align:center;">詳細を見る</a>
-                        </div>
-                        <!-- カード 3 -->
-                        <div class="recommend-card">
-                            <div>
-                                <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: var(--accent-green);">ハイエンド</span>
-                                <h3>4K・本格配信モデル</h3>
-                                <div class="price">約 280,000 円</div>
-                                <ul>
-                                    <li><strong>CPU:</strong> Ryzen 7 7800X3D</li>
-                                    <li><strong>GPU:</strong> RTX 4070 Ti SUPER</li>
-                                    <li><strong>RAM:</strong> 32GB DDR5</li>
-                                    <li><strong>用途:</strong> 4Kゲーム / VR / VTuber</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="option-btn" style="display:block; text-align:center;">詳細を見る</a>
-                        </div>
+                    <h2 class="section-title"><i class="fa-solid fa-fire"></i> おすすめPC構成一覧</h2>
+                    <p class="builder-intro">予算・ゲーム・配信・制作の目的別に複数の構成を比較できます。価格はサイト内の参考単価から計算したパーツ合計です。「この構成を使う」で下のシミュレーターに反映できます。</p>
+                    <div class="options-grid" id="recommendation-filters" style="margin:1rem 0">
+                        <button class="option-btn active" data-category="all" type="button">すべて</button>
+                        <button class="option-btn" data-category="budget" type="button">低予算・コスパ</button>
+                        <button class="option-btn" data-category="fps" type="button">FPS・高FPS</button>
+                        <button class="option-btn" data-category="wqhd" type="button">WQHD・4K</button>
+                        <button class="option-btn" data-category="creator" type="button">配信・制作・AI</button>
                     </div>
+                    <div class="cards-3col" id="recommendation-grid" aria-live="polite"><p>おすすめ構成を読み込み中…</p></div>
+                    <p class="builder-small">※価格は参考概算で、価格.comの実売価格を自動取得したものではありません。購入前に型番・送料・在庫・BIOS・GPU寸法・電源端子・ケース対応を確認してください。FPSはゲームや設定で変わります。</p>
                 </section>
             </div>
 
@@ -907,55 +871,31 @@
                 if(res==='fhd240'&&tier<2)tier=2;if(res==='wqhd'&&tier<2)tier=2;if(res==='4k')tier=4;
                 if(use==='ai'||use==='stream'||game==='mmo'||game==='heavy')tier=Math.max(tier,2);
                 if(game==='light'&&use==='work'&&tier>1)tier=1;
-                const profiles=[
-                    {title:'エントリー・コスパ重視',price:'約 10〜12万円',desc:'軽めのゲームや普段使い向け。重い3Dゲームでは画質調整が必要です。',cpu:'Ryzen 5 5600 / Core i3クラス',gpu:'Radeon RX 7600 / 同等クラス',ram:'16GB（2枚組推奨）',ssd:'1TB NVMe SSD'},
-                    {title:'フルHD・スタンダード',price:'約 14〜17万円',desc:'フルHDのゲームをバランスよく楽しみたい人向け。FPSはゲーム設定や環境で変わります。',cpu:'Ryzen 5 7500F / Core i5クラス',gpu:'RTX 5060 / RX 9060 XTクラス',ram:'32GB DDR5',ssd:'1TB NVMe SSD'},
-                    {title:'高FPS・アッパーミドル',price:'約 18〜23万円',desc:'競技系FPSの高フレームレートや、配信・編集も視野に入れた構成です。',cpu:'Ryzen 5 7500F / Ryzen 7クラス',gpu:'RTX 5060 Ti / RTX 5070クラス',ram:'32GB DDR5',ssd:'1〜2TB NVMe SSD'},
-                    {title:'WQHD・ハイスペック',price:'約 23〜29万円',desc:'WQHD高画質や重めのゲームを想定。予算に合わせてGPUを優先します。',cpu:'Ryzen 7 7800X3D / Ryzen 7 9700Xクラス',gpu:'RTX 5070 / RX 9070 XTクラス',ram:'32GB DDR5',ssd:'2TB NVMe SSD'},
-                    {title:'ハイエンド・4K/制作向け',price:'約 30万円以上',desc:'4Kゲームや重い制作作業向け。用途によってGPUメモリやストレージを増やします。',cpu:'Ryzen 7 7800X3D / Ryzen 7 9700Xクラス',gpu:'RTX 5070 Ti以上のクラス',ram:use==='ai'||use==='stream'?'64GB DDR5も検討':'32〜64GB DDR5',ssd:'2TB以上 NVMe SSD'}
-                ];
-                const d=Object.assign({},profiles[tier]);
-                if(use==='work')d.desc+=' 普段使い中心ならGPUを控えめにして、静音性や容量に予算を回す選択もあります。';
-                if(use==='stream')d.desc+=' 配信ソフトや編集ソフトを同時に使う場合は、メモリ32GB以上がおすすめです。';
-                if(use==='ai')d.desc+=' AI用途はソフトによって必要なGPUメモリが異なります。利用予定ソフトの要件も確認してください。';
-                if(game==='fps'&&res==='fhd240')d.desc+=' FPSで高フレームレートを狙う場合、CPU性能も重要です。実際のFPSはゲーム・設定・マップや場面で変動し、常時維持を保証するものではありません。';
-                if(game==='mmo')d.desc+=' MMOは同時に表示されるキャラクターやエフェクトの数で負荷が変わります。遊ぶタイトルの推奨スペックも確認してください。';
-                if(game==='heavy')d.desc+=' オープンワールド系は高画質設定やテクスチャでGPUメモリを多く使うことがあります。タイトルごとの推奨スペックも確認してください。';
-                ['title','desc','cpu','gpu','ram','ssd'].forEach(k=>{const ids={title:'result-title',desc:'result-desc',cpu:'spec-cpu',gpu:'spec-gpu',ram:'spec-ram',ssd:'spec-ssd'};document.getElementById(ids[k]).textContent=d[k];});
-
-                // 診断結果もパーツ構成シミュレーターと同じ参考価格データから合計する
-                const at=(arr,i)=>arr[Math.min(i,arr.length-1)];
-                const plan=[
-                    {cpu:1,gpu:3,board:1,ram:1,ssd:2,psu:1,pcCase:0,cooler:0,hdd:5,fans:0,os:1},
-                    {cpu:4,gpu:7,board:1,ram:1,ssd:2,psu:3,pcCase:2,cooler:0,hdd:5,fans:0,os:1},
-                    {cpu:6,gpu:9,board:2,ram:1,ssd:3,psu:4,pcCase:3,cooler:3,hdd:5,fans:2,os:1},
-                    {cpu:7,gpu:12,board:2,ram:1,ssd:3,psu:4,pcCase:3,cooler:3,hdd:5,fans:2,os:1},
-                    {cpu:9,gpu:15,board:4,ram:4,ssd:3,psu:5,pcCase:5,cooler:7,hdd:5,fans:2,os:1}
-                ][tier];
-                const dc=at(parts.cpu,plan.cpu), dg=at(parts.gpu,plan.gpu);
-                const db=at(parts.board.filter(x=>x.s===dc.s&&x.r===dc.r),plan.board);
-                const dr=at(listForRam(dc),plan.ram), ds=at(parts.ssd,plan.ssd), dp=at(parts.psu,plan.psu);
-                const dcase=at(parts.pcCase,plan.pcCase), dcl=at(parts.cooler,plan.cooler), dh=at(parts.hdd,plan.hdd), df=at(parts.fans,plan.fans), dos=at(parts.os,plan.os);
-                const buildRows=[
-                    ['CPU',dc],['GPU',dg],['マザーボード',db],['メモリ',dr],['SSD',ds],['電源',dp],
-                    ['ケース',dcase],['CPUクーラー',dcl],['追加HDD',dh],['ケースファン',df],['OS',dos]
-                ];
-                const buildTotal=buildRows.reduce((sum,row)=>sum+row[1].p,0);
-                document.getElementById('result-price').textContent='パーツ合計 約 '+buildTotal.toLocaleString('ja-JP')+' 円';
-                const detail=document.getElementById('diagnosis-build-detail');
-                detail.replaceChildren();
-                const detailTitle=document.createElement('strong');detailTitle.textContent='おすすめ構成の内訳（参考価格）';detail.append(detailTitle);
-                const detailList=document.createElement('ul');detailList.style.marginTop='.5rem';
-                buildRows.forEach(([label,item])=>{
-                    const li=document.createElement('li');
-                    const a=document.createElement('a');a.href='https://search.kakaku.com/'+encodeURIComponent(item.n)+'/';a.target='_blank';a.rel='noopener noreferrer';
-                    a.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+' 円（価格.comで確認 ↗）';
-                    a.style.color='var(--accent-cyan)';a.style.textDecoration='underline';li.append(a);detailList.append(li);
-                });
-                detail.append(detailList);
-                const note=document.createElement('p');note.style.cssText='font-size:.78rem;color:var(--text-muted);margin-top:.6rem';
-                note.textContent='これはパーツ単価を合計した参考額です。価格.comの実売価格を自動取得した値ではなく、組立費・送料・ライセンス条件などで総額は変わります。予算を超える場合はGPUやCPUなどの選択を調整してください。';
-                detail.append(note);
+                const presets=window.pcShindanBuilds;
+                if(!presets || !presets.length){document.getElementById('result-desc').textContent='構成データを準備中です。少し待ってからもう一度診断してください。';resultBox.classList.add('active');return;}
+                let key=tier===0?'budget-1080p':tier===1?'fhd-balanced':tier===2?'fps-value':tier===3?'wqhd-value':'4k-gaming';
+                if(use==='work')key=tier<=1?'budget-1080p':'fhd-balanced';
+                if(use==='stream')key=tier>=3?'creator-stream':'creator-value';
+                if(use==='ai')key=tier>=3?'creator-ai':'creator-value';
+                if(game==='fps'&&res==='fhd240')key=tier>=3?'fps-elite':'fps-value';
+                if(game==='mmo'||game==='heavy')key=tier>=3?'wqhd-amd':'wqhd-value';
+                if(res==='4k')key=use==='ai'?'creator-ai':'4k-gaming';
+                const d=presets.find(x=>x.id===key)||presets[0],build=window.pcShindanGetBuildParts(key);
+                if(!build){document.getElementById('result-desc').textContent='この構成データを読み込めませんでした。';resultBox.classList.add('active');return;}
+                window.pcShindanApplyBuild(key,{scroll:false});
+                document.getElementById('result-title').textContent=d.title;
+                document.getElementById('result-price').textContent='パーツ合計 約 '+build.total.toLocaleString('ja-JP')+' 円';
+                document.getElementById('result-desc').textContent=d.desc+(build.total>budget*10000?' 選択予算の目安を超えています。予算を優先する場合は、おすすめ構成一覧から低価格の構成を選んでください。':'');
+                document.getElementById('spec-cpu').textContent=build.cpu.n;
+                document.getElementById('spec-gpu').textContent=build.gpu.n;
+                document.getElementById('spec-ram').textContent=build.ram.n;
+                document.getElementById('spec-ssd').textContent=build.ssd.n;
+                const detail=document.getElementById('diagnosis-build-detail');detail.replaceChildren();
+                const heading=document.createElement('strong');heading.textContent='おすすめ構成の内訳（参考価格）';detail.append(heading);
+                const list=document.createElement('ul');list.style.marginTop='.5rem';
+                build.rows.forEach(([label,item])=>{const li=document.createElement('li');const link=document.createElement('a');link.href='https://search.kakaku.com/'+encodeURIComponent(item.n)+'/';link.target='_blank';link.rel='noopener noreferrer';link.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+' 円（価格.comで確認 ↗）';link.style.cssText='color:var(--accent-cyan);text-decoration:underline';li.append(link);list.append(li);});
+                detail.append(list);
+                const note=document.createElement('p');note.style.cssText='font-size:.78rem;color:var(--text-muted);margin-top:.6rem';note.textContent='価格.comの実売価格を自動取得した値ではありません。参考価格の合計で、組立費・送料・追加保証は含みません。';detail.append(note);
                 resultBox.classList.add('active');resultBox.scrollIntoView({behavior:'smooth',block:'nearest'});
             });
 
@@ -987,6 +927,31 @@
             };
             const el=id=>document.getElementById(id), yen=n=>'約 '+n.toLocaleString('ja-JP')+' 円';
             const listForRam=cpu=>cpu.r==='DDR4'?parts.ram4:parts.ram5;
+            const recommendedBuilds=[
+                {id:'budget-1080p',title:'低予算・フルHD入門',category:'budget',tag:'予算優先',desc:'軽めのゲームや普段使い向け。OSライセンスを別途用意できる人向けの低予算構成。',cpu:'Ryzen 5 5500',gpu:'Radeon RX 6600 8GB',board:'B550 mATX（AM4 / DDR4）',ram:'16GB（8GB×2）DDR4',ssd:'500GB NVMe Gen3 SSD',psu:'550W 80 PLUS Bronze',pcCase:'mATX対応・エアフロー重視ケース',cooler:'付属/低価格空冷クーラー',hdd:'追加HDDなし',fans:'追加ファンなし',os:'OSなし（既存ライセンス利用等）',usage:'FHD・軽めのゲーム / 予算重視'},
+                {id:'budget-am5',title:'コスパ重視・AM5入門',category:'budget',tag:'AM5入門',desc:'AM5プラットフォームを使い、将来のCPU交換も視野に入れたい人向け。',cpu:'Ryzen 5 7500F',gpu:'GeForce RTX 5050 8GB',board:'A620 mATX（AM5 / DDR5）',ram:'32GB（16GB×2）DDR5',ssd:'1TB NVMe Gen4 SSD',psu:'650W 80 PLUS Bronze',pcCase:'mATX対応・エアフロー重視ケース',cooler:'120mmタワー型空冷クーラー',hdd:'追加HDDなし',fans:'追加ファンなし',os:'Windows 11 Home',usage:'FHDゲーム / AM5で組みたい人'},
+                {id:'fhd-balanced',title:'フルHD・万能バランス',category:'budget',tag:'バランス型',desc:'FHDゲームを中心に、日常利用や複数のゲームにも使いやすい構成。',cpu:'Ryzen 5 7500F',gpu:'GeForce RTX 5060 8GB',board:'B650 mATX（AM5 / DDR5）',ram:'32GB（16GB×2）DDR5',ssd:'1TB NVMe Gen4 SSD',psu:'750W 80 PLUS Gold',pcCase:'ATX・メッシュフロントケース',cooler:'120mmタワー型空冷クーラー',hdd:'追加HDDなし',fans:'120mmケースファン×1',os:'Windows 11 Home',usage:'FHD高画質 / 幅広いゲーム'},
+                {id:'fps-value',title:'FPS・高フレームレート重視',category:'fps',tag:'FPS向け',desc:'競技系FPS向けにCPU性能と冷却を意識した構成。FPSはゲーム設定や場面で変動します。',cpu:'Ryzen 7 7800X3D',gpu:'GeForce RTX 5060 Ti 16GB',board:'B650 ATX（AM5 / DDR5）',ram:'32GB（16GB×2）DDR5',ssd:'1TB NVMe Gen4 SSD',psu:'750W 80 PLUS Gold',pcCase:'ATX・メッシュフロントケース',cooler:'デュアルタワー空冷クーラー',hdd:'追加HDDなし',fans:'120mmケースファン×3',os:'Windows 11 Home',usage:'Valorantなど競技系FPS / 高FPS狙い'},
+                {id:'wqhd-value',title:'WQHD・高画質バランス',category:'wqhd',tag:'WQHD向け',desc:'WQHD解像度や重めのゲームを想定。GPU性能とメモリ容量を重視。',cpu:'Ryzen 7 9700X',gpu:'GeForce RTX 5070 12GB',board:'B650 ATX（AM5 / DDR5）',ram:'32GB（16GB×2）DDR5',ssd:'2TB NVMe Gen4 SSD',psu:'850W 80 PLUS Gold',pcCase:'ATX・メッシュフロントケース',cooler:'デュアルタワー空冷クーラー',hdd:'追加HDDなし',fans:'120mmケースファン×3',os:'Windows 11 Home',usage:'WQHD / 重めの3Dゲーム'},
+                {id:'wqhd-amd',title:'WQHD・大容量VRAM重視',category:'wqhd',tag:'VRAM重視',desc:'大容量VRAMを活かしたいゲームや高画質設定向け。利用ソフトとの相性も確認。',cpu:'Ryzen 7 9700X',gpu:'Radeon RX 9070 XT 16GB',board:'B650 ATX（AM5 / DDR5）',ram:'32GB（16GB×2）DDR5',ssd:'2TB NVMe Gen4 SSD',psu:'850W 80 PLUS Gold',pcCase:'大型・高エアフローケース',cooler:'デュアルタワー空冷クーラー',hdd:'追加HDDなし',fans:'高性能PWMファン×3',os:'Windows 11 Home',usage:'WQHD高画質 / VRAM重視'},
+                {id:'creator-value',title:'配信・動画編集の入門',category:'creator',tag:'配信・編集',desc:'ゲーム配信や動画編集を始めたい人向け。メモリ32GBを基本にした構成。',cpu:'Core Ultra 7 265K',gpu:'GeForce RTX 5060 Ti 16GB',board:'B860 ATX（LGA1851 / DDR5）',ram:'32GB（16GB×2）DDR5',ssd:'2TB NVMe Gen4 SSD',psu:'850W 80 PLUS Gold',pcCase:'ATX・メッシュフロントケース',cooler:'360mm簡易水冷',hdd:'追加HDDなし',fans:'120mmケースファン×3',os:'Windows 11 Home',usage:'配信 / 動画編集 / マルチタスク'},
+                {id:'creator-ai',title:'AI・本格制作ワークステーション',category:'creator',tag:'AI・制作',desc:'GPUメモリと大容量メモリを重視した制作向け。AIソフトごとのVRAM要件は別途確認。',cpu:'Core Ultra 7 265K',gpu:'GeForce RTX 5070 Ti 16GB',board:'Z890 ATX（LGA1851 / DDR5）',ram:'64GB（32GB×2）DDR5',ssd:'2TB NVMe Gen4 SSD',psu:'1000W 80 PLUS Gold',pcCase:'大型・高エアフローケース',cooler:'360mm簡易水冷',hdd:'HDD 4TB 3.5インチ',fans:'高性能PWMファン×3',os:'Windows 11 Pro',usage:'AI開発 / 制作 / 配信・編集'},
+                {id:'4k-gaming',title:'4K・ハイエンドゲーミング',category:'wqhd',tag:'4K向け',desc:'4K高画質を狙うハイエンド構成。GPUサイズ、電源端子、ケース対応を購入前に確認。',cpu:'Ryzen 7 9800X3D',gpu:'GeForce RTX 5080 16GB',board:'B650E ATX（AM5 / DDR5）',ram:'32GB（16GB×2）DDR5',ssd:'2TB NVMe Gen4 SSD',psu:'1000W 80 PLUS Gold',pcCase:'大型・高エアフローケース',cooler:'360mm簡易水冷',hdd:'追加HDDなし',fans:'高性能PWMファン×3',os:'Windows 11 Home',usage:'4K / 高画質 / 重い3Dゲーム'},
+                {id:'fps-elite',title:'FPS・ハイエンドCPU構成',category:'fps',tag:'高FPS上位',desc:'高リフレッシュレートの競技系ゲーム向け上位構成。モニターとゲーム設定も重要。',cpu:'Ryzen 7 9800X3D',gpu:'GeForce RTX 5070 Ti 16GB',board:'B650E ATX（AM5 / DDR5）',ram:'32GB（16GB×2）DDR5',ssd:'2TB NVMe Gen4 SSD',psu:'850W 80 PLUS Gold',pcCase:'ATX・メッシュフロントケース',cooler:'デュアルタワー空冷クーラー',hdd:'追加HDDなし',fans:'120mmケースファン×3',os:'Windows 11 Home',usage:'高FPS / 競技系FPS / 配信も検討'}
+            ];
+            const getBuildParts=key=>{
+                const p=recommendedBuilds.find(x=>x.id===key);if(!p)return null;
+                const cpu=parts.cpu.find(x=>x.n===p.cpu),gpu=parts.gpu.find(x=>x.n===p.gpu);
+                const board=parts.board.find(x=>x.n===p.board&&x.s===cpu.s&&x.r===cpu.r);
+                const ram=listForRam(cpu).find(x=>x.n===p.ram);
+                const ssd=parts.ssd.find(x=>x.n===p.ssd),psu=parts.psu.find(x=>x.n===p.psu),pcCase=parts.pcCase.find(x=>x.n===p.pcCase);
+                const cooler=parts.cooler.find(x=>x.n===p.cooler),hdd=parts.hdd.find(x=>x.n===p.hdd),fans=parts.fans.find(x=>x.n===p.fans),os=parts.os.find(x=>x.n===p.os);
+                if([cpu,gpu,board,ram,ssd,psu,pcCase,cooler,hdd,fans,os].some(x=>!x))return null;
+                const rows=[['CPU',cpu],['GPU',gpu],['マザーボード',board],['メモリ',ram],['SSD',ssd],['電源',psu],['ケース',pcCase],['CPUクーラー',cooler],['追加HDD',hdd],['ケースファン',fans],['OS',os]];
+                return {preset:p,cpu,gpu,board,ram,ssd,psu,pcCase,cooler,hdd,fans,os,rows,total:rows.reduce((sum,row)=>sum+row[1].p,0)};
+            };
+            window.pcShindanBuilds=recommendedBuilds;
+            window.pcShindanGetBuildParts=getBuildParts;
             const selected=(id,arr)=>arr[Number(el('part-'+id).value)||0];
             const fill=(node,arr,label,selectedIndex=0)=>{node.replaceChildren();arr.forEach((x,i)=>{const o=document.createElement('option');o.value=i;o.textContent=label(x);if(i===selectedIndex)o.selected=true;node.append(o);});};
             const formatOption=x=>x.n+' — '+yen(x.p);
@@ -1056,6 +1021,39 @@
                 detailBox.append(detailList);
                 ['cpu','gpu','board','ram','ssd','psu','case','cooler','hdd','fans','os'].forEach(addPriceSearch);
             }
+            window.pcShindanApplyBuild=(key,options={})=>{
+                const p=recommendedBuilds.find(x=>x.id===key),build=getBuildParts(key);if(!p||!build)return false;
+                const setByName=(id,arr,name)=>{const index=arr.findIndex(x=>x.n===name);if(index>=0)el('part-'+id).value=String(index);};
+                setByName('cpu',parts.cpu,p.cpu);refreshParts();
+                const cpu=selected('cpu',parts.cpu),boards=parts.board.filter(x=>x.s===cpu.s&&x.r===cpu.r),rams=listForRam(cpu);
+                setByName('gpu',parts.gpu,p.gpu);setByName('board',boards,p.board);setByName('ram',rams,p.ram);
+                setByName('ssd',parts.ssd,p.ssd);setByName('psu',parts.psu,p.psu);setByName('case',parts.pcCase,p.pcCase);
+                setByName('cooler',parts.cooler,p.cooler);setByName('hdd',parts.hdd,p.hdd);setByName('fans',parts.fans,p.fans);setByName('os',parts.os,p.os);
+                update();if(options.scroll!==false)el('builder').scrollIntoView({behavior:'smooth',block:'start'});return true;
+            };
+            const renderRecommendations=(category='all')=>{
+                const grid=el('recommendation-grid');grid.replaceChildren();
+                recommendedBuilds.filter(p=>category==='all'||p.category===category).forEach(p=>{
+                    const build=getBuildParts(p.id);if(!build)return;
+                    const card=document.createElement('article');card.className='recommend-card';
+                    const badge=document.createElement('span');badge.className='badge';badge.textContent=p.tag;
+                    const title=document.createElement('h3');title.textContent=p.title;
+                    const price=document.createElement('div');price.className='price';price.textContent='約 '+build.total.toLocaleString('ja-JP')+' 円';
+                    const desc=document.createElement('p');desc.textContent=p.desc;desc.style.cssText='font-size:.84rem;color:var(--text-muted);margin:.5rem 0 .8rem';
+                    const list=document.createElement('ul');
+                    [['CPU',build.cpu.n],['GPU',build.gpu.n],['メモリ',build.ram.n],['SSD',build.ssd.n],['用途',p.usage]].forEach(([label,value])=>{const li=document.createElement('li');const strong=document.createElement('strong');strong.textContent=label+'：';li.append(strong,document.createTextNode(' '+value));list.append(li);});
+                    const breakdown=document.createElement('details');breakdown.style.cssText='margin:.7rem 0;font-size:.82rem';
+                    const summary=document.createElement('summary');summary.textContent='パーツ別価格を見る';summary.style.cursor='pointer';breakdown.append(summary);
+                    const costList=document.createElement('ul');build.rows.forEach(([label,item])=>{const li=document.createElement('li');li.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+'円';costList.append(li);});breakdown.append(costList);
+                    const button=document.createElement('button');button.type='button';button.className='option-btn';button.style.cssText='display:block;width:100%;text-align:center;margin-top:1rem';button.textContent='この構成をシミュレーターに反映';button.addEventListener('click',()=>{window.pcShindanApplyBuild(p.id);button.textContent='反映しました ✓';setTimeout(()=>button.textContent='この構成をシミュレーターに反映',1800);});
+                    card.append(badge,title,price,desc,list,breakdown,button);grid.append(card);
+                });
+            };
+            renderRecommendations();
+            el('recommendation-filters')?.querySelectorAll('button[data-category]').forEach(button=>button.addEventListener('click',()=>{
+                el('recommendation-filters').querySelectorAll('button').forEach(b=>b.classList.remove('active'));button.classList.add('active');renderRecommendations(button.dataset.category);
+            }));
+            window.pcShindanCatalog={parts,listForRam};
             el('part-cpu').addEventListener('change',refreshParts);
             ['gpu','board','ram','ssd','psu','case','cooler','hdd','fans','os'].forEach(k=>el('part-'+k).addEventListener('change',update));
             refreshParts();
@@ -1063,6 +1061,7 @@
             el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">各パーツの「価格.comで価格確認」から販売価格を確認できます。価格.comの実売価格をサイト内に自動反映する公式APIは確認できていないため、合計額には参考価格を使用しています。</div>';
             el('builder-save').addEventListener('click',()=>{try{localStorage.setItem('pc-shindan-build',JSON.stringify(window.pcShindanCurrentBuild));el('builder-save').textContent='保存しました';}catch(e){el('builder-save').textContent='保存できませんでした';}});
             el('builder-copy').addEventListener('click',async()=>{const b=window.pcShindanCurrentBuild;const txt='PC診断室 構成メモ\n'+Object.entries(b).map(([k,v])=>k+': '+v).join('\n');try{await navigator.clipboard.writeText(txt);el('builder-copy').textContent='コピーしました';}catch(e){window.prompt('構成をコピーしてください',txt);}});
+            el('builder-load').addEventListener('click',()=>{try{const saved=JSON.parse(localStorage.getItem('pc-shindan-build')||'null');if(!saved){el('builder-load').textContent='保存データなし';return;}const preset=recommendedBuilds.find(p=>p.cpu===saved.cpu&&p.gpu===saved.gpu&&p.board===saved.motherboard&&p.ram===saved.ram&&p.ssd===saved.ssd&&p.os===saved.os);if(preset){window.pcShindanApplyBuild(preset.id);el('builder-load').textContent='読み込みました';}else{el('builder-load').textContent='保存した構成は現在のおすすめ一覧にありません';}}catch(e){el('builder-load').textContent='読み込み失敗';}});
             el('builder-reset').addEventListener('click',()=>{fill(el('part-cpu'),parts.cpu,formatOption,3);fill(el('part-gpu'),parts.gpu,formatOption,7);fill(el('part-ssd'),parts.ssd,formatOption,2);fill(el('part-psu'),parts.psu,formatOption,3);fill(el('part-case'),parts.pcCase,formatOption,2);fill(el('part-cooler'),parts.cooler,formatOption,2);fill(el('part-hdd'),parts.hdd,formatOption,5);fill(el('part-fans'),parts.fans,formatOption,0);fill(el('part-os'),parts.os,formatOption,1);refreshParts();el('builder-save').textContent='構成を保存';el('builder-copy').textContent='構成をコピー';});
         });
 
