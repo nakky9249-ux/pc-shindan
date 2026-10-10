@@ -155,7 +155,7 @@ class SiteSmokeTests(unittest.TestCase):
         error_page = not_found.read_text(encoding="utf-8")
         self.assertIn("lang=\"ja\"", error_page)
         self.assertIn("noindex,follow", error_page)
-        self.assertIn('href="./"', error_page)
+        self.assertIn('href="/pc-shindan/"', error_page)
 
     def test_site_information_pages_exist(self):
         required_pages = ["about.html", "privacy.html", "affiliate.html", "contact.html"]
