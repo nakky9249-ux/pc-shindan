@@ -198,7 +198,7 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn("一致する記事がありません", self.html)
 
     def test_pricing_copy_does_not_claim_live_prices(self):
-        self.assertIn("実売価格の自動取得", self.html)
+        self.assertIn("価格表示について", self.html)
         self.assertIn("参考価格", self.html)
         self.assertIn("各ショップの公式サイトで実売価格を比較します", self.html)
 
