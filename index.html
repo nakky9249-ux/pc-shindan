@@ -710,6 +710,8 @@
                             </div>
                         </div>
 
+                        <div id="diagnosis-build-detail" class="builder-notes" style="margin:1rem 0" aria-live="polite"></div>
+
                         <!-- アフィリエイト用ボタン（将来の収益化リンク） -->
                         <a href="#" class="affiliate-btn" id="affiliate-link" target="_blank">
                             <i class="fa-solid fa-cart-shopping"></i> この構成に近いBTO PCをショップで探す (提携リンク)
@@ -720,10 +722,10 @@
 
                 <section id="builder" class="builder-card">
                     <h2 class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> パーツ構成シミュレーター</h2>
-                    <p class="builder-intro">CPU・GPU・マザーボード・メモリ・ストレージ・電源・ケース・冷却・OSまで選択。各パーツ名から販売価格を検索でき、合計金額も自動計算します。</p>
+                    <p class="builder-intro">CPU・GPU・マザーボード・メモリ・SSD/HDD・電源・ケース・冷却・ファン・OSを選択。互換性の注意点、仕様の詳細、参考価格の合計を確認し、価格.comで各パーツの実売価格を調べられます。</p>
                     <div id="live-price-status" role="status" style="margin:.8rem 0;padding:.85rem 1rem;border:1px solid var(--border-color);border-radius:12px;background:var(--card-bg);font-size:.88rem">
                         <strong>価格自動取得：</strong>連携設定を確認中…
-                        <div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">楽天市場の公式商品検索APIを利用予定。APIキー設定後、約6時間ごとに価格データを更新します。</div>
+                        <div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">価格.comの検索リンクを各パーツに追加しています。価格.comの価格データを自動取得する公式連携手段は確認できていないため、実売価格は検索先で確認してください。下の合計は参考価格を使って計算します。</div>
                     </div>
                     <div class="builder-grid">
                         <div class="builder-field"><label for="part-cpu">CPU（プロセッサー）</label><select id="part-cpu"></select></div>
@@ -740,12 +742,13 @@
                     </div>
                     <div class="builder-total"><div><span>選択パーツ合計の目安</span><div style="font-size:.78rem;color:var(--text-muted)">組立費・送料・追加保証は含みません。OSは選択に応じて加算。</div></div><strong id="builder-price">計算中…</strong></div>
                     <div class="builder-notes" id="builder-notes" aria-live="polite">パーツの組み合わせを確認しています…</div>
+                    <div class="builder-notes" id="builder-spec-detail" aria-live="polite"><strong>選択パーツの詳細</strong><p>パーツを選ぶと仕様と価格確認リンクが表示されます。</p></div>
                     <div class="builder-actions">
                         <button class="primary" id="builder-save" type="button">構成を保存</button>
                         <button id="builder-copy" type="button">構成をコピー</button>
                         <button id="builder-reset" type="button">初期構成に戻す</button>
                     </div>
-                    <p class="builder-small">表示額は参考概算で、販売店の実売価格を自動取得したものではありません。「価格を調べる」リンクから検索結果を確認してください。実売価格・在庫・対応BIOS・ケース寸法・電源端子は購入前に販売店とメーカー公式仕様で確認してください。</p>
+                    <p class="builder-small">表示額は参考概算です。価格.comの実売価格を自動取得したものではありません。各パーツの「価格.comで価格確認」リンクから販売価格・送料・在庫を確認してください。実売価格・在庫・対応BIOS・ケース寸法・電源端子は購入前に販売店とメーカー公式仕様で確認してください。</p>
                 </section>
 
                 <section id="bto-shops" class="builder-card" style="margin-top:2rem">
@@ -918,7 +921,41 @@
                 if(game==='fps'&&res==='fhd240')d.desc+=' FPSで高フレームレートを狙う場合、CPU性能も重要です。実際のFPSはゲーム・設定・マップや場面で変動し、常時維持を保証するものではありません。';
                 if(game==='mmo')d.desc+=' MMOは同時に表示されるキャラクターやエフェクトの数で負荷が変わります。遊ぶタイトルの推奨スペックも確認してください。';
                 if(game==='heavy')d.desc+=' オープンワールド系は高画質設定やテクスチャでGPUメモリを多く使うことがあります。タイトルごとの推奨スペックも確認してください。';
-                ['title','price','desc','cpu','gpu','ram','ssd'].forEach(k=>{const ids={title:'result-title',price:'result-price',desc:'result-desc',cpu:'spec-cpu',gpu:'spec-gpu',ram:'spec-ram',ssd:'spec-ssd'};document.getElementById(ids[k]).textContent=d[k];});
+                ['title','desc','cpu','gpu','ram','ssd'].forEach(k=>{const ids={title:'result-title',desc:'result-desc',cpu:'spec-cpu',gpu:'spec-gpu',ram:'spec-ram',ssd:'spec-ssd'};document.getElementById(ids[k]).textContent=d[k];});
+
+                // 診断結果もパーツ構成シミュレーターと同じ参考価格データから合計する
+                const at=(arr,i)=>arr[Math.min(i,arr.length-1)];
+                const plan=[
+                    {cpu:1,gpu:3,board:1,ram:1,ssd:2,psu:1,pcCase:0,cooler:0,hdd:5,fans:0,os:1},
+                    {cpu:4,gpu:7,board:4,ram:1,ssd:2,psu:3,pcCase:2,cooler:0,hdd:5,fans:0,os:1},
+                    {cpu:6,gpu:9,board:5,ram:1,ssd:3,psu:4,pcCase:3,cooler:3,hdd:5,fans:2,os:1},
+                    {cpu:7,gpu:12,board:5,ram:1,ssd:3,psu:4,pcCase:3,cooler:3,hdd:5,fans:2,os:1},
+                    {cpu:9,gpu:15,board:7,ram:4,ssd:3,psu:5,pcCase:5,cooler:7,hdd:5,fans:2,os:1}
+                ][tier];
+                const dc=at(parts.cpu,plan.cpu), dg=at(parts.gpu,plan.gpu);
+                const db=at(parts.board.filter(x=>x.s===dc.s&&x.r===dc.r),plan.board);
+                const dr=at(listForRam(dc),plan.ram), ds=at(parts.ssd,plan.ssd), dp=at(parts.psu,plan.psu);
+                const dcase=at(parts.pcCase,plan.pcCase), dcl=at(parts.cooler,plan.cooler), dh=at(parts.hdd,plan.hdd), df=at(parts.fans,plan.fans), dos=at(parts.os,plan.os);
+                const buildRows=[
+                    ['CPU',dc],['GPU',dg],['マザーボード',db],['メモリ',dr],['SSD',ds],['電源',dp],
+                    ['ケース',dcase],['CPUクーラー',dcl],['追加HDD',dh],['ケースファン',df],['OS',dos]
+                ];
+                const buildTotal=buildRows.reduce((sum,row)=>sum+row[1].p,0);
+                document.getElementById('result-price').textContent='パーツ合計 約 '+buildTotal.toLocaleString('ja-JP')+' 円';
+                const detail=document.getElementById('diagnosis-build-detail');
+                detail.replaceChildren();
+                const detailTitle=document.createElement('strong');detailTitle.textContent='おすすめ構成の内訳（参考価格）';detail.append(detailTitle);
+                const detailList=document.createElement('ul');detailList.style.marginTop='.5rem';
+                buildRows.forEach(([label,item])=>{
+                    const li=document.createElement('li');
+                    const a=document.createElement('a');a.href='https://search.kakaku.com/'+encodeURIComponent(item.n)+'/';a.target='_blank';a.rel='noopener noreferrer';
+                    a.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+' 円（価格.comで確認 ↗）';
+                    a.style.color='var(--accent-cyan)';a.style.textDecoration='underline';li.append(a);detailList.append(li);
+                });
+                detail.append(detailList);
+                const note=document.createElement('p');note.style.cssText='font-size:.78rem;color:var(--text-muted);margin-top:.6rem';
+                note.textContent='これはパーツ単価を合計した参考額です。価格.comの実売価格を自動取得した値ではなく、組立費・送料・ライセンス条件などで総額は変わります。予算を超える場合はGPUやCPUなどの選択を調整してください。';
+                detail.append(note);
                 resultBox.classList.add('active');resultBox.scrollIntoView({behavior:'smooth',block:'nearest'});
             });
 
@@ -993,37 +1030,37 @@
                 notes.push('選択パーツ合計は '+yen(total)+'。組立費・送料・OS以外の追加費用は含みません。');
                 const ul=document.createElement('ul');notes.forEach(n=>{const li=document.createElement('li');li.textContent=n;ul.append(li);});el('builder-notes').replaceChildren(ul);
                 window.pcShindanCurrentBuild={cpu:c.n,gpu:g.n,motherboard:b.n,ram:r.n,ssd:ssd.n,hdd:h.n,psu:p.n,case:cs.n,cooler:cl.n,caseFans:f.n,os:os.n,estimatedTotal:total};
+                const detailRows=[
+                    ['CPU',c.n,'ソケット '+c.s+' / メモリ '+c.r+' / 公称TDP目安 '+c.t+'W',c.p],
+                    ['GPU',g.n,'消費電力目安 '+g.w+'W',g.p],
+                    ['マザーボード',b.n,'ソケット '+b.s+' / メモリ '+b.r+' / フォームファクター '+b.z,b.p],
+                    ['メモリ',r.n,'容量 '+r.g+'GB',r.p],
+                    ['SSD',ssd.n,'容量 '+ssd.g+'GB',ssd.p],
+                    ['電源',p.n,'定格出力 '+p.w+'W',p.p],
+                    ['ケース',cs.n,'対応サイズ '+cs.z,cs.p],
+                    ['CPUクーラー',cl.n,'冷却能力の目安 '+cl.t+'W',cl.p],
+                    ['HDD',h.n,'容量 '+h.g+'GB',h.p],
+                    ['ケースファン',f.n,'追加ファン '+f.count+'基',f.p],
+                    ['OS',os.n,'ライセンス・インストール条件は購入先で確認',os.p]
+                ];
+                const detailBox=el('builder-spec-detail');detailBox.replaceChildren();
+                const detailHeading=document.createElement('strong');detailHeading.textContent='選択パーツの詳細';detailBox.append(detailHeading);
+                const detailList=document.createElement('ul');detailList.style.marginTop='.5rem';
+                detailRows.forEach(([label,name,spec,price])=>{
+                    const li=document.createElement('li');
+                    const strong=document.createElement('strong');strong.textContent=label+'：'+name+' ';
+                    const info=document.createElement('span');info.textContent='— '+spec+' — 約 '+price.toLocaleString('ja-JP')+'円 ';
+                    const a=document.createElement('a');a.href='https://search.kakaku.com/'+encodeURIComponent(name)+'/';a.target='_blank';a.rel='noopener noreferrer';a.textContent='価格.comで価格確認 ↗';a.style.cssText='color:var(--accent-cyan);text-decoration:underline';
+                    li.append(strong,info,a);detailList.append(li);
+                });
+                detailBox.append(detailList);
                 ['cpu','gpu','board','ram','ssd','psu','case','cooler','hdd','fans','os'].forEach(addPriceSearch);
             }
             el('part-cpu').addEventListener('change',refreshParts);
             ['gpu','board','ram','ssd','psu','case','cooler','hdd','fans','os'].forEach(k=>el('part-'+k).addEventListener('change',update));
             refreshParts();
-            // prices.json is generated by GitHub Actions using the official Rakuten API.
-            fetch('./prices.json', {cache:'no-store'}).then(response => {
-                if (!response.ok) throw new Error('prices.json unavailable');
-                return response.json();
-            }).then(data => {
-                const status=el('live-price-status');
-                if (!data || data.status !== 'ok' || !Array.isArray(data.items) || data.items.length===0) {
-                    status.innerHTML='<strong>価格自動取得：未接続</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">楽天APIキーの設定が必要です。GitHubリポジトリのSettings → Secrets and variables → Actionsで RAKUTEN_APP_ID と RAKUTEN_ACCESS_KEY を登録してください。設定後はActionsから「Update PC part prices」を実行します。</div>';
-                    return;
-                }
-                const cpuName=selected('cpu',parts.cpu).n, gpuName=selected('gpu',parts.gpu).n;
-                let updated=0;
-                data.items.forEach(item=>{
-                    const cpu=parts.cpu.find(x=>x.n===item.query);
-                    const gpu=parts.gpu.find(x=>x.n===item.query);
-                    if(cpu && Number.isFinite(Number(item.price))){cpu.p=Number(item.price);cpu.livePrice=true;cpu.marketItem=item;updated++;}
-                    if(gpu && Number.isFinite(Number(item.price))){gpu.p=Number(item.price);gpu.livePrice=true;gpu.marketItem=item;updated++;}
-                });
-                fill(el('part-cpu'),parts.cpu,x=>x.n+' — '+(x.livePrice?'市場価格 ':'参考価格 ')+yen(x.p),Math.max(0,parts.cpu.findIndex(x=>x.n===cpuName)));
-                fill(el('part-gpu'),parts.gpu,x=>x.n+' — '+(x.livePrice?'市場価格 ':'参考価格 ')+yen(x.p),Math.max(0,parts.gpu.findIndex(x=>x.n===gpuName)));
-                refreshParts();
-                const when=data.updatedAt ? new Date(data.updatedAt).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}) : '日時不明';
-                status.innerHTML='<strong>価格自動取得：接続済み</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">楽天市場の検索結果からCPU/GPU '+updated+'件の価格を反映。最終更新：'+when+'。表示額は取得できた候補商品の価格で、全店舗の最安値を保証するものではありません。</div>';
-            }).catch(()=>{
-                el('live-price-status').innerHTML='<strong>価格自動取得：データを読み込めません</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">価格データファイルの取得に失敗しました。GitHub Actionsの実行履歴を確認してください。</div>';
-            });
+            // 価格.comは検索リンクで接続。公式な価格データAPIの利用許可が確認できるまでは価格の自動取得を装わない。
+            el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">各パーツの「価格.comで価格確認」から販売価格を確認できます。価格.comの実売価格をサイト内に自動反映する公式APIは確認できていないため、合計額には参考価格を使用しています。</div>';
             el('builder-save').addEventListener('click',()=>{try{localStorage.setItem('pc-shindan-build',JSON.stringify(window.pcShindanCurrentBuild));el('builder-save').textContent='保存しました';}catch(e){el('builder-save').textContent='保存できませんでした';}});
             el('builder-copy').addEventListener('click',async()=>{const b=window.pcShindanCurrentBuild;const txt='PC診断室 構成メモ\n'+Object.entries(b).map(([k,v])=>k+': '+v).join('\n');try{await navigator.clipboard.writeText(txt);el('builder-copy').textContent='コピーしました';}catch(e){window.prompt('構成をコピーしてください',txt);}});
             el('builder-reset').addEventListener('click',()=>{fill(el('part-cpu'),parts.cpu,formatOption,3);fill(el('part-gpu'),parts.gpu,formatOption,7);fill(el('part-ssd'),parts.ssd,formatOption,2);fill(el('part-psu'),parts.psu,formatOption,3);fill(el('part-case'),parts.pcCase,formatOption,2);fill(el('part-cooler'),parts.cooler,formatOption,2);fill(el('part-hdd'),parts.hdd,formatOption,5);fill(el('part-fans'),parts.fans,formatOption,0);fill(el('part-os'),parts.os,formatOption,1);refreshParts();el('builder-save').textContent='構成を保存';el('builder-copy').textContent='構成をコピー';});
