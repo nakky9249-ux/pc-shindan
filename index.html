@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PC診断室 — PC・パーツ・ゲームの最新ニュースをまとめてチェック。">
+<title>PC診断室｜PC・ゲームニュース</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#121a2e;--line:#26324d;--text:#edf2ff;--muted:#9aa8c7;--accent:#75a7ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{border-bottom:1px solid var(--line);background:#0e1528} .wrap{width:min(100% - 32px,1000px);margin:auto}
+.top{padding:28px 0 22px} .brand{font-size:clamp(26px,5vw,38px);font-weight:800;letter-spacing:-.04em;margin:0}.brand span{color:var(--accent)} .tag{color:var(--muted);margin:4px 0 0}
+main{padding:28px 0 60px}.intro{padding:20px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(130deg,#151f38,#101729);margin-bottom:24px}
+h2{font-size:20px;margin:0 0 8px}.intro p{margin:0;color:var(--muted)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+input,select{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:11px 12px;font:inherit}input{flex:1;min-width:180px}
+#status{color:var(--muted);font-size:13px;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+article{padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--panel);min-width:0;transition:border-color .15s}article:hover{border-color:#5c82cb}
+.meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-bottom:9px}.source{color:var(--accent)}article h3{font-size:17px;line-height:1.45;margin:0 0 10px}article h3 a{color:var(--text);text-decoration:none}article h3 a:hover{color:var(--accent)}article p{color:#b9c4dc;font-size:14px;margin:0;overflow-wrap:anywhere}.empty{grid-column:1/-1;padding:28px;text-align:center;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:12px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.top{padding-top:22px}}
+</style>
+</head>
+<body>
+<header><div class="wrap top"><p class="brand">PC<span>診断室</span></p><p class="tag">PC・パーツ・ゲームの最新ニュースを、ここから。</p></div></header>
+<main class="wrap">
+<section class="intro"><h2>今日のPCニュース</h2><p>複数のニュースサイトの公開RSSを定期取得して一覧にしています。気になる記事は配信元のサイトで読めます。</p></section>
+<div class="toolbar"><input id="search" type="search" placeholder="記事・キーワードを検索…" aria-label="記事を検索"><select id="source" aria-label="配信元"><option value="">すべての配信元</option></select><select id="sort" aria-label="並び順"><option value="new">新しい順</option><option value="old">古い順</option></select></div>
+<p id="status" role="status">ニュースを読み込み中…</p><section id="news" class="grid" aria-live="polite"></section>
+</main>
+<footer><div class="wrap">記事の見出し・概要・リンクは各配信元のRSSを利用しています。内容の権利は各配信元に帰属します。掲載内容は各リンク先でご確認ください。</div></footer>
+<script>
+const $=s=>document.querySelector(s);let all=[];
+function esc(v=''){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function render(){
+ const q=$('#search').value.trim().toLowerCase(),source=$('#source').value,sort=$('#sort').value;
+ let items=all.filter(x=>(!source||x.source===source)&&(!q||[x.title,x.summary,x.source].join(' ').toLowerCase().includes(q)));
+ items.sort((a,b)=>(new Date(a.date||0)-new Date(b.date||0))*(sort==='new'?-1:1));
+ $('#status').textContent=items.length+'件の記事';
+ $('#news').innerHTML=items.length?items.map(x=>'<article><div class="meta"><span class="source">'+esc(x.source||'ニュース')+'</span><span>'+esc(x.date?new Date(x.date).toLocaleString('ja-JP',{dateStyle:'medium',timeStyle:'short'}):'日時不明')+'</span></div><h3><a href="'+esc(x.url||'#')+'" target="_blank" rel="noopener noreferrer">'+esc(x.title||'タイトルなし')+'</a></h3><p>'+esc(x.summary||'概要は配信元の記事をご覧ください。')+'</p></article>').join(''):'<div class="empty">該当する記事がありません。時間をおいて再度確認してください。</div>';
+}
+async function init(){try{const r=await fetch('news.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const data=await r.json();all=Array.isArray(data.articles)?data.articles:[];const sources=[...new Set(all.map(x=>x.source).filter(Boolean))].sort();$('#source').innerHTML='<option value="">すべての配信元</option>'+sources.map(s=>'<option value="'+esc(s)+'">'+esc(s)+'</option>').join('');$('#status').textContent='最終更新：'+(data.updated_at?new Date(data.updated_at).toLocaleString('ja-JP'):'不明');render();}catch(e){$('#status').textContent='ニュースを読み込めませんでした。少し時間をおいて再読み込みしてください。';$('#news').innerHTML='<div class="empty">まだニュースデータがないか、自動更新が初回実行されていません。</div>';}}
+$('#search').addEventListener('input',render);$('#source').addEventListener('change',render);$('#sort').addEventListener('change',render);init();
+</script>
+</body></html>
