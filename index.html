@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PCラボは、予算・用途・ゲーム・解像度からPC構成を診断。おすすめ構成、パーツ別参考価格、互換性チェック、PCニュースをまとめて確認できます。">
     <meta name="theme-color" content="#0b0f19">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <meta property="og:type" content="website">
     <meta property="og:title" content="PCラボ｜PC構成診断・パーツ比較">
     <meta property="og:description" content="予算と用途から自分に合うPCを探そう。構成診断、パーツ比較、互換性チェック、PCニュース。">
@@ -560,6 +561,12 @@
         .ad-notice{padding:.85rem 1rem;border:1px solid var(--card-border);border-left:3px solid var(--accent-cyan);border-radius:10px;background:rgba(6,182,212,.06);font-size:.83rem;color:var(--text-muted);margin:1rem 0}
         @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
         
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; align-items: flex-start; gap: .75rem; }
+            .nav-links { flex-wrap: wrap; gap: .55rem 1rem; }
+            .nav-links a { font-size: .82rem; }
+            .footer-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+        }
         @media (max-width: 992px) {
             .main-grid {
                 grid-template-columns: 1fr;
