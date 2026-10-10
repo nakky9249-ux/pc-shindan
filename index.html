@@ -1195,40 +1195,33 @@
             };
             // 個別の商品ページで構成を確認できた場合だけ販売リンクを表示する。
             // 検索結果や仕様違いの製品を「同スペック」と誤認させない。
-            const exactBuildListings = {
-                'wqhd-value': {url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga7g70b6bfdw101dec', label:'メーカー公式の販売ページ', note:'掲載仕様：Ryzen 7 9700X / RTX 5070 / メモリ32GB / SSD 2TB。購入前に価格・在庫・仕様を再確認してください。'}
-            };
+            // 公式販売ページで商品名・価格・主要仕様を確認できた完成品PCのみ掲載する。
+            // 価格・在庫は変動するため、購入前に販売ページで再確認する。
+            const availablePcListings = [
+                {id:'entry-5060',title:'GALLERIA XGR5M-R56-GD',brand:'ドスパラ',category:'budget',tag:'予算重視',price:214980,cpu:'Ryzen 5 7500F',gpu:'GeForce RTX 5060 8GB',ram:'16GB DDR5',ssd:'500GB Gen4 SSD',os:'Windows 11 Home',url:'https://www.dospara.co.jp/TC30/MC21974.html',note:'公式販売ページ掲載価格。メモリ・SSD容量は上位モデルより控えめ。'},
+                {id:'balanced-5070',title:'GALLERIA FPR7M-R57-W',brand:'ドスパラ',category:'wqhd',tag:'WQHD向け',price:324980,cpu:'Ryzen 7 9700X',gpu:'GeForce RTX 5070 12GB',ram:'16GB DDR5',ssd:'1TB Gen4 SSD',os:'Windows 11 Home',url:'https://www.dospara.co.jp/TC30/MC21004.html',note:'公式商品ページで基本構成を確認。メモリは16GBのため、必要に応じて増設も検討。'},
+                {id:'value-5070',title:'G TUNE DG-A5G70',brand:'マウスコンピューター',category:'fps',tag:'ゲーム向け',price:449900,cpu:'Ryzen 5 7500F',gpu:'GeForce RTX 5070 12GB',ram:'32GB DDR5',ssd:'1TB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga5g70b6bddw101dec/',note:'メーカー公式ページ掲載価格。モニター・マウス・キーボードは別売り。'},
+                {id:'wqhd-5070',title:'G TUNE DG-A7G70',brand:'マウスコンピューター',category:'wqhd',tag:'WQHD・大容量',price:509800,cpu:'Ryzen 7 9700X',gpu:'GeForce RTX 5070 12GB',ram:'32GB DDR5',ssd:'2TB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga7g70b6bfdw101dec/',note:'メーカー公式ページ掲載価格。モニター・マウス・キーボードは別売り。'},
+                {id:'highend-5080',title:'GALLERIA XDR7A-R58-GD',brand:'ドスパラ',category:'fps',tag:'ハイエンド',price:529980,cpu:'Ryzen 7 9800X3D',gpu:'GeForce RTX 5080 16GB',ram:'32GB DDR5',ssd:'1TB Gen4 SSD',os:'Windows 11 Home',url:'https://www.dospara.co.jp/TC30/MC19923.html',note:'公式販売ページ掲載価格。ハイエンドGPU搭載モデル。'}
+            ];
             const renderRecommendations=(category='all', query='')=>{
                 const grid=el('recommendation-grid');grid.replaceChildren();
                 const normalizedQuery=query.trim().toLocaleLowerCase('ja');
-                const filteredBuilds=recommendedBuilds.filter(p=>{
-                    const categoryMatches=category==='all'||p.category===category;
-                    const build=getBuildParts(p.id);
-                    const searchable=[p.title,p.tag,p.desc,p.usage,build?.cpu?.n,build?.gpu?.n,build?.ram?.n,build?.ssd?.n,build?yen(build.total):''].filter(Boolean).join(' ').toLocaleLowerCase('ja');
-                    return categoryMatches&&(!normalizedQuery||searchable.includes(normalizedQuery));
-                });
+                const filtered=availablePcListings.filter(p=>(category==='all'||p.category===category)&&(!normalizedQuery||[p.title,p.brand,p.tag,p.cpu,p.gpu,p.ram,p.ssd,p.os].join(' ').toLocaleLowerCase('ja').includes(normalizedQuery)));
                 const resultStatus=el('recommendation-results-status');
-                if(resultStatus)resultStatus.textContent=filteredBuilds.length+'件の構成を表示しています。';
-                if(!filteredBuilds.length){const empty=document.createElement('p');empty.className='empty-state';empty.textContent='条件に合う構成がありません。検索語を短くするか、別のカテゴリを選んでください。';grid.append(empty);return;}
-                filteredBuilds.forEach(p=>{
-                    const build=getBuildParts(p.id);if(!build)return;
+                if(resultStatus)resultStatus.textContent=filtered.length+'件の販売中PC候補を表示しています。';
+                if(!filtered.length){const empty=document.createElement('p');empty.className='empty-state';empty.textContent='条件に合う販売PCがありません。検索語を短くするか、別のカテゴリを選んでください。';grid.append(empty);return;}
+                filtered.forEach(p=>{
                     const card=document.createElement('article');card.className='recommend-card';
-                    const visual=document.createElement('div');visual.className='build-visual';
-                    const photo=document.createElement('img');photo.src=makeBuildIllustration(p);photo.alt=p.title+'のPC構成イラスト（実際の商品写真ではありません）';photo.loading='lazy';photo.decoding='async';photo.addEventListener('error',()=>{visual.replaceChildren();visual.style.background='linear-gradient(135deg,#202938,#4b5563)';visual.setAttribute('role','img');visual.setAttribute('aria-label',p.title+'の構成イラスト');},{once:true});visual.append(photo);
-                    const badge=document.createElement('span');badge.className='badge';badge.textContent=p.tag;
+                    const badge=document.createElement('span');badge.className='badge';badge.textContent=p.tag+' ・ '+p.brand;
                     const title=document.createElement('h3');title.textContent=p.title;
-                    const price=document.createElement('div');price.className='price';price.textContent='約 '+build.total.toLocaleString('ja-JP')+' 円';
-                    const desc=document.createElement('p');desc.textContent=p.desc;desc.style.cssText='font-size:.84rem;color:var(--text-muted);margin:.5rem 0 .8rem';
+                    const price=document.createElement('div');price.className='price';price.textContent='約 '+p.price.toLocaleString('ja-JP')+' 円〜';
+                    const desc=document.createElement('p');desc.textContent='販売店の公式ページで確認できる完成品PC。下記は掲載時点の基本構成です。';desc.style.cssText='font-size:.84rem;color:var(--text-muted);margin:.5rem 0 .8rem';
                     const list=document.createElement('ul');
-                    [['CPU',build.cpu.n],['GPU',build.gpu.n],['メモリ',build.ram.n],['SSD',build.ssd.n],['用途',p.usage]].forEach(([label,value])=>{const li=document.createElement('li');const strong=document.createElement('strong');strong.textContent=label+'：';li.append(strong,document.createTextNode(' '+value));list.append(li);});
-                    const breakdown=document.createElement('details');breakdown.style.cssText='margin:.7rem 0;font-size:.82rem';
-                    const summary=document.createElement('summary');summary.textContent='パーツ別価格を見る';summary.style.cursor='pointer';breakdown.append(summary);
-                    const costList=document.createElement('ul');build.rows.forEach(([label,item])=>{const li=document.createElement('li');li.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+'円';costList.append(li);});breakdown.append(costList);
-                    const button=document.createElement('button');button.type='button';button.className='option-btn';button.style.cssText='display:block;width:100%;text-align:center;margin-top:1rem';button.textContent='この構成をシミュレーターに反映';button.addEventListener('click',()=>{window.pcShindanApplyBuild(p.id);button.textContent='反映しました ✓';setTimeout(()=>button.textContent='この構成をシミュレーターに反映',1800);});
-                    const listing=exactBuildListings[p.id];
-                    const buyLink=document.createElement('a');buyLink.className='recommend-buy-link';buyLink.href=listing?.url||'#';buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.textContent=(listing?.label||'販売ページ未確認')+' ';if(listing){const buyIcon=document.createElement('i');buyIcon.className='fa-solid fa-arrow-up-right-from-square';buyIcon.setAttribute('aria-hidden','true');buyLink.append(buyIcon);}else{buyLink.removeAttribute('href');buyLink.removeAttribute('target');buyLink.setAttribute('aria-disabled','true');buyLink.style.cssText='display:block;width:100%;margin-top:.55rem;padding:.75rem .8rem;border-radius:9px;background:#202938;color:#cbd5e1;font-size:.86rem;font-weight:700;text-align:center;cursor:default';}
-                    const buyNote=document.createElement('p');buyNote.className='recommend-buy-note';buyNote.textContent=listing?.note||('この構成と一致する販売ページを確認できていないため、外部サイトへのリンクは掲載していません。CPU・GPU・メモリ・SSDの仕様は上に記載しています。購入先が確認できたら追加します。');
-                    card.append(visual,badge,title,price,desc,list,breakdown,button,buyLink,buyNote);grid.append(card);
+                    [['CPU',p.cpu],['GPU',p.gpu],['メモリ',p.ram],['SSD',p.ssd],['OS',p.os]].forEach(([label,value])=>{const li=document.createElement('li');const strong=document.createElement('strong');strong.textContent=label+'：';li.append(strong,document.createTextNode(' '+value));list.append(li);});
+                    const buyLink=document.createElement('a');buyLink.className='recommend-buy-link';buyLink.href=p.url;buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.textContent='公式販売ページで詳細・在庫を確認 ↗';
+                    const note=document.createElement('p');note.className='recommend-buy-note';note.textContent=p.note+' 価格・在庫・構成は変更される場合があります。';
+                    card.append(badge,title,price,desc,list,buyLink,note);grid.append(card);
                 });
             };
             let activeRecommendationCategory='all';
