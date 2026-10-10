@@ -986,13 +986,24 @@
                 if(game==='light'&&use==='work'&&tier>1)tier=1;
                 const presets=window.pcShindanBuilds;
                 if(!presets || !presets.length){document.getElementById('result-desc').textContent='構成データを準備中です。少し待ってからもう一度診断してください。';resultBox.classList.add('active');return;}
-                let key=tier===0?'budget-1080p':tier===1?'budget-am5':tier===2?'fhd-balanced':tier===3?'wqhd-value':'4k-gaming';
-                if(use==='work')key=tier<=1?'budget-1080p':'fhd-balanced';
-                if(use==='stream')key=tier>=3?'creator-ai':'creator-stream';
-                if(use==='ai')key=tier>=3?'creator-ai':'creator-value';
-                if(game==='fps'&&res==='fhd240')key=tier>=3?'fps-elite':'fps-value';
-                if(game==='mmo'||game==='heavy')key=tier>=3?'wqhd-amd':'wqhd-value';
-                if(res==='4k')key=use==='ai'?'creator-ai':'4k-gaming';
+                // 予算帯から固定プリセットを選ぶのではなく、各構成の参考合計を計算して予算内の候補を優先する。
+                let candidateIds;
+                if(use==='work')candidateIds=['budget-1080p','budget-am5','fhd-balanced'];
+                else if(use==='stream')candidateIds=budget>=25?['creator-ai','creator-value','creator-stream']:['creator-stream','creator-value','budget-am5'];
+                else if(use==='ai')candidateIds=budget>=25?['creator-ai','creator-value','creator-stream']:['creator-value','creator-stream','budget-am5'];
+                else if(res==='4k')candidateIds=['4k-gaming','wqhd-amd','wqhd-value','fps-elite'];
+                else if(res==='wqhd'||game==='heavy'||game==='mmo')candidateIds=budget>=25?['wqhd-value','wqhd-amd','fps-elite','fhd-balanced']:['fhd-balanced','budget-am5','wqhd-value'];
+                else if(res==='fhd240')candidateIds=budget>=25?['fps-elite','fps-value','fhd-balanced']:['fps-value','fhd-balanced','budget-am5'];
+                else candidateIds=['budget-1080p','budget-am5','fhd-balanced','fps-value','wqhd-value'];
+                if(game==='light'&&use==='work')candidateIds=['budget-1080p','budget-am5','fhd-balanced'];
+                const budgetLimit=budget*10000;
+                const evaluated=candidateIds.map(id=>({id,build:window.pcShindanGetBuildParts(id)})).filter(x=>x.build);
+                const affordable=evaluated.filter(x=>x.build.total<=budgetLimit);
+                const pool=affordable.length?affordable:evaluated;
+                // 予算内なら使える金額を活かしつつ、予算オーバーなら最安候補を出す。
+                pool.sort((a,b)=>affordable.length?(b.build.total-a.build.total):(a.build.total-b.build.total));
+                let key=(pool[0]||{id:'budget-1080p'}).id;
+                if(use==='game'&&game==='fps'&&res==='fhd240'&&budget>=25&&pool.some(x=>x.id==='fps-elite'))key='fps-elite';
                 const d=presets.find(x=>x.id===key)||presets[0],build=window.pcShindanGetBuildParts(key);
                 if(!build){document.getElementById('result-desc').textContent='この構成データを読み込めませんでした。';resultBox.classList.add('active');return;}
                 window.pcShindanApplyBuild(key,{scroll:false});
@@ -1010,7 +1021,7 @@
                 const detail=document.getElementById('diagnosis-build-detail');detail.replaceChildren();
                 const heading=document.createElement('strong');heading.textContent='おすすめ構成の内訳（参考価格）';detail.append(heading);
                 const list=document.createElement('ul');list.style.marginTop='.5rem';
-                build.rows.forEach(([label,item])=>{const li=document.createElement('li');const link=document.createElement('a');link.href=priceSearchUrl(id==='ram'?'メモリ':id==='gpu'?'GPU':id==='cpu'?'CPU':id==='board'?'マザーボード':id==='ssd'?'SSD':id==='psu'?'電源':id==='case'?'ケース':id==='cooler'?'CPUクーラー':id==='hdd'?'HDD':id==='fans'?'ケースファン':'OS',item.n);link.target='_blank';link.rel='noopener noreferrer';link.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+' 円（価格.comで確認 ↗）';link.style.cssText='color:var(--accent-cyan);text-decoration:underline';li.append(link);list.append(li);});
+                build.rows.forEach(([label,item])=>{const li=document.createElement('li');const link=document.createElement('a');link.href=priceSearchUrl(label,item.n);link.target='_blank';link.rel='noopener noreferrer';link.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+' 円（価格.comで確認 ↗）';link.style.cssText='color:var(--accent-cyan);text-decoration:underline';li.append(link);list.append(li);});
                 detail.append(list);
                 const note=document.createElement('p');note.style.cssText='font-size:.78rem;color:var(--text-muted);margin-top:.6rem';note.textContent='価格.comの実売価格を自動取得した値ではありません。参考価格の合計で、組立費・送料・追加保証は含みません。';detail.append(note);
                 resultBox.classList.add('active');resultBox.scrollIntoView({behavior:'smooth',block:'nearest'});
