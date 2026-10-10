@@ -8,6 +8,8 @@ on:
       - "**.css"
       - "**.js"
       - "**.json"
+      - "**.xml"
+      - "robots.txt"
       - "tests/**"
       - ".github/workflows/site-check.yml"
       - "README.md"
