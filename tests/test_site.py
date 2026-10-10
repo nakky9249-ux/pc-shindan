@@ -74,6 +74,13 @@ class SiteSmokeTests(unittest.TestCase):
                 )
             self.assertEqual(0, result.returncode, f"Inline script {index + 1} has a syntax error:\n{result.stderr}")
 
+
+    def test_page_has_accessible_main_landmark_and_skip_link(self):
+        self.assertIn('<main id="main-content">', self.html)
+        self.assertIn('<a class="skip-link" href="#main-content">本文へスキップ</a>', self.html)
+        self.assertIn('<nav aria-label="メインナビゲーション">', self.html)
+        self.assertIn('name="description"', self.html)
+
     def test_recommendation_catalog_has_eleven_unique_presets(self):
         preset_ids = re.findall(r"\{id:'([^']+)'", self.html)
         self.assertEqual(11, len(preset_ids), f"Expected 11 PC presets, found {len(preset_ids)}.")
