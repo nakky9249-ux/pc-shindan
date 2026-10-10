@@ -2,7 +2,7 @@
 
 予算や用途からPC構成を考えられる、PC初心者向けの静的サイトです。
 
-公開サイト： https://nakky9249-ux.github.io/pc-shindan/
+公開サイト： https://pc-lab-tech.github.io/pc-shindan/
 
 ## 主な機能
 - 予算・用途・ゲーム・解像度からおすすめ構成を診断
