@@ -155,7 +155,7 @@ class SiteSmokeTests(unittest.TestCase):
         root = ET.parse(sitemap).getroot()
         namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
         urls = {node.text for node in root.findall("sm:url/sm:loc", namespace)}
-        for page in ["", "about.html", "privacy.html", "affiliate.html", "contact.html", "upgrade-guide.html"]:
+        for page in ["", "about.html", "privacy.html", "affiliate.html", "contact.html", "upgrade-guide.html", "gaming-pc-guide.html", "fps-troubleshooting.html"]:
             expected = "https://pc-lab-tech.github.io/pc-shindan/" + page
             with self.subTest(page=page or "index.html"):
                 self.assertIn(expected, urls)
@@ -244,8 +244,23 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn('href="./upgrade-guide.html"', self.html)
         self.assertIn("https://pc-lab-tech.github.io/pc-shindan/upgrade-guide.html", (ROOT / "sitemap.xml").read_text(encoding="utf-8"))
 
+    def test_new_guides_have_original_content_and_metadata(self):
+        for filename, phrases in {
+            "gaming-pc-guide.html": ["ゲーミングPCの選び方", "解像度", "BTO", "購入前チェックリスト", '"@type":"Article"'],
+            "fps-troubleshooting.html": ["FPSが低い・不安定", "使用率", "温度", "バックグラウンド", '"@type":"Article"'],
+        }.items():
+            page = (ROOT / filename).read_text(encoding="utf-8")
+            with self.subTest(page=filename):
+                for phrase in phrases:
+                    self.assertIn(phrase, page)
+                self.assertIn('<link rel="canonical"', page)
+                self.assertIn('name="description"', page)
+        sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+        self.assertIn("gaming-pc-guide.html", sitemap)
+        self.assertIn("fps-troubleshooting.html", sitemap)
+
     def test_local_page_links_resolve(self):
-        pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html", "upgrade-guide.html"]]
+        pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html", "upgrade-guide.html", "gaming-pc-guide.html", "fps-troubleshooting.html"]]
         for path in pages:
             html = path.read_text(encoding="utf-8")
             for href in re.findall(r"""href=["']([^"']+)["']""", html):
