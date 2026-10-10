@@ -161,6 +161,21 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn("card.append(visual,badge,title,price,desc,list,breakdown,button)", self.html)
         self.assertIn("商品写真・メーカー公式ロゴではなく", self.html)
 
+    def test_bto_shop_cards_have_site_favicons_with_fallbacks(self):
+        self.assertEqual(6, self.html.count('class="shop-favicon"'))
+        self.assertEqual(6, self.html.count('class="shop-fallback'))
+        for domain in ["www.dospara.co.jp", "www.mouse-jp.co.jp", "www.frontier-direct.jp",
+                       "www.tsukumo.co.jp", "www.pc-koubou.jp", "www.sycom.co.jp"]:
+            with self.subTest(domain=domain):
+                self.assertIn("https://" + domain + "/favicon.ico", self.html)
+        self.assertIn("showFallback", self.html)
+
+    def test_news_cards_support_feed_images_and_fallback(self):
+        self.assertIn("article.image", self.html)
+        self.assertIn("className = 'news-thumb'", self.html)
+        self.assertIn("news-thumb-fallback", self.html)
+        self.assertIn("image.addEventListener('error'", self.html)
+
     def test_local_page_links_resolve(self):
         pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html"]]
         for path in pages:
