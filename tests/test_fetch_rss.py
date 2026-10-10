@@ -25,6 +25,18 @@ class FetchRssTests(unittest.TestCase):
         self.assertEqual(rss.clean(rss.child_text(item, {"description"})), "Summary here")
         self.assertEqual(rss.parse_date(rss.child_text(item, {"pubdate"})), "2026-10-10T03:00:00+00:00")
 
+    def test_extracts_rss_thumbnail(self):
+        item = ET.fromstring('<item><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.example.com/thumb.jpg"/></item>')
+        self.assertEqual(rss.child_image_url(item), "https://cdn.example.com/thumb.jpg")
+
+    def test_extracts_image_from_html_summary(self):
+        item = ET.fromstring('<item><description><![CDATA[<p>Summary</p><img src="https://cdn.example.com/news.png">]]></description></item>')
+        self.assertEqual(rss.child_image_url(item), "https://cdn.example.com/news.png")
+
+    def test_rejects_non_http_image_urls(self):
+        self.assertEqual(rss.safe_image_url("javascript:alert(1)"), "")
+        self.assertEqual(rss.safe_image_url("data:image/png;base64,abc"), "")
+
     def test_parse_atom_link_prefers_alternate(self):
         entry = ET.fromstring('<entry xmlns="http://www.w3.org/2005/Atom"><title>Atom item</title><link rel="self" href="https://example.com/self"/><link rel="alternate" href="https://example.com/article"/><updated>2026-10-10T03:00:00Z</updated></entry>')
         self.assertEqual(rss.child_text(entry, {"link"}), "https://example.com/article")
