@@ -188,6 +188,20 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn("className = 'news-summary'", self.html)
         self.assertIn("最終更新：", self.html)
 
+    def test_news_search_is_accessible_and_filters_titles_sources_and_summaries(self):
+        self.assertIn('id="news-search"', self.html)
+        self.assertIn('id="auto-news-count"', self.html)
+        self.assertIn('aria-describedby="auto-news-count"', self.html)
+        self.assertIn("const renderNews = () =>", self.html)
+        self.assertIn("search?.addEventListener('input', renderNews)", self.html)
+        self.assertIn("article.title, article.source, article.summary", self.html)
+        self.assertIn("一致する記事がありません", self.html)
+
+    def test_pricing_copy_does_not_claim_live_prices(self):
+        self.assertIn("実売価格の自動取得", self.html)
+        self.assertIn("参考価格", self.html)
+        self.assertIn("各ショップの公式サイトで実売価格を比較します", self.html)
+
     def test_local_page_links_resolve(self):
         pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html"]]
         for path in pages:
