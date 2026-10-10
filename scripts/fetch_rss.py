@@ -119,7 +119,7 @@ def child_image_url(node):
         if local_name(child.tag) not in {"description", "summary", "content", "encoded"}:
             continue
         html = "".join(child.itertext())
-        match = re.search(r"""<img\\b[^>]*?src\\s*=\\s*["']([^"']+)["']""", html, re.IGNORECASE)
+        match = re.search(r"""<img\b[^>]*?src\s*=\s*["']([^"']+)["']""", html, re.IGNORECASE)
         if match:
             result = safe_image_url(unescape(match.group(1)))
             if result:
