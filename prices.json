@@ -1,0 +1,8 @@
+{
+  "source": "Rakuten Ichiba Item Search API",
+  "status": "not_configured",
+  "updatedAt": null,
+  "currency": "JPY",
+  "priceNote": "価格自動取得を有効にするには、GitHub Actions Secretsに楽天APIのアプリIDとアクセスキーを登録してください。",
+  "items": []
+}
