@@ -88,7 +88,9 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn("価格.comの実売価格を自動取得した値ではありません", self.html)
 
     def test_recommendation_catalog_has_eleven_unique_presets(self):
-        preset_ids = re.findall(r"\{id:'([^']+)'", self.html)
+        builds_match = re.search(r"const recommendedBuilds\s*=\s*(\[.*?\n\s*\]);", self.html, re.DOTALL)
+        self.assertIsNotNone(builds_match, "Could not locate recommended PC presets.")
+        preset_ids = re.findall(r"\{id:'([^']+)'", builds_match.group(1))
         self.assertEqual(11, len(preset_ids), f"Expected 11 PC presets, found {len(preset_ids)}.")
         self.assertEqual(len(preset_ids), len(set(preset_ids)), "Recommendation preset IDs must be unique.")
         self.assertIn("window.pcShindanApplyBuild", self.html)
@@ -183,11 +185,13 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn("通常の公式サイトへのリンク", affiliate_page)
         self.assertNotIn("提携済みの広告リンクです", affiliate_page)
 
-    def test_recommendation_cards_have_original_visuals(self):
-        self.assertIn("const buildVisualSvg", self.html)
-        self.assertIn("className='build-visual'", self.html)
-        self.assertIn("card.append(visual,badge,title,price,desc,list,breakdown,button)", self.html)
-        self.assertIn("商品写真・メーカー公式ロゴではなく", self.html)
+    def test_recommendation_cards_use_real_listing_data_and_official_links(self):
+        self.assertIn("const availablePcListings=[", self.html)
+        self.assertIn("const renderRecommendations=(category='all', query='')=>", self.html)
+        self.assertIn("buyLink.href=p.url", self.html)
+        self.assertIn("buyLink.rel='noopener noreferrer'", self.html)
+        self.assertIn("card.append(badge,title,price,desc,list,buyLink,note)", self.html)
+        self.assertIn("価格・在庫・構成は変更される場合があります", self.html)
 
     def test_bto_shop_cards_have_site_favicons_with_fallbacks(self):
         self.assertEqual(6, self.html.count('class="shop-favicon"'))
@@ -208,7 +212,7 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn('id="recommendation-search"', self.html)
         self.assertIn('id="recommendation-results-status"', self.html)
         self.assertIn("toLocaleLowerCase('ja')", self.html)
-        self.assertIn("条件に合う構成がありません", self.html)
+        self.assertIn("条件に合う販売PCがありません", self.html)
 
     def test_news_dates_and_summaries_are_formatted(self):
         self.assertIn("Intl.DateTimeFormat('ja-JP'", self.html)
