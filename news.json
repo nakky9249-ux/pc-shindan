@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-10T08:50:42.033126+00:00",
+  "updated_at": "2026-10-10T11:10:52.017089+00:00",
   "articles": [
+    {
+      "title": "イカサマポーカーで地獄を生き残れ。“666”が最強の役になる「Hell Hold'em」はローグライクとテキサス・ホールデムが見事に融合した注目作だ",
+      "url": "https://www.4gamer.net/games/049/G104929/20261010013/",
+      "summary": "ゲームイベント「SAGABarcelonaGameFest2026」会場では，独創的なアイデアで注目を集めるインディータイトルが多数展示されている。そのなかでも，一風変わった世界観と骨太なシステムで来場者にアピールしているのが，地獄を舞台にしたデッキ構築型ローグライク「HellHold'em」だ。",
+      "source": "4Gamer",
+      "date": "2026-10-10T09:13:29+00:00",
+      "image": "https://www.4gamer.net/games/049/G104929/20261010013/SS/003.jpg"
+    },
+    {
+      "title": "週刊Steam広場 第174号：「Clive Barker's Hellraiser: Revival」や「スター・ウォーズ：ギャラクティック・レーサー」が発売に",
+      "url": "https://www.4gamer.net/games/038/G003821/20261009008/",
+      "summary": "今週発売されたSteamの注目タイトルやセール情報をお届けする「週刊Steam広場」。今週は，ホラー映画「ヘル・レイザー」シリーズを題材とする「CliveBarker'sHellraiser:Revival」や，ローグライトレース「スター・ウォーズ：ギャラクティック・レーサー」がリリースされた。",
+      "source": "4Gamer",
+      "date": "2026-10-10T09:00:00+00:00",
+      "image": "https://www.4gamer.net/games/038/G003821/20261009008/TN/009.jpg"
+    },
     {
       "title": "バルセロナを南ヨーロッパの重要開発拠点へと進化させたScopelyに初潜入。日本にもわりと身近なモバイルゲーム企業を紹介",
       "url": "https://www.4gamer.net/games/991/G999110/20261010010/",
@@ -118,16 +134,14 @@
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147307.html",
       "summary": "じゃんぱら秋葉原5号店など、じゃんぱら各店でオータムセールが実施中です。セール期間は18日（日）まで。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-10T02:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/307/a1.jpg"
+      "date": "2026-10-10T02:30:00+00:00"
     },
     {
       "title": "M3チップ搭載「iPad Air 13インチ」が69,980円など！展示機モデルのセール",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147305.html",
       "summary": "Apple製タブレット「iPad」シリーズの訳あり品セールがじゃんぱら秋葉原5号店やじゃんぱらD-Style秋葉原店など、じゃんぱらの一部店舗で実施中です。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-10T02:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/305/a1.jpg"
+      "date": "2026-10-10T02:05:00+00:00"
     },
     {
       "title": "「iPhone 15」が69,980円、「iPhone 16 Pro Max」が149,980円など！訳あり展示品セール",
@@ -403,25 +417,11 @@
       "date": "2026-10-09T11:00:00+00:00"
     },
     {
-      "title": "モンスターが徘徊する街に隠された秘密とは。メトロイドヴァニア風サバイバルホラー「Silver Pines」，配信開始",
-      "url": "https://www.4gamer.net/games/987/G098799/20261009042/",
-      "summary": "Team17は本日（2026年10月9日），WychElmが開発した新作タイトル「SilverPines」をリリースした。本作は，アメリカの小さな街を舞台に，私立探偵のレッド・ウォーカーが暗闇に隠された秘密を暴いていく，メトロイドヴァニア風のサバイバルホラーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-09T10:58:34+00:00"
-    },
-    {
       "title": "Windows App、リモートPC接続が正式提供に。職場アカウント不要",
       "url": "https://pc.watch.impress.co.jp/docs/news/2147045.html",
       "summary": "自宅や職場のPCに、クラウドPCと同じアプリからつなげるようになった。Microsoftは10月5日(米国時間)、Windows版「Windows App」でリモートPC接続機能の一般提供を開始したと発表した。Windows Appは、Microsoft Storeから無償で入手できる。",
       "source": "PC Watch",
       "date": "2026-10-09T10:53:42+00:00"
-    },
-    {
-      "title": "昼は学校，夜は悪魔狩り。「ユッピーサイコ」の開発元によるホラーRPG「Catechesis -カテケシス-」，10年以上の時を経て2027年夏発売へ",
-      "url": "https://www.4gamer.net/games/014/G101487/20261009044/",
-      "summary": "BaroqueDecayは，PC向けホラーRPG「Catechesis-カテケシス-」を2027年夏に発売すると発表した。2013年の初発表後に開発が中断され，10年以上の時を経て復活したタイトルだ。あわせて，現在配信中の体験版にもアップデートが実施されている。",
-      "source": "4Gamer",
-      "date": "2026-10-09T10:50:27+00:00"
     },
     {
       "title": "【笠原一輝のユビキタス情報局】打倒MacBook Pro？Surface Laptop Ultraが目指すモノ作りしやすいマシン",
