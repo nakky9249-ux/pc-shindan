@@ -554,7 +554,16 @@
         .build-visual svg{width:100%;height:100%;max-width:260px}
         .shop-card{position:relative;overflow:hidden}
         .shop-visual{display:flex;align-items:center;gap:.8rem;min-height:72px;margin-bottom:.9rem}
-        .shop-mark{width:52px;height:52px;display:grid;place-items:center;flex:0 0 auto;border-radius:14px;background:linear-gradient(135deg,rgba(59,130,246,.22),rgba(139,92,246,.2));border:1px solid var(--card-border);font-size:1.45rem;color:var(--accent-cyan)}
+        .shop-mark{position:relative;width:52px;height:52px;display:grid;place-items:center;flex:0 0 auto;border-radius:14px;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(226,232,240,.96));border:1px solid var(--card-border);font-size:1.45rem;color:#2563eb;overflow:hidden}
+        .shop-mark .shop-favicon{width:100%;height:100%;object-fit:contain;padding:7px}
+        .shop-mark .shop-fallback{position:absolute;inset:0;display:grid;place-items:center}
+        .shop-mark .shop-fallback[hidden]{display:none}
+        .news-thumb{position:relative;flex:0 0 176px;width:176px;height:104px;display:grid;place-items:center;overflow:hidden;border-radius:10px;background:linear-gradient(135deg,rgba(59,130,246,.24),rgba(139,92,246,.22));border:1px solid var(--card-border)}
+        .news-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .news-thumb img[hidden]{display:none}
+        .news-thumb-fallback{font-size:2rem;filter:drop-shadow(0 3px 8px rgba(0,0,0,.3))}
+        .news-thumb:has(img:not([hidden])) .news-thumb-fallback{display:none}
+        @media(max-width:600px){.horizontal-card{align-items:stretch;flex-direction:column}.news-thumb{width:100%;height:170px;flex-basis:auto}.horizontal-info{width:100%}}
         .shop-status{font-size:.72rem;color:var(--text-muted);margin-top:.3rem}
         .muted{color:var(--text-muted)}
         .footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:.8rem 1.3rem;margin:1rem 0}
@@ -798,12 +807,12 @@
                     <p class="builder-intro">自作が不安なら完成品PCを比較。価格・在庫・保証内容は各公式サイトで確認してください。</p>
                     <div class="ad-notice"><strong>リンクについて：</strong>現在掲載しているのは各メーカーの通常の公式サイトへのリンクで、アフィリエイト提携済みリンクではありません。提携が承認された場合は、広告リンクであることを分かるように表示します。</div>
                     <div class="cards-3col">
-                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><i class="fa-solid fa-gamepad"></i></span><div><h3>ドスパラ / GALLERIA</h3><p class="shop-status">ゲーミングPC・PCパーツ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">ゲーム向け完成品PCやパーツを探したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.dospara.co.jp/gamepc" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
-                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><i class="fa-solid fa-computer"></i></span><div><h3>マウスコンピューター</h3><p class="shop-status">G-TuneなどのゲーミングPC</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">用途に合わせて完成品PCを選びたい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.mouse-jp.co.jp/store/r/ra1020000/" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
-                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><i class="fa-solid fa-tags"></i></span><div><h3>FRONTIER</h3><p class="shop-status">セール・構成カスタマイズ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">セール対象のゲーミングPCを比較したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.frontier-direct.jp/direct/default.aspx" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
-                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></span><div><h3>ツクモ</h3><p class="shop-status">BTO PC・自作パーツ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">パーツから完成品まで検討したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.tsukumo.co.jp/bto/" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
-                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><i class="fa-solid fa-desktop"></i></span><div><h3>パソコン工房</h3><p class="shop-status">LEVEL∞・PCパーツ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">ゲーミングPCとパーツの候補を探したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.pc-koubou.jp/" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
-                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><i class="fa-solid fa-sliders"></i></span><div><h3>サイコム</h3><p class="shop-status">構成カスタマイズ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">細かな構成の違いを選んで注文したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.sycom.co.jp/" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
+                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><img class="shop-favicon" src="https://www.dospara.co.jp/favicon.ico" alt="" loading="lazy"><i class="shop-fallback fa-solid fa-gamepad" aria-hidden="true" hidden></i></span><div><h3>ドスパラ / GALLERIA</h3><p class="shop-status">ゲーミングPC・PCパーツ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">ゲーム向け完成品PCやパーツを探したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.dospara.co.jp/gamepc" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
+                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><img class="shop-favicon" src="https://www.mouse-jp.co.jp/favicon.ico" alt="" loading="lazy"><i class="shop-fallback fa-solid fa-computer" aria-hidden="true" hidden></i></span><div><h3>マウスコンピューター</h3><p class="shop-status">G-TuneなどのゲーミングPC</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">用途に合わせて完成品PCを選びたい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.mouse-jp.co.jp/store/r/ra1020000/" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
+                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><img class="shop-favicon" src="https://www.frontier-direct.jp/favicon.ico" alt="" loading="lazy"><i class="shop-fallback fa-solid fa-tags" aria-hidden="true" hidden></i></span><div><h3>FRONTIER</h3><p class="shop-status">セール・構成カスタマイズ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">セール対象のゲーミングPCを比較したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.frontier-direct.jp/direct/default.aspx" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
+                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><img class="shop-favicon" src="https://www.tsukumo.co.jp/favicon.ico" alt="" loading="lazy"><i class="shop-fallback fa-solid fa-screwdriver-wrench" aria-hidden="true" hidden></i></span><div><h3>ツクモ</h3><p class="shop-status">BTO PC・自作パーツ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">パーツから完成品まで検討したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.tsukumo.co.jp/bto/" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
+                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><img class="shop-favicon" src="https://www.pc-koubou.jp/favicon.ico" alt="" loading="lazy"><i class="shop-fallback fa-solid fa-desktop" aria-hidden="true" hidden></i></span><div><h3>パソコン工房</h3><p class="shop-status">LEVEL∞・PCパーツ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">ゲーミングPCとパーツの候補を探したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.pc-koubou.jp/" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
+                        <div class="recommend-card shop-card"><div><div class="shop-visual"><span class="shop-mark" aria-hidden="true"><img class="shop-favicon" src="https://www.sycom.co.jp/favicon.ico" alt="" loading="lazy"><i class="shop-fallback fa-solid fa-sliders" aria-hidden="true" hidden></i></span><div><h3>サイコム</h3><p class="shop-status">構成カスタマイズ</p></div></div><p class="muted" style="font-size:.85rem;margin:.5rem 0 1rem">細かな構成の違いを選んで注文したい人向け。</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.sycom.co.jp/" target="_blank" rel="noopener noreferrer">公式サイトを見る ↗</a></div>
                     </div>
                 </section>
 
@@ -1149,6 +1158,17 @@
             el('builder-reset').addEventListener('click',()=>{fill(el('part-cpu'),parts.cpu,formatOption,3);fill(el('part-gpu'),parts.gpu,formatOption,7);fill(el('part-ssd'),parts.ssd,formatOption,2);fill(el('part-psu'),parts.psu,formatOption,3);fill(el('part-case'),parts.pcCase,formatOption,2);fill(el('part-cooler'),parts.cooler,formatOption,2);fill(el('part-hdd'),parts.hdd,formatOption,5);fill(el('part-fans'),parts.fans,formatOption,0);fill(el('part-os'),parts.os,formatOption,1);refreshParts();el('builder-save').textContent='構成を保存';el('builder-copy').textContent='構成をコピー';});
         });
 
+        // 公式サイトのfaviconを読み込み、取得できない場合はアイコンにフォールバックする。
+        document.querySelectorAll('.shop-mark .shop-favicon').forEach(image => {
+            const fallback = image.nextElementSibling;
+            const showFallback = () => {
+                image.hidden = true;
+                if (fallback) fallback.hidden = false;
+            };
+            image.addEventListener('error', showFallback, { once: true });
+            if (image.complete && image.naturalWidth === 0) showFallback();
+        });
+
         // 公開サイト上で news.json を読み込み、RSSから収集した記事を表示する
         document.addEventListener('DOMContentLoaded', async () => {
             const list = document.getElementById('auto-news-list');
@@ -1185,6 +1205,23 @@
                     card.target = '_blank';
                     card.rel = 'noopener noreferrer';
 
+                    const thumbnail = document.createElement('div');
+                    thumbnail.className = 'news-thumb';
+                    thumbnail.setAttribute('aria-hidden', 'true');
+                    const thumbnailFallback = document.createElement('span');
+                    thumbnailFallback.className = 'news-thumb-fallback';
+                    thumbnailFallback.textContent = '📰';
+                    thumbnail.append(thumbnailFallback);
+                    if (typeof article.image === 'string' && /^https?:\/\//i.test(article.image)) {
+                        const image = document.createElement('img');
+                        image.src = article.image;
+                        image.alt = '';
+                        image.loading = 'lazy';
+                        image.decoding = 'async';
+                        image.addEventListener('error', () => image.hidden = true, { once: true });
+                        thumbnail.append(image);
+                    }
+
                     const info = document.createElement('div');
                     info.className = 'horizontal-info';
 
@@ -1201,7 +1238,7 @@
                     title.textContent = article.title;
 
                     info.append(meta, title);
-                    card.append(info);
+                    card.append(thumbnail, info);
                     list.append(card);
                 });
                 status.textContent = 'RSSから取得した記事です。詳細・正確性はリンク先の元記事で確認してください。';
