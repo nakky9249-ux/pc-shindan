@@ -1314,7 +1314,7 @@
                 }
                 search?.addEventListener('input', renderNews);
                 renderNews();
-                status.textContent = 'RSSから取得した記事です。'+(updatedAt ? ' 最終更新：'+formatNewsDate(updatedAt)+'（日本時間）' : '')+' 詳細・正確性はリンク先の元記事で確認してください。';
+                status.textContent = 'RSSから取得した記事です。'+(updatedAt ? ' 最終更新：'+formatNewsDate(updatedAt)+'（日本時間）' : '')+(Array.isArray(payload.errors)&&payload.errors.length ? ' 一部の配信元を取得できませんでした。' : '')+' 詳細・正確性はリンク先の元記事で確認してください。';
             } catch (error) {
                 status.textContent = 'ニュース自動取得は未設定、またはまだ初回更新前です。設定ガイドを確認してください。';
             }
