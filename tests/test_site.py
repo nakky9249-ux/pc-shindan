@@ -165,7 +165,7 @@ class SiteSmokeTests(unittest.TestCase):
         pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html"]]
         for path in pages:
             html = path.read_text(encoding="utf-8")
-            for href in re.findall(r'href=["\\']([^"\\']+)["\\']', html):
+            for href in re.findall(r"""href=["']([^"']+)["']""", html):
                 if href.startswith(("https://", "http://", "mailto:", "tel:", "#", "data:")):
                     continue
                 target = href.split("#", 1)[0].split("?", 1)[0]
