@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="予算・用途・ゲーム・解像度からPC構成を診断。11種類のおすすめ構成、パーツ別参考価格、互換性の注意点、PCニュースをまとめて確認できます。">
+    <meta name="description" content="PCラボは、予算・用途・ゲーム・解像度からPC構成を診断。おすすめ構成、パーツ別参考価格、互換性チェック、PCニュースをまとめて確認できます。">
     <meta name="theme-color" content="#0b0f19">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="PC診断室｜おすすめPC構成・パーツ選び">
-    <meta property="og:description" content="予算と用途からPC構成を診断。おすすめ構成とパーツの互換性、参考価格を確認。">
+    <meta property="og:title" content="PCラボ｜PC構成診断・パーツ比較">
+    <meta property="og:description" content="予算と用途から自分に合うPCを探そう。構成診断、パーツ比較、互換性チェック、PCニュース。">
     <meta property="og:url" content="https://nakky9249-ux.github.io/pc-shindan/">
-    <title>PC診断室 - 自分に最適なBTO/自作PC構成が見つかるサイト</title>
+    <title>PCラボ｜あなたに最適なPCが見つかる</title>
     <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -584,7 +584,7 @@
         <div class="container header-inner">
             <a href="#top" class="logo">
                 <i class="fa-solid fa-desktop"></i>
-                <span>PC診断室</span>
+                <span>PCラボ</span>
             </a>
             <nav aria-label="メインナビゲーション">
             <ul class="nav-links">
@@ -853,7 +853,7 @@
             <div class="footer-inner">
                 <div class="logo">
                     <i class="fa-solid font-awesome-desktop"></i>
-                    <span>PC診断室</span>
+                    <span>PCラボ</span>
                 </div>
                 <p style="font-size: 0.85rem; color: var(--text-muted);">
                     ※当サイトで紹介している価格・スペック情報は参考目安です。<br>
@@ -861,7 +861,7 @@
                 </p>
             </div>
             <div class="footer-copy">
-                &copy; 2026 PC診断室 All Rights Reserved.
+                &copy; 2026 PCラボ All Rights Reserved.
             </div>
         </div>
     </footer>
@@ -1089,7 +1089,7 @@
             // 価格.comは検索リンクで接続。公式な価格データAPIの利用許可が確認できるまでは価格の自動取得を装わない。
             el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">各パーツの「価格.comで価格確認」から販売価格を確認できます。価格.comの実売価格をサイト内に自動反映する公式APIは確認できていないため、合計額には参考価格を使用しています。</div>';
             el('builder-save').addEventListener('click',()=>{try{localStorage.setItem('pc-shindan-build',JSON.stringify(window.pcShindanCurrentBuild));el('builder-save').textContent='保存しました';}catch(e){el('builder-save').textContent='保存できませんでした';}});
-            el('builder-copy').addEventListener('click',async()=>{const b=window.pcShindanCurrentBuild;const txt='PC診断室 構成メモ\n'+Object.entries(b).map(([k,v])=>k+': '+v).join('\n');try{await navigator.clipboard.writeText(txt);el('builder-copy').textContent='コピーしました';}catch(e){window.prompt('構成をコピーしてください',txt);}});
+            el('builder-copy').addEventListener('click',async()=>{const b=window.pcShindanCurrentBuild;const txt='PCラボ 構成メモ\n'+Object.entries(b).map(([k,v])=>k+': '+v).join('\n');try{await navigator.clipboard.writeText(txt);el('builder-copy').textContent='コピーしました';}catch(e){window.prompt('構成をコピーしてください',txt);}});
             el('builder-load').addEventListener('click',()=>{try{
                 const saved=JSON.parse(localStorage.getItem('pc-shindan-build')||'null');if(!saved){el('builder-load').textContent='保存データなし';return;}
                 const setByName=(id,arr,name)=>{const index=arr.findIndex(x=>x.n===name);if(index<0)return false;el('part-'+id).value=String(index);return true;};
