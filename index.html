@@ -653,12 +653,13 @@
 
                     <!-- 質問3: プレイしたいゲーム -->
                     <div class="form-group">
-                        <label class="form-label"><i class="fa-solid fa-gamepad"></i> プレイしたいゲーム・目標</label>
+                        <label class="form-label"><i class="fa-solid fa-gamepad"></i> 遊びたいゲームのジャンル</label>
                         <div class="options-grid" id="game-options">
-                            <button class="option-btn active" data-value="apex">Apex / Valorant</button>
-                            <button class="option-btn" data-value="palworld">パルワールド / モンハン</button>
-                            <button class="option-btn" data-value="cyberpunk">サイバーパンク / 重い3D</button>
-                            <button class="option-btn" data-value="light">マインクラフト / 軽め</button>
+                            <button class="option-btn active" data-value="fps">FPS（競技系・高FPS）</button>
+                            <button class="option-btn" data-value="mmo">MMO・オンラインRPG</button>
+                            <button class="option-btn" data-value="heavy">オープンワールド・重量級</button>
+                            <button class="option-btn" data-value="light">軽め・サンドボックス</button>
+                            <button class="option-btn" data-value="all">いろいろなジャンル</button>
                         </div>
                     </div>
 
@@ -876,11 +877,11 @@
             if(submit&&resultBox)submit.addEventListener('click',()=>{
                 const budget=Number(document.querySelector('#budget-options .option-btn.active')?.dataset.value||15);
                 const use=document.querySelector('#use-options .option-btn.active')?.dataset.value||'game';
-                const game=document.querySelector('#game-options .option-btn.active')?.dataset.value||'apex';
+                const game=document.querySelector('#game-options .option-btn.active')?.dataset.value||'fps';
                 const res=document.querySelector('#res-options .option-btn.active')?.dataset.value||'fhd144';
                 let tier=budget<=10?0:budget<=15?1:budget<=20?2:budget<=25?3:4;
                 if(res==='fhd240'&&tier<2)tier=2;if(res==='wqhd'&&tier<2)tier=2;if(res==='4k')tier=4;
-                if(use==='ai'||use==='stream'||game==='palworld'||game==='cyberpunk')tier=Math.max(tier,2);
+                if(use==='ai'||use==='stream'||game==='mmo'||game==='heavy')tier=Math.max(tier,2);
                 if(game==='light'&&use==='work'&&tier>1)tier=1;
                 const profiles=[
                     {title:'エントリー・コスパ重視',price:'約 10〜12万円',desc:'軽めのゲームや普段使い向け。重い3Dゲームでは画質調整が必要です。',cpu:'Ryzen 5 5600 / Core i3クラス',gpu:'Radeon RX 7600 / 同等クラス',ram:'16GB（2枚組推奨）',ssd:'1TB NVMe SSD'},
@@ -893,7 +894,9 @@
                 if(use==='work')d.desc+=' 普段使い中心ならGPUを控えめにして、静音性や容量に予算を回す選択もあります。';
                 if(use==='stream')d.desc+=' 配信ソフトや編集ソフトを同時に使う場合は、メモリ32GB以上がおすすめです。';
                 if(use==='ai')d.desc+=' AI用途はソフトによって必要なGPUメモリが異なります。利用予定ソフトの要件も確認してください。';
-                if(game==='apex'&&res==='fhd240')d.desc+=' 240FPSは設定・戦闘状況に左右され、常時維持を保証するものではありません。';
+                if(game==='fps'&&res==='fhd240')d.desc+=' FPSで高フレームレートを狙う場合、CPU性能も重要です。実際のFPSはゲーム・設定・マップや場面で変動し、常時維持を保証するものではありません。';
+                if(game==='mmo')d.desc+=' MMOは同時に表示されるキャラクターやエフェクトの数で負荷が変わります。遊ぶタイトルの推奨スペックも確認してください。';
+                if(game==='heavy')d.desc+=' オープンワールド系は高画質設定やテクスチャでGPUメモリを多く使うことがあります。タイトルごとの推奨スペックも確認してください。';
                 ['title','price','desc','cpu','gpu','ram','ssd'].forEach(k=>{const ids={title:'result-title',price:'result-price',desc:'result-desc',cpu:'spec-cpu',gpu:'spec-gpu',ram:'spec-ram',ssd:'spec-ssd'};document.getElementById(ids[k]).textContent=d[k];});
                 resultBox.classList.add('active');resultBox.scrollIntoView({behavior:'smooth',block:'nearest'});
             });
