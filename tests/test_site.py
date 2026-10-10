@@ -4,6 +4,7 @@ import re
 import subprocess
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -133,6 +134,28 @@ class SiteSmokeTests(unittest.TestCase):
                                         f"{build['id']}: PSU below the site's estimated {required_watts}W target.")
                 self.assertGreaterEqual(chosen["cooler"]["t"], cpu["t"],
                                         f"{build['id']}: cooler rating is below the CPU TDP estimate.")
+
+    def test_search_engine_files_and_custom_404_page(self):
+        robots = ROOT / "robots.txt"
+        sitemap = ROOT / "sitemap.xml"
+        not_found = ROOT / "404.html"
+        self.assertTrue(robots.is_file(), "Missing robots.txt.")
+        self.assertTrue(sitemap.is_file(), "Missing sitemap.xml.")
+        self.assertTrue(not_found.is_file(), "Missing branded 404 page.")
+        robots_text = robots.read_text(encoding="utf-8")
+        self.assertIn("User-agent: *", robots_text)
+        self.assertIn("Sitemap: https://nakky9249-ux.github.io/pc-shindan/sitemap.xml", robots_text)
+        root = ET.parse(sitemap).getroot()
+        namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+        urls = {node.text for node in root.findall("sm:url/sm:loc", namespace)}
+        for page in ["", "about.html", "privacy.html", "affiliate.html", "contact.html"]:
+            expected = "https://nakky9249-ux.github.io/pc-shindan/" + page
+            with self.subTest(page=page or "index.html"):
+                self.assertIn(expected, urls)
+        error_page = not_found.read_text(encoding="utf-8")
+        self.assertIn("lang=\"ja\"", error_page)
+        self.assertIn("noindex,follow", error_page)
+        self.assertIn('href="./"', error_page)
 
     def test_site_information_pages_exist(self):
         required_pages = ["about.html", "privacy.html", "affiliate.html", "contact.html"]
