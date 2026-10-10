@@ -875,7 +875,7 @@
                 if(!presets || !presets.length){document.getElementById('result-desc').textContent='構成データを準備中です。少し待ってからもう一度診断してください。';resultBox.classList.add('active');return;}
                 let key=tier===0?'budget-1080p':tier===1?'fhd-balanced':tier===2?'fps-value':tier===3?'wqhd-value':'4k-gaming';
                 if(use==='work')key=tier<=1?'budget-1080p':'fhd-balanced';
-                if(use==='stream')key=tier>=3?'creator-stream':'creator-value';
+                if(use==='stream')key=tier>=3?'creator-ai':'creator-value';
                 if(use==='ai')key=tier>=3?'creator-ai':'creator-value';
                 if(game==='fps'&&res==='fhd240')key=tier>=3?'fps-elite':'fps-value';
                 if(game==='mmo'||game==='heavy')key=tier>=3?'wqhd-amd':'wqhd-value';
@@ -958,7 +958,7 @@
             const addPriceSearch=id=>{
                 const field=el('part-'+id).closest('.builder-field');
                 let link=field.querySelector('.price-search-link');
-                if(!link){link=document.createElement('a');link.className='price-search-link';link.target='_blank';link.rel='noopener noreferrer';link.textContent='価格を調べる ↗';link.style.cssText='font-size:.78rem;color:var(--accent-cyan);text-decoration:underline;align-self:flex-start';field.append(link);}
+                if(!link){link=document.createElement('a');link.className='price-search-link';link.target='_blank';link.rel='noopener noreferrer';link.textContent='価格.comで価格確認 ↗';link.style.cssText='font-size:.78rem;color:var(--accent-cyan);text-decoration:underline;align-self:flex-start';field.append(link);}
                 const item=selected(id, id==='cpu'?parts.cpu:id==='gpu'?parts.gpu:id==='board'?parts.board.filter(x=>x.s===selected('cpu',parts.cpu).s&&x.r===selected('cpu',parts.cpu).r):id==='ram'?listForRam(selected('cpu',parts.cpu)):id==='ssd'?parts.ssd:id==='psu'?parts.psu:id==='case'?parts.pcCase:id==='cooler'?parts.cooler:id==='hdd'?parts.hdd:id==='fans'?parts.fans:parts.os);
                 link.href='https://search.kakaku.com/'+encodeURIComponent(item.n)+'/';
                 link.setAttribute('aria-label',item.n+'の価格を検索');
@@ -1061,7 +1061,16 @@
             el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">各パーツの「価格.comで価格確認」から販売価格を確認できます。価格.comの実売価格をサイト内に自動反映する公式APIは確認できていないため、合計額には参考価格を使用しています。</div>';
             el('builder-save').addEventListener('click',()=>{try{localStorage.setItem('pc-shindan-build',JSON.stringify(window.pcShindanCurrentBuild));el('builder-save').textContent='保存しました';}catch(e){el('builder-save').textContent='保存できませんでした';}});
             el('builder-copy').addEventListener('click',async()=>{const b=window.pcShindanCurrentBuild;const txt='PC診断室 構成メモ\n'+Object.entries(b).map(([k,v])=>k+': '+v).join('\n');try{await navigator.clipboard.writeText(txt);el('builder-copy').textContent='コピーしました';}catch(e){window.prompt('構成をコピーしてください',txt);}});
-            el('builder-load').addEventListener('click',()=>{try{const saved=JSON.parse(localStorage.getItem('pc-shindan-build')||'null');if(!saved){el('builder-load').textContent='保存データなし';return;}const preset=recommendedBuilds.find(p=>p.cpu===saved.cpu&&p.gpu===saved.gpu&&p.board===saved.motherboard&&p.ram===saved.ram&&p.ssd===saved.ssd&&p.os===saved.os);if(preset){window.pcShindanApplyBuild(preset.id);el('builder-load').textContent='読み込みました';}else{el('builder-load').textContent='保存した構成は現在のおすすめ一覧にありません';}}catch(e){el('builder-load').textContent='読み込み失敗';}});
+            el('builder-load').addEventListener('click',()=>{try{
+                const saved=JSON.parse(localStorage.getItem('pc-shindan-build')||'null');if(!saved){el('builder-load').textContent='保存データなし';return;}
+                const setByName=(id,arr,name)=>{const index=arr.findIndex(x=>x.n===name);if(index<0)return false;el('part-'+id).value=String(index);return true;};
+                if(!setByName('cpu',parts.cpu,saved.cpu)){el('builder-load').textContent='保存したCPUが一覧にありません';return;}
+                refreshParts();const cpu=selected('cpu',parts.cpu),boards=parts.board.filter(x=>x.s===cpu.s&&x.r===cpu.r),rams=listForRam(cpu);
+                setByName('gpu',parts.gpu,saved.gpu);setByName('board',boards,saved.motherboard);setByName('ram',rams,saved.ram);
+                setByName('ssd',parts.ssd,saved.ssd);setByName('psu',parts.psu,saved.psu);setByName('case',parts.pcCase,saved.case);
+                setByName('cooler',parts.cooler,saved.cooler);setByName('hdd',parts.hdd,saved.hdd);setByName('fans',parts.fans,saved.caseFans);setByName('os',parts.os,saved.os);
+                update();el('builder-load').textContent='読み込みました';
+            }catch(e){el('builder-load').textContent='読み込み失敗';}});
             el('builder-reset').addEventListener('click',()=>{fill(el('part-cpu'),parts.cpu,formatOption,3);fill(el('part-gpu'),parts.gpu,formatOption,7);fill(el('part-ssd'),parts.ssd,formatOption,2);fill(el('part-psu'),parts.psu,formatOption,3);fill(el('part-case'),parts.pcCase,formatOption,2);fill(el('part-cooler'),parts.cooler,formatOption,2);fill(el('part-hdd'),parts.hdd,formatOption,5);fill(el('part-fans'),parts.fans,formatOption,0);fill(el('part-os'),parts.os,formatOption,1);refreshParts();el('builder-save').textContent='構成を保存';el('builder-copy').textContent='構成をコピー';});
         });
 
