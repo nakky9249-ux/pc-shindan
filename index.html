@@ -635,6 +635,10 @@
                 align-self: flex-end;
             }
         }
+        @media (max-width: 560px) {
+        #price-theme-panel > div:last-child { align-items: stretch !important; }
+        #price-theme-panel a, #price-theme-panel button { width: 100%; box-sizing: border-box; text-align: center; }
+    }
     </style>
 </head>
 <body id="top">
@@ -804,6 +808,15 @@
                     <div id="live-price-status" role="status" style="margin:.8rem 0;padding:.85rem 1rem;border:1px solid var(--border-color);border-radius:12px;background:var(--card-bg);font-size:.88rem">
                         <strong>価格表示について：</strong>参考価格を使用しています
                         <div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">価格.comの検索リンクを各パーツに追加しています。価格.comの価格データを自動取得する公式連携手段は確認できていないため、実売価格は検索先で確認してください。下の合計は参考価格を使って計算します。</div>
+                    </div>
+                    <div id="price-theme-panel" style="margin:.8rem 0 1rem;padding:1rem;border:1px solid var(--border-color);border-radius:12px;background:var(--card-bg)">
+                        <div style="font-size:.76rem;color:var(--text-muted);margin-bottom:.25rem">時間帯連動・パーツ検索ピックアップ（価格は検索先で確認）</div>
+                        <strong id="price-theme-title">メモリ強化</strong>
+                        <p id="price-theme-note" style="font-size:.85rem;color:var(--text-muted);margin:.35rem 0 .7rem">DDR5 32GBメモリなど、今チェックしたいパーツを提案します。</p>
+                        <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center">
+                            <a id="price-theme-link" class="recommend-buy-link" href="https://search.kakaku.com/DDR5%2032GB%20%E3%83%A1%E3%83%A2%E3%83%AA/" target="_blank" rel="noopener noreferrer">このテーマの価格を検索 ↗</a>
+                            <button id="price-theme-next" type="button" style="padding:.55rem .8rem">別のパーツに切り替え</button>
+                        </div>
                     </div>
                     <div class="builder-grid">
                         <div class="builder-field"><label for="part-cpu">CPU（プロセッサー）</label><select id="part-cpu"></select></div>
@@ -997,13 +1010,46 @@
                 const detail=document.getElementById('diagnosis-build-detail');detail.replaceChildren();
                 const heading=document.createElement('strong');heading.textContent='おすすめ構成の内訳（参考価格）';detail.append(heading);
                 const list=document.createElement('ul');list.style.marginTop='.5rem';
-                build.rows.forEach(([label,item])=>{const li=document.createElement('li');const link=document.createElement('a');link.href='https://search.kakaku.com/'+encodeURIComponent(item.n)+'/';link.target='_blank';link.rel='noopener noreferrer';link.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+' 円（価格.comで確認 ↗）';link.style.cssText='color:var(--accent-cyan);text-decoration:underline';li.append(link);list.append(li);});
+                build.rows.forEach(([label,item])=>{const li=document.createElement('li');const link=document.createElement('a');link.href=priceSearchUrl(id==='ram'?'メモリ':id==='gpu'?'GPU':id==='cpu'?'CPU':id==='board'?'マザーボード':id==='ssd'?'SSD':id==='psu'?'電源':id==='case'?'ケース':id==='cooler'?'CPUクーラー':id==='hdd'?'HDD':id==='fans'?'ケースファン':'OS',item.n);link.target='_blank';link.rel='noopener noreferrer';link.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+' 円（価格.comで確認 ↗）';link.style.cssText='color:var(--accent-cyan);text-decoration:underline';li.append(link);list.append(li);});
                 detail.append(list);
                 const note=document.createElement('p');note.style.cssText='font-size:.78rem;color:var(--text-muted);margin-top:.6rem';note.textContent='価格.comの実売価格を自動取得した値ではありません。参考価格の合計で、組立費・送料・追加保証は含みません。';detail.append(note);
                 resultBox.classList.add('active');resultBox.scrollIntoView({behavior:'smooth',block:'nearest'});
             });
 
-            const parts={
+            // 価格.com検索語をパーツ種別に最適化。価格そのものは自動取得せず、検索結果で確認する。
+            function priceSearchQuery(label,name){
+                const text=String(name||'');
+                if(label==='メモリ'||/DDR[45]/i.test(text)&&/(RAM|メモリ|GB)/i.test(text)){
+                    if(/DDR5/i.test(text)&&/32\s*GB|32GB/i.test(text))return 'DDR5 32GB メモリ 16GB×2';
+                    if(/DDR5/i.test(text))return 'DDR5 メモリ '+text.replace(/[()（）]/g,' ');
+                    if(/DDR4/i.test(text))return 'DDR4 メモリ '+text.replace(/[()（）]/g,' ');
+                    return text+' メモリ';
+                }
+                const prefixes={'CPU':'CPU','GPU':'グラフィックボード','マザーボード':'マザーボード','SSD':'M.2 NVMe SSD','電源':'PC 電源ユニット','ケース':'PCケース','CPUクーラー':'CPUクーラー','HDD':'内蔵 HDD','ケースファン':'ケースファン','OS':'Windows 11'};
+                return ((prefixes[label]||'')+' '+text).trim();
+            }
+            function priceSearchUrl(label,name){return 'https://search.kakaku.com/'+encodeURIComponent(priceSearchQuery(label,name))+'/';}
+            const priceSearchThemes=[
+                {id:'ram',title:'メモリ強化',query:'DDR5 32GB メモリ 16GB×2',note:'ゲーム用PCなら32GB（16GB×2）が選びやすい定番候補。マザーボード対応規格も確認。'},
+                {id:'ssd',title:'SSD容量アップ',query:'NVMe SSD 2TB Gen4',note:'ゲームを複数入れるなら2TBも比較。ヒートシンクや保証もチェック。'},
+                {id:'gpu',title:'グラフィックボード',query:'GeForce RTX 5060 グラフィックボード',note:'GPUはゲーム・解像度・電源容量に合わせて比較。'},
+                {id:'cpu',title:'CPUアップグレード',query:'Ryzen 7 7800X3D CPU',note:'CPU交換ではソケット、BIOS、冷却性能の確認が必要。'},
+                {id:'psu',title:'電源ユニット',query:'850W 80PLUS Gold 電源 ATX 3.1',note:'GPUの推奨電源容量と必要な補助電源コネクタを確認。'}
+            ];
+            // 時間帯と日付からテーマを決定。AIやリアルタイム価格APIではなく、ページ内の検索テーマ切替機能。
+            function getCurrentPriceTheme(){
+                const now=new Date();
+                return priceSearchThemes[(now.getHours()+now.getDate())%priceSearchThemes.length];
+            }
+            function renderPriceTheme(theme){
+                const title=document.getElementById('price-theme-title'),note=document.getElementById('price-theme-note'),link=document.getElementById('price-theme-link');
+                if(!title||!note||!link)return;
+                title.textContent=theme.title;note.textContent=theme.note;
+                link.href=priceSearchUrl('検索',theme.query);link.textContent='このテーマの価格を検索 ↗';
+                link.setAttribute('aria-label',theme.query+'を価格.comで検索');
+                link.dataset.theme=theme.id;
+            }
+                        const parts={
                 cpu:[
                     {n:'Ryzen 5 5500',p:11000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 5 5600',p:14000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 7 5700X',p:22000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 7 5700X3D',p:32000,s:'AM4',r:'DDR4',t:105},
                     {n:'Ryzen 5 7500F',p:24000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 5 7600',p:30000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 7700',p:38000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 7800X3D',p:60000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 7 9700X',p:50000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 9800X3D',p:75000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 9 9900X',p:65000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 9 9950X',p:90000,s:'AM5',r:'DDR5',t:170},
@@ -1063,10 +1109,11 @@
             const addPriceSearch=id=>{
                 const field=el('part-'+id).closest('.builder-field');
                 let link=field.querySelector('.price-search-link');
-                if(!link){link=document.createElement('a');link.className='price-search-link';link.target='_blank';link.rel='noopener noreferrer';link.textContent='価格.comで価格確認 ↗';link.style.cssText='font-size:.78rem;color:var(--accent-cyan);text-decoration:underline;align-self:flex-start';field.append(link);}
+                if(!link){link=document.createElement('a');link.className='price-search-link';link.target='_blank';link.rel='noopener noreferrer';link.textContent=(id==='ram'&&/DDR5/i.test(item.n)&&/32GB/i.test(item.n)?'DDR5 32GBメモリを検索 ↗':'価格.comで価格確認 ↗');link.style.cssText='font-size:.78rem;color:var(--accent-cyan);text-decoration:underline;align-self:flex-start';field.append(link);}
                 const item=selected(id, id==='cpu'?parts.cpu:id==='gpu'?parts.gpu:id==='board'?parts.board.filter(x=>x.s===selected('cpu',parts.cpu).s&&x.r===selected('cpu',parts.cpu).r):id==='ram'?listForRam(selected('cpu',parts.cpu)):id==='ssd'?parts.ssd:id==='psu'?parts.psu:id==='case'?parts.pcCase:id==='cooler'?parts.cooler:id==='hdd'?parts.hdd:id==='fans'?parts.fans:parts.os);
-                link.href='https://search.kakaku.com/'+encodeURIComponent(item.n)+'/';
-                link.setAttribute('aria-label',item.n+'の価格を検索');
+                link.href=priceSearchUrl(label,item.n);
+                link.setAttribute('aria-label',priceSearchQuery(id==='ram'?'メモリ':id,item.n)+'を価格.comで検索');
+                link.title=priceSearchQuery(id==='ram'?'メモリ':id,item.n);
             };
             fill(el('part-cpu'),parts.cpu,formatOption,3);
             fill(el('part-gpu'),parts.gpu,formatOption,7);
@@ -1121,7 +1168,7 @@
                     const li=document.createElement('li');
                     const strong=document.createElement('strong');strong.textContent=label+'：'+name+' ';
                     const info=document.createElement('span');info.textContent='— '+spec+' — 約 '+price.toLocaleString('ja-JP')+'円 ';
-                    const a=document.createElement('a');a.href='https://search.kakaku.com/'+encodeURIComponent(name)+'/';a.target='_blank';a.rel='noopener noreferrer';a.textContent='価格.comで価格確認 ↗';a.style.cssText='color:var(--accent-cyan);text-decoration:underline';
+                    const a=document.createElement('a');a.href=priceSearchUrl(label,name);a.target='_blank';a.rel='noopener noreferrer';a.textContent='価格.comで価格確認 ↗';a.style.cssText='color:var(--accent-cyan);text-decoration:underline';
                     li.append(strong,info,a);detailList.append(li);
                 });
                 detailBox.append(detailList);
@@ -1245,8 +1292,15 @@
             el('part-cpu').addEventListener('change',refreshParts);
             ['gpu','board','ram','ssd','psu','case','cooler','hdd','fans','os'].forEach(k=>el('part-'+k).addEventListener('change',update));
             refreshParts();
+            // 時間帯・日付で初期テーマを切り替え、ボタンからも手動で切り替え可能。
+            let activePriceThemeIndex=priceSearchThemes.findIndex(x=>x.id===getCurrentPriceTheme().id);
+            renderPriceTheme(priceSearchThemes[activePriceThemeIndex]);
+            el('price-theme-next')?.addEventListener('click',()=>{
+                activePriceThemeIndex=(activePriceThemeIndex+1)%priceSearchThemes.length;
+                renderPriceTheme(priceSearchThemes[activePriceThemeIndex]);
+            });
             // 価格.comは検索リンクで接続。公式な価格データAPIの利用許可が確認できるまでは価格の自動取得を装わない。
-            el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">各パーツの「価格.comで価格確認」から販売価格を確認できます。価格.comの実売価格をサイト内に自動反映する公式APIは確認できていないため、合計額には参考価格を使用しています。</div>';
+            el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">価格検索はパーツ名に合わせて検索語を調整します。メモリは「DDR5 32GB メモリ 16GB×2」などの語句で探します。実売価格を自動取得する機能ではないため、価格・送料・在庫は検索先で確認してください。</div>';
             el('builder-save').addEventListener('click',()=>{try{localStorage.setItem('pc-shindan-build',JSON.stringify(window.pcShindanCurrentBuild));el('builder-save').textContent='保存しました';}catch(e){el('builder-save').textContent='保存できませんでした';}});
             el('builder-copy').addEventListener('click',async()=>{const b=window.pcShindanCurrentBuild;const txt='PCラボ 構成メモ\n'+Object.entries(b).map(([k,v])=>k+': '+v).join('\n');try{await navigator.clipboard.writeText(txt);el('builder-copy').textContent='コピーしました';}catch(e){window.prompt('構成をコピーしてください',txt);}});
             el('builder-load').addEventListener('click',()=>{try{
