@@ -927,10 +927,10 @@
                 const at=(arr,i)=>arr[Math.min(i,arr.length-1)];
                 const plan=[
                     {cpu:1,gpu:3,board:1,ram:1,ssd:2,psu:1,pcCase:0,cooler:0,hdd:5,fans:0,os:1},
-                    {cpu:4,gpu:7,board:4,ram:1,ssd:2,psu:3,pcCase:2,cooler:0,hdd:5,fans:0,os:1},
-                    {cpu:6,gpu:9,board:5,ram:1,ssd:3,psu:4,pcCase:3,cooler:3,hdd:5,fans:2,os:1},
-                    {cpu:7,gpu:12,board:5,ram:1,ssd:3,psu:4,pcCase:3,cooler:3,hdd:5,fans:2,os:1},
-                    {cpu:9,gpu:15,board:7,ram:4,ssd:3,psu:5,pcCase:5,cooler:7,hdd:5,fans:2,os:1}
+                    {cpu:4,gpu:7,board:1,ram:1,ssd:2,psu:3,pcCase:2,cooler:0,hdd:5,fans:0,os:1},
+                    {cpu:6,gpu:9,board:2,ram:1,ssd:3,psu:4,pcCase:3,cooler:3,hdd:5,fans:2,os:1},
+                    {cpu:7,gpu:12,board:2,ram:1,ssd:3,psu:4,pcCase:3,cooler:3,hdd:5,fans:2,os:1},
+                    {cpu:9,gpu:15,board:4,ram:4,ssd:3,psu:5,pcCase:5,cooler:7,hdd:5,fans:2,os:1}
                 ][tier];
                 const dc=at(parts.cpu,plan.cpu), dg=at(parts.gpu,plan.gpu);
                 const db=at(parts.board.filter(x=>x.s===dc.s&&x.r===dc.r),plan.board);
