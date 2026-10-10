@@ -83,8 +83,8 @@ class SiteSmokeTests(unittest.TestCase):
 
 
     def test_all_presets_have_compatible_catalog_parts(self):
-        parts_match = re.search(r"const parts\s*=\s*(\{[\s\S]*?\n\s*\});", self.html)
-        builds_match = re.search(r"const recommendedBuilds\s*=\s*(\[[\s\S]*?\n\s*\]);", self.html)
+        parts_match = re.search(r"const parts\s*=\s*(\{.*?\n\s*\});", self.html, re.DOTALL)
+        builds_match = re.search(r"const recommendedBuilds\s*=\s*(\[.*?\n\s*\]);", self.html, re.DOTALL)
         self.assertIsNotNone(parts_match, "Could not locate the part catalog.")
         self.assertIsNotNone(builds_match, "Could not locate the recommendation catalog.")
         js = (
