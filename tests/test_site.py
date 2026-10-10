@@ -176,6 +176,18 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertIn("news-thumb-fallback", self.html)
         self.assertIn("image.addEventListener('error'", self.html)
 
+    def test_recommendation_search_is_available_and_accessible(self):
+        self.assertIn('id="recommendation-search"', self.html)
+        self.assertIn('id="recommendation-results-status"', self.html)
+        self.assertIn("toLocaleLowerCase('ja')", self.html)
+        self.assertIn("条件に合う構成がありません", self.html)
+
+    def test_news_dates_and_summaries_are_formatted(self):
+        self.assertIn("Intl.DateTimeFormat('ja-JP'", self.html)
+        self.assertIn("formatNewsDate(article.date)", self.html)
+        self.assertIn("className = 'news-summary'", self.html)
+        self.assertIn("最終更新：", self.html)
+
     def test_local_page_links_resolve(self):
         pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html"]]
         for path in pages:
