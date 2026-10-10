@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PCラボは、予算・用途・ゲーム・解像度からPC構成を診断。おすすめ構成、パーツ別参考価格、互換性チェック、PCニュースをまとめて確認できます。">
     <meta name="theme-color" content="#0b0f19">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://nakky9249-ux.github.io/pc-shindan/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PCラボ｜PC構成診断・パーツ比較">
+    <meta name="twitter:description" content="予算と用途から自分に合うPCを探そう。構成診断、パーツ比較、互換性チェック、PCニュース。">
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <meta property="og:type" content="website">
     <meta property="og:title" content="PCラボ｜PC構成診断・パーツ比較">
@@ -61,6 +66,10 @@
             color: inherit;
             text-decoration: none;
         }
+        :focus-visible{outline:3px solid var(--accent-cyan);outline-offset:3px}
+        button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent-cyan);outline-offset:3px}
+        html{scroll-behavior:smooth;scroll-padding-top:6rem}
+        @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
         /* ヘッダー */
         header {
@@ -562,6 +571,12 @@
         .news-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
         .news-thumb img[hidden]{display:none}
         .news-thumb-fallback{font-size:2rem;filter:drop-shadow(0 3px 8px rgba(0,0,0,.3))}
+        .news-summary{color:var(--text-muted);font-size:.82rem;line-height:1.55;margin-top:.4rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+        .recommend-search{display:flex;gap:.7rem;align-items:center;margin:1rem 0 .5rem}
+        .recommend-search input{flex:1;min-width:0;background:#0d1422;color:var(--text-main);border:1px solid var(--card-border);border-radius:10px;padding:.85rem 1rem;font:inherit}
+        .recommend-search input::placeholder{color:#94a3b8}
+        .recommend-results{font-size:.82rem;color:var(--text-muted);margin:.4rem 0 1rem}
+        .empty-state{grid-column:1/-1;padding:1.5rem;border:1px dashed var(--card-border);border-radius:12px;color:var(--text-muted);text-align:center}
         .news-thumb:has(img:not([hidden])) .news-thumb-fallback{display:none}
         @media(max-width:600px){.horizontal-card{align-items:stretch;flex-direction:column}.news-thumb{width:100%;height:170px;flex-basis:auto}.horizontal-info{width:100%}}
         .shop-status{font-size:.72rem;color:var(--text-muted);margin-top:.3rem}
@@ -662,7 +677,7 @@
                     <div class="step-number">3</div>
                     <div class="step-info">
                         <h4>構成チェック・購入</h4>
-                        <p>おすすめ理由と各ショップの最新価格を確認できます。</p>
+                        <p>おすすめ構成を確認し、各ショップの公式サイトで最新価格をチェックします。</p>
                     </div>
                 </div>
             </div>
@@ -697,7 +712,7 @@
                         <div class="options-grid" id="use-options" role="group" aria-label="主な用途">
                             <button class="option-btn active" data-value="game">3Dゲーム</button>
                             <button class="option-btn" data-value="stream">配信・動画編集</button>
-                            <button class="option-btn" data-value="work">普段使い・事務 work</button>
+                            <button class="option-btn" data-value="work">普段使い・事務作業</button>
                             <button class="option-btn" data-value="ai">AIイラスト・開発</button>
                         </div>
                     </div>
@@ -774,7 +789,7 @@
                     <h2 class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> パーツ構成シミュレーター</h2>
                     <p class="builder-intro">CPU・GPU・マザーボード・メモリ・SSD/HDD・電源・ケース・冷却・ファン・OSを選択。互換性の注意点、仕様の詳細、参考価格の合計を確認し、価格.comで各パーツの実売価格を調べられます。</p>
                     <div id="live-price-status" role="status" style="margin:.8rem 0;padding:.85rem 1rem;border:1px solid var(--border-color);border-radius:12px;background:var(--card-bg);font-size:.88rem">
-                        <strong>価格自動取得：</strong>連携設定を確認中…
+                        <strong>価格表示について：</strong>参考価格を使用しています
                         <div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">価格.comの検索リンクを各パーツに追加しています。価格.comの価格データを自動取得する公式連携手段は確認できていないため、実売価格は検索先で確認してください。下の合計は参考価格を使って計算します。</div>
                     </div>
                     <div class="builder-grid">
@@ -820,6 +835,8 @@
                 <section id="recommend" style="margin-top: 2.5rem;">
                     <h2 class="section-title"><i class="fa-solid fa-fire"></i> おすすめPC構成一覧</h2>
                     <p class="builder-intro">予算・ゲーム・配信・制作の目的別に複数の構成を比較できます。価格はサイト内の参考単価から計算したパーツ合計です。「この構成を使う」で下のシミュレーターに反映できます。</p>
+                    <label class="recommend-search" for="recommendation-search"><span class="muted">構成を検索</span><input id="recommendation-search" type="search" placeholder="例：RTX 5070、15万円、配信" autocomplete="off"></label>
+                    <p class="recommend-results" id="recommendation-results-status" role="status" aria-live="polite">11件の構成を表示しています。</p>
                     <div class="options-grid" id="recommendation-filters" style="margin:1rem 0">
                         <button class="option-btn active" data-category="all" type="button">すべて</button>
                         <button class="option-btn" data-category="budget" type="button">低予算・コスパ</button>
@@ -1109,9 +1126,19 @@
                 if (kind === 'budget') return '<svg '+common+' role="img" aria-label="コンパクトなPCのイメージイラスト">'+grad+'<rect x="91" y="9" width="78" height="99" rx="8" fill="#111827" stroke="url(#lab-gradient-'+index+')" stroke-width="3"/><rect x="100" y="18" width="60" height="69" rx="4" fill="url(#lab-gradient-'+index+')" opacity=".2"/><circle cx="130" cy="49" r="19" fill="none" stroke="url(#lab-gradient-'+index+')" stroke-width="5"/><circle cx="130" cy="49" r="7" fill="'+b+'"/><path d="M111 76h38" stroke="'+b+'" stroke-width="3" stroke-linecap="round"/><circle cx="130" cy="97" r="3" fill="'+b+'"/></svg>';
                 return '<svg '+common+' role="img" aria-label="ゲーミングPCのイメージイラスト">'+grad+'<rect x="51" y="15" width="158" height="88" rx="9" fill="#101827" stroke="url(#lab-gradient-'+index+')" stroke-width="3"/><rect x="61" y="24" width="138" height="70" rx="4" fill="url(#lab-gradient-'+index+')" opacity=".12"/><rect x="75" y="34" width="48" height="48" rx="5" fill="url(#lab-gradient-'+index+')"/><circle cx="99" cy="58" r="16" fill="#101827" stroke="'+b+'" stroke-width="3"/><circle cx="99" cy="58" r="6" fill="'+b+'"/><rect x="135" y="36" width="48" height="8" rx="3" fill="'+b+'"/><rect x="135" y="52" width="36" height="6" rx="3" fill="#64748b"/><rect x="135" y="66" width="42" height="6" rx="3" fill="#64748b"/><path d="M130 103v6m-24 0h48" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/></svg>';
             };
-            const renderRecommendations=(category='all')=>{
+            const renderRecommendations=(category='all', query='')=>{
                 const grid=el('recommendation-grid');grid.replaceChildren();
-                recommendedBuilds.filter(p=>category==='all'||p.category===category).forEach(p=>{
+                const normalizedQuery=query.trim().toLocaleLowerCase('ja');
+                const filteredBuilds=recommendedBuilds.filter(p=>{
+                    const categoryMatches=category==='all'||p.category===category;
+                    const build=getBuildParts(p.id);
+                    const searchable=[p.title,p.tag,p.desc,p.usage,build?.cpu?.n,build?.gpu?.n,build?.ram?.n,build?.ssd?.n].filter(Boolean).join(' ').toLocaleLowerCase('ja');
+                    return categoryMatches&&(!normalizedQuery||searchable.includes(normalizedQuery));
+                });
+                const resultStatus=el('recommendation-results-status');
+                if(resultStatus)resultStatus.textContent=filteredBuilds.length+'件の構成を表示しています。';
+                if(!filteredBuilds.length){const empty=document.createElement('p');empty.className='empty-state';empty.textContent='条件に合う構成がありません。検索語を短くするか、別のカテゴリを選んでください。';grid.append(empty);return;}
+                filteredBuilds.forEach(p=>{
                     const build=getBuildParts(p.id);if(!build)return;
                     const card=document.createElement('article');card.className='recommend-card';
                     const visual=document.createElement('div');visual.className='build-visual';visual.innerHTML=buildVisualSvg(p.category,recommendedBuilds.findIndex(x=>x.id===p.id));
@@ -1128,13 +1155,16 @@
                     card.append(visual,badge,title,price,desc,list,breakdown,button);grid.append(card);
                 });
             };
+            let activeRecommendationCategory='all';
+            const recommendationSearch=el('recommendation-search');
+            recommendationSearch?.addEventListener('input',()=>renderRecommendations(activeRecommendationCategory,recommendationSearch.value));
             renderRecommendations();
             el('recommendation-filters')?.querySelectorAll('button[data-category]').forEach(button=>{
                 button.type='button';
                 button.setAttribute('aria-pressed',String(button.classList.contains('active')));
                 button.addEventListener('click',()=>{
                     el('recommendation-filters').querySelectorAll('button[data-category]').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
-                    button.classList.add('active');button.setAttribute('aria-pressed','true');renderRecommendations(button.dataset.category);
+                    button.classList.add('active');button.setAttribute('aria-pressed','true');activeRecommendationCategory=button.dataset.category;renderRecommendations(activeRecommendationCategory,recommendationSearch?.value||'');
                 });
             });
             window.pcShindanCatalog={parts,listForRam};
@@ -1180,6 +1210,13 @@
                 if (!response.ok) throw new Error('news.json がまだありません');
                 const payload = await response.json();
                 const articles = Array.isArray(payload) ? payload : payload.articles;
+                const updatedAt = Array.isArray(payload) ? '' : payload.updated_at;
+                const formatNewsDate = value => {
+                    if (!value) return '日付不明';
+                    const parsed = new Date(value);
+                    if (Number.isNaN(parsed.getTime())) return '日付不明';
+                    return new Intl.DateTimeFormat('ja-JP', {year:'numeric',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tokyo'}).format(parsed);
+                };
                 if (!Array.isArray(articles) || articles.length === 0) {
                     status.textContent = '現在表示できるニュースはありません。';
                     return;
@@ -1228,7 +1265,7 @@
                     const meta = document.createElement('div');
                     meta.className = 'horizontal-meta';
                     const date = document.createElement('span');
-                    date.textContent = article.date || '日付不明';
+                    date.textContent = formatNewsDate(article.date);
                     const category = document.createElement('span');
                     category.textContent = article.source || 'PCニュース';
                     meta.append(date, category);
@@ -1238,10 +1275,16 @@
                     title.textContent = article.title;
 
                     info.append(meta, title);
+                    if (typeof article.summary === 'string' && article.summary.trim()) {
+                        const summary = document.createElement('p');
+                        summary.className = 'news-summary';
+                        summary.textContent = article.summary.trim();
+                        info.append(summary);
+                    }
                     card.append(thumbnail, info);
                     list.append(card);
                 });
-                status.textContent = 'RSSから取得した記事です。詳細・正確性はリンク先の元記事で確認してください。';
+                status.textContent = 'RSSから取得した記事です。'+(updatedAt ? ' 最終更新：'+formatNewsDate(updatedAt)+'（日本時間）' : '')+' 詳細・正確性はリンク先の元記事で確認してください。';
             } catch (error) {
                 status.textContent = 'ニュース自動取得は未設定、またはまだ初回更新前です。設定ガイドを確認してください。';
             }
