@@ -835,7 +835,7 @@
                 <section id="recommend" style="margin-top: 2.5rem;">
                     <h2 class="section-title"><i class="fa-solid fa-fire"></i> おすすめPC構成一覧</h2>
                     <p class="builder-intro">予算・ゲーム・配信・制作の目的別に複数の構成を比較できます。価格はサイト内の参考単価から計算したパーツ合計です。「この構成を使う」で下のシミュレーターに反映できます。</p>
-                    <label class="recommend-search" for="recommendation-search"><span class="muted">構成を検索</span><input id="recommendation-search" type="search" placeholder="例：RTX 5070、15万円、配信" autocomplete="off"></label>
+                    <label class="recommend-search" for="recommendation-search"><span class="muted">構成を検索</span><input id="recommendation-search" type="search" placeholder="例：RTX 5070、FPS、配信" autocomplete="off"></label>
                     <p class="recommend-results" id="recommendation-results-status" role="status" aria-live="polite">11件の構成を表示しています。</p>
                     <div class="options-grid" id="recommendation-filters" style="margin:1rem 0">
                         <button class="option-btn active" data-category="all" type="button">すべて</button>
@@ -1132,7 +1132,7 @@
                 const filteredBuilds=recommendedBuilds.filter(p=>{
                     const categoryMatches=category==='all'||p.category===category;
                     const build=getBuildParts(p.id);
-                    const searchable=[p.title,p.tag,p.desc,p.usage,build?.cpu?.n,build?.gpu?.n,build?.ram?.n,build?.ssd?.n].filter(Boolean).join(' ').toLocaleLowerCase('ja');
+                    const searchable=[p.title,p.tag,p.desc,p.usage,build?.cpu?.n,build?.gpu?.n,build?.ram?.n,build?.ssd?.n,build?yen(build.total):''].filter(Boolean).join(' ').toLocaleLowerCase('ja');
                     return categoryMatches&&(!normalizedQuery||searchable.includes(normalizedQuery));
                 });
                 const resultStatus=el('recommendation-results-status');
