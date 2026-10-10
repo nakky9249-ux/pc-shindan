@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nakky9249-ux.github.io/pc-shindan/sitemap.xml
