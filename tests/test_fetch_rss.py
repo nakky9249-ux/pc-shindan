@@ -37,6 +37,18 @@ class FetchRssTests(unittest.TestCase):
         self.assertEqual(rss.safe_image_url("javascript:alert(1)"), "")
         self.assertEqual(rss.safe_image_url("data:image/png;base64,abc"), "")
 
+    def test_extracts_open_graph_image_metadata(self):
+        parser = rss.ArticleImageParser()
+        parser.feed('<html><head><meta content="/images/story.jpg" property="og:image"></head></html>')
+        self.assertEqual(parser.image, "/images/story.jpg")
+        self.assertEqual(rss.safe_image_url(rss.urljoin("https://news.example.com/story", parser.image)),
+                         "https://news.example.com/images/story.jpg")
+
+    def test_twitter_image_metadata_is_supported(self):
+        parser = rss.ArticleImageParser()
+        parser.feed('<meta name="twitter:image" content="https://cdn.example.com/story.png">')
+        self.assertEqual(parser.image, "https://cdn.example.com/story.png")
+
     def test_parse_atom_link_prefers_alternate(self):
         entry = ET.fromstring('<entry xmlns="http://www.w3.org/2005/Atom"><title>Atom item</title><link rel="self" href="https://example.com/self"/><link rel="alternate" href="https://example.com/article"/><updated>2026-10-10T03:00:00Z</updated></entry>')
         self.assertEqual(rss.child_text(entry, {"link"}), "https://example.com/article")
