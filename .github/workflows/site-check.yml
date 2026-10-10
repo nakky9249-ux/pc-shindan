@@ -1,0 +1,54 @@
+name: Site quality checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.html"
+      - "**.css"
+      - "**.js"
+      - "**.json"
+      - "tests/**"
+      - ".github/workflows/site-check.yml"
+      - "README.md"
+      - "AFFILIATE_SETUP.md"
+  pull_request:
+    paths:
+      - "**.html"
+      - "**.css"
+      - "**.js"
+      - "**.json"
+      - "tests/**"
+      - ".github/workflows/site-check.yml"
+      - "README.md"
+      - "AFFILIATE_SETUP.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate JSON data
+        run: |
+          python -m json.tool news.json > /dev/null
+          python -m json.tool prices.json > /dev/null
+      - name: Run site and parser tests
+        run: python -m unittest discover -s tests -v
