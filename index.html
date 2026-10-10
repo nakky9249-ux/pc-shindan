@@ -632,7 +632,7 @@
                     <!-- 質問1: 予算 -->
                     <div class="form-group">
                         <label class="form-label"><i class="fa-solid fa-yen-sign"></i> ご予算</label>
-                        <div class="options-grid" id="budget-options">
+                        <div class="options-grid" id="budget-options" role="group" aria-label="予算">
                             <button class="option-btn" data-value="10">〜10万円</button>
                             <button class="option-btn active" data-value="15">15万円前後</button>
                             <button class="option-btn" data-value="20">20万円前後</button>
@@ -644,7 +644,7 @@
                     <!-- 質問2: 主な用途 -->
                     <div class="form-group">
                         <label class="form-label"><i class="fa-solid fa-compass"></i> 主な用途</label>
-                        <div class="options-grid" id="use-options">
+                        <div class="options-grid" id="use-options" role="group" aria-label="主な用途">
                             <button class="option-btn active" data-value="game">3Dゲーム</button>
                             <button class="option-btn" data-value="stream">配信・動画編集</button>
                             <button class="option-btn" data-value="work">普段使い・事務 work</button>
@@ -655,7 +655,7 @@
                     <!-- 質問3: プレイしたいゲーム -->
                     <div class="form-group">
                         <label class="form-label"><i class="fa-solid fa-gamepad"></i> 遊びたいゲームのジャンル</label>
-                        <div class="options-grid" id="game-options">
+                        <div class="options-grid" id="game-options" role="group" aria-label="遊びたいゲームのジャンル">
                             <button class="option-btn active" data-value="fps">FPS（競技系・高FPS）</button>
                             <button class="option-btn" data-value="mmo">MMO・オンラインRPG</button>
                             <button class="option-btn" data-value="heavy">オープンワールド・重量級</button>
@@ -667,7 +667,7 @@
                     <!-- 質問4: 解像度 ＆ FPS -->
                     <div class="form-group">
                         <label class="form-label"><i class="fa-solid fa-desktop"></i> 希望の画質・ターゲット環境</label>
-                        <div class="options-grid" id="res-options">
+                        <div class="options-grid" id="res-options" role="group" aria-label="希望の画質・フレームレート">
                             <button class="option-btn active" data-value="fhd144">FHD / 144FPS+</button>
                             <button class="option-btn" data-value="fhd240">FHD / 240FPS+</button>
                             <button class="option-btn" data-value="wqhd">WQHD / 144FPS</button>
@@ -713,8 +713,8 @@
                         <div id="diagnosis-build-detail" class="builder-notes" style="margin:1rem 0" aria-live="polite"></div>
 
                         <!-- アフィリエイト用ボタン（将来の収益化リンク） -->
-                        <a href="#" class="affiliate-btn" id="affiliate-link" target="_blank">
-                            <i class="fa-solid fa-cart-shopping"></i> この構成に近いBTO PCをショップで探す (提携リンク)
+                        <a href="#bto-shops" class="affiliate-btn" id="affiliate-link">
+                            <i class="fa-solid fa-cart-shopping"></i> BTO購入先・公式ショップを見る
                         </a>
                     </div>
                 </section>
@@ -858,7 +858,14 @@
             const setupOptionGroup = id => {
                 const box=document.getElementById(id); if(!box)return;
                 const buttons=box.querySelectorAll('.option-btn');
-                buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');}));
+                buttons.forEach(btn=>{
+                    btn.type='button';
+                    btn.setAttribute('aria-pressed',String(btn.classList.contains('active')));
+                    btn.addEventListener('click',()=>{
+                        buttons.forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
+                        btn.classList.add('active');btn.setAttribute('aria-pressed','true');
+                    });
+                });
             };
             ['budget-options','use-options','game-options','res-options'].forEach(setupOptionGroup);
             const submit=document.getElementById('submit-btn'), resultBox=document.getElementById('result-box');
@@ -989,6 +996,7 @@
                 notes.push(p.w<watts?'電源容量は '+watts+'W 以上が目安です。選択中の '+p.w+'W では余裕が足りない可能性があります。':'電源容量の目安は '+watts+'W 以上。選択中の '+p.w+'W は概算目安を満たしています。');
                 if(b.z==='ATX'&&cs.z!=='ATX'&&cs.z!=='EATX')notes.push('ATXマザーボードにはATX対応ケースが必要です。');
                 if(cl.t<c.t)notes.push('CPUに対してクーラーの冷却性能が不足する可能性があります。');
+                if(cl.p===0)notes.push('クーラー費用0円はCPU付属クーラーを使える場合のみです。付属有無をCPUの製品ページで確認してください。');
                 if(r.g<32)notes.push('ゲームや配信なら32GBメモリも検討してください。');
                 if(ssd.g<1000)notes.push('ゲームを複数入れるなら1TB以上のSSDが便利です。');
                 if(g.w>=300&&p.w<850)notes.push('高消費電力GPUでは電源容量・補助電源コネクタをメーカー仕様で必ず確認してください。');
@@ -1090,13 +1098,20 @@
                     status.textContent = '現在表示できるニュースはありません。';
                     return;
                 }
+                const validArticles = articles.filter(article => {
+                    const link = article && (article.url || article.link);
+                    return !!article && typeof article.title === 'string' && article.title.trim() &&
+                        typeof link === 'string' && /^https?:\/\//i.test(link);
+                }).slice(0, 8);
+                if (!validArticles.length) {
+                    list.replaceChildren();
+                    status.textContent = '表示できるニュース記事がありません。RSS設定を確認してください。';
+                    return;
+                }
 
                 list.replaceChildren();
-                articles.slice(0, 8).forEach(article => {
-                    const link = article && (article.url || article.link);
-                    if (!article || typeof article.title !== 'string' ||
-                        typeof link !== 'string' ||
-                        !/^https?:\/\//i.test(link)) return;
+                validArticles.forEach(article => {
+                    const link = article.url || article.link;
 
                     const card = document.createElement('a');
                     card.className = 'horizontal-card';
