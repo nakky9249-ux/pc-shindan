@@ -134,6 +134,47 @@ class SiteSmokeTests(unittest.TestCase):
                 self.assertGreaterEqual(chosen["cooler"]["t"], cpu["t"],
                                         f"{build['id']}: cooler rating is below the CPU TDP estimate.")
 
+    def test_site_information_pages_exist(self):
+        required_pages = ["about.html", "privacy.html", "affiliate.html", "contact.html"]
+        for page in required_pages:
+            with self.subTest(page=page):
+                path = ROOT / page
+                self.assertTrue(path.is_file(), f"Missing site information page: {page}")
+                html = path.read_text(encoding="utf-8")
+                self.assertIn('lang="ja"', html)
+                self.assertIn('<meta name="viewport"', html)
+                self.assertIn('href="./info.css"', html)
+                self.assertRegex(html, r"<title>[^<]+</title>")
+                self.assertIn('href="./privacy.html"', html)
+                self.assertIn('href="./affiliate.html"', html)
+
+    def test_affiliate_disclosure_matches_current_links(self):
+        self.assertIn("通常の公式サイトへのリンク", self.html)
+        self.assertIn("アフィリエイト提携済みリンクではありません", self.html)
+        affiliate_page = (ROOT / "affiliate.html").read_text(encoding="utf-8")
+        self.assertIn("通常の公式サイトへのリンク", affiliate_page)
+        self.assertNotIn("提携済みの広告リンクです", affiliate_page)
+
+    def test_recommendation_cards_have_original_visuals(self):
+        self.assertIn("const buildVisualSvg", self.html)
+        self.assertIn("className='build-visual'", self.html)
+        self.assertIn("card.append(visual,badge,title,price,desc,list,breakdown,button)", self.html)
+        self.assertIn("商品写真・メーカー公式ロゴではなく", self.html)
+
+    def test_local_page_links_resolve(self):
+        pages = [ROOT / "index.html"] + [ROOT / name for name in ["about.html", "privacy.html", "affiliate.html", "contact.html"]]
+        for path in pages:
+            html = path.read_text(encoding="utf-8")
+            for href in re.findall(r'href=["\\']([^"\\']+)["\\']', html):
+                if href.startswith(("https://", "http://", "mailto:", "tel:", "#", "data:")):
+                    continue
+                target = href.split("#", 1)[0].split("?", 1)[0]
+                if not target:
+                    continue
+                resolved = (path.parent / target).resolve()
+                with self.subTest(page=path.name, href=href):
+                    self.assertTrue(resolved.is_file(), f"Broken local link in {path.name}: {href}")
+
 
 if __name__ == "__main__":
     unittest.main()
