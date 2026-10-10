@@ -940,7 +940,7 @@
                 update();
             }
             function update(){
-                const c=selected('part-cpu',parts.cpu),g=selected('part-gpu',parts.gpu),b=selected('part-board',parts.board),r=selected('part-ram',listForRam(c)),s=selected('part-ssd',parts.ssd),p=selected('part-psu',parts.psu),cs=selected('part-case',parts.pcCase),cl=selected('part-cooler',parts.cooler);
+                const c=selected('part-cpu',parts.cpu),g=selected('part-gpu',parts.gpu),compatibleBoards=parts.board.filter(x=>x.s===c.s&&x.r===c.r),b=compatibleBoards[Number(el('part-board').value)||0],r=selected('part-ram',listForRam(c)),s=selected('part-ssd',parts.ssd),p=selected('part-psu',parts.psu),cs=selected('part-case',parts.pcCase),cl=selected('part-cooler',parts.cooler);
                 const total=c.p+g.p+b.p+r.p+s.p+p.p+cs.p+cl.p, watts=Math.ceil((c.t+g.w+150)*1.2/50)*50;
                 el('builder-price').textContent=yen(total);
                 const notes=[];
