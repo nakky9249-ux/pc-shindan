@@ -186,7 +186,7 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertNotIn("提携済みの広告リンクです", affiliate_page)
 
     def test_recommendation_cards_use_real_listing_data_and_official_links(self):
-        self.assertIn("const availablePcListings=[", self.html)
+        self.assertIn("const availablePcListings = [", self.html)
         self.assertIn("const renderRecommendations=(category='all', query='')=>", self.html)
         self.assertIn("buyLink.href=p.url", self.html)
         self.assertIn("buyLink.rel='noopener noreferrer'", self.html)
