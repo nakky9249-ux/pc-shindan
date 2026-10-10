@@ -580,6 +580,7 @@
                 <li><a href="#diagnosis"><i class="fa-solid fa-calculator"></i> PC診断</a></li>
                 <li><a href="#recommend"><i class="fa-solid fa-thumbs-up"></i> おすすめ構成</a></li>
                 <li><a href="#builder"><i class="fa-solid fa-screwdriver-wrench"></i> パーツ構成</a></li>
+                <li><a href="#bto-shops"><i class="fa-solid fa-store"></i> BTO購入先</a></li>
                 <li><a href="#news"><i class="fa-solid fa-newspaper"></i> ニュース/価格</a></li>
             </ul>
         </div>
@@ -719,7 +720,7 @@
 
                 <section id="builder" class="builder-card">
                     <h2 class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> パーツ構成シミュレーター</h2>
-                    <p class="builder-intro">CPU・GPUから細かく選択。対応するマザーボードやメモリを絞り込み、構成の概算価格と注意点を確認できます。</p>
+                    <p class="builder-intro">CPU・GPU・マザーボード・メモリ・ストレージ・電源・ケース・冷却・OSまで選択。各パーツ名から販売価格を検索でき、合計金額も自動計算します。</p>
                     <div class="builder-grid">
                         <div class="builder-field"><label for="part-cpu">CPU（プロセッサー）</label><select id="part-cpu"></select></div>
                         <div class="builder-field"><label for="part-gpu">GPU（グラフィックボード）</label><select id="part-gpu"></select></div>
@@ -729,15 +730,31 @@
                         <div class="builder-field"><label for="part-psu">電源ユニット</label><select id="part-psu"></select></div>
                         <div class="builder-field"><label for="part-case">PCケース</label><select id="part-case"></select></div>
                         <div class="builder-field"><label for="part-cooler">CPUクーラー</label><select id="part-cooler"></select></div>
+                        <div class="builder-field"><label for="part-hdd">追加ストレージ（HDD）</label><select id="part-hdd"></select></div>
+                        <div class="builder-field"><label for="part-fans">追加ケースファン</label><select id="part-fans"></select></div>
+                        <div class="builder-field"><label for="part-os">OS</label><select id="part-os"></select></div>
                     </div>
-                    <div class="builder-total"><div><span>パーツ合計の目安</span><div style="font-size:.78rem;color:var(--text-muted)">OS・組立費・送料などは含みません</div></div><strong id="builder-price">計算中…</strong></div>
+                    <div class="builder-total"><div><span>選択パーツ合計の目安</span><div style="font-size:.78rem;color:var(--text-muted)">組立費・送料・追加保証は含みません。OSは選択に応じて加算。</div></div><strong id="builder-price">計算中…</strong></div>
                     <div class="builder-notes" id="builder-notes" aria-live="polite">パーツの組み合わせを確認しています…</div>
                     <div class="builder-actions">
                         <button class="primary" id="builder-save" type="button">構成を保存</button>
                         <button id="builder-copy" type="button">構成をコピー</button>
                         <button id="builder-reset" type="button">初期構成に戻す</button>
                     </div>
-                    <p class="builder-small">価格は比較用の参考概算です。実売価格・在庫・対応BIOS・ケース寸法は購入前に販売店とメーカー公式仕様で確認してください。</p>
+                    <p class="builder-small">表示額は参考概算で、販売店の実売価格を自動取得したものではありません。「価格を調べる」リンクから検索結果を確認してください。実売価格・在庫・対応BIOS・ケース寸法・電源端子は購入前に販売店とメーカー公式仕様で確認してください。</p>
+                </section>
+
+                <section id="bto-shops" class="builder-card" style="margin-top:2rem">
+                    <h2 class="section-title"><i class="fa-solid fa-store"></i> BTOショップ・購入先</h2>
+                    <p class="builder-intro">自作が不安なら完成品PCを比較。公式サイトで最新価格・在庫・保証内容を確認できます。</p>
+                    <div class="cards-3col">
+                        <div class="recommend-card"><div><h3>ドスパラ / GALLERIA</h3><p style="color:var(--text-muted);font-size:.85rem;margin:.5rem 0 1rem">ゲーミングPC・PCパーツ</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.dospara.co.jp/gamepc" target="_blank" rel="noopener noreferrer">公式サイトへ ↗</a></div>
+                        <div class="recommend-card"><div><h3>マウスコンピューター</h3><p style="color:var(--text-muted);font-size:.85rem;margin:.5rem 0 1rem">G-TuneなどのゲーミングPC</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.mouse-jp.co.jp/store/r/ra1020000/" target="_blank" rel="noopener noreferrer">公式サイトへ ↗</a></div>
+                        <div class="recommend-card"><div><h3>FRONTIER</h3><p style="color:var(--text-muted);font-size:.85rem;margin:.5rem 0 1rem">セール・構成カスタマイズ</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.frontier-direct.jp/direct/default.aspx" target="_blank" rel="noopener noreferrer">公式サイトへ ↗</a></div>
+                        <div class="recommend-card"><div><h3>ツクモ</h3><p style="color:var(--text-muted);font-size:.85rem;margin:.5rem 0 1rem">BTO PC・自作パーツ</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.tsukumo.co.jp/bto/" target="_blank" rel="noopener noreferrer">公式サイトへ ↗</a></div>
+                        <div class="recommend-card"><div><h3>パソコン工房</h3><p style="color:var(--text-muted);font-size:.85rem;margin:.5rem 0 1rem">LEVEL∞・PCパーツ</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.pc-koubou.jp/" target="_blank" rel="noopener noreferrer">公式サイトへ ↗</a></div>
+                        <div class="recommend-card"><div><h3>サイコム</h3><p style="color:var(--text-muted);font-size:.85rem;margin:.5rem 0 1rem">構成を細かく選びたい人向け</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.sycom.co.jp/" target="_blank" rel="noopener noreferrer">公式サイトへ ↗</a></div>
+                    </div>
                 </section>
 
                 <!-- 3列構成: 人気のおすすめプリセット -->
@@ -798,28 +815,28 @@
                 
                 <!-- パーツ価格速報（横長カードデザイン） -->
                 <div class="sidebar-widget">
-                    <h3 class="widget-title"><i class="fa-solid fa-chart-line"></i> パーツ価格動向</h3>
+                    <h3 class="widget-title"><i class="fa-solid fa-chart-line"></i> 価格検索ショートカット</h3>
                     <div class="horizontal-card-list">
                         <div class="horizontal-card">
                             <div class="horizontal-info">
                                 <div class="horizontal-meta"><span>GPU</span><span>値下がり傾向</span></div>
                                 <div class="horizontal-title">RTX 4060 系列</div>
                             </div>
-                            <div class="price-badge">最安 ¥43,800〜</div>
+                            <div class="price-badge"><a href="https://search.kakaku.com/GeForce%20RTX%205060/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
                         </div>
                         <div class="horizontal-card">
                             <div class="horizontal-info">
                                 <div class="horizontal-meta"><span>DDR5 RAM</span><span>安定</span></div>
                                 <div class="horizontal-title">32GB Kit (16GBx2)</div>
                             </div>
-                            <div class="price-badge">最安 ¥13,200〜</div>
+                            <div class="price-badge"><a href="https://search.kakaku.com/DDR5%2032GB/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
                         </div>
                         <div class="horizontal-card">
                             <div class="horizontal-info">
                                 <div class="horizontal-meta"><span>SSD</span><span>やや高騰</span></div>
                                 <div class="horizontal-title">1TB NVMe Gen4</div>
                             </div>
-                            <div class="price-badge">最安 ¥9,800〜</div>
+                            <div class="price-badge"><a href="https://search.kakaku.com/1TB%20NVMe%20SSD/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
                         </div>
                     </div>
                 </div>
@@ -903,66 +920,83 @@
 
             const parts={
                 cpu:[
-                    {n:'Ryzen 5 5600',p:14000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 7 5700X',p:22000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 7 5700X3D',p:32000,s:'AM4',r:'DDR4',t:105},
-                    {n:'Ryzen 5 7500F',p:24000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 7800X3D',p:60000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 7 9700X',p:50000,s:'AM5',r:'DDR5',t:65},
-                    {n:'Core i5-12400F',p:17000,s:'LGA1700',r:'DDR4',t:117},{n:'Core i5-14400F',p:23000,s:'LGA1700',r:'DDR5',t:148},{n:'Core Ultra 5 245K',p:38000,s:'LGA1851',r:'DDR5',t:159},{n:'Core Ultra 7 265K',p:65000,s:'LGA1851',r:'DDR5',t:250}
+                    {n:'Ryzen 5 5500',p:11000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 5 5600',p:14000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 7 5700X',p:22000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 7 5700X3D',p:32000,s:'AM4',r:'DDR4',t:105},
+                    {n:'Ryzen 5 7500F',p:24000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 5 7600',p:30000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 7700',p:38000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 7800X3D',p:60000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 7 9700X',p:50000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 9800X3D',p:75000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 9 9900X',p:65000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 9 9950X',p:90000,s:'AM5',r:'DDR5',t:170},
+                    {n:'Core i3-12100F',p:11000,s:'LGA1700',r:'DDR4',t:89},{n:'Core i5-12400F',p:17000,s:'LGA1700',r:'DDR4',t:117},{n:'Core i5-13400F',p:22000,s:'LGA1700',r:'DDR4',t:148},{n:'Core i5-14400F',p:23000,s:'LGA1700',r:'DDR5',t:148},{n:'Core i7-14700F',p:48000,s:'LGA1700',r:'DDR5',t:219},{n:'Core Ultra 5 245K',p:38000,s:'LGA1851',r:'DDR5',t:159},{n:'Core Ultra 7 265K',p:65000,s:'LGA1851',r:'DDR5',t:250},{n:'Core Ultra 9 285K',p:95000,s:'LGA1851',r:'DDR5',t:250}
                 ],
                 gpu:[
-                    {n:'GeForce RTX 3050 6GB',p:23000,w:70},{n:'Radeon RX 7600 8GB',p:38000,w:165},{n:'GeForce RTX 4060 8GB',p:40000,w:115},{n:'GeForce RTX 4060 Ti 8GB',p:55000,w:160},
-                    {n:'GeForce RTX 5060 8GB',p:55000,w:145},{n:'Radeon RX 9060 XT 16GB',p:60000,w:180},{n:'GeForce RTX 5070 12GB',p:90000,w:250},{n:'Radeon RX 9070 XT 16GB',p:105000,w:304},{n:'GeForce RTX 5070 Ti 16GB',p:130000,w:300},{n:'GeForce RTX 5080 16GB',p:190000,w:360}
+                    {n:'GeForce RTX 3050 6GB',p:23000,w:70},{n:'GeForce RTX 5050 8GB',p:35000,w:130},{n:'Radeon RX 6600 8GB',p:28000,w:132},{n:'Radeon RX 7600 8GB',p:38000,w:165},{n:'GeForce RTX 4060 8GB',p:40000,w:115},{n:'GeForce RTX 4060 Ti 8GB',p:55000,w:160},{n:'GeForce RTX 4060 Ti 16GB',p:65000,w:165},
+                    {n:'GeForce RTX 5060 8GB',p:55000,w:145},{n:'GeForce RTX 5060 Ti 8GB',p:65000,w:180},{n:'GeForce RTX 5060 Ti 16GB',p:78000,w:180},{n:'Radeon RX 9060 XT 8GB',p:50000,w:160},{n:'Radeon RX 9060 XT 16GB',p:60000,w:180},{n:'GeForce RTX 5070 12GB',p:90000,w:250},{n:'Radeon RX 9070 16GB',p:95000,w:220},{n:'Radeon RX 9070 XT 16GB',p:105000,w:304},{n:'GeForce RTX 5070 Ti 16GB',p:130000,w:300},{n:'GeForce RTX 5080 16GB',p:190000,w:360},{n:'GeForce RTX 5090 32GB',p:400000,w:575}
                 ],
                 board:[
-                    {n:'B550 mATX（AM4 / DDR4）',p:12000,s:'AM4',r:'DDR4',z:'mATX'},{n:'B550 ATX（AM4 / DDR4）',p:15000,s:'AM4',r:'DDR4',z:'ATX'},
-                    {n:'B650 mATX（AM5 / DDR5）',p:17000,s:'AM5',r:'DDR5',z:'mATX'},{n:'B650 ATX（AM5 / DDR5）',p:22000,s:'AM5',r:'DDR5',z:'ATX'},
-                    {n:'B760 DDR4 mATX（LGA1700）',p:14000,s:'LGA1700',r:'DDR4',z:'mATX'},{n:'B760 DDR5 ATX（LGA1700）',p:18000,s:'LGA1700',r:'DDR5',z:'ATX'},
-                    {n:'B860 mATX（LGA1851 / DDR5）',p:23000,s:'LGA1851',r:'DDR5',z:'mATX'},{n:'Z890 ATX（LGA1851 / DDR5）',p:35000,s:'LGA1851',r:'DDR5',z:'ATX'}
+                    {n:'A520 mATX（AM4 / DDR4）',p:9000,s:'AM4',r:'DDR4',z:'mATX'},{n:'B550 mATX（AM4 / DDR4）',p:12000,s:'AM4',r:'DDR4',z:'mATX'},{n:'B550 ATX（AM4 / DDR4）',p:15000,s:'AM4',r:'DDR4',z:'ATX'},
+                    {n:'A620 mATX（AM5 / DDR5）',p:13000,s:'AM5',r:'DDR5',z:'mATX'},{n:'B650 mATX（AM5 / DDR5）',p:17000,s:'AM5',r:'DDR5',z:'mATX'},{n:'B650 ATX（AM5 / DDR5）',p:22000,s:'AM5',r:'DDR5',z:'ATX'},{n:'B650E ATX（AM5 / DDR5）',p:28000,s:'AM5',r:'DDR5',z:'ATX'},{n:'X870 ATX（AM5 / DDR5）',p:40000,s:'AM5',r:'DDR5',z:'ATX'},
+                    {n:'H610 mATX（LGA1700 / DDR4）',p:10000,s:'LGA1700',r:'DDR4',z:'mATX'},{n:'B760 DDR4 mATX（LGA1700）',p:14000,s:'LGA1700',r:'DDR4',z:'mATX'},{n:'B760 DDR5 ATX（LGA1700）',p:18000,s:'LGA1700',r:'DDR5',z:'ATX'},{n:'Z790 ATX（LGA1700 / DDR5）',p:30000,s:'LGA1700',r:'DDR5',z:'ATX'},
+                    {n:'B860 mATX（LGA1851 / DDR5）',p:23000,s:'LGA1851',r:'DDR5',z:'mATX'},{n:'B860 ATX（LGA1851 / DDR5）',p:30000,s:'LGA1851',r:'DDR5',z:'ATX'},{n:'Z890 ATX（LGA1851 / DDR5）',p:35000,s:'LGA1851',r:'DDR5',z:'ATX'}
                 ],
-                ram4:[{n:'16GB（8GB×2）DDR4',p:5000,g:16},{n:'32GB（16GB×2）DDR4',p:8500,g:32},{n:'64GB（32GB×2）DDR4',p:17000,g:64}],
-                ram5:[{n:'16GB（8GB×2）DDR5',p:6500,g:16},{n:'32GB（16GB×2）DDR5',p:10000,g:32},{n:'32GB（16GB×2）DDR5 高速モデル',p:14000,g:32},{n:'64GB（32GB×2）DDR5',p:22000,g:64}],
-                ssd:[{n:'500GB NVMe SSD',p:5000,g:500},{n:'1TB NVMe Gen4 SSD',p:8500,g:1000},{n:'2TB NVMe Gen4 SSD',p:15000,g:2000},{n:'4TB NVMe SSD',p:32000,g:4000}],
-                psu:[{n:'650W 80 PLUS Bronze',p:8000,w:650},{n:'750W 80 PLUS Gold',p:12000,w:750},{n:'850W 80 PLUS Gold',p:16000,w:850},{n:'1000W 80 PLUS Gold',p:23000,w:1000}],
-                pcCase:[{n:'mATX対応・エアフロー重視ケース',p:7000,z:'mATX'},{n:'ATXミドルタワー・標準ケース',p:10000,z:'ATX'},{n:'ATX・メッシュフロントケース',p:14000,z:'ATX'},{n:'大型・高エアフローケース',p:20000,z:'ATX'}],
-                cooler:[{n:'付属/低価格空冷クーラー',p:0,t:65},{n:'タワー型空冷クーラー',p:4500,t:180},{n:'高性能デュアルタワー空冷',p:8500,t:250},{n:'240mm簡易水冷',p:11000,t:220},{n:'360mm簡易水冷',p:18000,t:300}]
+                ram4:[{n:'8GB（8GB×1）DDR4',p:3000,g:8},{n:'16GB（8GB×2）DDR4',p:5000,g:16},{n:'32GB（16GB×2）DDR4',p:8500,g:32},{n:'32GB（8GB×4）DDR4',p:9500,g:32},{n:'64GB（32GB×2）DDR4',p:17000,g:64},{n:'128GB（32GB×4）DDR4',p:35000,g:128}],
+                ram5:[{n:'16GB（8GB×2）DDR5',p:6500,g:16},{n:'32GB（16GB×2）DDR5',p:10000,g:32},{n:'32GB（16GB×2）DDR5 高速モデル',p:14000,g:32},{n:'48GB（24GB×2）DDR5',p:15000,g:48},{n:'64GB（32GB×2）DDR5',p:22000,g:64},{n:'96GB（48GB×2）DDR5',p:32000,g:96},{n:'128GB（32GB×4）DDR5',p:45000,g:128}],
+                ssd:[{n:'500GB NVMe Gen3 SSD',p:5000,g:500},{n:'1TB NVMe Gen3 SSD',p:7000,g:1000},{n:'1TB NVMe Gen4 SSD',p:8500,g:1000},{n:'2TB NVMe Gen4 SSD',p:15000,g:2000},{n:'2TB NVMe Gen5 SSD',p:30000,g:2000},{n:'4TB NVMe Gen4 SSD',p:32000,g:4000},{n:'4TB NVMe Gen5 SSD',p:55000,g:4000},{n:'8TB NVMe SSD',p:100000,g:8000}],
+                psu:[{n:'550W 80 PLUS Bronze',p:6500,w:550},{n:'650W 80 PLUS Bronze',p:8000,w:650},{n:'650W 80 PLUS Gold',p:10000,w:650},{n:'750W 80 PLUS Gold',p:12000,w:750},{n:'850W 80 PLUS Gold',p:16000,w:850},{n:'1000W 80 PLUS Gold',p:23000,w:1000},{n:'1200W 80 PLUS Platinum',p:35000,w:1200},{n:'1600W 80 PLUS Platinum',p:65000,w:1600}],
+                pcCase:[{n:'mATX対応・エアフロー重視ケース',p:7000,z:'mATX'},{n:'コンパクトmATXケース',p:9000,z:'mATX'},{n:'ATXミドルタワー・標準ケース',p:10000,z:'ATX'},{n:'ATX・メッシュフロントケース',p:14000,z:'ATX'},{n:'ピラーレスATXケース',p:18000,z:'ATX'},{n:'大型・高エアフローケース',p:20000,z:'ATX'},{n:'フルタワーケース',p:30000,z:'EATX'}],
+                cooler:[{n:'付属/低価格空冷クーラー',p:0,t:65},{n:'120mmタワー型空冷クーラー',p:3000,t:120},{n:'高性能タワー型空冷クーラー',p:4500,t:180},{n:'デュアルタワー空冷クーラー',p:8500,t:250},{n:'120mm簡易水冷',p:8000,t:150},{n:'240mm簡易水冷',p:11000,t:220},{n:'280mm簡易水冷',p:15000,t:260},{n:'360mm簡易水冷',p:18000,t:300},{n:'420mm簡易水冷',p:28000,t:350}],
+                hdd:[{n:'HDD 1TB 3.5インチ',p:7000,g:1000},{n:'HDD 2TB 3.5インチ',p:8500,g:2000},{n:'HDD 4TB 3.5インチ',p:12000,g:4000},{n:'HDD 6TB 3.5インチ',p:16000,g:6000},{n:'HDD 8TB 3.5インチ',p:20000,g:8000},{n:'追加HDDなし',p:0,g:0}],
+                fans:[{n:'追加ファンなし',p:0,count:0},{n:'120mmケースファン×1',p:1200,count:1},{n:'120mmケースファン×3',p:3000,count:3},{n:'140mmケースファン×2',p:3000,count:2},{n:'高性能PWMファン×3',p:6000,count:3},{n:'ARGBファン×3',p:6500,count:3}],
+                os:[{n:'OSなし（既存ライセンス利用等）',p:0},{n:'Windows 11 Home',p:18000},{n:'Windows 11 Pro',p:26000}]
             };
             const el=id=>document.getElementById(id), yen=n=>'約 '+n.toLocaleString('ja-JP')+' 円';
-            const ids=['cpu','gpu','board','ram','ssd','psu','case','cooler'];
-            const fill=(node,arr,label,selected=0)=>{node.replaceChildren();arr.forEach((x,i)=>{const o=document.createElement('option');o.value=i;o.textContent=label(x);if(i===selected)o.selected=true;node.append(o);});};
             const listForRam=cpu=>cpu.r==='DDR4'?parts.ram4:parts.ram5;
-            const selected=(id,arr)=>arr[Number(el(id).value)||0];
-            fill(el('part-cpu'),parts.cpu,x=>x.n+' — '+yen(x.p),3);
-            fill(el('part-gpu'),parts.gpu,x=>x.n+' — '+yen(x.p),4);
-            fill(el('part-ssd'),parts.ssd,x=>x.n+' — '+yen(x.p),1);
-            fill(el('part-psu'),parts.psu,x=>x.n+' — '+yen(x.p),1);
-            fill(el('part-case'),parts.pcCase,x=>x.n+' — '+yen(x.p),1);
-            fill(el('part-cooler'),parts.cooler,x=>x.n+' — '+yen(x.p),1);
+            const selected=(id,arr)=>arr[Number(el('part-'+id).value)||0];
+            const fill=(node,arr,label,selectedIndex=0)=>{node.replaceChildren();arr.forEach((x,i)=>{const o=document.createElement('option');o.value=i;o.textContent=label(x);if(i===selectedIndex)o.selected=true;node.append(o);});};
+            const formatOption=x=>x.n+' — '+yen(x.p);
+            const addPriceSearch=id=>{
+                const field=el('part-'+id).closest('.builder-field');
+                let link=field.querySelector('.price-search-link');
+                if(!link){link=document.createElement('a');link.className='price-search-link';link.target='_blank';link.rel='noopener noreferrer';link.textContent='価格を調べる ↗';link.style.cssText='font-size:.78rem;color:var(--accent-cyan);text-decoration:underline;align-self:flex-start';field.append(link);}
+                const item=selected(id, id==='cpu'?parts.cpu:id==='gpu'?parts.gpu:id==='board'?parts.board:id==='ram'?listForRam(selected('cpu',parts.cpu)):id==='ssd'?parts.ssd:id==='psu'?parts.psu:id==='case'?parts.pcCase:id==='cooler'?parts.cooler:id==='hdd'?parts.hdd:id==='fans'?parts.fans:parts.os);
+                link.href='https://search.kakaku.com/'+encodeURIComponent(item.n)+'/';
+                link.setAttribute('aria-label',item.n+'の価格を検索');
+            };
+            fill(el('part-cpu'),parts.cpu,formatOption,3);
+            fill(el('part-gpu'),parts.gpu,formatOption,7);
+            fill(el('part-ssd'),parts.ssd,formatOption,2);
+            fill(el('part-psu'),parts.psu,formatOption,3);
+            fill(el('part-case'),parts.pcCase,formatOption,2);
+            fill(el('part-cooler'),parts.cooler,formatOption,2);
+            fill(el('part-hdd'),parts.hdd,formatOption,5);
+            fill(el('part-fans'),parts.fans,formatOption,0);
+            fill(el('part-os'),parts.os,formatOption,1);
             function refreshParts(){
-                const c=selected('part-cpu',parts.cpu), oldBoard=el('part-board').selectedOptions[0]?.textContent||'', oldRam=el('part-ram').selectedOptions[0]?.textContent||'';
+                const c=selected('cpu',parts.cpu), oldBoard=el('part-board').selectedOptions[0]?.textContent||'', oldRam=el('part-ram').selectedOptions[0]?.textContent||'';
                 const boards=parts.board.filter(x=>x.s===c.s&&x.r===c.r);
-                fill(el('part-board'),boards,x=>x.n+' — '+yen(x.p),Math.max(0,boards.findIndex(x=>x.n===oldBoard.split(' — ')[0])));
+                fill(el('part-board'),boards,formatOption,Math.max(0,boards.findIndex(x=>x.n===oldBoard.split(' — ')[0])));
                 const rs=listForRam(c), ri=rs.findIndex(x=>oldRam.startsWith(x.n));
-                fill(el('part-ram'),rs,x=>x.n+' — '+yen(x.p),ri>=0?ri:1);
+                fill(el('part-ram'),rs,formatOption,ri>=0?ri:1);
                 update();
             }
             function update(){
-                const c=selected('part-cpu',parts.cpu),g=selected('part-gpu',parts.gpu),compatibleBoards=parts.board.filter(x=>x.s===c.s&&x.r===c.r),b=compatibleBoards[Number(el('part-board').value)||0],r=selected('part-ram',listForRam(c)),s=selected('part-ssd',parts.ssd),p=selected('part-psu',parts.psu),cs=selected('part-case',parts.pcCase),cl=selected('part-cooler',parts.cooler);
-                const total=c.p+g.p+b.p+r.p+s.p+p.p+cs.p+cl.p, watts=Math.ceil((c.t+g.w+150)*1.2/50)*50;
+                const c=selected('cpu',parts.cpu),g=selected('gpu',parts.gpu),compatibleBoards=parts.board.filter(x=>x.s===c.s&&x.r===c.r),b=compatibleBoards[Number(el('part-board').value)||0],r=selected('ram',listForRam(c)),ssd=selected('ssd',parts.ssd),p=selected('psu',parts.psu),cs=selected('case',parts.pcCase),cl=selected('cooler',parts.cooler),h=selected('hdd',parts.hdd),f=selected('fans',parts.fans),os=selected('os',parts.os);
+                const total=c.p+g.p+b.p+r.p+ssd.p+p.p+cs.p+cl.p+h.p+f.p+os.p, watts=Math.ceil((c.t+g.w+150)*1.2/50)*50;
                 el('builder-price').textContent=yen(total);
                 const notes=[];
                 notes.push(p.w<watts?'電源容量は '+watts+'W 以上が目安です。選択中の '+p.w+'W では余裕が足りない可能性があります。':'電源容量の目安は '+watts+'W 以上。選択中の '+p.w+'W は概算目安を満たしています。');
-                if(b.z==='ATX'&&cs.z!=='ATX')notes.push('ATXマザーボードにはATX対応ケースが必要です。');
+                if(b.z==='ATX'&&cs.z!=='ATX'&&cs.z!=='EATX')notes.push('ATXマザーボードにはATX対応ケースが必要です。');
                 if(cl.t<c.t)notes.push('CPUに対してクーラーの冷却性能が不足する可能性があります。');
                 if(r.g<32)notes.push('ゲームや配信なら32GBメモリも検討してください。');
-                if(s.g<1000)notes.push('ゲームを複数入れるなら1TB以上のSSDが便利です。');
-                notes.push('構成合計は '+yen(total)+'。物理寸法、補助電源端子、BIOS、クーラーのソケット対応も購入前に確認してください。');
+                if(ssd.g<1000)notes.push('ゲームを複数入れるなら1TB以上のSSDが便利です。');
+                if(g.w>=300&&p.w<850)notes.push('高消費電力GPUでは電源容量・補助電源コネクタをメーカー仕様で必ず確認してください。');
+                if(h.g>0)notes.push('HDDを搭載する場合は、ケース内の3.5インチベイ数とSATAケーブルも確認してください。');
+                notes.push('選択パーツ合計は '+yen(total)+'。組立費・送料・OS以外の追加費用は含みません。');
                 const ul=document.createElement('ul');notes.forEach(n=>{const li=document.createElement('li');li.textContent=n;ul.append(li);});el('builder-notes').replaceChildren(ul);
-                window.pcShindanCurrentBuild={cpu:c.n,gpu:g.n,motherboard:b.n,ram:r.n,ssd:s.n,psu:p.n,case:cs.n,cooler:cl.n,estimatedTotal:total};
+                window.pcShindanCurrentBuild={cpu:c.n,gpu:g.n,motherboard:b.n,ram:r.n,ssd:ssd.n,hdd:h.n,psu:p.n,case:cs.n,cooler:cl.n,caseFans:f.n,os:os.n,estimatedTotal:total};
+                ['cpu','gpu','board','ram','ssd','psu','case','cooler','hdd','fans','os'].forEach(addPriceSearch);
             }
             el('part-cpu').addEventListener('change',refreshParts);
-            ['gpu','board','ram','ssd','psu','case','cooler'].forEach(k=>el('part-'+k).addEventListener('change',update));
+            ['gpu','board','ram','ssd','psu','case','cooler','hdd','fans','os'].forEach(k=>el('part-'+k).addEventListener('change',update));
             refreshParts();
             el('builder-save').addEventListener('click',()=>{try{localStorage.setItem('pc-shindan-build',JSON.stringify(window.pcShindanCurrentBuild));el('builder-save').textContent='保存しました';}catch(e){el('builder-save').textContent='保存できませんでした';}});
             el('builder-copy').addEventListener('click',async()=>{const b=window.pcShindanCurrentBuild;const txt='PC診断室 構成メモ\n'+Object.entries(b).map(([k,v])=>k+': '+v).join('\n');try{await navigator.clipboard.writeText(txt);el('builder-copy').textContent='コピーしました';}catch(e){window.prompt('構成をコピーしてください',txt);}});
-            el('builder-reset').addEventListener('click',()=>{fill(el('part-cpu'),parts.cpu,x=>x.n+' — '+yen(x.p),3);fill(el('part-gpu'),parts.gpu,x=>x.n+' — '+yen(x.p),4);fill(el('part-ssd'),parts.ssd,x=>x.n+' — '+yen(x.p),1);fill(el('part-psu'),parts.psu,x=>x.n+' — '+yen(x.p),1);fill(el('part-case'),parts.pcCase,x=>x.n+' — '+yen(x.p),1);fill(el('part-cooler'),parts.cooler,x=>x.n+' — '+yen(x.p),1);refreshParts();el('builder-save').textContent='構成を保存';el('builder-copy').textContent='構成をコピー';});
+            el('builder-reset').addEventListener('click',()=>{fill(el('part-cpu'),parts.cpu,formatOption,3);fill(el('part-gpu'),parts.gpu,formatOption,7);fill(el('part-ssd'),parts.ssd,formatOption,2);fill(el('part-psu'),parts.psu,formatOption,3);fill(el('part-case'),parts.pcCase,formatOption,2);fill(el('part-cooler'),parts.cooler,formatOption,2);fill(el('part-hdd'),parts.hdd,formatOption,5);fill(el('part-fans'),parts.fans,formatOption,0);fill(el('part-os'),parts.os,formatOption,1);refreshParts();el('builder-save').textContent='構成を保存';el('builder-copy').textContent='構成をコピー';});
         });
 
         // 公開サイト上で news.json を読み込み、RSSから収集した記事を表示する
