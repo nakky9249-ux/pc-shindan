@@ -1,6 +1,463 @@
 {
-  "updated_at": null,
-  "articles": [],
-  "feed_count": 2,
+  "updated_at": "2026-10-10T05:39:53.935020+00:00",
+  "articles": [
+    {
+      "title": "【本日みつけたお買い得品】8万円引き！31.5型や26.5型の4KゲーミングモニターがAmazonで特価",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147337.html",
+      "summary": "Amazonで、ベンキューのゲーミングモニターがセール価格で販売されている。31.5型4Kの「MOBIUZ EX321UX」は、直近価格から8万1,109円引きの15万9,800円で販売中だ。",
+      "source": "PC Watch",
+      "date": "2026-10-10T05:27:13+00:00"
+    },
+    {
+      "title": "Switch2の試遊台から模造刀の店まで。物販ブースが目立つBGS会場フォトレポート［BGS2026］",
+      "url": "https://www.4gamer.net/games/991/G999110/20261010008/",
+      "summary": "2026年10月9日から12日まで開催されているゲームイベント「BrasilGameShow2026」では，メーカーの試遊ブースと並んで，フィギュアや模造刀，中古のレトロゲームを売る店がひしめき，アーケード機と体感型シミュレータの区画も広がる。初日の会場を写真で紹介しよう。",
+      "source": "4Gamer",
+      "date": "2026-10-10T04:10:54+00:00"
+    },
+    {
+      "title": "【本日みつけたお買い得品】AmazonでRTX Spark搭載MSIノートが予約開始。109万9,800円から",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147329.html",
+      "summary": "Amazonで、MSIのRTX Spark搭載ノートPC「Prestige N16 Flip AI+ C1XM」の予約販売が開始されている。価格は109万9,800円からで、発売予定日は10月31日。",
+      "source": "PC Watch",
+      "date": "2026-10-10T03:47:13+00:00"
+    },
+    {
+      "title": "「Brasil Game Show 2026」開幕。オープニングイベントでセガが「クレイジータクシー：ワールドツアー」新マップ「ブラジル」を発表［BGS2026］",
+      "url": "https://www.4gamer.net/games/991/G999110/20261010006/",
+      "summary": "2026年10月9日，ブラジル・サンパウロで「BrasilGameShow2026」が開幕した。初日の開場前には，出展各社が新作や新製品を紹介する「BGSConference」が行われ，セガは「クレイジータクシー：ワールドツアー」のストーリーモードに「ブラジル」が登場することを，世界初公開の映像で明かした。",
+      "source": "4Gamer",
+      "date": "2026-10-10T03:02:19+00:00"
+    },
+    {
+      "title": "第9世代Core i5やDVDマルチドライブ搭載のDELL製デスクトップPCが26,400円、Qualitの中古Cランク品セール",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2146780.html",
+      "summary": "Core i5-9500(6コア/6スレッド)を搭載したDELL製デスクトップPC「Optiplex 3070 3000SFF」の中古品が、横河レンタ・リースが運営する通販サイト「Qualit」で特価販売中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-10T03:00:00+00:00"
+    },
+    {
+      "title": "たった3つのダイスが数千万のパワーに化ける。「DiceVaders」は，ボドゲ的なエンジンビルドをデジタルで極めた“ダイスローグライク”［プレイレポ］",
+      "url": "https://www.4gamer.net/games/985/G098513/20261009024/",
+      "summary": "Pengonautsが手掛ける「DiceVaders」は，「StarVaders」と世界観を共有するローグライクダイスゲームだ。3つのダイスを振り，効果を連鎖させて高スコアを目指す。ボードゲーム的なエンジン構築の面白さをデジタルで味わえる本作の魅力を紹介しよう。",
+      "source": "4Gamer",
+      "date": "2026-10-10T03:00:00+00:00"
+    },
+    {
+      "title": "「iPhone 17e」が114,800円、「Apple Watch Ultra 2」の中古品が64,800円など！秋葉原で期間限定セール",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147307.html",
+      "summary": "じゃんぱら秋葉原5号店など、じゃんぱら各店でオータムセールが実施中です。セール期間は18日（日）まで。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-10T02:30:00+00:00"
+    },
+    {
+      "title": "M3チップ搭載「iPad Air 13インチ」が69,980円など！展示機モデルのセール",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147305.html",
+      "summary": "Apple製タブレット「iPad」シリーズの訳あり品セールがじゃんぱら秋葉原5号店やじゃんぱらD-Style秋葉原店など、じゃんぱらの一部店舗で実施中です。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-10T02:05:00+00:00"
+    },
+    {
+      "title": "「iPhone 15」が69,980円、「iPhone 16 Pro Max」が149,980円など！訳あり展示品セール",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147308.html",
+      "summary": "Apple製スマートフォン「iPhone」シリーズの展示品セールが、じゃんぱら秋葉原5号店やじゃんぱらD-Style秋葉原店など、じゃんぱらの一部店舗で実施中です。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-10T01:30:00+00:00"
+    },
+    {
+      "title": "剣術経験者のこだわりが宿る「QUEEN'S GUARD」プレイレポート。護衛として王女を守り抜くアクションアドベンチャー［OIGS2026］",
+      "url": "https://www.4gamer.net/games/049/G104928/20261009060/",
+      "summary": "10月3日と4日に開催された「OSAKAINDIEGAMESSUMMIT2026」にて，MIBUKISTUDIOのアクションADV「QUEEN'SGUARD」のデモ版が出展されていた。剣術経験者のこだわりが宿るリアルな攻防の手触りと，2027年発売予定の本作について，開発者のコメントを交えて紹介しよう。",
+      "source": "4Gamer",
+      "date": "2026-10-10T01:30:00+00:00"
+    },
+    {
+      "title": "玄関鍵や家電をオートメーション化、進化を遂げるスマートホーム製品 スマートホームの基本機能23製品をピックアップ text by 石川 ひさよし",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147306.html",
+      "summary": "自宅をスマートホーム化しませんか? たとえば、朝になるとスマートカーテンが自動的に開き、仕事のために自宅を出ると、一定の距離でスマートロックが玄関の鍵を施錠し、同時にスマートリモコンが照明や空調をOFFにする、といった具合です。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-10T01:00:00+00:00"
+    },
+    {
+      "title": "「リリア・ゲームミュージック・セレクション vol.3 伊藤賢治 with 成田勤」のチケットが本日発売。2027年3月13日に川口で開催",
+      "url": "https://www.4gamer.net/games/810/G081093/20261007048/",
+      "summary": "川口総合文化センター・リリアで2027年3月13日に開催されるコンサート，「リリア・ゲームミュージック・セレクションvol.3伊藤賢治with成田勤」のチケット一般発売が，本日（10月10日）10：00にスタートした。料金は全席指定8000円（税込）だ。",
+      "source": "4Gamer",
+      "date": "2026-10-10T01:00:00+00:00"
+    },
+    {
+      "title": "マウス操作で閃光のように駆け抜け敵を両断！ HAL大阪の学生チームが制作する超高速アクション「▽△Slash」プレイレポート［OIGS2026］",
+      "url": "https://www.4gamer.net/games/048/G104870/20261008026/",
+      "summary": "10月3日と4日に開催された「OSAKAINDIEGAMESSUMMIT2026」にて，専門学校HAL大阪の学生らが制作するPC向けアクションゲーム「▽△Slash（トライスラッシュ）」のデモ版が出展されていた。半妖半人の少女が妖怪たちを圧倒的暴力で斬り伏せる，極上の疾走感が味わえるタイトルだ。",
+      "source": "4Gamer",
+      "date": "2026-10-10T00:30:00+00:00"
+    },
+    {
+      "title": "Core i5-1235Uや16GBメモリ搭載の13.3型「VAIO」が45,000円、中古品がML COMPUTERSでセール",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2147239.html",
+      "summary": "10コア(Pコア2、Eコア8)/12スレッドのCore i5-1235Uを搭載した13.3インチノートPC「VAIO Pro PK（VJPK22）」の中古品が、ML COMPUTERSの通販サイトで販売中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-10T00:00:00+00:00"
+    },
+    {
+      "title": "ろうそくの火で暗闇を進む恐怖と，じわじわ忍び寄る精神的不安。クリックで紡ぐサイコホラーADV「Kindling Hour」試遊レポート［OIGS2026］",
+      "url": "https://www.4gamer.net/games/049/G104923/20261009056/",
+      "summary": "10月3日・4日に開催された「OSAKAINDIEGAMESSUMMIT2026」にて，ゲームサウンドデザイナー・くわぽん氏のサイコホラーアドベンチャー「KindlingHour」のデモ版が出展された。暗闇を進むたびに奇妙な事象に遭遇する異色作の手触りと，開発者のコメントをお届けしよう。",
+      "source": "4Gamer",
+      "date": "2026-10-10T00:00:00+00:00"
+    },
+    {
+      "title": "BiwinのM.2 SSD「Black Opal NV3500」が店頭入荷、512GBと1TBの2モデル",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147211.html",
+      "summary": "BiwinのPCIe 3.0 x4接続M.2 SSD「Black Opal NV3500」シリーズが、一部ショップに入荷。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T23:30:00+00:00"
+    },
+    {
+      "title": "BiwinのPCIe 4.0 x4対応SSD「M350」が店頭入荷、500GB/1TB/2TBの3モデル",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147216.html",
+      "summary": "BiwinのM.2 SSD「M350」シリーズが、一部ショップに入荷。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T23:05:00+00:00"
+    },
+    {
+      "title": "バッテリを外したら、代わりにファンが付いた。GPD WIN Max 3の“着脱式”はただのギミックじゃありません",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147299.html",
+      "summary": "ノートPCを選ぶとき、私たちはいつも何かを諦めてきました。軽さを取ればパワーが足りず、パワーを取れば重くてバッテリが持たない。どちらを優先するかは買う時に一度決めたら、そのマシンを手放すまで変えられない。それが当たり前だと思っていないでしょうか。",
+      "source": "PC Watch",
+      "date": "2026-10-09T23:00:00+00:00"
+    },
+    {
+      "title": "第8世代Core i7やDVD-ROMドライブ搭載の「dynabook B65/M」が26,980円、パソコン工房で中古品が販売中",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2147309.html",
+      "summary": "Core i7-8550U(4コア/8スレッド)を搭載した15.6型ノートPC「dynabook B65/M」の中古品が、パソコン工房の通販サイトで販売中。販売されているのは3か月保証が付いた中古品で、価格は26,980円となっています。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T22:00:00+00:00"
+    },
+    {
+      "title": "「ドルフロ2」2周年記念オーケストラコンサート「人形たちのホワイト・ノクターン」の開催が決定。描き下ろしイラストも一部公開",
+      "url": "https://www.4gamer.net/games/631/G063178/20261010004/",
+      "summary": "サンボーンジャパンは2026年10月9日，スマートフォン/PC向けRPG「ドールズフロントライン2：エクシリウム」のサービス開始2周年を記念したオーケストラコンサート「人形たちのホワイト・ノクターン」を，2027年1月15日に東京・ルネこだいら大ホールで開催すると発表した。",
+      "source": "4Gamer",
+      "date": "2026-10-09T22:00:00+00:00"
+    },
+    {
+      "title": "1,180円からの静音3ボタンマウス、エレコムが接続方式3種で展開",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147317.html",
+      "summary": "エレコムは、シンプルなシンメトリーデザインを採用したBluetooth/2.4GHz無線/有線の3種類から選べる静音設計の3ボタンマウスを10月上旬より順次発売する。",
+      "source": "PC Watch",
+      "date": "2026-10-09T21:33:00+00:00"
+    },
+    {
+      "title": "【今すぐ読みたい！人気記事】「Windows＋V」から始める快適クリップボード生活 - PC Watch",
+      "url": "https://pc.watch.impress.co.jp/docs/topic/readitnow/2147257.html",
+      "summary": "Windowsでは「Ctrl＋C」と「Ctrl＋V」のショートカットキーでクリップボードのコピー&ペースト機能を利用できることがよく知られている。Windows 10以降は、さらにWindowsキーを使った「Windows＋V」でクリップボードの履歴を表示する機能も加わった。",
+      "source": "PC Watch",
+      "date": "2026-10-09T21:16:00+00:00"
+    },
+    {
+      "title": "【今すぐ読みたい！人気記事】SSD換装+OS丸ごとデータ移行を無料ソフト「Clonezilla」でやろう - PC Watch",
+      "url": "https://pc.watch.impress.co.jp/docs/topic/readitnow/2147255.html",
+      "summary": "どんなに高級なノートPCであっても長く使い続けているとだんだんと不満を持ってくるようになる。CPUの性能低下はPCそのものを交換するしか手はないが、ストレージの残容量が減ってくると特にストレスが溜まる。それに伴い性能が低下するという問題が発生する場合がある。",
+      "source": "PC Watch",
+      "date": "2026-10-09T21:08:00+00:00"
+    },
+    {
+      "title": "5G対応の6.8インチスマホ「Redmi 12 5G」が19,800円！未使用品が大量入荷",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147294.html",
+      "summary": "Xiaomiの5G対応6.8インチAndroidスマートフォン「Redmi 12 5G」の未使用品が、イオシス各店で特価販売中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T21:05:00+00:00"
+    },
+    {
+      "title": "全面アルミで1.18kg、180度開く14型ノート「Swift Air 14」",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147313.html",
+      "summary": "日本エイサーは10月9日、ノートPC Swiftシリーズより、14型ノートPC「Swift Air 14(SFA14-I31)」を発売した。直販価格はCore 3 304搭載モデルが13万9,800円、Core 5 320搭載モデルが14万7,800円。",
+      "source": "PC Watch",
+      "date": "2026-10-09T21:01:00+00:00"
+    },
+    {
+      "title": "写真も動画も声もまとめて0.74Bで検索。ローカルRAG向け「EmbeddingGemma 2」",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147318.html",
+      "summary": "録りためた動画の中の“あの場面”を、声で吹き込んだメモから探し出す。こうした検索をインターネットなしで実行できるAIモデル「EmbeddingGemma 2」を、Googleが10月6日(現地時間)に無償公開した。写真や動画、音声、文字、コードを1つのモデルで検索でき、ローカルRAG(検索拡張生成)では、資料を探す処理を受け持つ。オープンウェイト(モデルの重み)はHugging FaceとKaggleからダウンロードでき、Apache 2.0ライセンスの下で商用利用も認められる。",
+      "source": "PC Watch",
+      "date": "2026-10-09T20:55:00+00:00"
+    },
+    {
+      "title": "1周年を迎えた「ソニックレーシング クロスワールド」はシーズン2へ。「ゴジラ」「エヴァ」コラボコースや新モードを先行体験",
+      "url": "https://www.4gamer.net/games/882/G088208/20261006034/",
+      "summary": "セガは発売中のレースゲーム「ソニックレーシングクロスワールド」について，11月4日に最新DLC「シーズンパス2」の配信を予定している。第1弾「ゴジラパック」，第2弾「エヴァンゲリオンパック」をひと足早く遊んできた。",
+      "source": "4Gamer",
+      "date": "2026-10-09T20:00:00+00:00"
+    },
+    {
+      "title": "「餓狼伝説 City of the Wolves」に鉄拳8から「麗奈」が参戦！ シーズン3の締めくくりとして12月に実装予定",
+      "url": "https://www.4gamer.net/games/649/G064915/20261010003/",
+      "summary": "SNKは本日（2026年10月10日），現在フランスのニースで開催されている「EVOFrance2026」にて，「餓狼伝説CityoftheWolves」の新DLCキャラクターとして，「鉄拳8」から参戦する「麗奈」を発表した。",
+      "source": "4Gamer",
+      "date": "2026-10-09T17:06:27+00:00"
+    },
+    {
+      "title": "「荒野行動」×「ドン・キホーテ」コラボが本日スタート。巨大ンペンとの記念撮影でアイテムが手に入るチャンス",
+      "url": "https://www.4gamer.net/games/402/G040245/20261010002/",
+      "summary": "NetEaseGamesは本日（2026年10月10日），バトルロイヤルゲーム「荒野行動」で，総合ディスカウントストア「ドン・キホーテ」とのコラボをスタートした。コラボレーション期間中は，マップ「嵐の半島」にドン・キホーテの公式キャラクター「ドンペン」が巨大な姿で登場する。",
+      "source": "4Gamer",
+      "date": "2026-10-09T15:57:13+00:00"
+    },
+    {
+      "title": "「ボードゲームアリーナ」，名作ボードゲームを2人対戦向けに再構築した「あやつり人形：デュエル」を正式実装",
+      "url": "https://www.4gamer.net/games/639/G063965/20261010001/",
+      "summary": "AsmodeeDigitalは2026年10月7日，同社が運営するオンラインボードゲームサイト「ボードゲームアリーナ」で，Z-ManGamesのボードゲーム「CitadelsDuel」（あやつり人形：デュエル）を正式実装した。「あやつり人形」を2人専用に再構築した作品で，役職の能力を使い，4×4区画の共通の街で建物の支配権を競う。",
+      "source": "4Gamer",
+      "date": "2026-10-09T15:30:02+00:00"
+    },
+    {
+      "title": "Zynq-7000 SoC搭載開発ボード「TUL PYNQ-Z2」がSPARKLEから",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147303.html",
+      "summary": "AMD Zynq-7000を搭載したSPARKLEの評価・開発用ボード「TUL PYNQ-Z2」が発売された。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T15:20:00+00:00"
+    },
+    {
+      "title": "Biwinのデスクトップ・ノートPC向けメモリが複数入荷、クーラー付きの「ORIGINCODE Vortex」など計7製品",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147298.html",
+      "summary": "Biwinのメモリが秋葉原の一部ショップに入荷。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T15:15:00+00:00"
+    },
+    {
+      "title": "be quiet!の大判マウスパッド「Mousepad XL」",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147121.html",
+      "summary": "be quiet!から大判ゲーミングマウスパッド「Mousepad XL」が発売された。Amazon.co.jp価格は5,980円。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T15:10:00+00:00"
+    },
+    {
+      "title": "高輝度IPSパネル搭載の簡易水冷CPUクーラー「LIGHT LOOP IO LCD 360mm」がbe quiet!から",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147131.html",
+      "summary": "2.1インチIPS液晶や360mmラジエーターを備えた簡易水冷CPUクーラー「LIGHT LOOP IO LCD 360mm」がbe quiet!から発売された。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T15:05:00+00:00"
+    },
+    {
+      "title": "Core Ultra 7 258V搭載になった10.95インチ3in1ポータブルゲーミングPC「OneXPlayer X2 Air」",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147197.html",
+      "summary": "One-Netbookの10.95インチモバイルゲーミングPC「OneXPlayer X2 Air」国内正規版が登場した。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-09T15:00:00+00:00"
+    },
+    {
+      "title": "高速版「Qwen-Image-2.1-Turbo」重み公開、画像生成8ステップで完了",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147316.html",
+      "summary": "画像の生成と編集を、わずか8ステップでこなすAIの高速版が無料でダウンロードできるようになった。AlibabaのAI開発チームQwenは10月9日(日本時間)、画像生成AI「Qwen-Image-2.1-Turbo」をオープンウェイト(モデルの重み)として公開した。配布先はHugging FaceとModelScopeだ。ただし、モデルを無償で利用できるのは研究・評価目的に限られ、商用利用には別途契約が必要。",
+      "source": "PC Watch",
+      "date": "2026-10-09T14:59:00+00:00"
+    },
+    {
+      "title": "ラグナロク後の世界で新たなパンテオンを築き上げろ！ 神々の子が戦う見下ろし型アクションRPG「Aftergods」が発表",
+      "url": "https://www.4gamer.net/games/049/G104924/20261009059/",
+      "summary": "Norsfellは本日（2026年10月9日），新作タイトル「Aftergods」を発表した。ラグナロクを生き延びた神々の子となり，信徒を集めて新たなパンテオンを築く見下ろし型サバイバルアクションRPGだ。嵐による採集や神殿の召喚など，神の力を使ったサバイバルを展開する。",
+      "source": "4Gamer",
+      "date": "2026-10-09T14:29:50+00:00"
+    },
+    {
+      "title": "「ゼンレスゾーンゼロ」，Ver.3.3を10月21日に配信決定。同時にSteam版もリリース予定。「崩壊：スターレイル」とのコラボ情報も明らかに",
+      "url": "https://www.4gamer.net/games/630/G063081/20261009057/",
+      "summary": "HoYoverseは本日（2026年10月9日），アクションRPG「ゼンレスゾーンゼロ」の予告番組を公開し，Ver.3.3「もう一度，空へと飛び立って」を10月21日に配信すると発表した。今回は，S級エージェント「フィオニー」と「セヴェリアン」が登場し，新たなメカ戦闘コンテンツも追加される。",
+      "source": "4Gamer",
+      "date": "2026-10-09T13:19:14+00:00"
+    },
+    {
+      "title": "1人の老人がミニバンで思い出の地を旅するナラティブADV「Forever Ago」，配信開始",
+      "url": "https://www.4gamer.net/games/993/G099381/20261009054/",
+      "summary": "AnnapurnaInteractiveは2026年10月8日，ThirdShiftが開発した新作タイトル「ForeverAgo」をリリースした。本作は，悲劇的な運命の転機を迎えたという1人の老人「アルフレッド」が，恋人「オードリー」との思い出の地を巡る旅に出るロードトリップアドベンチャーゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-09T12:45:45+00:00"
+    },
+    {
+      "title": "徒歩で十分な街を，車が必須の街に作り変えろ！ 住民を車依存にする“風刺的”経営シム「Car Park Capital」，アーリーアクセスを開始",
+      "url": "https://www.4gamer.net/games/049/G104922/20261009055/",
+      "summary": "MicroProseSoftwareは本日（2026年10月9日），HilkojjInteractiveが開発する新作PC用ソフト「CarParkCapital」のアーリーアクセスをSteamで開始した。住宅を駐車場に変え，宣伝で住民を車依存へ誘導して利益を上げる経営シムだ。",
+      "source": "4Gamer",
+      "date": "2026-10-09T12:37:50+00:00"
+    },
+    {
+      "title": "あなたは，死者と自由に文通できるシステムのテストユーザー。幽霊とコミュニケーションを取るADV「Posthumors」，早期アクセスをSteamで開始",
+      "url": "https://www.4gamer.net/games/986/G098698/20261009053/",
+      "summary": "アニサ喫茶は本日，PC用ソフト「Posthumors」の早期アクセスを開始した。本作は，幽霊と文通をして，死後の世界とコミュニケーションを取るアドベンチャーゲームだ。死者と自由に文通できるシステムのテストユーザーに選ばれたあなたは，地獄の留置施設に留置されている幽霊たちと文通を行う。",
+      "source": "4Gamer",
+      "date": "2026-10-09T12:07:10+00:00"
+    },
+    {
+      "title": "「信長の野望 覇道」，4周年記念公式オフ会の参加者募集をスタート。運営プロデューサーの黒田智広氏，公式生放送の出演者らが参加予定",
+      "url": "https://www.4gamer.net/games/666/G066636/20261009052/",
+      "summary": "コーエーテクモゲームスは本日（2026年10月9日），「信長の野望覇道」の4周年記念公式オフ会の参加者募集を開始した。12月6日に横浜の12月6日に横浜のKTビルで開催予定。運営プロデューサーや公式生放送の出演者との交流，クイズ大会などが用意される。招待人数は40人を予定しており，応募締め切りは10月18日23：59。",
+      "source": "4Gamer",
+      "date": "2026-10-09T11:50:58+00:00"
+    },
+    {
+      "title": "映画「ヘルレイザー」シリーズの正史を描くサバイバルホラー「Clive Barker's Hellraiser: Revival」配信開始",
+      "url": "https://www.4gamer.net/games/037/G103786/20261009051/",
+      "summary": "SaberInteractiveは2026年10月8日，新作タイトル「CliveBarker'sHellraiser:Revival」をリリースした。本作は，1987年公開のホラー映画「ヘルレイザー」を第1作とするシリーズの正史を描く，一人称視点のサバイバルホラーだ。",
+      "source": "4Gamer",
+      "date": "2026-10-09T11:45:20+00:00"
+    },
+    {
+      "title": "ドレスをまとったホロライブメンバー63人とパーティー！ 「hololive Grand Reception 〜感謝を込めた招待状〜」東京会場を覗いてみた",
+      "url": "https://www.4gamer.net/games/760/G076029/20261009049/",
+      "summary": "「ホロライブ」設立9周年記念イベント「hololiveGrandReception〜感謝を込めた招待状〜」が，2026年10月10日の東京を皮切りに，大阪，名古屋，福岡の計4会場で順次開催する。初日前日に報道関係者向け内覧会が行われたので，イベントの様子を写真中心でレポートしたい。",
+      "source": "4Gamer",
+      "date": "2026-10-09T11:33:37+00:00"
+    },
+    {
+      "title": "相次ぐサイバー攻撃被害。国家サイバー統括室が事業者に対策徹底を要請",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147200.html",
+      "summary": "大量の個人情報を扱う事業者のシステムへの不正アクセスにより、個人情報の漏洩事故が相次いでいる。これを受け、内閣官房国家サイバー統括室は10月9日、「不正アクセスによる漏えい等の事案を踏まえた対応について」を公表した。個人情報や機微な情報を扱う事業者に対し、対策の徹底を速やかに検討するよう求めている。",
+      "source": "PC Watch",
+      "date": "2026-10-09T11:10:57+00:00"
+    },
+    {
+      "title": "「プロセカ」，「ダーリン」をリズムゲーム楽曲に追加。「転生林檎」セカイver.のフルサイズ2DMVを公開",
+      "url": "https://www.4gamer.net/games/476/G047609/20261009046/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-09T11:06:41+00:00"
+    },
+    {
+      "title": "怪物と戦わず料理を振る舞うデッキ構築ADV「ハングリー・ホラーズ」，正式版1.0を10月13日に発売",
+      "url": "https://www.4gamer.net/games/976/G097651/20261005028/",
+      "summary": "ClumsyBearStudioは本日（2026年10月9日），Steamで早期アクセスを実施している「ハングリー・ホラーズ（HungryHorrors）」の正式版1.0を10月13日に発売すると発表した。価格は1700円（税込）。本作は，怪物に料理を振る舞い，プレイヤー自身が食べられてしまう前に満足してもらうデッキ構築アドベンチャーゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-09T11:00:00+00:00"
+    },
+    {
+      "title": "モンスターが徘徊する街に隠された秘密とは。メトロイドヴァニア風サバイバルホラー「Silver Pines」，配信開始",
+      "url": "https://www.4gamer.net/games/987/G098799/20261009042/",
+      "summary": "Team17は本日（2026年10月9日），WychElmが開発した新作タイトル「SilverPines」をリリースした。本作は，アメリカの小さな街を舞台に，私立探偵のレッド・ウォーカーが暗闇に隠された秘密を暴いていく，メトロイドヴァニア風のサバイバルホラーゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-09T10:58:34+00:00"
+    },
+    {
+      "title": "Windows App、リモートPC接続が正式提供に。職場アカウント不要",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147045.html",
+      "summary": "自宅や職場のPCに、クラウドPCと同じアプリからつなげるようになった。Microsoftは10月5日(米国時間)、Windows版「Windows App」でリモートPC接続機能の一般提供を開始したと発表した。Windows Appは、Microsoft Storeから無償で入手できる。",
+      "source": "PC Watch",
+      "date": "2026-10-09T10:53:42+00:00"
+    },
+    {
+      "title": "昼は学校，夜は悪魔狩り。「ユッピーサイコ」の開発元によるホラーRPG「Catechesis -カテケシス-」，10年以上の時を経て2027年夏発売へ",
+      "url": "https://www.4gamer.net/games/014/G101487/20261009044/",
+      "summary": "BaroqueDecayは，PC向けホラーRPG「Catechesis-カテケシス-」を2027年夏に発売すると発表した。2013年の初発表後に開発が中断され，10年以上の時を経て復活したタイトルだ。あわせて，現在配信中の体験版にもアップデートが実施されている。",
+      "source": "4Gamer",
+      "date": "2026-10-09T10:50:27+00:00"
+    },
+    {
+      "title": "「ソニック」シリーズの音楽ライブ「SONIC MUSIC EXPERIENCE」，12月4日に大阪公演を開催",
+      "url": "https://www.4gamer.net/games/882/G088214/20261009043/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-09T10:46:33+00:00"
+    },
+    {
+      "title": "豆知識に隠された嘘を見破るフルボイスADV「豆カスちゃん 〜豆知識とカスみたいな嘘をランダムに語る少女〜」，Steamストアページを公開",
+      "url": "https://www.4gamer.net/games/049/G104921/20261009040/",
+      "summary": "ゲーム制作サークルの夜光研は本日，PC用ソフト「豆カスちゃん〜豆知識とカスみたいな嘘をランダムに語る少女〜」のSteamストアページを公開した。本作は，次々と意外な豆知識を繰り出す謎の少女「豆カスちゃん」のカスみたいな嘘を見破るフルボイスADVだ。",
+      "source": "4Gamer",
+      "date": "2026-10-09T10:37:24+00:00"
+    },
+    {
+      "title": "「ツーポイントミュージアム」，遊園地がテーマのDLC「ユーエンチアム」を発売",
+      "url": "https://www.4gamer.net/games/828/G082821/20261009039/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-09T10:30:43+00:00"
+    },
+    {
+      "title": "「ステューピッド・ネバー・ダイズ」，開発陣がアートを解説する動画を公開",
+      "url": "https://www.4gamer.net/games/968/G096854/20261009038/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-09T10:21:19+00:00"
+    },
+    {
+      "title": "見下ろし型脱出系アクションRPG「VAULTBREAKERS」，体験版をSteamで本日配信。2人のキャラから1人を選び，序盤マップを探索",
+      "url": "https://www.4gamer.net/games/926/G092689/20261009035/",
+      "summary": "スクウェア・エニックスは本日，BetaDwarfが開発する脱出系アクションRPG「VAULTBREAKERS」の体験版をSteamで配信開始した。2人のキャラクターから1人を選び，ソロまたは協力プレイで序盤マップを探索し，遺物を持ち帰るゲームプレイを体験できる。",
+      "source": "4Gamer",
+      "date": "2026-10-09T10:19:37+00:00"
+    },
+    {
+      "title": "「maimai でらっくす」「CHUNITHM」「オンゲキ」の全国大会「KING of Performai The 8th」，オンライン予選のエントリー開始",
+      "url": "https://www.4gamer.net/games/043/G104364/20261009037/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-09T10:16:22+00:00"
+    },
+    {
+      "title": "【笠原一輝のユビキタス情報局】打倒MacBook Pro？Surface Laptop Ultraが目指すモノ作りしやすいマシン",
+      "url": "https://pc.watch.impress.co.jp/docs/column/ubiq/2147205.html",
+      "summary": "",
+      "source": "PC Watch",
+      "date": "2026-10-09T09:32:17+00:00"
+    },
+    {
+      "title": "カタログのバッテリ時間はなぜ実際と違う？JEITAが解説ガイド公開",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147237.html",
+      "summary": "カタログに載っているバッテリ動作時間と、実際に使ったときの持ち時間はなぜ違うのか――そんな疑問に業界団体が答えるコンテンツが登場した。電子情報技術産業協会(JEITA)のPC・タブレット事業委員会は10月9日、Webコンテンツ「JEITA バッテリ動作時間測定法ガイド」を公開した。ノートPCのバッテリ動作時間の測定法や数値の見方を解説するものだ。",
+      "source": "PC Watch",
+      "date": "2026-10-09T09:06:33+00:00"
+    },
+    {
+      "title": "ガチくんに! 第433回切り抜き「ガチくんにマーベル闘魂で対戦させてみた結果…」",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147241.html",
+      "summary": "※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchとYouTubeで配信しています。レギュラー出演者はぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードした切り抜きとアーカイブの動画を掲載しています。",
+      "source": "PC Watch",
+      "date": "2026-10-09T09:00:00+00:00"
+    },
+    {
+      "title": "Grok BotでXの投稿を検索/閲覧/監視できるように",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147147.html",
+      "summary": "SpaceXAIが提供するAIエージェント「Grok Bot」は10月8日、X上の投稿の検索や読み込み、監視に対応した。",
+      "source": "PC Watch",
+      "date": "2026-10-09T08:06:33+00:00"
+    },
+    {
+      "title": "【本日みつけたお買い得品】Amazonで2万円切り！レグザの200Hzゲーミングモニター",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147149.html",
+      "summary": "Amazonにおいて、レグザ(REGZA)ブランドの23.8型ゲーミングモニター「RM-G244RE」がタイムセール中。直近価格の2,640円引きとなる1万9,800円で購入可能だ。",
+      "source": "PC Watch",
+      "date": "2026-10-09T06:23:06+00:00"
+    },
+    {
+      "title": "無料版ChatGPTにもGPT-6導入！回答に操作できるUIを生成",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147113.html",
+      "summary": "ChatGPTは、単なるチャットではなくインタラクティブなものになる――OpenAIは10月7日(現地時間)、ChatGPTに最新モデル「GPT-6」を全プランで順次展開すると発表した。有料のPlus、Pro、Business、Enterpriseプランでは同日から、FreeプランとGoプランでも10月8日から提供が始まる。なお、アップデートが適用されるのはChatGPTのチャットだけで、WorkとCodexの基盤モデルに変更はない。Enterpriseプランでの利用可否は、管理者の設定によって異なる。",
+      "source": "PC Watch",
+      "date": "2026-10-09T05:44:53+00:00"
+    },
+    {
+      "title": "Qwen3.8-27Bを8GBに凝縮！メモリ16GBのノートで動く「Saluki 27B」",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147095.html",
+      "summary": "Opus 4.6 Maxに匹敵するとされる「Qwen3.8-27B」を、8GB未満に収めた量子化モデルが登場した。Underdogは10月8日(米国時間)、Alibabaの「Qwen3.8-27B」をベースに約2bitまで量子化したLLM「Underdog Saluki 27B 1.0」をオープンウェイト(モデルの重み)として公開した。Apache 2.0ライセンスを採用し、Hugging Faceからダウンロードできる。",
+      "source": "PC Watch",
+      "date": "2026-10-09T05:34:39+00:00"
+    },
+    {
+      "title": "Claudeにダッシュボードや説明用動画の作成機能。Designは無料でも利用可能に",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147110.html",
+      "summary": "データ分析用のダッシュボードや、プレゼン用のちょっとした説明動画も、Claudeに依頼するだけで作れるようになった。Anthropicは10月8日、Claudeの新機能として「Claude Dashboards」および「Claude Motion」を発表した。前者は有料プラン向けに、後者はTeamおよびEnterpriseプラン向けにそれぞれベータ版で提供している。",
+      "source": "PC Watch",
+      "date": "2026-10-09T05:28:52+00:00"
+    },
+    {
+      "title": "【本日みつけたお買い得品】老舗「澤井珈琲」のドリップパック型インスタントコーヒーが3,091円引き",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147058.html",
+      "summary": "Amazonにおいて、老舗コーヒー専門店「澤井珈琲」のドリップパック型インスタントコーヒー「澤井珈琲 ドリップコーヒー ドリップパック ルナブレンド 50袋(8g)」が直近価格から3,091円引きとなる3,086円で販売されている。1杯あたりの価格は約62円。",
+      "source": "PC Watch",
+      "date": "2026-10-09T03:02:44+00:00"
+    }
+  ],
+  "feed_count": 3,
+  "successful_feeds": 3,
   "errors": []
 }
