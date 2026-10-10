@@ -1109,11 +1109,13 @@
             const addPriceSearch=id=>{
                 const field=el('part-'+id).closest('.builder-field');
                 let link=field.querySelector('.price-search-link');
-                if(!link){link=document.createElement('a');link.className='price-search-link';link.target='_blank';link.rel='noopener noreferrer';link.textContent=(id==='ram'&&/DDR5/i.test(item.n)&&/32GB/i.test(item.n)?'DDR5 32GBメモリを検索 ↗':'価格.comで価格確認 ↗');link.style.cssText='font-size:.78rem;color:var(--accent-cyan);text-decoration:underline;align-self:flex-start';field.append(link);}
+                if(!link){link=document.createElement('a');link.className='price-search-link';link.target='_blank';link.rel='noopener noreferrer';link.textContent='価格.comで価格確認 ↗';link.style.cssText='font-size:.78rem;color:var(--accent-cyan);text-decoration:underline;align-self:flex-start';field.append(link);}
                 const item=selected(id, id==='cpu'?parts.cpu:id==='gpu'?parts.gpu:id==='board'?parts.board.filter(x=>x.s===selected('cpu',parts.cpu).s&&x.r===selected('cpu',parts.cpu).r):id==='ram'?listForRam(selected('cpu',parts.cpu)):id==='ssd'?parts.ssd:id==='psu'?parts.psu:id==='case'?parts.pcCase:id==='cooler'?parts.cooler:id==='hdd'?parts.hdd:id==='fans'?parts.fans:parts.os);
+                const label=id==='ram'?'メモリ':id==='gpu'?'GPU':id==='cpu'?'CPU':id==='board'?'マザーボード':id==='ssd'?'SSD':id==='psu'?'電源':id==='case'?'ケース':id==='cooler'?'CPUクーラー':id==='hdd'?'HDD':id==='fans'?'ケースファン':'OS';
                 link.href=priceSearchUrl(label,item.n);
-                link.setAttribute('aria-label',priceSearchQuery(id==='ram'?'メモリ':id,item.n)+'を価格.comで検索');
-                link.title=priceSearchQuery(id==='ram'?'メモリ':id,item.n);
+                link.textContent=(id==='ram'&&/DDR5/i.test(item.n)&&/32GB/i.test(item.n)?'DDR5 32GBメモリを検索 ↗':'価格.comで価格確認 ↗');
+                link.setAttribute('aria-label',priceSearchQuery(label,item.n)+'を価格.comで検索');
+                link.title=priceSearchQuery(label,item.n);
             };
             fill(el('part-cpu'),parts.cpu,formatOption,3);
             fill(el('part-gpu'),parts.gpu,formatOption,7);
