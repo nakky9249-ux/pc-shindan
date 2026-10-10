@@ -639,7 +639,29 @@
         #price-theme-panel > div:last-child { align-items: stretch !important; }
         #price-theme-panel a, #price-theme-panel button { width: 100%; box-sizing: border-box; text-align: center; }
     }
-    </style>
+    
+        /* 今のPCを診断：既存PCのアップグレード提案 */
+        .current-pc-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1.5rem}
+        .current-pc-lead{color:var(--text-muted);font-size:.9rem;margin:-.5rem 0 1.2rem}
+        .current-pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+        .current-pc-field{display:flex;flex-direction:column;gap:.4rem}
+        .current-pc-field label{font-size:.88rem;font-weight:700}
+        .current-pc-field select{width:100%;min-width:0;background:#0d1422;color:var(--text-main);border:1px solid var(--card-border);border-radius:9px;padding:.8rem;font:inherit}
+        .current-pc-submit{width:100%;margin-top:1.1rem;border:0;border-radius:10px;padding:.95rem;background:var(--gradient-accent);color:white;font:inherit;font-weight:800;cursor:pointer}
+        .current-pc-result{display:none;margin-top:1.2rem;padding-top:1.2rem;border-top:1px dashed var(--card-border)}
+        .current-pc-result.active{display:block}
+        .current-pc-result h3{font-size:1.1rem;margin-bottom:.6rem}
+        .current-pc-result p{font-size:.9rem;color:var(--text-muted);margin:.45rem 0}
+        .current-pc-priority{display:grid;gap:.7rem;margin-top:.8rem}
+        .current-pc-priority article{padding:.9rem 1rem;background:rgba(0,0,0,.18);border:1px solid var(--card-border);border-radius:10px}
+        .current-pc-priority strong{display:block;margin-bottom:.25rem}
+        .current-pc-priority span{display:block;color:var(--text-muted);font-size:.86rem}
+        .current-pc-links{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.6rem}
+        .current-pc-links a{font-size:.82rem;color:var(--text-main);text-decoration:underline;text-underline-offset:3px}
+        .current-pc-caveat{font-size:.76rem!important;margin-top:.9rem!important}
+        @media(max-width:600px){.current-pc-grid{grid-template-columns:1fr}}
+
+</style>
 </head>
 <body id="top">
     <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -707,6 +729,30 @@
             
             <!-- メインカラム: 診断フォーム & 結果 -->
             <div>
+
+                <!-- 現在使っているPCのアップグレード診断 -->
+                <section id="current-pc-diagnosis" class="current-pc-card" aria-labelledby="current-pc-heading">
+                    <h2 id="current-pc-heading" class="section-title"><i class="fa-solid fa-stethoscope"></i> 今のPCを診断・アップグレード提案</h2>
+                    <p class="current-pc-lead">今使っているPCの構成と困っていることを選ぶと、交換を優先したいパーツと確認ポイントを提案します。新しいPCを買う前に、今のPCを活かせるかチェック。</p>
+                    <div class="current-pc-grid">
+                        <div class="current-pc-field"><label for="current-cpu">現在のCPU</label><select id="current-cpu">
+                            <option value="entry">Core i3 / Ryzen 3・古めのCPU</option><option value="mid">Core i5 / Ryzen 5（一般的な世代）</option><option value="strong">Core i7 / Ryzen 7（旧世代を含む）</option><option value="modern">新しめの高性能CPU</option><option value="unknown" selected>わからない</option>
+                            <option value="r73700x">Ryzen 7 3700X</option><option value="r55600">Ryzen 5 5600</option><option value="r75700x">Ryzen 7 5700X</option><option value="r57500f">Ryzen 5 7500F</option><option value="r77800x3d">Ryzen 7 7800X3D</option>
+                        </select></div>
+                        <div class="current-pc-field"><label for="current-gpu">現在のグラフィックボード（GPU）</label><select id="current-gpu">
+                            <option value="entry">内蔵GPU / GTX 1650以下</option><option value="mid">RTX 2060 / RTX 3060 / RX 6600クラス</option><option value="strong">RTX 3070 / RTX 4060 Tiクラス</option><option value="modern">RTX 4070以上 / 新しめの上位GPU</option><option value="unknown" selected>わからない</option>
+                            <option value="rtx3070">GeForce RTX 3070</option><option value="rtx4060">GeForce RTX 4060</option><option value="rtx5060">GeForce RTX 5060</option><option value="rtx5070">GeForce RTX 5070</option><option value="rx9070xt">Radeon RX 9070 XT</option>
+                        </select></div>
+                        <div class="current-pc-field"><label for="current-ram">メモリ容量</label><select id="current-ram"><option value="8">8GB以下</option><option value="16">16GB</option><option value="32">32GB</option><option value="48" selected>48GB以上</option><option value="unknown">わからない</option></select></div>
+                        <div class="current-pc-field"><label for="current-storage">ストレージ</label><select id="current-storage"><option value="hdd">HDD中心</option><option value="ssd-small">SSD 500GB以下</option><option value="ssd-large" selected>SSD 1TB以上</option><option value="unknown">わからない</option></select></div>
+                        <div class="current-pc-field"><label for="current-usage">主な用途</label><select id="current-usage"><option value="fps" selected>ValorantなどFPS・高FPS</option><option value="heavy">重い3Dゲーム・高画質</option><option value="creator">配信・動画編集・AI</option><option value="daily">普段使い・勉強</option></select></div>
+                        <div class="current-pc-field"><label for="current-problem">いちばん困っていること</label><select id="current-problem"><option value="fps" selected>FPSが伸びない・カクつく</option><option value="load">ゲームの起動・読み込みが遅い</option><option value="memory">重い作業で固まる・メモリ不足</option><option value="quality">画質を上げると重い</option><option value="noise">熱・ファンの音・温度が気になる</option><option value="none">特に不満はない・全体を診断したい</option></select></div>
+                        <div class="current-pc-field"><label for="current-budget">アップグレード予算</label><select id="current-budget"><option value="1">1万円以内</option><option value="3">3万円以内</option><option value="6" selected>6万円以内</option><option value="10">10万円以内</option><option value="20">20万円以内</option><option value="any">予算より性能重視</option></select></div>
+                    </div>
+                    <button type="button" id="current-pc-submit" class="current-pc-submit">今のPCを診断する</button>
+                    <div id="current-pc-result" class="current-pc-result" aria-live="polite"></div>
+                </section>
+
                 <!-- PC診断カード -->
                 <section id="diagnosis" class="diagnosis-card">
                     <h2 class="section-title"><i class="fa-solid fa-sliders"></i> かんたんPC診断</h2>
@@ -1458,5 +1504,63 @@
             }
         });
     </script>
+
+    <script>
+    // 現在PCの診断は、入力された構成・困りごとから優先確認項目を提案する簡易ルール方式。
+    // 自動ベンチマークではないため、具体的な型番やゲーム内設定を確認してから購入する。
+    document.addEventListener('DOMContentLoaded', () => {
+        const byId = id => document.getElementById(id);
+        const formButton = byId('current-pc-submit');
+        const result = byId('current-pc-result');
+        if (!formButton || !result) return;
+        const cpuLevels = {entry:1,mid:2,strong:3,modern:4,unknown:2,r73700x:2,r55600:2,r75700x:3,r57500f:3,r77800x3d:4};
+        const gpuLevels = {entry:1,mid:2,strong:3,modern:4,unknown:2,rtx3070:3,rtx4060:3,rtx5060:3,rtx5070:4,rx9070xt:4};
+        const cpuNames = {entry:'エントリーCPU',mid:'ミドルクラスCPU',strong:'旧世代を含む高性能CPU',modern:'新しめの高性能CPU',unknown:'CPU（型番未確認）',r73700x:'Ryzen 7 3700X',r55600:'Ryzen 5 5600',r75700x:'Ryzen 7 5700X',r57500f:'Ryzen 5 7500F',r77800x3d:'Ryzen 7 7800X3D'};
+        const gpuNames = {entry:'エントリーGPU / 内蔵GPU',mid:'ミドルクラスGPU',strong:'RTX 3070 / RTX 4060 Tiクラス',modern:'上位GPU',unknown:'GPU（型番未確認）',rtx3070:'GeForce RTX 3070',rtx4060:'GeForce RTX 4060',rtx5060:'GeForce RTX 5060',rtx5070:'GeForce RTX 5070',rx9070xt:'Radeon RX 9070 XT'};
+        const searchLink = (query,label) => '<a target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q='+encodeURIComponent(query)+'">'+label+'の価格・仕様を検索 ↗</a>';
+        formButton.addEventListener('click', () => {
+            const cpu=byId('current-cpu').value, gpu=byId('current-gpu').value;
+            const ram=byId('current-ram').value, storage=byId('current-storage').value;
+            const usage=byId('current-usage').value, problem=byId('current-problem').value;
+            const budget=byId('current-budget').value;
+            const c=cpuLevels[cpu]||2, g=gpuLevels[gpu]||2;
+            const priorities=[];
+            const add=(rank,title,body,query)=>priorities.push({rank,title,body,query});
+            if(problem==='load'||storage==='hdd'||storage==='ssd-small') add(storage==='hdd'||storage==='ssd-small'?1:2,'SSDの状態・空き容量を確認','HDD中心ならSSD化の効果が出やすいです。SSD搭載済みなら空き容量・健康状態・ゲームのインストール先を確認。','NVMe SSD 1TB');
+            if(problem==='memory'||Number(ram)<=16) add(Number(ram)<=16?1:2,'メモリ容量と使用率を確認',Number(ram)<=8?'まずはメモリ増設を検討。対応規格・空きスロット・最大容量を確認してください。':Number(ram)===16?'ゲーム中に使用率が高いなら32GB化を検討。必ず対応規格を確認。':'容量だけで決めず、作業中のメモリ使用率を確認してください。','DDR4 32GB メモリ');
+            if(problem==='quality'||(usage==='heavy'&&g<=3)) add(1,'GPU（グラフィックボード）を優先候補に','高画質ゲームで重いならGPUが候補。ただし電源容量・補助電源・ケース寸法・ゲームごとのVRAM使用量を先に確認。', 'グラフィックボード ゲーミング');
+            if(problem==='fps'||(usage==='fps'&&c<=g)) add(1,'CPU・GPUのどちらが先に限界か確認','FPSが伸びない場合、CPU使用率・GPU使用率・ゲーム内設定・温度を同時に確認。CPUが限界ならCPU、GPU使用率が高止まりならGPUが候補です。', 'CPU ゲーミング 性能比較');
+            if(problem==='noise') add(1,'温度・冷却・ホコリを先に確認','いきなりパーツ交換せず、CPU/GPU温度、ファン回転、ホコリ、ケースの吸排気を確認。高温なら清掃や冷却改善が先になる場合があります。','PC ケースファン CPUクーラー');
+            if(problem==='none') add(1,'使用中の負荷を測定してから交換','不満がないなら交換は急がなくてOK。普段使うゲームでFPS・フレーム時間・CPU/GPU使用率・温度を記録してから判断。','PC モニタリング CPU GPU 使用率');
+            if(priorities.length===0) add(1,'ボトルネックを測定','構成だけでは交換箇所を断定できません。実際のゲーム中のCPU/GPU使用率・温度・メモリ使用率を確認しましょう。','PC ボトルネック 確認方法');
+            if(usage==='creator'&&Number(ram)<=32) add(2,'配信・編集ならメモリとCPUも確認','配信ソフトや編集ソフトを同時使用する場合、メモリ使用率とCPU負荷も測定。容量だけでなく作業内容に合わせて選びます。','DDR5 32GB メモリ');
+            const budgetText = budget==='any'?'予算より性能重視':Number(budget)+'万円以内';
+            const partsToConsider=[];
+            if(problem==='quality'||(usage==='heavy'&&g<=3)) partsToConsider.push('GPU');
+            if(problem==='fps') partsToConsider.push(c<=g?'CPU側の限界も確認':'GPU側の限界も確認');
+            if(problem==='load'||storage==='hdd'||storage==='ssd-small') partsToConsider.push('SSD');
+            if(problem==='memory'||Number(ram)<=16) partsToConsider.push('メモリ');
+            if(problem==='noise') partsToConsider.push('冷却・清掃');
+            const intro=document.createElement('p');
+            intro.textContent='入力された構成：CPU '+cpuNames[cpu]+' / GPU '+gpuNames[gpu]+' / メモリ '+(ram==='unknown'?'不明':ram+'GB')+' / ストレージ '+({hdd:'HDD中心','ssd-small':'SSD 500GB以下','ssd-large':'SSD 1TB以上',unknown:'不明'}[storage])+'。予算は'+budgetText+'です。';
+            const heading=document.createElement('h3');heading.textContent='診断結果：交換前に確認したい優先項目';
+            const list=document.createElement('div');list.className='current-pc-priority';
+            priorities.sort((a,b)=>a.rank-b.rank).forEach(item=>{
+                const card=document.createElement('article');
+                const strong=document.createElement('strong');strong.textContent=(item.rank===1?'優先候補':'次に確認')+'：'+item.title;
+                const body=document.createElement('span');body.textContent=item.body;
+                card.append(strong,body);
+                if(item.query){const links=document.createElement('div');links.className='current-pc-links';links.innerHTML=searchLink(item.query,item.query);card.append(links);}
+                list.append(card);
+            });
+            const note=document.createElement('p');note.className='current-pc-caveat';
+            note.textContent='これは入力内容に基づく一次診断で、実機ベンチマークや互換性を自動確認する機能ではありません。予算内で交換できるか、CPUソケット・マザーボード・電源・ケース寸法・BIOS対応を確認してから購入してください。'+(partsToConsider.length?' 今回の主な確認対象：'+[...new Set(partsToConsider)].join('、')+'。':'');
+            result.replaceChildren(heading,intro,list,note);
+            result.classList.add('active');
+            result.scrollIntoView({behavior:'smooth',block:'nearest'});
+        });
+    });
+    </script>
+
 </body>
 </html>
