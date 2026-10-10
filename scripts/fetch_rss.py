@@ -78,6 +78,55 @@ def read_feeds():
             print(f"WARN feeds.txt:{line_no}: invalid feed name or URL")
     return feeds
 
+def safe_image_url(value):
+    """Return a safe public image URL, or an empty string."""
+    value = (value or "").strip()
+    if value.startswith("//"):
+        value = "https:" + value
+    if not value.lower().startswith(("https://", "http://")):
+        return ""
+    return value[:2000]
+
+
+def child_image_url(node):
+    """Extract an image URL from common RSS/Atom media fields and HTML summaries."""
+    # Prefer explicit thumbnails and image enclosures/media content.
+    for child in node.iter():
+        if child is node:
+            continue
+        tag = local_name(child.tag)
+        url = child.attrib.get("url") or child.attrib.get("href") or ""
+        if not url:
+            continue
+        media_type = (child.attrib.get("type") or "").lower()
+        medium = (child.attrib.get("medium") or "").lower()
+        is_image = media_type.startswith("image/") or medium == "image"
+        if tag == "thumbnail":
+            result = safe_image_url(url)
+            if result:
+                return result
+        elif tag == "enclosure" and is_image:
+            result = safe_image_url(url)
+            if result:
+                return result
+        elif tag == "content" and is_image:
+            result = safe_image_url(url)
+            if result:
+                return result
+
+    # Some feeds embed the first article image in description/content HTML.
+    for child in node.iter():
+        if local_name(child.tag) not in {"description", "summary", "content", "encoded"}:
+            continue
+        html = "".join(child.itertext())
+        match = re.search(r"""<img\\b[^>]*?src\\s*=\\s*["']([^"']+)["']""", html, re.IGNORECASE)
+        if match:
+            result = safe_image_url(unescape(match.group(1)))
+            if result:
+                return result
+    return ""
+
+
 def parse_feed(name, url):
     request = urllib.request.Request(url, headers={
         "User-Agent": USER_AGENT,
@@ -109,15 +158,19 @@ def parse_feed(name, url):
                     link = child.attrib["href"].strip()
                     break
         summary = clean(child_text(node, {"description", "summary", "content", "encoded", "subtitle"}))
+        image = child_image_url(node)
         date = parse_date(child_text(node, {"pubdate", "published", "updated", "date", "issued", "modified", "created"}))
         if title and link.startswith(("https://", "http://")):
-            results.append({
+            article = {
                 "title": title[:300],
                 "url": link,
                 "summary": summary[:600],
                 "source": name[:100],
                 "date": date,
-            })
+            }
+            if image:
+                article["image"] = image
+            results.append(article)
     return results
 
 def main():
