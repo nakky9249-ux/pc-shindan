@@ -678,7 +678,7 @@
                     <button class="btn-submit" id="submit-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> この条件で最適構成を診断する</button>
 
                     <!-- 診断結果表示ボックス -->
-                    <div class="result-box" id="result-box">
+                    <div class="result-box" id="result-box" aria-live="polite" aria-atomic="true">
                         <div class="result-header">
                             <div>
                                 <span style="font-size: 0.8rem; color: var(--text-muted);">あなたにぴったりの構成</span>
@@ -1059,9 +1059,14 @@
                 });
             };
             renderRecommendations();
-            el('recommendation-filters')?.querySelectorAll('button[data-category]').forEach(button=>button.addEventListener('click',()=>{
-                el('recommendation-filters').querySelectorAll('button').forEach(b=>b.classList.remove('active'));button.classList.add('active');renderRecommendations(button.dataset.category);
-            }));
+            el('recommendation-filters')?.querySelectorAll('button[data-category]').forEach(button=>{
+                button.type='button';
+                button.setAttribute('aria-pressed',String(button.classList.contains('active')));
+                button.addEventListener('click',()=>{
+                    el('recommendation-filters').querySelectorAll('button[data-category]').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
+                    button.classList.add('active');button.setAttribute('aria-pressed','true');renderRecommendations(button.dataset.category);
+                });
+            });
             window.pcShindanCatalog={parts,listForRam};
             el('part-cpu').addEventListener('change',refreshParts);
             ['gpu','board','ram','ssd','psu','case','cooler','hdd','fans','os'].forEach(k=>el('part-'+k).addEventListener('change',update));
