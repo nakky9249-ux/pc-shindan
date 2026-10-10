@@ -544,6 +544,22 @@
         .builder-small{color:var(--text-muted);font-size:.75rem;margin-top:.8rem}
         @media(max-width:600px){.builder-grid{grid-template-columns:1fr}.builder-total{align-items:flex-start;flex-direction:column}.builder-total strong{font-size:1.4rem}}
 
+        /* PCラボの視覚ガイド（製品写真ではなく、サイト独自のイラスト） */
+        .hero-actions{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap;margin:1.2rem 0 .5rem}
+        .hero-action{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.1rem;border-radius:10px;font-weight:700;border:1px solid var(--card-border);background:var(--card-bg);transition:var(--transition)}
+        .hero-action.primary{background:var(--gradient-accent);border-color:transparent;color:#fff}
+        .hero-action:hover{transform:translateY(-2px);border-color:var(--accent-blue)}
+        .build-visual{height:118px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:12px;margin:-.15rem -.15rem 1rem;background:radial-gradient(circle at 50% 40%,rgba(59,130,246,.22),rgba(139,92,246,.08) 60%,rgba(11,15,25,.25));border:1px solid rgba(59,130,246,.16)}
+        .build-visual svg{width:100%;height:100%;max-width:260px}
+        .shop-card{position:relative;overflow:hidden}
+        .shop-visual{display:flex;align-items:center;gap:.8rem;min-height:72px;margin-bottom:.9rem}
+        .shop-mark{width:52px;height:52px;display:grid;place-items:center;flex:0 0 auto;border-radius:14px;background:linear-gradient(135deg,rgba(59,130,246,.22),rgba(139,92,246,.2));border:1px solid var(--card-border);font-size:1.45rem;color:var(--accent-cyan)}
+        .shop-status{font-size:.72rem;color:var(--text-muted);margin-top:.3rem}
+        .footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:.8rem 1.3rem;margin:1rem 0}
+        .footer-links a{color:var(--accent-cyan);text-decoration:underline;text-underline-offset:3px}
+        .ad-notice{padding:.85rem 1rem;border:1px solid var(--card-border);border-left:3px solid var(--accent-cyan);border-radius:10px;background:rgba(6,182,212,.06);font-size:.83rem;color:var(--text-muted);margin:1rem 0}
+        @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+        
         @media (max-width: 992px) {
             .main-grid {
                 grid-template-columns: 1fr;
@@ -603,7 +619,11 @@
     <section class="hero">
         <div class="container">
             <h1>初心者でも迷わない！<br>あなたに最適なPC構成が見つかる</h1>
-            <p>予算・目的・ゲーム・解像度を選ぶだけ。失敗しないBTO＆自作PC選びを強力にサポートします。</p>
+            <p>予算・目的・ゲーム・解像度を選ぶだけ。PC初心者でも構成の違いと予算感をつかめるようにサポートします。</p>
+            <div class="hero-actions">
+                <a class="hero-action primary" href="#diagnosis"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>無料でPC診断</a>
+                <a class="hero-action" href="#recommend"><i class="fa-solid fa-layer-group" aria-hidden="true"></i>おすすめ構成を見る</a>
+            </div>
 
             <!-- 使い方ガイド -->
             <div class="how-to-steps">
@@ -767,7 +787,8 @@
 
                 <section id="bto-shops" class="builder-card" style="margin-top:2rem">
                     <h2 class="section-title"><i class="fa-solid fa-store"></i> BTOショップ・購入先</h2>
-                    <p class="builder-intro">自作が不安なら完成品PCを比較。公式サイトで最新価格・在庫・保証内容を確認できます。</p>
+                    <p class="builder-intro">自作が不安なら完成品PCを比較。価格・在庫・保証内容は各公式サイトで確認してください。</p>
+                    <div class="ad-notice"><strong>リンクについて：</strong>現在掲載しているのは各メーカーの通常の公式サイトへのリンクで、アフィリエイト提携済みリンクではありません。提携が承認された場合は、広告リンクであることを分かるように表示します。</div>
                     <div class="cards-3col">
                         <div class="recommend-card"><div><h3>ドスパラ / GALLERIA</h3><p style="color:var(--text-muted);font-size:.85rem;margin:.5rem 0 1rem">ゲーミングPC・PCパーツ</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.dospara.co.jp/gamepc" target="_blank" rel="noopener noreferrer">公式サイトへ ↗</a></div>
                         <div class="recommend-card"><div><h3>マウスコンピューター</h3><p style="color:var(--text-muted);font-size:.85rem;margin:.5rem 0 1rem">G-TuneなどのゲーミングPC</p></div><a class="option-btn" style="display:block;text-align:center" href="https://www.mouse-jp.co.jp/store/r/ra1020000/" target="_blank" rel="noopener noreferrer">公式サイトへ ↗</a></div>
@@ -803,21 +824,21 @@
                     <div class="horizontal-card-list">
                         <div class="horizontal-card">
                             <div class="horizontal-info">
-                                <div class="horizontal-meta"><span>GPU</span><span>値下がり傾向</span></div>
-                                <div class="horizontal-title">RTX 4060 系列</div>
+                                <div class="horizontal-meta"><span>GPU</span><span>価格比較</span></div>
+                                <div class="horizontal-title">RTX 5060 系列</div>
                             </div>
                             <div class="price-badge"><a href="https://search.kakaku.com/GeForce%20RTX%205060/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
                         </div>
                         <div class="horizontal-card">
                             <div class="horizontal-info">
-                                <div class="horizontal-meta"><span>DDR5 RAM</span><span>安定</span></div>
+                                <div class="horizontal-meta"><span>DDR5 RAM</span><span>仕様を比較</span></div>
                                 <div class="horizontal-title">32GB Kit (16GBx2)</div>
                             </div>
                             <div class="price-badge"><a href="https://search.kakaku.com/DDR5%2032GB/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
                         </div>
                         <div class="horizontal-card">
                             <div class="horizontal-info">
-                                <div class="horizontal-meta"><span>SSD</span><span>やや高騰</span></div>
+                                <div class="horizontal-meta"><span>SSD</span><span>容量を比較</span></div>
                                 <div class="horizontal-title">1TB NVMe Gen4</div>
                             </div>
                             <div class="price-badge"><a href="https://search.kakaku.com/1TB%20NVMe%20SSD/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
@@ -852,14 +873,20 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="logo">
-                    <i class="fa-solid font-awesome-desktop"></i>
+                    <i class="fa-solid fa-desktop" aria-hidden="true"></i>
                     <span>PCラボ</span>
                 </div>
-                <p style="font-size: 0.85rem; color: var(--text-muted);">
-                    ※当サイトで紹介している価格・スペック情報は参考目安です。<br>
-                    ※掲載リンクの一部にはアフィリエイト広告が含まれる場合があります。
+                <p style="font-size: 0.85rem; color: var(--text-muted); max-width:650px;">
+                    ※掲載価格は参考目安です。購入前に販売店・メーカーの最新情報をご確認ください。<br>
+                    ※現在の購入先リンクは通常の公式サイトへのリンクです。広告提携後は対象リンクに広告表示を行います。
                 </p>
             </div>
+            <nav class="footer-links" aria-label="サイト情報">
+                <a href="./about.html">PCラボについて</a>
+                <a href="./privacy.html">プライバシーポリシー</a>
+                <a href="./affiliate.html">広告・アフィリエイトについて</a>
+                <a href="./contact.html">お問い合わせ</a>
+            </nav>
             <div class="footer-copy">
                 &copy; 2026 PCラボ All Rights Reserved.
             </div>
