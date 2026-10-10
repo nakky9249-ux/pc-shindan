@@ -26,6 +26,10 @@
 - Actionsタブの「Update PC news」から手動実行できます。
 - RSSの見出し・概要・元記事リンクを紹介し、配信元が公開している画像メタデータをサムネイルとして表示します。記事本文の全文転載はしません。各配信元の利用条件を守ってください。
 
+## 検索エンジン・エラーページ
+- `robots.txt` と `sitemap.xml` を設置し、公開ページを検索エンジンに案内します。
+- `404.html` はサイトのデザインに合わせた日本語のエラーページです。
+
 ## GitHub Pages
 リポジトリの Settings → Pages で Source を「Deploy from a branch」、Branch を `main`、フォルダを `/(root)` に設定してください。
 
