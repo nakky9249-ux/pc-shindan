@@ -567,8 +567,13 @@
         .hero-action{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.1rem;border-radius:10px;font-weight:700;border:1px solid var(--card-border);background:var(--card-bg);transition:var(--transition)}
         .hero-action.primary{background:var(--gradient-accent);border-color:transparent;color:#fff}
         .hero-action:hover{transform:translateY(-2px);border-color:var(--accent-blue)}
-        .build-visual{height:118px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:12px;margin:-.15rem -.15rem 1rem;background:radial-gradient(circle at 50% 40%,rgba(59,130,246,.22),rgba(139,92,246,.08) 60%,rgba(11,15,25,.25));border:1px solid rgba(59,130,246,.16)}
-        .build-visual svg{width:100%;height:100%;max-width:260px}
+        .build-visual{height:170px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:12px;margin:-.15rem -.15rem .8rem;background:#0d1422;border:1px solid var(--card-border);position:relative}
+        .build-visual img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+        .recommend-card:hover .build-visual img{transform:scale(1.035)}
+        .build-visual::after{content:"構成イメージ";position:absolute;right:.45rem;bottom:.45rem;padding:.18rem .45rem;border-radius:5px;background:rgba(0,0,0,.72);color:#e5e7eb;font-size:.68rem}
+        .recommend-buy-link{display:flex;align-items:center;justify-content:center;gap:.45rem;width:100%;margin-top:.55rem;padding:.75rem .8rem;border-radius:9px;background:#e5e7eb;color:#111827;font-size:.86rem;font-weight:800;text-align:center;transition:var(--transition)}
+        .recommend-buy-link:hover{background:#fff;transform:translateY(-1px)}
+        .recommend-buy-note{font-size:.72rem;color:var(--text-muted);margin-top:.45rem;line-height:1.5}
         .shop-card{position:relative;overflow:hidden}
         .shop-visual{display:flex;align-items:center;gap:.8rem;min-height:72px;margin-bottom:.9rem}
         .shop-mark{position:relative;width:52px;height:52px;display:grid;place-items:center;flex:0 0 auto;border-radius:14px;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(226,232,240,.96));border:1px solid var(--card-border);font-size:1.45rem;color:#2563eb;overflow:hidden}
@@ -1133,15 +1138,19 @@
                 setByName('cooler',parts.cooler,p.cooler);setByName('hdd',parts.hdd,p.hdd);setByName('fans',parts.fans,p.fans);setByName('os',parts.os,p.os);
                 update();if(options.scroll!==false)el('builder').scrollIntoView({behavior:'smooth',block:'start'});return true;
             };
-            // オリジナルのSVGイラスト。商品写真・メーカー公式ロゴではなく、構成の種類を示す装飾です。
-            const buildVisualSvg = (kind, index) => {
-                const palettes = [['#737b88','#d1d5db'],['#525866','#a3a3a3'],['#64748b','#e2e8f0'],['#4b5563','#9ca3af'],['#6b7280','#f3f4f6']];
-                const [a,b] = palettes[index % palettes.length];
-                const common = 'viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg"';
-                const grad = '<defs><linearGradient id="lab-gradient-'+index+'" x1="0" y1="0" x2="1" y2="1"><stop stop-color="'+a+'"/><stop offset="1" stop-color="'+b+'"/></linearGradient></defs>';
-                if (kind === 'creator') return '<svg '+common+' role="img" aria-label="制作向けPCのイメージイラスト">'+grad+'<rect x="65" y="15" width="130" height="78" rx="8" fill="#101827" stroke="url(#lab-gradient-'+index+')" stroke-width="3"/><rect x="74" y="24" width="112" height="60" rx="4" fill="url(#lab-gradient-'+index+')" opacity=".22"/><path d="M130 94v11m-28 0h56" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/><path d="M91 65l19-20 14 12 15-21 31 33H91z" fill="url(#lab-gradient-'+index+')"/><circle cx="160" cy="40" r="5" fill="'+b+'"/></svg>';
-                if (kind === 'budget') return '<svg '+common+' role="img" aria-label="コンパクトなPCのイメージイラスト">'+grad+'<rect x="91" y="9" width="78" height="99" rx="8" fill="#111827" stroke="url(#lab-gradient-'+index+')" stroke-width="3"/><rect x="100" y="18" width="60" height="69" rx="4" fill="url(#lab-gradient-'+index+')" opacity=".2"/><circle cx="130" cy="49" r="19" fill="none" stroke="url(#lab-gradient-'+index+')" stroke-width="5"/><circle cx="130" cy="49" r="7" fill="'+b+'"/><path d="M111 76h38" stroke="'+b+'" stroke-width="3" stroke-linecap="round"/><circle cx="130" cy="97" r="3" fill="'+b+'"/></svg>';
-                return '<svg '+common+' role="img" aria-label="ゲーミングPCのイメージイラスト">'+grad+'<rect x="51" y="15" width="158" height="88" rx="9" fill="#101827" stroke="url(#lab-gradient-'+index+')" stroke-width="3"/><rect x="61" y="24" width="138" height="70" rx="4" fill="url(#lab-gradient-'+index+')" opacity=".12"/><rect x="75" y="34" width="48" height="48" rx="5" fill="url(#lab-gradient-'+index+')"/><circle cx="99" cy="58" r="16" fill="#101827" stroke="'+b+'" stroke-width="3"/><circle cx="99" cy="58" r="6" fill="'+b+'"/><rect x="135" y="36" width="48" height="8" rx="3" fill="'+b+'"/><rect x="135" y="52" width="36" height="6" rx="3" fill="#64748b"/><rect x="135" y="66" width="42" height="6" rx="3" fill="#64748b"/><path d="M130 103v6m-24 0h48" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/></svg>';
+            // 構成カード用のPCイメージ写真。販売商品そのものではなく、構成の雰囲気を示す画像です。
+            const buildImageByCategory = {
+                budget: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80',
+                fps: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80',
+                wqhd: 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80',
+                creator: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=80'
+            };
+            const getBuildShopUrl = p => {
+                const gpu = String(p.gpu || '');
+                if (gpu.includes('RTX 5060')) return 'https://www.mouse-jp.co.jp/store/r/rs1011902/';
+                if (gpu.includes('RTX 5070') || gpu.includes('RTX 5080') || gpu.includes('RTX 5050')) return 'https://www.dospara.co.jp/gamepc';
+                if (gpu.includes('RX ')) return 'https://www.frontier-direct.jp/';
+                return 'https://www.dospara.co.jp/gamepc';
             };
             const renderRecommendations=(category='all', query='')=>{
                 const grid=el('recommendation-grid');grid.replaceChildren();
@@ -1158,7 +1167,8 @@
                 filteredBuilds.forEach(p=>{
                     const build=getBuildParts(p.id);if(!build)return;
                     const card=document.createElement('article');card.className='recommend-card';
-                    const visual=document.createElement('div');visual.className='build-visual';visual.innerHTML=buildVisualSvg(p.category,recommendedBuilds.findIndex(x=>x.id===p.id));
+                    const visual=document.createElement('div');visual.className='build-visual';
+                    const photo=document.createElement('img');photo.src=buildImageByCategory[p.category]||buildImageByCategory.budget;photo.alt=p.title+'のPC構成イメージ';photo.loading='lazy';photo.decoding='async';photo.referrerPolicy='no-referrer';photo.addEventListener('error',()=>{visual.replaceChildren();visual.style.background='linear-gradient(135deg,#202938,#4b5563)';visual.setAttribute('role','img');visual.setAttribute('aria-label',p.title+'のPC構成イメージ');},{once:true});visual.append(photo);
                     const badge=document.createElement('span');badge.className='badge';badge.textContent=p.tag;
                     const title=document.createElement('h3');title.textContent=p.title;
                     const price=document.createElement('div');price.className='price';price.textContent='約 '+build.total.toLocaleString('ja-JP')+' 円';
@@ -1169,7 +1179,9 @@
                     const summary=document.createElement('summary');summary.textContent='パーツ別価格を見る';summary.style.cursor='pointer';breakdown.append(summary);
                     const costList=document.createElement('ul');build.rows.forEach(([label,item])=>{const li=document.createElement('li');li.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+'円';costList.append(li);});breakdown.append(costList);
                     const button=document.createElement('button');button.type='button';button.className='option-btn';button.style.cssText='display:block;width:100%;text-align:center;margin-top:1rem';button.textContent='この構成をシミュレーターに反映';button.addEventListener('click',()=>{window.pcShindanApplyBuild(p.id);button.textContent='反映しました ✓';setTimeout(()=>button.textContent='この構成をシミュレーターに反映',1800);});
-                    card.append(visual,badge,title,price,desc,list,breakdown,button);grid.append(card);
+                    const buyLink=document.createElement('a');buyLink.className='recommend-buy-link';buyLink.href=getBuildShopUrl(p);buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.textContent='販売中のPCを探す ';const buyIcon=document.createElement('i');buyIcon.className='fa-solid fa-arrow-up-right-from-square';buyIcon.setAttribute('aria-hidden','true');buyLink.append(buyIcon);
+                    const buyNote=document.createElement('p');buyNote.className='recommend-buy-note';buyNote.textContent='販売ページには近いスペックの製品が表示されます。完全に同じ構成とは限らないため、CPU・GPU・メモリを確認してください。';
+                    card.append(visual,badge,title,price,desc,list,breakdown,button,buyLink,buyNote);grid.append(card);
                 });
             };
             let activeRecommendationCategory='all';
