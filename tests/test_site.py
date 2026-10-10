@@ -144,12 +144,12 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertTrue(not_found.is_file(), "Missing branded 404 page.")
         robots_text = robots.read_text(encoding="utf-8")
         self.assertIn("User-agent: *", robots_text)
-        self.assertIn("Sitemap: https://nakky9249-ux.github.io/pc-shindan/sitemap.xml", robots_text)
+        self.assertIn("Sitemap: https://pc-lab-tech.github.io/pc-shindan/sitemap.xml", robots_text)
         root = ET.parse(sitemap).getroot()
         namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
         urls = {node.text for node in root.findall("sm:url/sm:loc", namespace)}
         for page in ["", "about.html", "privacy.html", "affiliate.html", "contact.html"]:
-            expected = "https://nakky9249-ux.github.io/pc-shindan/" + page
+            expected = "https://pc-lab-tech.github.io/pc-shindan/" + page
             with self.subTest(page=page or "index.html"):
                 self.assertIn(expected, urls)
         error_page = not_found.read_text(encoding="utf-8")
