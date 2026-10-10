@@ -1,3 +1,5 @@
+import json
+import math
 import re
 import subprocess
 import tempfile
@@ -78,6 +80,52 @@ class SiteSmokeTests(unittest.TestCase):
         self.assertEqual(len(preset_ids), len(set(preset_ids)), "Recommendation preset IDs must be unique.")
         self.assertIn("window.pcShindanApplyBuild", self.html)
         self.assertIn("news.json", self.html)
+
+
+    def test_all_presets_have_compatible_catalog_parts(self):
+        parts_match = re.search(r"const parts\\s*=\\s*(\\{[\\s\\S]*?\\n\\s*\\});", self.html)
+        builds_match = re.search(r"const recommendedBuilds\\s*=\\s*(\\[[\\s\\S]*?\\n\\s*\\]);", self.html)
+        self.assertIsNotNone(parts_match, "Could not locate the part catalog.")
+        self.assertIsNotNone(builds_match, "Could not locate the recommendation catalog.")
+        js = (
+            "const parts=" + parts_match.group(1) + ";"
+            "const recommendedBuilds=" + builds_match.group(1) + ";"
+            "console.log(JSON.stringify({parts,recommendedBuilds}));"
+        )
+        result = subprocess.run(["node", "-e", js], capture_output=True, text=True, check=False)
+        self.assertEqual(0, result.returncode, f"Could not inspect catalogs: {result.stderr}")
+        data = json.loads(result.stdout)
+        parts = data["parts"]
+        fields = {
+            "cpu": parts["cpu"],
+            "gpu": parts["gpu"],
+            "board": parts["board"],
+            "ram": parts["ram4"] + parts["ram5"],
+            "ssd": parts["ssd"],
+            "psu": parts["psu"],
+            "pcCase": parts["pcCase"],
+            "cooler": parts["cooler"],
+            "hdd": parts["hdd"],
+            "fans": parts["fans"],
+            "os": parts["os"],
+        }
+        for build in data["recommendedBuilds"]:
+            with self.subTest(preset=build["id"]):
+                chosen = {}
+                for field, catalog in fields.items():
+                    item = next((item for item in catalog if item["n"] == build[field]), None)
+                    self.assertIsNotNone(item, f"{build['id']}: {field} '{build[field]}' is missing from catalog.")
+                    chosen[field] = item
+                cpu = chosen["cpu"]
+                board = chosen["board"]
+                self.assertEqual(cpu["s"], board["s"], f"{build['id']}: CPU and motherboard socket mismatch.")
+                self.assertEqual(cpu["r"], board["r"], f"{build['id']}: CPU and motherboard memory type mismatch.")
+                self.assertIn(cpu["r"], chosen["ram"]["n"], f"{build['id']}: RAM type mismatch.")
+                required_watts = math.ceil((cpu["t"] + chosen["gpu"]["w"] + 150) * 1.2 / 50) * 50
+                self.assertGreaterEqual(chosen["psu"]["w"], required_watts,
+                                        f"{build['id']}: PSU below the site's estimated {required_watts}W target.")
+                self.assertGreaterEqual(chosen["cooler"]["t"], cpu["t"],
+                                        f"{build['id']}: cooler rating is below the CPU TDP estimate.")
 
 
 if __name__ == "__main__":
