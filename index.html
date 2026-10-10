@@ -852,9 +852,9 @@
                     <p class="recommend-results" id="recommendation-results-status" role="status" aria-live="polite">11件の構成を表示しています。</p>
                     <div class="options-grid" id="recommendation-filters" style="margin:1rem 0">
                         <button class="option-btn active" data-category="all" type="button">すべて</button>
-                        <button class="option-btn" data-category="budget" type="button">低予算・コスパ</button>
-                        <button class="option-btn" data-category="fps" type="button">FPS・高FPS</button>
-                        <button class="option-btn" data-category="wqhd" type="button">WQHD・4K</button>
+                        <button class="option-btn" data-category="budget" type="button">低スペック</button>
+                        <button class="option-btn" data-category="fps" type="button">ハイスペック</button>
+                        <button class="option-btn" data-category="wqhd" type="button">ミドルスペック</button>
                     </div>
                     <div class="cards-3col" id="recommendation-grid" aria-live="polite"><p>おすすめ構成を読み込み中…</p></div>
                     <p class="builder-small">※掲載価格・仕様は各販売店の公式ページを確認した時点の情報です。価格・在庫・構成は変更される場合があるため、購入前にリンク先で再確認してください。FPSはゲームや設定で変わります。</p>
@@ -1196,12 +1196,14 @@
             // 検索結果や仕様違いの製品を「同スペック」と誤認させない。
             // 公式販売ページで商品名・価格・主要仕様を確認できた完成品PCのみ掲載する。
             // 価格・在庫は変動するため、購入前に販売ページで再確認する。
+            // 公式販売ページで仕様・価格を確認した完成品PC。価格は変動するため購入前に再確認。
             const availablePcListings = [
-                {id:'entry-5060',title:'GALLERIA XGR5M-R56-GD',brand:'ドスパラ',category:'budget',tag:'予算重視',price:214980,cpu:'Ryzen 5 7500F',gpu:'GeForce RTX 5060 8GB',ram:'16GB DDR5',ssd:'500GB Gen4 SSD',os:'Windows 11 Home',url:'https://www.dospara.co.jp/TC30/MC21974.html',note:'公式販売ページ掲載価格。メモリ・SSD容量は上位モデルより控えめ。'},
-                {id:'balanced-5070',title:'GALLERIA FPR7M-R57-W',brand:'ドスパラ',category:'wqhd',tag:'WQHD向け',price:324980,cpu:'Ryzen 7 9700X',gpu:'GeForce RTX 5070 12GB',ram:'16GB DDR5',ssd:'1TB Gen4 SSD',os:'Windows 11 Home',url:'https://www.dospara.co.jp/TC30/MC21004.html',note:'公式商品ページで基本構成を確認。メモリは16GBのため、必要に応じて増設も検討。'},
-                {id:'value-5070',title:'G TUNE DG-A5G70',brand:'マウスコンピューター',category:'fps',tag:'ゲーム向け',price:449900,cpu:'Ryzen 5 7500F',gpu:'GeForce RTX 5070 12GB',ram:'32GB DDR5',ssd:'1TB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga5g70b6bddw101dec/',note:'メーカー公式ページ掲載価格。モニター・マウス・キーボードは別売り。'},
-                {id:'wqhd-5070',title:'G TUNE DG-A7G70',brand:'マウスコンピューター',category:'wqhd',tag:'WQHD・大容量',price:509800,cpu:'Ryzen 7 9700X',gpu:'GeForce RTX 5070 12GB',ram:'32GB DDR5',ssd:'2TB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga7g70b6bfdw101dec/',note:'メーカー公式ページ掲載価格。モニター・マウス・キーボードは別売り。'},
-                {id:'highend-5080',title:'GALLERIA XDR7A-R58-GD',brand:'ドスパラ',category:'fps',tag:'ハイエンド',price:529980,cpu:'Ryzen 7 9800X3D',gpu:'GeForce RTX 5080 16GB',ram:'32GB DDR5',ssd:'1TB Gen4 SSD',os:'Windows 11 Home',url:'https://www.dospara.co.jp/TC30/MC19923.html',note:'公式販売ページ掲載価格。ハイエンドGPU搭載モデル。'}
+                {id:'low-1',title:'NEXTGEAR JG-A5G60',brand:'マウスコンピューター',category:'budget',tag:'低スペック・入門',price:189800,cpu:'Ryzen 5 4500',gpu:'GeForce RTX 5060 8GB',ram:'16GB DDR4（8GB×2）',ssd:'500GB NVMe SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/gngear-jga5g60b5badw102dec/',note:'価格は公式ページ掲載額。メモリとSSDは控えめな入門構成。Wi-Fiは標準非搭載。'},
+                {id:'low-2',title:'NEXTGEAR JG-A5G60（Ryzen 5 7500F）',brand:'マウスコンピューター',category:'budget',tag:'低スペック・入門',price:239800,cpu:'Ryzen 5 7500F',gpu:'GeForce RTX 5060 8GB',ram:'16GB DDR5（16GB×1）',ssd:'500GB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/gngear-jga5g60b6bddw103dec/',note:'公式ページ掲載の基本構成。メモリはシングルチャネルなので、購入時に増設・変更も検討。'},
+                {id:'mid-1',title:'G TUNE DG-A7G70',brand:'マウスコンピューター',category:'wqhd',tag:'ミドルスペック',price:549800,cpu:'Ryzen 7 9800X3D',gpu:'GeForce RTX 5070 12GB',ram:'32GB DDR5（16GB×2）',ssd:'2TB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga7g70b6bfdw102dec/',note:'高性能CPUと32GBメモリ、2TB SSDを搭載。モニター・マウス・キーボードは別売り。'},
+                {id:'mid-2',title:'G TUNE DG-A7G7T',brand:'マウスコンピューター',category:'wqhd',tag:'ミドル〜上位',price:529800,cpu:'Ryzen 7 5700X',gpu:'GeForce RTX 5070 Ti 16GB',ram:'32GB DDR5（16GB×2）',ssd:'2TB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga7g7tb5bbdw101dec/',note:'RTX 5070 Ti搭載モデル。CPU世代・メモリ規格など細部は購入ページで再確認。モニター等は別売り。'},
+                {id:'high-1',title:'G TUNE FZ-I7G80',brand:'マウスコンピューター',category:'fps',tag:'ハイスペック',price:699800,cpu:'Core Ultra 7 270K Plus',gpu:'GeForce RTX 5080 16GB',ram:'32GB DDR5（16GB×2）',ssd:'1TB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/ggtune-fzi7g80g8bgdw101dec/',note:'RTX 5080搭載のハイエンドモデル。モニター・マウス・キーボードは別売り。'},
+                {id:'high-2',title:'NEXTGEAR HD-A7A7X',brand:'マウスコンピューター',category:'fps',tag:'ハイスペック・Radeon',price:474800,cpu:'Ryzen 7 9800X3D',gpu:'Radeon RX 9070 XT 16GB',ram:'32GB DDR5（16GB×2）',ssd:'1TB NVMe Gen4 SSD',os:'Windows 11 Home',url:'https://www.mouse-jp.co.jp/store/g/gngear-hda7a7xb8afdw102dec/',note:'Radeonの高性能GPUを選びたい人向け。モニター・マウス・キーボードは別売り。'}
             ];
             const renderRecommendations=(category='all', query='')=>{
                 const grid=el('recommendation-grid');grid.replaceChildren();
@@ -1215,7 +1217,7 @@
                     const badge=document.createElement('span');badge.className='badge';badge.textContent=p.tag+' ・ '+p.brand;
                     const title=document.createElement('h3');title.textContent=p.title;
                     const price=document.createElement('div');price.className='price';price.textContent='約 '+p.price.toLocaleString('ja-JP')+' 円〜';
-                    const desc=document.createElement('p');desc.textContent='販売店の公式ページで確認できる完成品PC。下記は掲載時点の基本構成です。';desc.style.cssText='font-size:.84rem;color:var(--text-muted);margin:.5rem 0 .8rem';
+                    const desc=document.createElement('p');desc.textContent='販売店の公式ページで仕様を確認できる完成品PC。下記は掲載時点の基本構成です。';desc.style.cssText='font-size:.84rem;color:var(--text-muted);margin:.5rem 0 .8rem';
                     const list=document.createElement('ul');
                     [['CPU',p.cpu],['GPU',p.gpu],['メモリ',p.ram],['SSD',p.ssd],['OS',p.os]].forEach(([label,value])=>{const li=document.createElement('li');const strong=document.createElement('strong');strong.textContent=label+'：';li.append(strong,document.createTextNode(' '+value));list.append(li);});
                     const buyLink=document.createElement('a');buyLink.className='recommend-buy-link';buyLink.href=p.url;buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.textContent='公式販売ページで詳細・在庫を確認 ↗';
