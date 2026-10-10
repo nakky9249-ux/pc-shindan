@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ゲームのFPSが低い・急に落ちる・カクつくときの原因を切り分ける手順。CPU・GPU使用率、温度、メモリ、設定、ドライバーを順番に確認します。">
+<meta name="theme-color" content="#0b0f19">
+<link rel="canonical" href="https://pc-lab-tech.github.io/pc-shindan/fps-troubleshooting.html">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<title>ゲームのFPSが低い・不安定なときの対処法｜PCラボ</title>
+<link rel="stylesheet" href="./info.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"ゲームのFPSが低い・不安定なときの対処法","description":"ゲームのFPS低下やカクつきの原因を安全に切り分けるチェックガイド。","mainEntityOfPage":"https://pc-lab-tech.github.io/pc-shindan/fps-troubleshooting.html","author":{"@type":"Organization","name":"PCラボ"},"publisher":{"@type":"Organization","name":"PCラボ"},"inLanguage":"ja"}
+</script>
+<style>
+.article{max-width:860px}.article .lead{max-width:72ch}.article h2{margin:2rem 0 .7rem;font-size:1.4rem}.article h3{margin:1.2rem 0 .4rem;font-size:1.05rem}.article p,.article li{line-height:1.9}.article .toc{padding:1rem 1.3rem}.article .toc a{display:block;margin:.3rem 0}.article .callout{padding:1rem 1.1rem;border:1px solid var(--line);border-left:4px solid var(--cyan);border-radius:12px;background:rgba(34,211,238,.05);margin:1rem 0}.article .action{display:inline-block;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;text-decoration:none;font-weight:800;border-radius:10px;padding:.8rem 1rem;margin:.35rem .35rem .35rem 0}.article table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem}.article th,.article td{border:1px solid var(--line);padding:.7rem;text-align:left;vertical-align:top}.article th{background:rgba(255,255,255,.05)}.article .small{font-size:.82rem;color:var(--muted)}@media(max-width:600px){.article table{font-size:.8rem}.article th,.article td{padding:.5rem}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">⌘</span>PCラボ</a><a class="back-link" href="./index.html">← トップページへ戻る</a></div></header>
+<main class="page article">
+<div class="eyebrow">FPS TROUBLESHOOTING</div>
+<h1>ゲームのFPSが低い・不安定なときの確認手順</h1>
+<p class="lead">FPSが出ない、急に落ちる、カクつく。こうした症状はGPUだけが原因とは限りません。パーツを買い替える前に、再現条件をそろえて原因を切り分けることで、不要な出費を避けやすくなります。</p>
+<p class="small">最終確認日：2026年10月10日。以下はWindows PC向けの一般的な確認手順です。表示項目や設定名は、Windows・ゲーム・ドライバーのバージョンによって異なる場合があります。</p>
+<div class="callout"><strong>最初のルール：</strong>一度に設定を何個も変えないこと。変更前の状態をメモし、1項目ずつ比較すると原因を見つけやすくなります。<br><a class="action" href="./index.html#current-pc-diagnosis">今のPCを診断する</a><a class="action" href="./upgrade-guide.html">交換パーツの選び方</a></div>
+<nav class="panel toc" aria-label="記事内目次"><strong>この記事の内容</strong><a href="#symptom">1. 症状を分類する</a><a href="#measure">2. 使用率・温度を確認する</a><a href="#settings">3. ゲーム設定を確認する</a><a href="#background">4. バックグラウンド処理を確認する</a><a href="#hardware">5. パーツ交換を考える前に</a><a href="#faq">よくある質問</a></nav>
+<section id="symptom"><h2>1. 症状を分類する</h2><table><thead><tr><th>症状</th><th>確認したいこと</th></tr></thead><tbody><tr><td>いつもFPSが低い</td><td>解像度、画質、ゲーム要件、CPU/GPUの性能と使用率</td></tr><tr><td>試合中だけ急に落ちる</td><td>特定の場面での負荷、温度、バックグラウンド処理、ゲーム側の更新</td></tr><tr><td>画面が一瞬止まる・カクつく</td><td>フレームタイム、メモリ使用量、ストレージアクセス、シェーダー処理など</td></tr><tr><td>長時間遊ぶと遅くなる</td><td>温度上昇、冷却、電源設定、メモリ・VRAM使用量</td></tr><tr><td>アップデート後に悪化した</td><td>ゲーム設定のリセット、ドライバー、ゲーム側の既知問題</td></tr></tbody></table><p>まずゲーム名、解像度、画質設定、FPS上限、症状が起きる場面をメモしましょう。アップデート前後の比較では、同じ条件でテストすることが重要です。</p></section>
+<section id="measure"><h2>2. CPU・GPU使用率と温度を確認する</h2><p>Windowsのタスクマネージャーを開き、「パフォーマンス」でCPU、メモリ、GPUの使用状況を確認します。ゲーム内のFPS表示や、信頼できる監視ツールも参考になります。温度やクロックを確認する場合は、ハードウェアやメーカーの仕様に対応したツールを使ってください。</p><ul><li>問題が発生している場面で数値を確認する</li><li>GPU使用率が高い状態が続くなら、画質や解像度を下げた比較を行う</li><li>CPUの合計使用率が低くても、特定のコアが制約になる場合がある</li><li>温度上昇と同時にクロックが下がっていないか確認する</li><li>メモリやVRAMの使用量が上限に近づいていないか確認する</li></ul><div class="callout">使用率の数字ひとつだけでボトルネックを断定しないでください。ゲームエンジン、表示ツール、設定によって見え方が変わります。</div></section>
+<section id="settings"><h2>3. ゲーム内設定を確認する</h2><p>画質設定を変えて比較する場合は、解像度、レンダリングスケール、レイトレーシング、影、反射、アンチエイリアスなどを1項目ずつ確認します。競技系ゲームでは、見やすさと安定性を優先して設定する選択肢もあります。</p><p>垂直同期、FPS上限、可変リフレッシュレートなどは、使用しているモニターや好みによって適切な設定が異なります。設定を変えたら、操作感や画面の乱れも含めて確認し、問題があれば元に戻してください。</p></section>
+<section id="background"><h2>4. バックグラウンド処理を確認する</h2><ul><li>不要な録画・配信・動画編集ソフトが動いていないか確認する</li><li>ブラウザーのタブや重いアプリを必要に応じて閉じる</li><li>ゲームとOSの更新がバックグラウンドで進んでいないか確認する</li><li>空きストレージが極端に少なくなっていないか確認する</li><li>ドライバー更新後に症状が変化した場合は、メーカーの案内や既知の問題を確認する</li></ul><p>セキュリティ機能を無効にしたり、出所が不明な最適化ツールを実行したりする方法はおすすめしません。改善目的で設定を変える場合も、公式情報を確認し、元に戻せるようにしておきましょう。</p></section>
+<section id="hardware"><h2>5. パーツ交換を考える前に</h2><p>原因がハードウェア性能にあると分かったら、次に互換性と費用を確認します。GPU交換なら電源容量・コネクタ・カード寸法、CPU交換ならソケット・マザーボードの対応表・BIOS・冷却、メモリなら規格と対応容量を確認してください。</p><p>一部のPCでは、パーツ交換よりも設定調整や冷却の改善が適切な場合があります。CPU・GPU・マザーボードなど複数部品が必要になるなら、買い替え総額とも比較しましょう。</p><a class="action" href="./upgrade-guide.html">アップグレードガイドを読む</a><a class="action" href="./gaming-pc-guide.html">ゲーミングPCの選び方</a></section>
+<section id="faq"><h2>よくある質問</h2><h3>GPU使用率が100%なら故障ですか？</h3><p>必ずしも故障ではありません。ゲームがGPU性能を十分に使っている場合もあります。温度、クロック、動作の安定性、ゲームの設定などをあわせて確認してください。</p><h3>メモリを増やせばFPSは上がりますか？</h3><p>メモリ不足が原因の場合は改善する可能性がありますが、十分な容量がある環境では増設してもFPSが大きく上がるとは限りません。</p><h3>SSDに交換すればカクつきは直りますか？</h3><p>ストレージの読み込みが原因なら改善する場合がありますが、GPUやCPU処理が原因のFPS不足を必ず解消するわけではありません。</p><h3>何を記録して相談すればいいですか？</h3><p>PCのCPU・GPU・メモリ、ゲーム名、解像度、設定、通常時と低下時のFPS、温度、使用率、症状が起きるタイミングを記録すると、原因を絞り込みやすくなります。</p></section>
+<section class="panel"><h2>次に読む</h2><p><a href="./gaming-pc-guide.html">ゲーミングPCの選び方</a></p><p><a href="./upgrade-guide.html">PCアップグレード入門</a></p><p><a href="./index.html">PCラボの診断・構成比較へ戻る</a></p></section>
+<p class="small">広告について：現在の販売店リンクは通常の公式サイトへのリンクであり、提携済み広告リンクではありません。広告を導入する場合は承認済みリンクを使い、広告であることが分かるように表示します。<a href="./affiliate.html">広告方針</a> / <a href="./privacy.html">プライバシーポリシー</a> / <a href="./contact.html">お問い合わせ</a></p>
+</main>
+<footer class="site-footer"><nav class="footer-links" aria-label="サイト情報"><a href="./index.html">トップページ</a><a href="./about.html">PCラボについて</a><a href="./privacy.html">プライバシーポリシー</a><a href="./affiliate.html">広告について</a><a href="./contact.html">お問い合わせ</a></nav>© 2026 PCラボ</footer>
+</body></html>
