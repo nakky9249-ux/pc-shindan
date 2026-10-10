@@ -893,7 +893,7 @@
                                 <div class="horizontal-meta"><span>DDR5 RAM</span><span>仕様を比較</span></div>
                                 <div class="horizontal-title">32GB Kit (16GBx2)</div>
                             </div>
-                            <div class="price-badge"><a href="https://search.kakaku.com/DDR5%2032GB/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
+                            <div class="price-badge"><a href="https://search.kakaku.com/DDR5%2032GB%20%E3%83%A1%E3%83%A2%E3%83%AA%2016GB%C3%972/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
                         </div>
                         <div class="horizontal-card">
                             <div class="horizontal-info">
@@ -1301,6 +1301,16 @@
                 activePriceThemeIndex=(activePriceThemeIndex+1)%priceSearchThemes.length;
                 renderPriceTheme(priceSearchThemes[activePriceThemeIndex]);
             });
+            let lastAutoThemeIndex=activePriceThemeIndex;
+            window.setInterval(()=>{
+                const currentTheme=getCurrentPriceTheme();
+                const currentIndex=priceSearchThemes.findIndex(x=>x.id===currentTheme.id);
+                if(currentIndex!==lastAutoThemeIndex){
+                    lastAutoThemeIndex=currentIndex;
+                    activePriceThemeIndex=currentIndex;
+                    renderPriceTheme(currentTheme);
+                }
+            },60000);
             // 価格.comは検索リンクで接続。公式な価格データAPIの利用許可が確認できるまでは価格の自動取得を装わない。
             el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">価格検索はパーツ名に合わせて検索語を調整します。メモリは「DDR5 32GB メモリ 16GB×2」などの語句で探します。実売価格を自動取得する機能ではないため、価格・送料・在庫は検索先で確認してください。</div>';
             el('builder-save').addEventListener('click',()=>{try{localStorage.setItem('pc-shindan-build',JSON.stringify(window.pcShindanCurrentBuild));el('builder-save').textContent='保存しました';}catch(e){el('builder-save').textContent='保存できませんでした';}});
