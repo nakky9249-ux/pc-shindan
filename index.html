@@ -985,7 +985,7 @@
                 const useLabel={game:'3Dゲーム',stream:'配信・動画編集',work:'普段使い・事務作業',ai:'AIイラスト・開発'}[use]||'用途未指定';
                 const gameLabel={fps:'FPS・高フレームレート',mmo:'MMO・オンラインRPG',heavy:'重量級オープンワールド',light:'軽め・サンドボックス',all:'複数ジャンル'}[game]||'ゲーム未指定';
                 const resLabel={fhd144:'FHD / 144FPS+',fhd240:'FHD / 240FPS+',wqhd:'WQHD / 144FPS','4k':'4K画質重視'}[res]||res;
-                document.getElementById('result-desc').textContent='選択条件：'+budgetLabel+'・'+useLabel+'・'+gameLabel+'・'+resLabel+'。 '+d.desc+(build.total>budget*10000?' 選択予算の目安を超えています。予算を優先する場合は、おすすめ構成一覧から低価格の構成を選んでください.':'')+' FPSはゲーム内設定・解像度・場面・ドライバーなどで変動し、この診断は実測値や性能保証ではありません。';
+                document.getElementById('result-desc').textContent='選択条件：'+budgetLabel+'・'+useLabel+'・'+gameLabel+'・'+resLabel+'。 '+d.desc+(build.total>budget*10000?' 選択予算の目安を超えています。予算を優先する場合は、おすすめ構成一覧から低価格の構成を選んでください。':'')+' FPSはゲーム内設定・解像度・場面・ドライバーなどで変動し、この診断は実測値や性能保証ではありません。';
                 document.getElementById('spec-cpu').textContent=build.cpu.n;
                 document.getElementById('spec-gpu').textContent=build.gpu.n;
                 document.getElementById('spec-ram').textContent=build.ram.n;
