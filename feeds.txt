@@ -1,0 +1,3 @@
+# 1行に「表示名|RSS/AtomのURL」を書きます。#で始まる行はコメントです。
+PC Watch|https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf
+4Gamer|https://www.4gamer.net/rss/index.xml
