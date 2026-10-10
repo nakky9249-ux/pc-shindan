@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "feeds.txt"
+      - "index.html"
       - "scripts/**"
       - "tests/**"
       - ".github/workflows/update-news.yml"
