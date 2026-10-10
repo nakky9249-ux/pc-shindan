@@ -1138,20 +1138,29 @@
                 setByName('cooler',parts.cooler,p.cooler);setByName('hdd',parts.hdd,p.hdd);setByName('fans',parts.fans,p.fans);setByName('os',parts.os,p.os);
                 update();if(options.scroll!==false)el('builder').scrollIntoView({behavior:'smooth',block:'start'});return true;
             };
-            // 構成カード用のPCイメージ写真。販売商品そのものではなく、構成の雰囲気を示す画像です。
-            const buildImageByCategory = {
-                budget: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80',
-                fps: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80',
-                wqhd: 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80',
-                creator: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=80'
+            // 構成ごとに別画像を割り当て、同じ画像の使い回しを避ける。写真は構成イメージで販売品そのものではありません。
+            const buildImages = {
+                'budget-1080p':'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80',
+                'budget-am5':'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=80',
+                'fhd-balanced':'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80',
+                'fps-value':'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80',
+                'wqhd-value':'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80',
+                'wqhd-amd':'https://images.unsplash.com/photo-1587202372616-b43abea06c2a?auto=format&fit=crop&w=900&q=80',
+                'creator-stream':'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=80',
+                'creator-value':'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80&sat=-60',
+                'creator-ai':'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80&sat=-60',
+                '4k-gaming':'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80&sat=-70',
+                'fps-elite':'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80&sat=-70'
             };
-            const getBuildShopUrl = p => {
-                const gpu = String(p.gpu || '');
-                if (gpu.includes('RTX 5060')) return 'https://www.mouse-jp.co.jp/store/r/rs1011902/';
-                if (gpu.includes('RTX 5070') || gpu.includes('RTX 5080') || gpu.includes('RTX 5050')) return 'https://www.dospara.co.jp/gamepc';
-                if (gpu.includes('RX ')) return 'https://www.frontier-direct.jp/';
-                return 'https://www.dospara.co.jp/gamepc';
+            // 実在の商品ページでCPU・GPU・メモリ・SSDが一致するものだけを「同スペック」として登録。
+            // 完全一致を確認できない構成は、誤案内を避けるため販売サイトの検索結果へ案内する。
+            const exactBuildListings = {
+                'budget-am5': {url:'https://www.suruga-ya.jp/product/detail/145999424?tenpo_cd=400568', label:'同スペックの販売ページ', note:'Ryzen 5 7500F / RTX 5060 / メモリ32GB / SSD 1TB。価格・在庫は販売ページで確認してください。'},
+                'fhd-balanced': {url:'https://www.suruga-ya.jp/product/detail/145999424?tenpo_cd=400568', label:'同スペックの販売ページ', note:'CPU・GPU・メモリ・SSDが一致する販売品。マザーボード等の細部は構成表と異なる場合があります。'},
+                'wqhd-value': {url:'https://www.mouse-jp.co.jp/store/g/ggtune-dga7g70b6bfdw101dec', label:'同スペックの販売ページ', note:'Ryzen 7 9700X / RTX 5070 / メモリ32GB / SSD 2TB。'},
+                '4k-gaming': {url:'https://www.tsukumo.co.jp/bto/pc/game/2026/GE7A-L261BH.html', label:'同スペックの販売ページ', note:'Ryzen 7 9800X3D / RTX 5080 / メモリ32GB / SSD 2TB。'}
             };
+            const getBuildShopUrl = p => exactBuildListings[p.id]?.url || ('https://www.google.com/search?q='+encodeURIComponent(p.cpu+' '+p.gpu+' '+p.ram+' '+p.ssd+' ゲーミングPC 販売 日本'));
             const renderRecommendations=(category='all', query='')=>{
                 const grid=el('recommendation-grid');grid.replaceChildren();
                 const normalizedQuery=query.trim().toLocaleLowerCase('ja');
@@ -1168,7 +1177,7 @@
                     const build=getBuildParts(p.id);if(!build)return;
                     const card=document.createElement('article');card.className='recommend-card';
                     const visual=document.createElement('div');visual.className='build-visual';
-                    const photo=document.createElement('img');photo.src=buildImageByCategory[p.category]||buildImageByCategory.budget;photo.alt=p.title+'のPC構成イメージ';photo.loading='lazy';photo.decoding='async';photo.referrerPolicy='no-referrer';photo.addEventListener('error',()=>{visual.replaceChildren();visual.style.background='linear-gradient(135deg,#202938,#4b5563)';visual.setAttribute('role','img');visual.setAttribute('aria-label',p.title+'のPC構成イメージ');},{once:true});visual.append(photo);
+                    const photo=document.createElement('img');photo.src=buildImages[p.id]||buildImages['budget-1080p'];photo.alt=p.title+'のPC構成イメージ';photo.loading='lazy';photo.decoding='async';photo.referrerPolicy='no-referrer';photo.addEventListener('error',()=>{visual.replaceChildren();visual.style.background='linear-gradient(135deg,#202938,#4b5563)';visual.setAttribute('role','img');visual.setAttribute('aria-label',p.title+'のPC構成イメージ');},{once:true});visual.append(photo);
                     const badge=document.createElement('span');badge.className='badge';badge.textContent=p.tag;
                     const title=document.createElement('h3');title.textContent=p.title;
                     const price=document.createElement('div');price.className='price';price.textContent='約 '+build.total.toLocaleString('ja-JP')+' 円';
@@ -1179,8 +1188,9 @@
                     const summary=document.createElement('summary');summary.textContent='パーツ別価格を見る';summary.style.cursor='pointer';breakdown.append(summary);
                     const costList=document.createElement('ul');build.rows.forEach(([label,item])=>{const li=document.createElement('li');li.textContent=label+'：'+item.n+' — 約 '+item.p.toLocaleString('ja-JP')+'円';costList.append(li);});breakdown.append(costList);
                     const button=document.createElement('button');button.type='button';button.className='option-btn';button.style.cssText='display:block;width:100%;text-align:center;margin-top:1rem';button.textContent='この構成をシミュレーターに反映';button.addEventListener('click',()=>{window.pcShindanApplyBuild(p.id);button.textContent='反映しました ✓';setTimeout(()=>button.textContent='この構成をシミュレーターに反映',1800);});
-                    const buyLink=document.createElement('a');buyLink.className='recommend-buy-link';buyLink.href=getBuildShopUrl(p);buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.textContent='販売中のPCを探す ';const buyIcon=document.createElement('i');buyIcon.className='fa-solid fa-arrow-up-right-from-square';buyIcon.setAttribute('aria-hidden','true');buyLink.append(buyIcon);
-                    const buyNote=document.createElement('p');buyNote.className='recommend-buy-note';buyNote.textContent='販売ページには近いスペックの製品が表示されます。完全に同じ構成とは限らないため、CPU・GPU・メモリを確認してください。';
+                    const listing=exactBuildListings[p.id];
+                    const buyLink=document.createElement('a');buyLink.className='recommend-buy-link';buyLink.href=getBuildShopUrl(p);buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.textContent=(listing?.label||'同じスペックの販売品を検索')+' ';const buyIcon=document.createElement('i');buyIcon.className='fa-solid fa-arrow-up-right-from-square';buyIcon.setAttribute('aria-hidden','true');buyLink.append(buyIcon);
+                    const buyNote=document.createElement('p');buyNote.className='recommend-buy-note';buyNote.textContent=listing?.note||('現時点でCPU・GPU・メモリ・SSDがすべて一致する販売ページを確認できていないため、構成名で販売品を検索します。購入前に仕様を照合してください。');
                     card.append(visual,badge,title,price,desc,list,breakdown,button,buyLink,buyNote);grid.append(card);
                 });
             };
