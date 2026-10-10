@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Fetch public RSS/Atom feeds and publish a small, deduplicated news.json."""
+"""Fetch public RSS/Atom feeds and publish a deduplicated news.json."""
 import json
 import re
 import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -13,9 +14,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FEEDS = ROOT / "feeds.txt"
 OUTPUT = ROOT / "news.json"
-MAX_PER_FEED = 25
-MAX_TOTAL = 100
-USER_AGENT = "PCShindanRSSBot/1.0 (public RSS reader)"
+MAX_PER_FEED = 30
+MAX_TOTAL = 120
+MAX_BYTES = 4_000_000
+USER_AGENT = "PCShindanRSSBot/1.1 (+https://github.com/nakky9249-ux/pc-shindan)"
+
+def local_name(tag):
+    """Return a namespace-independent lowercase XML element name."""
+    return tag.rsplit("}", 1)[-1].split(":")[-1].lower()
 
 def clean(value):
     value = re.sub(r"<[^>]+>", " ", value or "")
@@ -23,12 +29,18 @@ def clean(value):
     return re.sub(r"\s+", " ", value).strip()
 
 def child_text(el, names):
+    """Read a direct child by local XML name; supports Atom href links."""
+    names = {n.lower() for n in names}
     for child in list(el):
-        tag = child.tag.rsplit("}", 1)[-1].lower()
-        if tag in names:
-            if tag == "link" and child.attrib.get("href"):
-                return child.attrib["href"].strip()
-            return "".join(child.itertext()).strip()
+        tag = local_name(child.tag)
+        if tag not in names:
+            continue
+        if tag == "link" and child.attrib.get("href"):
+            rel = child.attrib.get("rel", "alternate")
+            if rel not in ("alternate", ""):
+                continue
+            return child.attrib["href"].strip()
+        return "".join(child.itertext()).strip()
     return ""
 
 def parse_date(value):
@@ -52,45 +64,78 @@ def parse_date(value):
 
 def read_feeds():
     feeds = []
-    for line in FEEDS.read_text(encoding="utf-8").splitlines():
+    for line_no, line in enumerate(FEEDS.read_text(encoding="utf-8").splitlines(), 1):
         line = line.strip()
-        if not line or line.startswith("#") or "|" not in line:
+        if not line or line.startswith("#"):
+            continue
+        if "|" not in line:
+            print(f"WARN feeds.txt:{line_no}: expected name|url")
             continue
         name, url = (part.strip() for part in line.split("|", 1))
         if name and url.startswith(("https://", "http://")):
             feeds.append((name, url))
+        else:
+            print(f"WARN feeds.txt:{line_no}: invalid feed name or URL")
     return feeds
 
 def parse_feed(name, url):
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"})
-    with urllib.request.urlopen(request, timeout=20) as response:
-        payload = response.read(3_000_000)
+    request = urllib.request.Request(url, headers={
+        "User-Agent": USER_AGENT,
+        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+    })
+    last_error = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=25) as response:
+                payload = response.read(MAX_BYTES + 1)
+            if len(payload) > MAX_BYTES:
+                raise ValueError("feed exceeds 4 MB size limit")
+            break
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            last_error = exc
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+    else:
+        raise last_error
     root = ET.fromstring(payload)
-    nodes = [n for n in root.iter() if n.tag.rsplit("}", 1)[-1].lower() in ("item", "entry")]
+    nodes = [n for n in root.iter() if local_name(n.tag) in ("item", "entry")]
     results = []
     for node in nodes[:MAX_PER_FEED]:
         title = clean(child_text(node, {"title"}))
         link = child_text(node, {"link"})
         if not link:
             for child in list(node):
-                if child.tag.rsplit("}", 1)[-1].lower() == "link" and child.attrib.get("href"):
-                    link = child.attrib["href"]
+                if local_name(child.tag) == "link" and child.attrib.get("href"):
+                    link = child.attrib["href"].strip()
                     break
-        summary = clean(child_text(node, {"description", "summary", "content", "encoded"}))
-        date = parse_date(child_text(node, {"pubdate", "published", "updated", "date", "issued", "modified"}))
+        summary = clean(child_text(node, {"description", "summary", "content", "encoded", "subtitle"}))
+        date = parse_date(child_text(node, {"pubdate", "published", "updated", "date", "issued", "modified", "created"}))
         if title and link.startswith(("https://", "http://")):
-            results.append({"title": title[:300], "url": link, "summary": summary[:500], "source": name, "date": date})
+            results.append({
+                "title": title[:300],
+                "url": link,
+                "summary": summary[:600],
+                "source": name[:100],
+                "date": date,
+            })
     return results
 
 def main():
+    feeds = read_feeds()
     articles, errors = [], []
-    for name, url in read_feeds():
+    if not feeds:
+        raise SystemExit("No valid RSS feeds configured in feeds.txt")
+    for name, url in feeds:
         try:
-            articles.extend(parse_feed(name, url))
-            print(f"OK {name}")
+            fetched = parse_feed(name, url)
+            articles.extend(fetched)
+            print(f"OK {name}: {len(fetched)} articles")
+            if not fetched:
+                errors.append(f"{name}: feed parsed but contained no usable entries")
         except Exception as exc:
-            errors.append(f"{name}: {type(exc).__name__}: {exc}")
-            print(f"WARN {errors[-1]}")
+            message = f"{name}: {type(exc).__name__}: {exc}"
+            errors.append(message)
+            print(f"WARN {message}")
         time.sleep(0.5)
     unique, seen = [], set()
     for article in articles:
@@ -102,13 +147,15 @@ def main():
     data = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "articles": unique[:MAX_TOTAL],
-        "feed_count": len(read_feeds()),
+        "feed_count": len(feeds),
+        "successful_feeds": len(feeds) - len({e.split(":", 1)[0] for e in errors}),
         "errors": errors,
     }
     OUTPUT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {len(data['articles'])} articles; feed errors: {len(errors)}")
+    print(f"Wrote {len(data['articles'])} unique articles from {len(feeds)} feeds; {len(errors)} feed warnings")
+    # Preserve diagnostic output even when one provider fails; fail only if all providers failed.
     if not data["articles"]:
-        raise SystemExit("No articles fetched. Check feeds.txt and the Actions log.")
+        raise SystemExit("No articles fetched from any feed. Check feed URLs and the Actions log.")
 
 if __name__ == "__main__":
     main()
