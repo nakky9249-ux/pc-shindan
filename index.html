@@ -953,7 +953,7 @@
                 const field=el('part-'+id).closest('.builder-field');
                 let link=field.querySelector('.price-search-link');
                 if(!link){link=document.createElement('a');link.className='price-search-link';link.target='_blank';link.rel='noopener noreferrer';link.textContent='価格を調べる ↗';link.style.cssText='font-size:.78rem;color:var(--accent-cyan);text-decoration:underline;align-self:flex-start';field.append(link);}
-                const item=selected(id, id==='cpu'?parts.cpu:id==='gpu'?parts.gpu:id==='board'?parts.board:id==='ram'?listForRam(selected('cpu',parts.cpu)):id==='ssd'?parts.ssd:id==='psu'?parts.psu:id==='case'?parts.pcCase:id==='cooler'?parts.cooler:id==='hdd'?parts.hdd:id==='fans'?parts.fans:parts.os);
+                const item=selected(id, id==='cpu'?parts.cpu:id==='gpu'?parts.gpu:id==='board'?parts.board.filter(x=>x.s===selected('cpu',parts.cpu).s&&x.r===selected('cpu',parts.cpu).r):id==='ram'?listForRam(selected('cpu',parts.cpu)):id==='ssd'?parts.ssd:id==='psu'?parts.psu:id==='case'?parts.pcCase:id==='cooler'?parts.cooler:id==='hdd'?parts.hdd:id==='fans'?parts.fans:parts.os);
                 link.href='https://search.kakaku.com/'+encodeURIComponent(item.n)+'/';
                 link.setAttribute('aria-label',item.n+'の価格を検索');
             };
