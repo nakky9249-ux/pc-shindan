@@ -893,7 +893,7 @@
                                 <div class="horizontal-meta"><span>DDR5 RAM</span><span>仕様を比較</span></div>
                                 <div class="horizontal-title">32GB Kit (16GBx2)</div>
                             </div>
-                            <div class="price-badge"><a href="https://search.kakaku.com/DDR5%2032GB%20%E3%83%A1%E3%83%A2%E3%83%AA%2016GB%C3%972/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
+                            <div class="price-badge"><a href="https://search.kakaku.com/DDR5%2032GB%20%E3%83%A1%E3%83%A2%E3%83%AA/" target="_blank" rel="noopener noreferrer">価格を確認 ↗</a></div>
                         </div>
                         <div class="horizontal-card">
                             <div class="horizontal-info">
@@ -1020,7 +1020,7 @@
             function priceSearchQuery(label,name){
                 const text=String(name||'');
                 if(label==='メモリ'||/DDR[45]/i.test(text)&&/(RAM|メモリ|GB)/i.test(text)){
-                    if(/DDR5/i.test(text)&&/32\s*GB|32GB/i.test(text))return 'DDR5 32GB メモリ 16GB×2';
+                    if(/DDR5/i.test(text)&&/32\s*GB|32GB/i.test(text))return 'DDR5 32GB メモリ';
                     if(/DDR5/i.test(text))return 'DDR5 メモリ '+text.replace(/[()（）]/g,' ');
                     if(/DDR4/i.test(text))return 'DDR4 メモリ '+text.replace(/[()（）]/g,' ');
                     return text+' メモリ';
@@ -1030,7 +1030,7 @@
             }
             function priceSearchUrl(label,name){return 'https://search.kakaku.com/'+encodeURIComponent(priceSearchQuery(label,name))+'/';}
             const priceSearchThemes=[
-                {id:'ram',title:'メモリ強化',query:'DDR5 32GB メモリ 16GB×2',note:'ゲーム用PCなら32GB（16GB×2）が選びやすい定番候補。マザーボード対応規格も確認。'},
+                {id:'ram',title:'メモリ強化',query:'DDR5 32GB メモリ',note:'ゲーム用PCなら32GB（16GB×2）が選びやすい定番候補。マザーボード対応規格も確認。'},
                 {id:'ssd',title:'SSD容量アップ',query:'NVMe SSD 2TB Gen4',note:'ゲームを複数入れるなら2TBも比較。ヒートシンクや保証もチェック。'},
                 {id:'gpu',title:'グラフィックボード',query:'GeForce RTX 5060 グラフィックボード',note:'GPUはゲーム・解像度・電源容量に合わせて比較。'},
                 {id:'cpu',title:'CPUアップグレード',query:'Ryzen 7 7800X3D CPU',note:'CPU交換ではソケット、BIOS、冷却性能の確認が必要。'},
@@ -1312,7 +1312,7 @@
                 }
             },60000);
             // 価格.comは検索リンクで接続。公式な価格データAPIの利用許可が確認できるまでは価格の自動取得を装わない。
-            el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">価格検索はパーツ名に合わせて検索語を調整します。メモリは「DDR5 32GB メモリ 16GB×2」などの語句で探します。実売価格を自動取得する機能ではないため、価格・送料・在庫は検索先で確認してください。</div>';
+            el('live-price-status').innerHTML='<strong>価格確認：価格.com検索に対応</strong><div style="font-size:.78rem;color:var(--text-muted);margin-top:.3rem">価格検索はパーツ名に合わせて検索語を調整します。メモリは「DDR5 32GB メモリ」などの語句で探します。実売価格を自動取得する機能ではないため、価格・送料・在庫は検索先で確認してください。</div>';
             el('builder-save').addEventListener('click',()=>{try{localStorage.setItem('pc-shindan-build',JSON.stringify(window.pcShindanCurrentBuild));el('builder-save').textContent='保存しました';}catch(e){el('builder-save').textContent='保存できませんでした';}});
             el('builder-copy').addEventListener('click',async()=>{const b=window.pcShindanCurrentBuild;const txt='PCラボ 構成メモ\n'+Object.entries(b).map(([k,v])=>k+': '+v).join('\n');try{await navigator.clipboard.writeText(txt);el('builder-copy').textContent='コピーしました';}catch(e){window.prompt('構成をコピーしてください',txt);}});
             el('builder-load').addEventListener('click',()=>{try{
