@@ -9,6 +9,8 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
+from html.parser import HTMLParser
+from urllib.parse import urljoin
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -127,6 +129,39 @@ def child_image_url(node):
     return ""
 
 
+class ArticleImageParser(HTMLParser):
+    """Read only image metadata from article HTML; never extract article body text."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.image = ""
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() != "meta" or self.image:
+            return
+        values = {key.lower(): value for key, value in attrs if key and value}
+        key = (values.get("property") or values.get("name") or "").lower()
+        if key in {"og:image", "og:image:url", "twitter:image", "twitter:image:src"}:
+            self.image = values.get("content", "").strip()
+
+
+def fetch_article_image(article_url):
+    """Fetch an article's public Open Graph image URL, with a small timeout/size cap."""
+    request = urllib.request.Request(article_url, headers={
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.1",
+    })
+    try:
+        with urllib.request.urlopen(request, timeout=8) as response:
+            payload = response.read(1_500_000)
+            charset = response.headers.get_content_charset() or "utf-8"
+        parser = ArticleImageParser()
+        parser.feed(payload.decode(charset, errors="replace"))
+        return safe_image_url(urljoin(article_url, parser.image))
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError, UnicodeError) as exc:
+        print(f"WARN article image unavailable for {article_url}: {type(exc).__name__}")
+        return ""
+
+
 def parse_feed(name, url):
     request = urllib.request.Request(url, headers={
         "User-Agent": USER_AGENT,
@@ -197,6 +232,15 @@ def main():
             seen.add(key)
             unique.append(article)
     unique.sort(key=lambda a: a.get("date") or "", reverse=True)
+    # Most RSS feeds omit image metadata. Resolve Open Graph thumbnails for the
+    # newest articles only, with a per-page timeout and a small delay to be polite.
+    for article in unique[:16]:
+        if article.get("image"):
+            continue
+        image = fetch_article_image(article["url"])
+        if image:
+            article["image"] = image
+        time.sleep(0.25)
     data = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "articles": unique[:MAX_TOTAL],
