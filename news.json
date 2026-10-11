@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-10-11T01:39:33.339490+00:00",
+  "updated_at": "2026-10-11T03:32:35.240608+00:00",
   "articles": [
+    {
+      "title": "「Huni Kuin: Beya Xinã Bena」は，アマゾンの村人が絵を描き，声を当てた2Dアクション［BGS2026］",
+      "url": "https://www.4gamer.net/games/049/G104930/20261011002/",
+      "summary": "「BrasilGameShow2026」の会場に，アマゾンの先住民が開発に携わる「HuniKuin:BeyaXinãBena」が出展されていた。部族に伝わる神話を題材にした作品で，2027年第1四半期の発売を予定している。14年以上にわたってフニ・クインの人々と関わってきた人類学者，GuilhermeMeneses氏に話を聞いた。",
+      "source": "4Gamer",
+      "date": "2026-10-11T03:07:36+00:00",
+      "image": "https://www.4gamer.net/games/049/G104930/20261011002/SS/003.jpg"
+    },
+    {
+      "title": "Core i5-8350Uや128GB M.2 SSD搭載の「ThinkPad X1 Carbon」が39,600円、Qualitの中古Cランク品が大量入荷",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2146932.html",
+      "summary": "Core i5-8350U(4コア/8スレッド)を搭載したLenovo製14型ノートPC「ThinkPad X1 Carbon」の中古品が、横河レンタ・リースが運営する通販サイト「Qualit」で特価販売中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-11T03:00:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2146/932/a1.jpg"
+    },
+    {
+      "title": "クリエイター向けの広色域4K液晶モニター「CB32U1」「CB27U1」がINNOCNから",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147160.html",
+      "summary": "クリエイター・プロフェッショナル向け4Kモニターの32型「CB32U1」と27型「CB27U1」の2製品が、INNOCNから登場した。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-11T02:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/160/s1.jpg"
+    },
     {
       "title": "「arrows We3」の未使用品が24,800円、「arrows Alpha」の中古品が59,980円など！秋葉原でarrowsシリーズがお買い得",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147340.html",
@@ -110,24 +134,21 @@
       "url": "https://www.4gamer.net/games/991/G999110/20261010007/",
       "summary": "スペイン・バルセロナで「SAGABarcelonaGameFest2026」が10月9日から11日まで開催中だ。3つのイベントを統合した新たなゲームイベントで，第1回のゲスト国には日本を選出された。東野美紀氏と松前真奈美氏によるトークセッションも行われる。",
       "source": "4Gamer",
-      "date": "2026-10-10T05:51:11+00:00",
-      "image": "https://www.4gamer.net/games/991/G999110/20261010007/SS/001.jpg"
+      "date": "2026-10-10T05:51:11+00:00"
     },
     {
       "title": "【本日みつけたお買い得品】8万円引き！31.5型や26.5型の4KゲーミングモニターがAmazonで特価",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147337.html",
       "summary": "Amazonで、ベンキューのゲーミングモニターがセール価格で販売されている。31.5型4Kの「MOBIUZ EX321UX」は、直近価格から8万1,109円引きの15万9,800円で販売中だ。",
       "source": "PC Watch",
-      "date": "2026-10-10T05:27:13+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/337/01.jpg"
+      "date": "2026-10-10T05:27:13+00:00"
     },
     {
       "title": "Switch2の試遊台から模造刀の店まで。物販ブースが目立つBGS会場フォトレポート［BGS2026］",
       "url": "https://www.4gamer.net/games/991/G999110/20261010008/",
       "summary": "2026年10月9日から12日まで開催されているゲームイベント「BrasilGameShow2026」では，メーカーの試遊ブースと並んで，フィギュアや模造刀，中古のレトロゲームを売る店がひしめき，アーケード機と体感型シミュレータの区画も広がる。初日の会場を写真で紹介しよう。",
       "source": "4Gamer",
-      "date": "2026-10-10T04:10:54+00:00",
-      "image": "https://www.4gamer.net/games/991/G999110/20261010008/SS/001.jpg"
+      "date": "2026-10-10T04:10:54+00:00"
     },
     {
       "title": "【本日みつけたお買い得品】AmazonでRTX Spark搭載MSIノートが予約開始。109万9,800円から",
@@ -277,13 +298,6 @@
       "date": "2026-10-09T21:08:00+00:00"
     },
     {
-      "title": "5G対応の6.8インチスマホ「Redmi 12 5G」が19,800円！未使用品が大量入荷",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147294.html",
-      "summary": "Xiaomiの5G対応6.8インチAndroidスマートフォン「Redmi 12 5G」の未使用品が、イオシス各店で特価販売中。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-09T21:05:00+00:00"
-    },
-    {
       "title": "全面アルミで1.18kg、180度開く14型ノート「Swift Air 14」",
       "url": "https://pc.watch.impress.co.jp/docs/news/2147313.html",
       "summary": "日本エイサーは10月9日、ノートPC Swiftシリーズより、14型ノートPC「Swift Air 14(SFA14-I31)」を発売した。直販価格はCore 3 304搭載モデルが13万9,800円、Core 5 320搭載モデルが14万7,800円。",
@@ -324,13 +338,6 @@
       "summary": "AsmodeeDigitalは2026年10月7日，同社が運営するオンラインボードゲームサイト「ボードゲームアリーナ」で，Z-ManGamesのボードゲーム「CitadelsDuel」（あやつり人形：デュエル）を正式実装した。「あやつり人形」を2人専用に再構築した作品で，役職の能力を使い，4×4区画の共通の街で建物の支配権を競う。",
       "source": "4Gamer",
       "date": "2026-10-09T15:30:02+00:00"
-    },
-    {
-      "title": "Zynq-7000 SoC搭載開発ボード「TUL PYNQ-Z2」がSPARKLEから",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147303.html",
-      "summary": "AMD Zynq-7000を搭載したSPARKLEの評価・開発用ボード「TUL PYNQ-Z2」が発売された。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-09T15:20:00+00:00"
     },
     {
       "title": "高速版「Qwen-Image-2.1-Turbo」重み公開、画像生成8ステップで完了",
@@ -408,13 +415,6 @@
       "summary": "",
       "source": "4Gamer",
       "date": "2026-10-09T11:06:41+00:00"
-    },
-    {
-      "title": "怪物と戦わず料理を振る舞うデッキ構築ADV「ハングリー・ホラーズ」，正式版1.0を10月13日に発売",
-      "url": "https://www.4gamer.net/games/976/G097651/20261005028/",
-      "summary": "ClumsyBearStudioは本日（2026年10月9日），Steamで早期アクセスを実施している「ハングリー・ホラーズ（HungryHorrors）」の正式版1.0を10月13日に発売すると発表した。価格は1700円（税込）。本作は，怪物に料理を振る舞い，プレイヤー自身が食べられてしまう前に満足してもらうデッキ構築アドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-09T11:00:00+00:00"
     },
     {
       "title": "Windows App、リモートPC接続が正式提供に。職場アカウント不要",
