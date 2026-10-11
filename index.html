@@ -1083,29 +1083,44 @@
                 const budgetLimit=budget*10000;
                 const evaluated=presets.map(p=>({id:p.id,preset:p,build:window.pcShindanGetBuildParts(p.id)})).filter(x=>x.build);
                 const scoreBuild=x=>{
-                    const p=x.preset, price=x.build.total;
+                    const p=x.preset, b=x.build, price=b.total;
                     let score=0;
-                    const isBudget=p.id==='budget-1080p'||p.id==='budget-am5';
-                    const isFhd=p.id==='fhd-balanced';
-                    const isFps=p.id==='fps-value'||p.id==='fps-elite';
-                    const isWqhd=p.id==='wqhd-value'||p.id==='wqhd-amd';
-                    const isCreator=p.id==='creator-stream'||p.id==='creator-value'||p.id==='creator-ai';
-                    const is4k=p.id==='4k-gaming';
-                    if(use==='work') score+=(isBudget?8:0)+(isFhd?7:0)+(isCreator?-8:0)+(is4k?-10:0);
-                    if(use==='stream') score+=(isCreator?12:0)+(isFps?-2:0);
-                    if(use==='ai') score+=(p.id==='creator-ai'?16:0)+(isCreator?8:0)+(isBudget?-8:0);
-                    if(use==='game') score+=(isBudget?1:0);
-                    if(game==='fps') score+=(isFps?12:0)+(is4k?-3:0);
-                    if(game==='mmo'||game==='heavy') score+=(isWqhd?8:0)+(is4k?5:0)+(isBudget?-6:0);
-                    if(game==='light') score+=(isBudget?7:0)+(isFhd?5:0)+(is4k?-8:0);
-                    if(res==='fhd144') score+=(isFhd?8:0)+(isBudget?4:0)+(isWqhd?-3:0)+(is4k?-8:0);
-                    if(res==='fhd240') score+=(isFps?13:0)+(isBudget?-6:0);
-                    if(res==='wqhd') score+=(isWqhd?13:0)+(is4k?2:0)+(isBudget?-8:0);
-                    if(res==='4k') score+=(is4k?18:0)+(isWqhd?5:0)+(isBudget?-15:0);
-                    if(price<=budgetLimit) score+=10;
-                    else score-=Math.min(30,((price-budgetLimit)/10000)*3);
-                    // 予算内では、用途に合う構成の中から予算を有効活用。予算超過時は安さを優先。
-                    score+=price<=budgetLimit?Math.min(8,price/budgetLimit*8):-price/100000;
+                    // プリセット名だけでなく、実際に採用しているCPU/GPU/メモリから評価する。
+                    const cpuName=b.cpu.n, gpuName=b.gpu.n;
+                    const cpuTier=cpuName.includes('9800X3D')?10:cpuName.includes('7800X3D')?9:cpuName.includes('9950X')?9:cpuName.includes('9900X')?8:cpuName.includes('9700X')?8:cpuName.includes('7700')?7:cpuName.includes('7500F')||cpuName.includes('7600')?6:cpuName.includes('5700X3D')?6:cpuName.includes('5700X')?5:cpuName.includes('5500')?3:cpuName.includes('Ultra 9')?9:cpuName.includes('Ultra 7')||cpuName.includes('i7-14700')?8:cpuName.includes('Ultra 5')?6:cpuName.includes('i5')?5:3;
+                    const gpuTier=gpuName.includes('5080')?10:gpuName.includes('5070 Ti')?9:gpuName.includes('9070 XT')?9:gpuName.includes('5070')?8:gpuName.includes('9060 XT')?7:gpuName.includes('5060 Ti')?6:gpuName.includes('5060')?5:gpuName.includes('7600')?4:gpuName.includes('4060')?4:gpuName.includes('5050')?3:gpuName.includes('6600')?3:gpuName.includes('3050')?1:2;
+                    const vram=Number((gpuName.match(/(\d+)GB/)||[])[1]||8);
+                    const ramGb=Number((b.ram.n.match(/(\d+)GB/)||[])[1]||16);
+                    const isNvidia=gpuName.includes('GeForce');
+                    // 用途ごとにCPU・GPU・メモリの重みを変更
+                    if(use==='game'){
+                        score+=cpuTier*(game==='fps'?5:2);
+                        score+=gpuTier*(game==='fps'?2:5);
+                        if(game==='fps'&&cpuName.includes('X3D'))score+=12;
+                        if(game==='heavy'||game==='mmo')score+=gpuTier*2;
+                        if(game==='light')score+=cpuTier+gpuTier;
+                    } else if(use==='stream'){
+                        score+=cpuTier*3+gpuTier*3+ramGb/4;
+                        if(isNvidia)score+=7;
+                    } else if(use==='ai'){
+                        score+=gpuTier*3+vram*1.5+ramGb/2;
+                        if(isNvidia)score+=12;
+                        if(ramGb>=64)score+=8;
+                    } else {
+                        score+=Math.max(0,7-cpuTier)*2+Math.max(0,6-gpuTier);
+                        if(price<150000)score+=10;
+                        if(ramGb>=32)score+=3;
+                    }
+                    if(res==='fhd144')score+=Math.max(0,7-gpuTier)*2-Math.max(0,gpuTier-7);
+                    if(res==='fhd240')score+=cpuTier*2+(cpuName.includes('X3D')?10:0);
+                    if(res==='wqhd')score+=gpuTier*4+vram;
+                    if(res==='4k')score+=gpuTier*6+vram*1.5;
+                    // 予算超過は強く減点。予算内では予算消化率より条件への適合を優先する。
+                    if(price>budgetLimit)score-=Math.min(100,(price-budgetLimit)/10000*12);
+                    else score+=Math.min(5,price/budgetLimit*2);
+                    if(use!=='ai'&&vram<12&&(res==='wqhd'||res==='4k'))score-=12;
+                    if(res==='4k'&&gpuTier<8)score-=25;
+                    if(use==='work'&&price>budgetLimit*0.8)score-=8;
                     return score;
                 };
                 evaluated.sort((a,b)=>scoreBuild(b)-scoreBuild(a));
