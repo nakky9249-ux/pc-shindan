@@ -1,48 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/</loc>
-<lastmod>2026-10-11T04:29:19+00:00</lastmod>
-<priority>1.0000</priority>
-</url>
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/upgrade-guide.html</loc>
-<lastmod>2026-10-11T04:29:19+00:00</lastmod>
-<priority>0.8000</priority>
-</url>
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/gaming-pc-guide.html</loc>
-<lastmod>2026-10-11T04:29:20+00:00</lastmod>
-<priority>0.8000</priority>
-</url>
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/fps-troubleshooting.html</loc>
-<lastmod>2026-10-11T04:29:20+00:00</lastmod>
-<priority>0.8000</priority>
-</url>
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/affiliate.html</loc>
-<lastmod>2026-10-11T04:29:20+00:00</lastmod>
-<priority>0.8000</priority>
-</url>
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/about.html</loc>
-<lastmod>2026-10-11T04:29:20+00:00</lastmod>
-<priority>0.8000</priority>
-</url>
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/privacy.html</loc>
-<lastmod>2026-10-11T04:29:19+00:00</lastmod>
-<priority>0.8000</priority>
-</url>
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/contact.html</loc>
-<lastmod>2026-10-11T04:29:19+00:00</lastmod>
-<priority>0.8000</priority>
-</url>
-<url>
-<loc>https://pc-lab-tech.github.io/pc-shindan/index.html</loc>
-<lastmod>2026-10-11T04:29:20+00:00</lastmod>
-<priority>0.6400</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://pc-lab-tech.github.io/pc-shindan/</loc></url>
+  <url><loc>https://pc-lab-tech.github.io/pc-shindan/gaming-pc-guide.html</loc></url>
+  <url><loc>https://pc-lab-tech.github.io/pc-shindan/fps-troubleshooting.html</loc></url>
+  <url><loc>https://pc-lab-tech.github.io/pc-shindan/upgrade-guide.html</loc></url>
+  <url><loc>https://pc-lab-tech.github.io/pc-shindan/about.html</loc></url>
+  <url><loc>https://pc-lab-tech.github.io/pc-shindan/privacy.html</loc></url>
+  <url><loc>https://pc-lab-tech.github.io/pc-shindan/affiliate.html</loc></url>
+  <url><loc>https://pc-lab-tech.github.io/pc-shindan/contact.html</loc></url>
 </urlset>
