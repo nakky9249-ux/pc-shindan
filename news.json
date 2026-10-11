@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-10-11T00:41:14.964213+00:00",
+  "updated_at": "2026-10-11T01:39:33.339490+00:00",
   "articles": [
+    {
+      "title": "「arrows We3」の未使用品が24,800円、「arrows Alpha」の中古品が59,980円など！秋葉原でarrowsシリーズがお買い得",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147340.html",
+      "summary": "秋葉原の中古スマートフォンショップで、arrowsシリーズがお買い得。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-11T01:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/340/a3.jpg"
+    },
     {
       "title": "金色に輝く限定カラーの非売品マウス「GOLDEN PRO X3 SUPERSTRIKE」がソフマップで展示スタート",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2146881.html",
@@ -126,8 +134,7 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147329.html",
       "summary": "Amazonで、MSIのRTX Spark搭載ノートPC「Prestige N16 Flip AI+ C1XM」の予約販売が開始されている。価格は109万9,800円からで、発売予定日は10月31日。",
       "source": "PC Watch",
-      "date": "2026-10-10T03:47:13+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/329/01.jpg"
+      "date": "2026-10-10T03:47:13+00:00"
     },
     {
       "title": "「Brasil Game Show 2026」開幕。オープニングイベントでセガが「クレイジータクシー：ワールドツアー」新マップ「ブラジル」を発表［BGS2026］",
@@ -324,13 +331,6 @@
       "summary": "AMD Zynq-7000を搭載したSPARKLEの評価・開発用ボード「TUL PYNQ-Z2」が発売された。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-09T15:20:00+00:00"
-    },
-    {
-      "title": "Biwinのデスクトップ・ノートPC向けメモリが複数入荷、クーラー付きの「ORIGINCODE Vortex」など計7製品",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147298.html",
-      "summary": "Biwinのメモリが秋葉原の一部ショップに入荷。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-09T15:15:00+00:00"
     },
     {
       "title": "高速版「Qwen-Image-2.1-Turbo」重み公開、画像生成8ステップで完了",
