@@ -1,0 +1,41 @@
+name: Check published GitHub Pages headers
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check sitemap HTTP status, headers, and XML
+        shell: bash
+        run: |
+          set -u
+          url="https://pc-lab-tech.github.io/pc-shindan/sitemap.xml"
+          echo "Checking $url"
+          curl --location --silent --show-error --max-time 30 -D headers.txt -o sitemap.xml "$url"
+          echo "--- Response headers ---"
+          cat headers.txt
+          echo "--- Content-Type ---"
+          grep -i '^content-type:' headers.txt | tail -1 || true
+          echo "--- XML validation ---"
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          root = ET.parse("sitemap.xml").getroot()
+          ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          urls = root.findall("sm:url/sm:loc", ns)
+          print(f"Root element: {root.tag}")
+          print(f"URL count: {len(urls)}")
+          for item in urls:
+              print(item.text)
+          if root.tag != "{http://www.sitemaps.org/schemas/sitemap/0.9}urlset":
+              raise SystemExit("Unexpected sitemap root element")
+          if not urls:
+              raise SystemExit("No URLs found in sitemap")
+          PY
