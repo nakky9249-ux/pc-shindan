@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-11T18:33:53.423831+00:00",
+  "updated_at": "2026-10-11T21:30:14.023146+00:00",
   "articles": [
+    {
+      "title": "【本日みつけたお買い得品】ミニLEDの27型WQHDゲーミングモニターが1万6千円引き、Amazonでセール",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147402.html",
+      "summary": "Amazonで、Xiaomiのゲーミングモニターがセール価格で販売されている。27型WQHD(2,560×1,440ドット)の「G Pro 27i」は、直近価格から1万6,180円引きの3万3,800円で販売中だ。",
+      "source": "PC Watch",
+      "date": "2026-10-11T21:20:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/402/01.jpg"
+    },
+    {
+      "title": "【やじうまミニレビュー】こういうのでいいんだよ……のはずだった。Amazonベーシック格安USB4ケーブル",
+      "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147366.html",
+      "summary": "",
+      "source": "PC Watch",
+      "date": "2026-10-11T21:02:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/366/01.jpg"
+    },
     {
       "title": "「マーベル闘魂」，DLC第2弾は「ソー（ジェーン・フォスター）」に決定！ 「ヴェノム」は2027年春，「ジュビリー」は2027年夏に登場！",
       "url": "https://www.4gamer.net/games/916/G091618/20261011013/",
@@ -118,16 +134,14 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147352.html",
       "summary": "Amazonで、ベンキューの28.2型プログラミング向けモニター「RD280U」が、直近価格から2万1,509円引きの7万9,400円で販売中だ。",
       "source": "PC Watch",
-      "date": "2026-10-10T07:49:45+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/352/03.jpg"
+      "date": "2026-10-10T07:49:45+00:00"
     },
     {
       "title": "主任，搭乗のお時間です！ 「18TRIP」の歩みを振り返り，区長30人が待つ「HAMA TRANSIT CHECK-IN to Season2」へ【PR】",
       "url": "https://www.4gamer.net/games/779/G077989/20261010005/",
       "summary": "主任，Season2行きの便が出発します！ 「18TRIP」の企画広告「HAMATRANSITCHECK-INtoSeason2」が，みなとみらい駅で10月12日まで開催中。Season1を振り返る展示から区長30人の全身パネルまで，“空港”と化した会場をレポートします。",
       "source": "4Gamer",
-      "date": "2026-10-10T07:38:48+00:00",
-      "image": "https://www.4gamer.net/games/779/G077989/20261010005/SS/007.jpg"
+      "date": "2026-10-10T07:38:48+00:00"
     },
     {
       "title": "故郷で起きた悲劇をゲームで語り継ぐ。バイーアのスタジオが作る「ARIDA 2: Rise of the Brave」［BGS2026］",
@@ -457,20 +471,6 @@
       "summary": "Amazonにおいて、レグザ(REGZA)ブランドの23.8型ゲーミングモニター「RM-G244RE」がタイムセール中。直近価格の2,640円引きとなる1万9,800円で購入可能だ。",
       "source": "PC Watch",
       "date": "2026-10-09T06:23:06+00:00"
-    },
-    {
-      "title": "無料版ChatGPTにもGPT-6導入！回答に操作できるUIを生成",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2147113.html",
-      "summary": "ChatGPTは、単なるチャットではなくインタラクティブなものになる――OpenAIは10月7日(現地時間)、ChatGPTに最新モデル「GPT-6」を全プランで順次展開すると発表した。有料のPlus、Pro、Business、Enterpriseプランでは同日から、FreeプランとGoプランでも10月8日から提供が始まる。なお、アップデートが適用されるのはChatGPTのチャットだけで、WorkとCodexの基盤モデルに変更はない。Enterpriseプランでの利用可否は、管理者の設定によって異なる。",
-      "source": "PC Watch",
-      "date": "2026-10-09T05:44:53+00:00"
-    },
-    {
-      "title": "Qwen3.8-27Bを8GBに凝縮！メモリ16GBのノートで動く「Saluki 27B」",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2147095.html",
-      "summary": "Opus 4.6 Maxに匹敵するとされる「Qwen3.8-27B」を、8GB未満に収めた量子化モデルが登場した。Underdogは10月8日(米国時間)、Alibabaの「Qwen3.8-27B」をベースに約2bitまで量子化したLLM「Underdog Saluki 27B 1.0」をオープンウェイト(モデルの重み)として公開した。Apache 2.0ライセンスを採用し、Hugging Faceからダウンロードできる。",
-      "source": "PC Watch",
-      "date": "2026-10-09T05:34:39+00:00"
     }
   ],
   "feed_count": 3,
