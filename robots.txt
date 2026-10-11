@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://pc-lab-tech.github.io/pc-shindan/sitemap.xml
+Sitemap: https://pc-lab-tech.github.io/pc-shindan/sitemap.txt
