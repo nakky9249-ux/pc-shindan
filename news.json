@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-10-12T18:37:01.893648+00:00",
+  "updated_at": "2026-10-12T21:30:55.492040+00:00",
   "articles": [
+    {
+      "title": "【やじうまミニレビュー】防災に“握れる”ポタ電、コンセント付きでリン酸鉄が魅力のモバイルバッテリ",
+      "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147376.html",
+      "summary": "",
+      "source": "PC Watch",
+      "date": "2026-10-12T21:13:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/376/001.jpg"
+    },
     {
       "title": "Dropbox/1Passwordや翻訳機ポケトークS2などソースネクスト製品が最大85%オフ！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147269.html",
@@ -126,8 +134,7 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147404.html",
       "summary": "Amazonで、Xiaomiのモニター4製品がセール価格で販売されている。23.8型フルHD(1,920×1,080ドット)の「A24i」は、直近価格から1,899円引きの1万693円で販売中だ。",
       "source": "PC Watch",
-      "date": "2026-10-11T21:32:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/404/02.jpg"
+      "date": "2026-10-11T21:32:00+00:00"
     },
     {
       "title": "【本日みつけたお買い得品】ミニLEDの27型WQHDゲーミングモニターが1万6千円引き、Amazonでセール",
@@ -464,13 +471,6 @@
       "summary": "",
       "source": "PC Watch",
       "date": "2026-10-09T09:32:17+00:00"
-    },
-    {
-      "title": "カタログのバッテリ時間はなぜ実際と違う？JEITAが解説ガイド公開",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2147237.html",
-      "summary": "カタログに載っているバッテリ動作時間と、実際に使ったときの持ち時間はなぜ違うのか――そんな疑問に業界団体が答えるコンテンツが登場した。電子情報技術産業協会(JEITA)のPC・タブレット事業委員会は10月9日、Webコンテンツ「JEITA バッテリ動作時間測定法ガイド」を公開した。ノートPCのバッテリ動作時間の測定法や数値の見方を解説するものだ。",
-      "source": "PC Watch",
-      "date": "2026-10-09T09:06:33+00:00"
     }
   ],
   "feed_count": 3,
