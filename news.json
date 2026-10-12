@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-10-12T00:44:10.999507+00:00",
+  "updated_at": "2026-10-12T03:36:12.566022+00:00",
   "articles": [
+    {
+      "title": "Core i5-8500TやWindows 11 Pro搭載の「EliteDesk 800 G4 DM」が22,000円、Qualitの中古Cランク品セール",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2146934.html",
+      "summary": "Core i5-8500T(6コア/6スレッド)を搭載したHP製ミニPC「EliteDesk 800 G4 DM」の中古品が、横河レンタ・リースが運営する通販サイト「Qualit」で特価販売中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-12T03:00:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2146/934/a1.jpg"
+    },
     {
       "title": "Ryzen PROや32GBメモリ搭載の「ThinkPad X13 Gen1」が45,800円！中古PCセール",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147330.html",
@@ -126,8 +134,7 @@
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2146881.html",
       "summary": "Logicool Gの特別カラー非売品マウス「GOLDEN PRO X3 SUPERSTRIKE」の展示が、ソフマップAKIBA パソコン・デジタル館でスタート。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-11T00:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2146/881/s1.jpg"
+      "date": "2026-10-11T00:05:00+00:00"
     },
     {
       "title": "手とお腹を温めながらスマホ操作ができる『おなかぽかぽかポッケ』がサンコーから",
@@ -317,13 +324,6 @@
       "summary": "10月3日・4日に開催された「OSAKAINDIEGAMESSUMMIT2026」にて，ゲームサウンドデザイナー・くわぽん氏のサイコホラーアドベンチャー「KindlingHour」のデモ版が出展された。暗闇を進むたびに奇妙な事象に遭遇する異色作の手触りと，開発者のコメントをお届けしよう。",
       "source": "4Gamer",
       "date": "2026-10-10T00:00:00+00:00"
-    },
-    {
-      "title": "BiwinのM.2 SSD「Black Opal NV3500」が店頭入荷、512GBと1TBの2モデル",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147211.html",
-      "summary": "BiwinのPCIe 3.0 x4接続M.2 SSD「Black Opal NV3500」シリーズが、一部ショップに入荷。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-09T23:30:00+00:00"
     },
     {
       "title": "バッテリを外したら、代わりにファンが付いた。GPD WIN Max 3の“着脱式”はただのギミックじゃありません",
