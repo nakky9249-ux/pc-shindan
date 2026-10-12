@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-12T09:37:14.195410+00:00",
+  "updated_at": "2026-10-12T12:54:50.024002+00:00",
   "articles": [
+    {
+      "title": "ついに実機を入手！Surface Laptop UltraとProArt P16開封の儀",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147419.html",
+      "summary": "既報の通り、NVIDIAのSoC「RTX Spark」を搭載したPCが各社から正式発表された。それを受け、Microsoftの「Surface Laptop Ultra」とASUSの「ProArt P16(H7607)」の開封の儀を行なう機会を得た。詳細なレビューはもう少々お待ちいただきたい。",
+      "source": "PC Watch",
+      "date": "2026-10-12T12:00:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/419/00.jpg"
+    },
+    {
+      "title": "【プロダクトレビュー・ショーケース】RTX Sparkの実機がやってきた！サンフランシスコの青空の下で“開封の儀”に臨むMicrosoft Surface Laptop、ASUS ProArtのRTX Spark搭載モデル text by 芹澤 正芳",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/parts_review/showcase/2147426.html",
+      "summary": "2026年10月7日（米国時間）、MicrosoftはNVIDIA RTX Sparkを搭載する新Surfaceを正式に発表、同時に各PCメーカーからも発売がアナウンスされた。国内でも10月16日より、各PCメーカーから順次発売が予定されている。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-12T12:00:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/426/top.jpg"
+    },
     {
       "title": "「トータルウォー：ショーグン2 コンプリートエディション」はシリーズの入り口にうってつけの1本だ［プレイレポ］",
       "url": "https://www.4gamer.net/games/043/G104352/20261011001/",
@@ -118,16 +134,14 @@
       "url": "https://www.4gamer.net/games/049/G104930/20261011002/",
       "summary": "「BrasilGameShow2026」の会場に，アマゾンの先住民が開発に携わる「HuniKuin:BeyaXinãBena」が出展されていた。部族に伝わる神話を題材にした作品で，2027年第1四半期の発売を予定している。14年以上にわたってフニ・クインの人々と関わってきた人類学者，GuilhermeMeneses氏に話を聞いた。",
       "source": "4Gamer",
-      "date": "2026-10-11T03:07:36+00:00",
-      "image": "https://www.4gamer.net/games/049/G104930/20261011002/SS/003.jpg"
+      "date": "2026-10-11T03:07:36+00:00"
     },
     {
       "title": "Core i5-8350Uや128GB M.2 SSD搭載の「ThinkPad X1 Carbon」が39,600円、Qualitの中古Cランク品が大量入荷",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2146932.html",
       "summary": "Core i5-8350U(4コア/8スレッド)を搭載したLenovo製14型ノートPC「ThinkPad X1 Carbon」の中古品が、横河レンタ・リースが運営する通販サイト「Qualit」で特価販売中。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-11T03:00:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2146/932/a1.jpg"
+      "date": "2026-10-11T03:00:00+00:00"
     },
     {
       "title": "クリエイター向けの広色域4K液晶モニター「CB32U1」「CB27U1」がINNOCNから",
@@ -326,13 +340,6 @@
       "date": "2026-10-10T00:30:00+00:00"
     },
     {
-      "title": "Core i5-1235Uや16GBメモリ搭載の13.3型「VAIO」が45,000円、中古品がML COMPUTERSでセール",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2147239.html",
-      "summary": "10コア(Pコア2、Eコア8)/12スレッドのCore i5-1235Uを搭載した13.3インチノートPC「VAIO Pro PK（VJPK22）」の中古品が、ML COMPUTERSの通販サイトで販売中。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-10T00:00:00+00:00"
-    },
-    {
       "title": "ろうそくの火で暗闇を進む恐怖と，じわじわ忍び寄る精神的不安。クリックで紡ぐサイコホラーADV「Kindling Hour」試遊レポート［OIGS2026］",
       "url": "https://www.4gamer.net/games/049/G104923/20261009056/",
       "summary": "10月3日・4日に開催された「OSAKAINDIEGAMESSUMMIT2026」にて，ゲームサウンドデザイナー・くわぽん氏のサイコホラーアドベンチャー「KindlingHour」のデモ版が出展された。暗闇を進むたびに奇妙な事象に遭遇する異色作の手触りと，開発者のコメントをお届けしよう。",
@@ -464,13 +471,6 @@
       "summary": "※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchとYouTubeで配信しています。レギュラー出演者はぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードした切り抜きとアーカイブの動画を掲載しています。",
       "source": "PC Watch",
       "date": "2026-10-09T09:00:00+00:00"
-    },
-    {
-      "title": "Grok BotでXの投稿を検索/閲覧/監視できるように",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2147147.html",
-      "summary": "SpaceXAIが提供するAIエージェント「Grok Bot」は10月8日、X上の投稿の検索や読み込み、監視に対応した。",
-      "source": "PC Watch",
-      "date": "2026-10-09T08:06:33+00:00"
     }
   ],
   "feed_count": 3,
