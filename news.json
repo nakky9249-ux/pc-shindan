@@ -1,133 +1,266 @@
 {
-  "updated_at": "2026-10-13T06:42:32.733844+00:00",
+  "updated_at": "2026-10-13T09:35:31.434155+00:00",
   "articles": [
+    {
+      "title": "Switch2版「メタファー：リファンタジオ」，プロローグ体験版をリリース。セーブデータは製品版に引き継ぎ可能",
+      "url": "https://www.4gamer.net/games/015/G101544/20261013037/",
+      "summary": "アトラスは本日（2026年10月13日），NintendoSwitch2版「メタファー：リファンタジオ」のプロローグ体験版をリリースした。また，東京ゲームショウ2026のセガ/アトラスブースで楽しめた体験型ゲームコンテンツ「剣の試練」が，Web版として公開された。",
+      "source": "4Gamer",
+      "date": "2026-10-13T09:24:10+00:00",
+      "image": "https://www.4gamer.net/games/015/G101544/20261013037/TN/001.jpg"
+    },
+    {
+      "title": "心理ホラー「SOMBRAS: negative frames」，12月のリリースを前にデモが進化。濃い霧の表現と“おかしな日本語”の看板が見どころ",
+      "url": "https://www.4gamer.net/games/009/G100945/20261013035/",
+      "summary": "SAGABarcelonaGameFest2026のEntaltoPublishingブースでは，2026年12月4日のリリースが決定しているMaboroshiArtworksの新作「SOMBRAS:negativeframes」の最新デモが展示されていた。2000年代の日本の地方都市を背景に，独自のアプローチでノスタルジーと不安感が表現されている。",
+      "source": "4Gamer",
+      "date": "2026-10-13T09:19:52+00:00",
+      "image": "https://www.4gamer.net/games/009/G100945/20261013035/SS/002.jpg"
+    },
+    {
+      "title": "3つの武器を切り替えて斬り，グラップリングフックで飛び回る。チリのチームが作るアクションRPG「Atemporal Silentium」［BGS2026］",
+      "url": "https://www.4gamer.net/games/049/G104978/20261013034/",
+      "summary": "チリのインディースタジオOuchGamesが，ブラジルで開催されたBrasilGameShow2026に，開発中のアクションRPG「AtemporalSilentium」を出展していた。「DevilMayCry」のような手数の多い戦闘にソウルライクの要素を混ぜ，物語は「ファイナルファンタジー」のように語るという作品だ。",
+      "source": "4Gamer",
+      "date": "2026-10-13T09:04:39+00:00",
+      "image": "https://www.4gamer.net/games/049/G104978/20261013034/SS/002.jpg"
+    },
+    {
+      "title": "名もなき死者たちと会話して手がかりを集め，名前を突き止めて火葬する。ミステリーホラーADV「I SHALL NAME THE DEAD 〜死者に名を〜」体験版配信開始",
+      "url": "https://www.4gamer.net/games/023/G102312/20261013033/",
+      "summary": "DANGENEntertainmentは，PC向け新作「ISHALLNAMETHEDEAD〜死者に名を〜」の体験版をSteamで配信開始した。本作は，名もなき死者たちと会話し，手がかりから名前を突き止めて弔いへと導くミステリーホラーADVだ。体験版では本編の冒頭部分を遊べるほか，ワームが会話の選択肢を侵食するシステムも体験できる。",
+      "source": "4Gamer",
+      "date": "2026-10-13T08:43:40+00:00",
+      "image": "https://www.4gamer.net/games/023/G102312/20261013033/SS/003.jpg"
+    },
+    {
+      "title": "27型4Kでデュアルモード対応の量子ドットMini LEDゲーミングディスプレイがKTCから登場",
+      "url": "https://www.4gamer.net/games/049/G104956/20261013032/",
+      "summary": "2026年10月12日，KTC日本は，「KeyToCombat」ブランドの27インチゲーミング液晶ディスプレイ「M27P6S」を11月に発売すると発表した。量子ドットMiniLEDバックライトの採用とデュアルモード対応が特徴だ。税込価格は8万1000円。",
+      "source": "4Gamer",
+      "date": "2026-10-13T08:22:49+00:00",
+      "image": "https://www.4gamer.net/games/049/G104956/20261013032/SS/002.jpg"
+    },
+    {
+      "title": "失った過去のかけらを拾い集め，少年は都会を目指す。ブラジルの個人開発者が4年かけて作る探索アドベンチャー「[AFANTASIA]」［BGS2026］",
+      "url": "https://www.4gamer.net/games/049/G104974/20261013028/",
+      "summary": "BrasilGameShow2026の会場で，探索アドベンチャー「[AFANTASIA]」を試遊し，開発者のLeonStevans氏に話を聞いた。記憶をなくした少年は，自分が何者だったのかを探して小さな町を歩き回る作品だ。開発はStevans氏がたった1人で手がけており，日本のスタジオサザンカがパブリッシャを務める。",
+      "source": "4Gamer",
+      "date": "2026-10-13T08:16:31+00:00",
+      "image": "https://www.4gamer.net/games/049/G104974/20261013028/SS/001.jpg"
+    },
+    {
+      "title": "高速ノンコーティング表面採用のガラスマウスパッド「Statice Seraph」",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2146946.html",
+      "summary": "Staticeのガラス製ゲーミングマウスパッド「Seraph」が登場した。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-13T08:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2146/946/s1.jpg"
+    },
+    {
+      "title": "今夜22時から放送の「RADIO 4Gamer Tap（仮）」では，2026年10月6日に発売されたばかりのアクションTPS「Gears of War: E-Day」を紹介します",
+      "url": "https://www.4gamer.net/games/968/G096869/20261013007/",
+      "summary": "2026年10月13日22：00より，声優の岡本信彦さんと，フリーライターのマフィア梶田さんがパーソナリティを務めるWeb番組「RADIO4GamerTap（仮）」第309回のライブ配信を行います。今回は，「GearsofWar:E-Day」を紹介します。",
+      "source": "4Gamer",
+      "date": "2026-10-13T08:00:00+00:00",
+      "image": "https://www.4gamer.net/games/968/G096869/20261013007/SS/001.jpg"
+    },
+    {
+      "title": "ブラジルの路上文化を詰め込んだブーマーシューター「BRAZILIAN DRUG DEALER BEFORE 4」［BGS2026］",
+      "url": "https://www.4gamer.net/games/049/G104970/20261013027/",
+      "summary": "ブラジル・サンパウロで開催されたBrasilGameShow2026で，個人開発者のJoeveno氏が，9月16日にSteamで発売したばかりのFPS「BRAZILIANDRUGDEALERBEFORE4」を紹介してくれた。2000年代のブラジルで露店に並んでいた海賊版ゲームへのオマージュとして作った前作は，Steamで9000件を超えるレビューを集め，食べるお金にも困っていた開発者の暮らしを変えたという。",
+      "source": "4Gamer",
+      "date": "2026-10-13T07:52:37+00:00",
+      "image": "https://www.4gamer.net/games/049/G104970/20261013027/SS/002.jpg"
+    },
+    {
+      "title": "吉田修平氏も4Gamerもちょっと舐めていた。2回目の「OSAKA INDIE GAMES SUMMIT」は，“見逃していいゲーム”がないイベントだった［インタビュー］",
+      "url": "https://www.4gamer.net/games/991/G999110/20261006028/",
+      "summary": "東京ゲームショウが終わったのは9月20日である。そしてOSAKAINDIEGAMESSUMMITが開催されたのは，10月3日である。その間，わずか2週間。いやさすがに書くものないのでは？ 遊ぶものないのでは？ と思っていた2人の予想を，軽く上回ったイベントの締めのインタビューがこちらです。",
+      "source": "4Gamer",
+      "date": "2026-10-13T07:45:00+00:00",
+      "image": "https://www.4gamer.net/games/991/G999110/20261006028/SS/015.jpg"
+    },
+    {
+      "title": "倒した相手の技を奪って，次の試合に持ち込む。ローグライク格闘ゲーム「Poly Fighter」［BGS2026］",
+      "url": "https://www.4gamer.net/games/049/G104971/20261013026/",
+      "summary": "2026年10月11日，BrasilGameShow2026の会場で，カナダのHeartLoopGamesが手がける「PolyFighter」を試遊した。1対1の格闘ゲームにローグライクの仕組みを組み込んだシングルプレイ専用のタイトルで，倒した相手から技を奪い，自分だけの技構成を組み上げながらリーグを勝ち上がっていく。",
+      "source": "4Gamer",
+      "date": "2026-10-13T07:36:01+00:00",
+      "image": "https://www.4gamer.net/games/049/G104971/20261013026/SS/001.jpg"
+    },
+    {
+      "title": "ZOTAC、GeForce RTX 5080搭載で世界最小クラスをうたうミニPC",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147705.html",
+      "summary": "ZOTACは10月13日、ZBOX EシリーズからGeForce RTX 5080を搭載するミニPC「MAGNUS ONE ULTRA EU275080C」を発売した。価格はオープンプライスで、直販価格は41万8,000円～75万200円。",
+      "source": "PC Watch",
+      "date": "2026-10-13T07:32:11+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/705/001.jpg"
+    },
+    {
+      "title": "「MTG」×マーベルの新セット「ダークホールド・デスティニー」発表。ドクター・ストレンジら4人を中心に完全新作ストーリーを展開",
+      "url": "https://www.4gamer.net/games/136/G013687/20261013024/",
+      "summary": "ウィザーズ・オブ・ザ・コーストは，ニューヨーク・コミコンで「マジック：ザ・ギャザリング|マーベル：ダークホールド・デスティニー」を発表した。マーベル・ユニバースを舞台に，約30の次元をまたぐ完全新作ストーリーを描く「ユニバース・ビヨンド」セットとなる。",
+      "source": "4Gamer",
+      "date": "2026-10-13T07:26:04+00:00",
+      "image": "https://www.4gamer.net/games/136/G013687/20261013024/SS/001.jpg"
+    },
+    {
+      "title": "「Slay the Spire」を手本に，ブラジルのインディースタジオが自社エンジンで作るデッキ構築型ローグライク「Rogue Reigns」［BGS2026］",
+      "url": "https://www.4gamer.net/games/049/G104955/20261013019/",
+      "summary": "クマ，ライオン，ネコ，ウサギがそれぞれ専用のデッキを持ち，パーティを組んで戦うデッキ構築型ローグライクゲーム「RogueReigns」が，「BrasilGameShow2026」に出展されていた。開発はサンパウロのインディースタジオ，VennStudiosだ。PC向けに11月3日の発売が予定されている。",
+      "source": "4Gamer",
+      "date": "2026-10-13T07:20:18+00:00",
+      "image": "https://www.4gamer.net/games/049/G104955/20261013019/SS/001.jpg"
+    },
+    {
+      "title": "杖で殴ってマナを溜め，魔法を放つ。魔法少女×ローグライトARPG「Bless You Again」，体験版をSteamで配信開始",
+      "url": "https://www.4gamer.net/games/887/G088794/20261013023/",
+      "summary": "Ginoは2026年10月12日，ローグライトアクションRPG「BlessYouAgain」の体験版をSteamで配信開始した。杖で敵を殴ってマナを溜め，魔法を放つという，近接と魔法を往復する戦闘が特徴だ。体験版ではリリィとヨルの2人から1人を選び，最初のダンジョン「導きの玄廊」に挑める。",
+      "source": "4Gamer",
+      "date": "2026-10-13T07:08:42+00:00",
+      "image": "https://www.4gamer.net/games/887/G088794/20261013023/SS/001.jpg"
+    },
+    {
+      "title": "【本日みつけたお買い得品】ROGの220Hzゲーミングモニターが1万420円引きで2万円台！Amazonセール",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147676.html",
+      "summary": "Amazonにてプライム感謝祭先行セールが開催中。ASUSが展開するROGブランドのゲーミングモニターがセール価格で販売されており、27型の「XG27ACSR」は直近価格から1万420円引きとなる2万9,800円で購入可能になっている。",
+      "source": "PC Watch",
+      "date": "2026-10-13T07:04:26+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/676/01.jpg"
+    },
+    {
+      "title": "「悪魔城ドラキュラ」への愛に満ちた「Castlevania: Belmont's Curse」は，愛ゆえの手ごわさで一瞬たりとも気が抜けない［プレイレポ］",
+      "url": "https://www.4gamer.net/games/983/G098352/20261002027/",
+      "summary": "「悪魔城ドラキュラ」シリーズの最新作となる「Castlevania:Belmont'sCurse」は，広大なマップを特殊能力で踏破する探索型でありつつ，過去作品とは違ったプレイ感がある。やり応えのあるジャンプアクションと激しいバトルの両方を楽しめる作品だ。",
+      "source": "4Gamer",
+      "date": "2026-10-13T07:00:00+00:00"
+    },
+    {
+      "title": "数字のヒントを頼りにマスを埋め，隠された動物のドット絵を完成させていく。お絵かきロジック「Pet Cross」，体験版配信中",
+      "url": "https://www.4gamer.net/games/049/G104965/20261013022/",
+      "summary": "SanoGamesは，PC向け新作「PetCross」の体験版をSteamで配信している。本作は，数字をヒントにマスを埋め，動物のドット絵を完成させるお絵かきロジック系のパズルゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-13T06:56:30+00:00"
+    },
+    {
+      "title": "魔法の鉛筆で世界を改変しながら戦う。キュートな見た目のバイオレンスFPS「PAPERHEAD」，配信開始",
+      "url": "https://www.4gamer.net/games/011/G101192/20261013021/",
+      "summary": "HypeTrainDigitalは2026年10月10日，Paperheadte4mが開発した新作タイトル「PAPERHEAD」をリリースした。本作は，廃墟となった研究施設を探索して闇に潜む真実を暴き出す，スピーディなブーマーシューターとホラーアドベンチャーを組み合わせたFPSだ。",
+      "source": "4Gamer",
+      "date": "2026-10-13T06:48:55+00:00"
+    },
     {
       "title": "【本日みつけたお買い得品】Core Ultra 7 356H/32GBメモリ搭載のミニPCが2万5千円引き",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147631.html",
       "summary": "Amazonにてプライム感謝祭先行セールが開催されており、GEEKOM製のミニPCが特価にて販売中。例として、Core Ultra 7 356H搭載の「IT13」の場合、直近価格19万9,990円のところ、2万5,200円引きの17万4,790円にて購入できる。",
       "source": "PC Watch",
-      "date": "2026-10-13T06:36:05+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/631/01.jpg"
+      "date": "2026-10-13T06:36:05+00:00"
     },
     {
       "title": "Pulsar×“TenZ”コラボゲーミングマウスに第2弾、2サイズ展開",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2146179.html",
       "summary": "VALORANT元プロ監修のゲーミングマウス「TenZ Signature Edition 2.0」がPulsar Gaming Gearsから登場した。カラーはBlackとMisty Blueの2色で、価格は順に19,800円、21,890円。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-13T06:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2146/179/s1.jpg"
+      "date": "2026-10-13T06:05:00+00:00"
     },
     {
       "title": "日本を舞台にしたゲームを作り続けるLGS Games Productionsとは［BGS2026］",
       "url": "https://www.4gamer.net/games/991/G999110/20261013015/",
       "summary": "ブラジル・サンパウロで開催されたBrasilGameShow2026の会場で，LGSGamesProductionsのCEO，GilsonB.Pontes氏に話を聞いた。LGSGamesProductionsは2020年から2024年まで毎年1本ずつ，日本の歴史を題材にしたアクションアドベンチャーを発売してきた会社だ。",
       "source": "4Gamer",
-      "date": "2026-10-13T05:59:38+00:00",
-      "image": "https://www.4gamer.net/games/991/G999110/20261013015/SS/009.jpg"
+      "date": "2026-10-13T05:59:38+00:00"
     },
     {
       "title": "父の遺志を継ぎ，統首“クリムゾン”を討て。「クリムゾン（MSX2版）」，プロジェクトEGGで会員向けに無料配信開始",
       "url": "https://www.4gamer.net/games/008/G000896/20261013018/",
       "summary": "D4エンタープライズは本日，プロジェクトEGGで「クリムゾン（MSX2版）」の無料配信を会員向けに開始した。「クリムゾン」は，1987年にクリスタルソフトから発売されたRPGだ。消息不明となった父の遺志を継いだ主人公が仲間を集め，世界を支配する統首“クリムゾン”の打倒を目指す。",
       "source": "4Gamer",
-      "date": "2026-10-13T05:57:04+00:00",
-      "image": "https://www.4gamer.net/games/008/G000896/20261013018/SS/003.jpg"
+      "date": "2026-10-13T05:57:04+00:00"
     },
     {
       "title": "「逆転裁判」より成歩堂龍一と御剣怜侍のぬいぐるみが登場。カプコンのグッズシリーズ「ちびかぷ」，予約受付を開始",
       "url": "https://www.4gamer.net/games/805/G080590/20261013017/",
       "summary": "カプコンは本日（2026年10月13日），同社のオリジナルグッズシリーズ「ちびかぷ」の予約受付を開始し，特設サイトをオープンした。第1弾として，「逆転裁判」シリーズより成歩堂龍一と御剣怜侍のぬいぐるみが登場した。",
       "source": "4Gamer",
-      "date": "2026-10-13T05:54:10+00:00",
-      "image": "https://www.4gamer.net/games/805/G080590/20261013017/SS/002.jpg"
+      "date": "2026-10-13T05:54:10+00:00"
     },
     {
       "title": "2人の少女と呪物が引き起こす事件を追う。謎を解きながら呪いの真相に迫る探索型ホラーADV「穢れ憑きの少女 鳴海龍也の回奇録」発表",
       "url": "https://www.4gamer.net/games/049/G104953/20261013016/",
       "summary": "BogeymanGamesは，PC向け新作「穢れ憑きの少女鳴海龍也の回奇録」を発表した。本作は，2人の少女と呪物が引き起こす事件を追い，呪いの真相に迫る探索型ホラーアドベンチャーゲームだ。",
       "source": "4Gamer",
-      "date": "2026-10-13T05:37:31+00:00",
-      "image": "https://www.4gamer.net/games/049/G104953/20261013016/SS/002.jpg"
+      "date": "2026-10-13T05:37:31+00:00"
     },
     {
       "title": "VALORANTプロ兄弟監修のPulsarコラボマウス第2弾「Susanto-X 2.0」、新センサー搭載/Largeモデルも用意",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2146182.html",
       "summary": "プロeスポーツプレイヤー兄弟が監修したというゲーミングマウス「Susanto-X 2.0 Gaming Mouse」がPulsar Gaming Gearsから登場した。価格は21,890円。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-13T05:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2146/182/s1.jpg"
+      "date": "2026-10-13T05:30:00+00:00"
     },
     {
       "title": "ホロライブ「博衣こより」の1stソロライブ「Dream Spark」が12月22日に東京ガーデンシアターで開催決定！",
       "url": "https://www.4gamer.net/games/760/G076029/20261013014/",
       "summary": "2026年10月11日，カバーは，ホロライブ所属VTuberの博衣こよりによる初のソロライブ「HakuiKoyori1stLive“DreamSpark”」を，12月22日に「東京ガーデンシアター」で開催すると発表した。現地会場指定席チケットの1次先行抽選と，配信チケットの販売も始まっている。",
       "source": "4Gamer",
-      "date": "2026-10-13T05:29:49+00:00",
-      "image": "https://www.4gamer.net/games/760/G076029/20261013014/SS/002.jpg"
+      "date": "2026-10-13T05:29:49+00:00"
     },
     {
       "title": "【本日みつけたお買い得品】紙のような書き心地のTCL製11.5型タブレットが15%オフ",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147645.html",
       "summary": "Amazonのプライム感謝祭先行セールにおいて、TCLの11.5型電子ノート「Note A1 NXTPAPER」が、1万3,947円オフの7万9,033円で購入可能となっている。",
       "source": "PC Watch",
-      "date": "2026-10-13T05:29:43+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/645/001.jpg"
+      "date": "2026-10-13T05:29:43+00:00"
     },
     {
       "title": "日本語配列のメカニカルキーボード「Aurora 80 JIS」が登場、トライモード接続対応",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147230.html",
       "summary": "WOBKEYのサブブランド「PMO」の日本語配列メカニカルキーボード「Aurora 80 JIS」が、パソコンショップ アークに入荷。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-13T05:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/230/s1.jpg"
+      "date": "2026-10-13T05:05:00+00:00"
     },
     {
       "title": "敵を倒すより，カードを場に居座らせたほうが強い。3つの勢力で戦うカードゲーム「Dfiance: Dominance」［BGS2026］",
       "url": "https://www.4gamer.net/games/049/G104949/20261013011/",
       "summary": "空を飛ぶ勢力，魔法の勢力，力押しの勢力から1つを選んでデッキを組み，オンラインで対戦するカードゲーム「Dfiance:Dominance」が，ブラジル・サンパウロのBrasilGameShow2026に出展されていた。勝敗を分けるのは，敵のカードを何枚倒したかではなく，自分のカードをどれだけ長く場に残せたかだ。",
       "source": "4Gamer",
-      "date": "2026-10-13T04:55:32+00:00",
-      "image": "https://www.4gamer.net/games/049/G104949/20261013011/SS/002.jpg"
+      "date": "2026-10-13T04:55:32+00:00"
     },
     {
       "title": "「ステューピッド・ネバー・ダイズ」の魅力を凝縮した「90秒ゲーム紹介映像」とWebCMが公開に",
       "url": "https://www.4gamer.net/games/968/G096854/20261013010/",
       "summary": "セガは2026年10月13日，「ステューピッド・ネバー・ダイズ」の最新ムービー「90秒ゲーム紹介映像」を同社公式YouTubeチャンネルで公開した。今回のムービーは，本作の世界観やアクションなどの魅力を90秒に凝縮し，実際のプレイシーンを交えて紹介している。WebCMも同時公開されている。",
       "source": "4Gamer",
-      "date": "2026-10-13T04:40:56+00:00",
-      "image": "https://www.4gamer.net/games/968/G096854/20261013010/SS/002.jpg"
+      "date": "2026-10-13T04:40:56+00:00"
     },
     {
       "title": "不気味な人形を修理する職人の日々は，村に戻ってきた幼なじみとの再会で一変する。ロマンスとホラーを組み合わせたビジュアルノベル「The Doll Shop」，現在配信中",
       "url": "https://www.4gamer.net/games/049/G104945/20261013008/",
       "summary": "AtelierSentôは，PC向け新作「TheDollShop」の配信をSteamで開始した。本作は，雪に閉ざされた日本の村を舞台に，人形職人の青年と幼なじみの再会を描く，ロマンスとホラーを組み合わせたビジュアルノベルだ。",
       "source": "4Gamer",
-      "date": "2026-10-13T04:38:08+00:00",
-      "image": "https://www.4gamer.net/games/049/G104945/20261013008/SS/002.jpg"
+      "date": "2026-10-13T04:38:08+00:00"
     },
     {
       "title": "センサーやスクロールホイール，ワイヤレス通信のすべてを最新世代にアップデートしたマウス「Razer Basilisk V4 Pro」登場",
       "url": "https://www.4gamer.net/games/023/G002318/20261013009/",
       "summary": "2026年10月9日，Razerは，ゲーマー向けワイヤレス＆ワイヤードマウス「BasiliskV4Pro」を発表した。搭載センサーやスクロールホイール，ワイヤレス通信技術をRazerの最新世代にアップデートしたうえで，左側面にボタンを追加したのが特徴だ。",
       "source": "4Gamer",
-      "date": "2026-10-13T04:32:36+00:00",
-      "image": "https://www.4gamer.net/games/023/G002318/20261013009/SS/004.jpg"
+      "date": "2026-10-13T04:32:36+00:00"
     },
     {
       "title": "【本日みつけたお買い得品】AirPods Pro 3が6千円引き！ノイキャン搭載AirPods 4も7千円オフに",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147601.html",
       "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施中だ。ワイヤレスイヤフォンのApple「AirPods Pro 3」は、プライム会員限定の6,000円引きで、3万6,800円にて購入できる。",
       "source": "PC Watch",
-      "date": "2026-10-13T04:14:37+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/601/01.jpg"
+      "date": "2026-10-13T04:14:37+00:00"
     },
     {
       "title": "Switch2版「オラ夏」「炭シロ」，2027年3月4日発売決定。2作品入りパッケージも登場。60fpsや高解像度，マウス操作に対応",
       "url": "https://www.4gamer.net/games/049/G104941/20261013006/",
       "summary": "ネオスは本日，「クレヨンしんちゃん『オラと博士の夏休み』〜おわらない七日間の旅〜」と「クレヨンしんちゃん『炭の町のシロ』」のSwitch2版を，2027年3月4日に発売すると発表した。60fpsや高解像度，マウス操作，どこでもセーブなどのSwitch2向け機能を追加する。",
       "source": "4Gamer",
-      "date": "2026-10-13T04:13:11+00:00",
-      "image": "https://www.4gamer.net/games/049/G104941/20261013006/SS/001.jpg"
+      "date": "2026-10-13T04:13:11+00:00"
     },
     {
       "title": "Antecの安価な簡易水冷CPUクーラー「Ultra 240 ARGB/360 ARGB」",
@@ -207,27 +340,6 @@
       "date": "2026-10-13T03:00:00+00:00"
     },
     {
-      "title": "残酷なオリジンストーリーを体験せよ。「Gears of War: E-Day」が販売中。限定版のXBOX ワイヤレス コントローラーが当たるキャンペーンを実施【PR】",
-      "url": "https://www.4gamer.net/games/968/G096869/20261008043/",
-      "summary": "XBOXGameStudiosは，TheCoalitionが開発する「GearsofWar:E-Day」を10月7日に発売した。本作の発売を記念し，4Gamerの公式Xアカウントで「『GearsofWar:E-Day』XBOXワイヤレスコントローラー」が抽選で1名に当たるプレゼントキャンペーンを実施する。",
-      "source": "4Gamer",
-      "date": "2026-10-13T03:00:00+00:00"
-    },
-    {
-      "title": "わけありの死刑囚たちが参加するバラエティ番組を舞台にしたADV「BUZZ or DIE」，10月28日に発売決定",
-      "url": "https://www.4gamer.net/games/037/G103760/20261009045/",
-      "summary": "講談社クリエイターズラボは本日（2026年10月13日），PC向け新作タイトル「BUZZorDIE」を10月28日にSteamで発売すると発表した。本作は，わけありの死刑囚たちが参加するバラエティ番組を舞台にしたアドベンチャーゲームだ。また，発売に先駆けて，ゲーム冒頭の1エピソードを丸ごと楽しめる体験版も配信された。",
-      "source": "4Gamer",
-      "date": "2026-10-13T03:00:00+00:00"
-    },
-    {
-      "title": "女性向けゲームブランド MintLip+，完全新規乙女ゲーム「PROJECT SIGN：Astraea」のティザーサイトを公開。10月19日12：00に“資料”公開へ",
-      "url": "https://www.4gamer.net/games/949/G094998/20261010012/",
-      "summary": "エディアは本日，女性向けゲームブランド「MintLip+」より発売予定の完全新規乙女ゲームの第1弾「PROJECTSIGN：Astraea」のティザーサイトを公開した。同サイトではユーザーに向けた「ミッション」が提示されており，10月19日12：00には作品に関する“資料”が公開される予定だ。",
-      "source": "4Gamer",
-      "date": "2026-10-13T03:00:00+00:00"
-    },
-    {
       "title": "ChatGPT、またリセット予告。16時頃までに利用枠回復",
       "url": "https://pc.watch.impress.co.jp/docs/news/2147518.html",
       "summary": "この3日間で2回目のリセットだ。OpenAIでCodexとChatGPTを担当するThibault Sottiaux(ティボー・ソティオ)氏が10月13日(日本時間)、全ユーザーの利用枠リセットを同日中に実施するとX(旧Twitter)で告知した。",
@@ -270,13 +382,6 @@
       "date": "2026-10-13T01:50:55+00:00"
     },
     {
-      "title": "日本語専用モデルの「PlayStation 5 デジタル・エディション ミッドナイト ブラック」が11月19日発売",
-      "url": "https://www.4gamer.net/games/990/G999027/20261013001/",
-      "summary": "2026年10月13日，ソニー・インタラクティブエンタテインメントは，PlayStation5の新モデル「PlayStation5デジタル・エディションミッドナイトブラック日本語専用」を11月19日に発売すると発表した。税込価格は5万5000円だ。",
-      "source": "4Gamer",
-      "date": "2026-10-13T01:48:14+00:00"
-    },
-    {
       "title": "【本日みつけたお買い得品】iPad Airが1万3千円引きで購入可能！プライム感謝祭先行セール",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147491.html",
       "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施している。Apple「11インチiPad Air(M4)」(Wi-Fiモデル)は、プライム会員限定の1万3,000円引きで、128GBストレージ版が11万6,800円、256GB版が13万3,800円、512GB版が16万8,800円にて購入可能だ。また1TB版は、非プライム会員も対象の1万3,000円引きにより、21万8,800円で購入できる。",
@@ -312,13 +417,6 @@
       "date": "2026-10-13T01:05:00+00:00"
     },
     {
-      "title": "気づいたら，獣人の足をペロペロしていた。大阪出張で見てきた特殊なゲームとコントローラ［OIGS2026］",
-      "url": "https://www.4gamer.net/games/049/G104934/20261011012/",
-      "summary": "OSAKAINDIEGAMESSUMMIT2026の会場で目を惹いた，変わった遊びの作品を紹介しよう。VRで獣人をなめる「シュ〜ペロ」から，麺切り包丁がコントローラーになる「うどんプッシャー」まで。",
-      "source": "4Gamer",
-      "date": "2026-10-13T01:00:00+00:00"
-    },
-    {
       "title": "【本日みつけたお買い得品】iPhone Airが最大11万円以上オフ！プライム感謝祭先行セールで大幅値引き",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147466.html",
       "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施中だ。Apple「iPhone Air」は、プライム会員限定の割引で、256GBストレージ版が4万円引きの14万9,800円、512GB版が5万3,200円引きの17万1,600円、1TB版が11万4,278円引きの18万3,500円にて購入できる。",
@@ -347,13 +445,6 @@
       "date": "2026-10-13T00:30:00+00:00"
     },
     {
-      "title": "こんな配達はしたくない。怪異の潜む昭和の団地が舞台のフードデリバリーホラー「To 666 Deliver or Die」，シナリオライターがあえてテキストを封じて描く挑戦作［OIGS2026］",
-      "url": "https://www.4gamer.net/games/048/G104849/20261011004/",
-      "summary": "「To666DeliverorDie」は，怪異の潜む団地へ配達する2Dゲームだ。Ge-sakuの長井知佳氏が1人で開発中のプレアルファデモを，OSAKAINDIEGAMESSUMMIT2026で体験した。",
-      "source": "4Gamer",
-      "date": "2026-10-13T00:30:00+00:00"
-    },
-    {
       "title": "賢者の石を探して迷宮を探索！カシオ『賢者の石』",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/column/retrosoft/2138057.html",
       "summary": "当時の懐かしい広告とゲーム画面で、国産PCの歴史とノスタルジーに浸れる連載コーナー。今回はアクションゲームにRPGのエッセンスを加えた、MSX用の固定画面迷宮探索ゲーム『賢者の石』を取り上げます。",
@@ -361,31 +452,10 @@
       "date": "2026-10-13T00:05:00+00:00"
     },
     {
-      "title": "【福田昭のセミコン業界最前線】AI特需による異常な半導体不足がもたらす個人向け市場の「ディストピア」",
-      "url": "https://pc.watch.impress.co.jp/docs/column/semicon/2147451.html",
-      "summary": "",
-      "source": "PC Watch",
-      "date": "2026-10-13T00:01:06+00:00"
-    },
-    {
-      "title": "プレイと音がシンクロする。Rezが出発点のリズムレールシューター「カゲキオトメ・カノン」［OIGS2026］",
-      "url": "https://www.4gamer.net/games/923/G092321/20261011011/",
-      "summary": "「カゲキオトメ・カノン」をOSAKAINDIEGAMESSUMMIT2026で体験した。敵を撃つたびにBGMへギターやピアノのフレーズが足されていく，音が作品のコアとなるシューティングだ。",
-      "source": "4Gamer",
-      "date": "2026-10-13T00:00:00+00:00"
-    },
-    {
       "title": "布・ガラスが選べるゲーミングマウスパッド「Monica Nica」",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147304.html",
       "summary": "Monicaブランドのゲーミングマウスパッド「Nica」が、パソコンショップ アークに入荷。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-12T23:30:00+00:00"
-    },
-    {
-      "title": "ボールを渡した瞬間の，ネコの幸せそうな顔がたまらない。「私の赤いボールはどこだ?」は親子の話から姉妹の物語へ［OIGS2026］",
-      "url": "https://www.4gamer.net/games/937/G093713/20261011010/",
-      "summary": "ポイント＆クリックパズル「私の赤いボールはどこだ?」の未公開ステージをOSAKAINDIEGAMESSUMMIT2026の会場で触ってきた。姉妹の物語へ変わった背景も紹介しよう。",
-      "source": "4Gamer",
       "date": "2026-10-12T23:30:00+00:00"
     },
     {
@@ -396,81 +466,11 @@
       "date": "2026-10-12T23:05:00+00:00"
     },
     {
-      "title": "眠くなるまで，部屋のものを触っていく。無料ADV「オピポピ」は，仕組みが先で物語が後だった［OIGS2026］",
-      "url": "https://www.4gamer.net/games/000/G100036/20261011009/",
-      "summary": "眠る前の部屋で眠気が満ちるまでを過ごす無料短編アドベンチャー「オピポピ」。OSAKAINDIEGAMESSUMMIT2026で，製作者のぐらたんP氏に聞いた話を交えて，本作を紹介しよう。",
-      "source": "4Gamer",
-      "date": "2026-10-12T23:00:00+00:00"
-    },
-    {
-      "title": "「プリコネR」と「ウマ娘」がコラボ！ 特別番組を10月17日に配信。忘れずに見たい「今週の公式配信番組」ピックアップ",
-      "url": "https://www.4gamer.net/games/421/G042182/20261009041/",
-      "summary": "「プリンセスコネクト！Re:Dive」と「ウマ娘プリティーダービー」のコラボを記念した特別番組が，10月17日19：00に配信される。今回もこの1週間で予定されている，ゲームに関連した公式配信番組を中心に，いくつかをピックアップして紹介しよう。",
-      "source": "4Gamer",
-      "date": "2026-10-12T23:00:00+00:00"
-    },
-    {
-      "title": "お尻を叩いて，謎の女の子とのコミュニケーション。デスクトップ常駐でいつでも触れ合える，ストーリーありのコンパニオン「Your Momo」［OIGS2026］",
-      "url": "https://www.4gamer.net/games/048/G104850/20261011006/",
-      "summary": "OSAKAINDIEGAMESSUMMIT2026で出会った「YourMomo」は，韓国のインディースタジオが開発するデスクトップマスコットだ。おどおどした女の子のお尻を叩いて仲良くなる，ちょっと変わったコミュニケーションゲームである。",
-      "source": "4Gamer",
-      "date": "2026-10-12T22:30:00+00:00"
-    },
-    {
       "title": "第10世代CoreやDVD-RWドライブ搭載の15.6型ノートPCが29,980円、パソコン工房で中古品が販売中",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2147346.html",
       "summary": "Core i3-10110U(2コア/4スレッド)を搭載した15.6型ノートPC「LIFEBOOK A5510/D」の中古品が、パソコン工房の通販サイトで販売中。販売されているのは3か月保証が付いた中古品で、価格は29,980円となっています。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-12T22:00:00+00:00"
-    },
-    {
-      "title": "ガチくんに! 第434回切り抜き「ガチくんvsさはらvsりゅうきち！業界屈指の3人の学力テスト」",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2147441.html",
-      "summary": "※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchとYouTubeで配信しています。レギュラー出演者はぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードした切り抜きとアーカイブの動画を掲載しています。",
-      "source": "PC Watch",
-      "date": "2026-10-12T21:30:00+00:00"
-    },
-    {
-      "title": "Dropbox/1Passwordや翻訳機ポケトークS2などソースネクスト製品が最大85%オフ！Amazonプライム感謝祭",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147269.html",
-      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールが開催中です。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-12T15:20:00+00:00"
-    },
-    {
-      "title": "「トータルウォー：ショーグン2 コンプリートエディション」はシリーズの入り口にうってつけの1本だ［プレイレポ］",
-      "url": "https://www.4gamer.net/games/043/G104352/20261011001/",
-      "summary": "2011年にリリースされたストラテジーゲーム「TotalWar:SHOGUN2」のコンプリートエディションが，2026年10月14日に発売される。DLCを含めその内容をまるごと日本語で遊べるのはこれが初めてだ。本稿では追加要素に加え，本作がどんなゲームで，どこが面白いのかをあらためて紹介したい。",
-      "source": "4Gamer",
-      "date": "2026-10-12T09:00:00+00:00"
-    },
-    {
-      "title": "「プロセカ」，星、ときどき光をリズムゲーム楽曲に追加。ゲーム内イベント「Stars Off Orbit」「Soundless Seaガチャ」を開催",
-      "url": "https://www.4gamer.net/games/476/G047609/20261009050/",
-      "summary": "",
-      "source": "4Gamer",
-      "date": "2026-10-12T06:00:00+00:00"
-    },
-    {
-      "title": "【今週のモチベ】動物園シム「Planet Zoo 2」や，シリーズ最新作「Castlevania: Belmont’s Curse」が発売される 2026年10月12日〜10月18日",
-      "url": "https://www.4gamer.net/games/954/G095479/20261011003/",
-      "summary": "「え？あれって今週発売だったの!?」となりがちな人のための週刊連載「今週のモチベ」。今週は，世界各地を舞台に，自分だけの動物園を設計＆運営していく「PlanetZoo2」や，「悪魔城ドラキュラ」シリーズ最新作「Castlevania:Belmont’sCurse」がリリースされる。",
-      "source": "4Gamer",
-      "date": "2026-10-11T23:00:00+00:00"
-    },
-    {
-      "title": "4Gamerの1週間を振り返る「Weekly 4Gamer」，2026年10月5日〜10月11日",
-      "url": "https://www.4gamer.net/games/040/G004099/20261011008/",
-      "summary": "2026年10月5日〜10月11日，4Gamerに掲載された記事は283本でした。ブラジルで開催された「BrasilGameShow2026」や，スペインの「SAGABarcelonaGameFest2026」など，世界中のゲームイベントの新情報を掲載した4Gamerと，世界のゲーム業界の1週間を振り返ってみましょう。",
-      "source": "4Gamer",
-      "date": "2026-10-11T22:00:00+00:00"
-    },
-    {
-      "title": "「マーベル闘魂」，DLC第2弾は「ソー（ジェーン・フォスター）」に決定！ 「ヴェノム」は2027年春，「ジュビリー」は2027年夏に登場！",
-      "url": "https://www.4gamer.net/games/916/G091618/20261011013/",
-      "summary": "ソニー・インタラクティブエンタテインメントは本日（2026年10月11日），対戦格闘ゲーム「MARVELTōkon:FightingSouls」の最新トレイラーを公開し，Year1DLCに収録されるキャラクター情報を公開した。DLC第2弾は「ソー（ジェーン・フォスター）」となる。",
-      "source": "4Gamer",
-      "date": "2026-10-11T12:27:11+00:00"
     }
   ],
   "feed_count": 3,
