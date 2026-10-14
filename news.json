@@ -1,6 +1,62 @@
 {
-  "updated_at": "2026-10-13T21:42:28.603936+00:00",
+  "updated_at": "2026-10-14T00:56:18.305991+00:00",
   "articles": [
+    {
+      "title": "【本日みつけたお買い得品】ASUSの4K有機ELモニターが約2万円引きで11万9千円に。Amazonセール",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147867.html",
+      "summary": "Amazonにてプライム感謝祭先行セールが開催中。ASUSが展開するProArtブランドのモニターで26.5型の「PA279CDV-J」は直近価格から2万1,202円引きとなる11万9,000円で購入可能になっている。",
+      "source": "PC Watch",
+      "date": "2026-10-14T00:49:21+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/867/01.jpg"
+    },
+    {
+      "title": "Thunderbolt 5対応の10GbE LAN変換アダプタがSonnetから",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147332.html",
+      "summary": "Thunderbolt 5接続に対応したSonnetの10GBASE-T変換アダプタ「Solo10G T5 Thunderbolt 5 Adapter（SOLO10G-TB5）」が店頭入荷。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-14T00:30:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/332/a1.jpg"
+    },
+    {
+      "title": "【本日みつけたお買い得品】約5万4千円引きでASUSゲーミングデスクトップがAmazonプライム感謝祭先行セール中",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147859.html",
+      "summary": "Amazonでは10月16日から19日まで、Amazonプライム感謝祭が開催されるが、現在は先行セール中。セールではASUSのゲーミングデスクトップPC「ASUS TUF Gaming T500 TM500MH」(TM500MH-R516G5123050)が直近価格の5万4,065円引きとなる14万9,800円で販売されている。",
+      "source": "PC Watch",
+      "date": "2026-10-14T00:26:27+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/859/01.jpg"
+    },
+    {
+      "title": "MSIのデュアルモード対応31.5インチゲーミングモニター「MAG 321UPD E14」がTSUKUMOで展示中",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147333.html",
+      "summary": "デュアルモードや24.5/27インチモードを搭載するMSIの31.5インチモニター「MAG 321UPD E14」が、ツクモパソコン本店IIとTSUKUMO eX.で展示中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-14T00:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/333/a1.jpg"
+    },
+    {
+      "title": "Western Digital「WD Purple Pro」26TB HDDが159,800円で特売、東芝「N300」に安価なバルク品が登場 [10月前半のHDD価格]",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/price/monthly_repo/2147850.html",
+      "summary": "サハロフ佐藤(佐藤 純一)とAKIBA PC Hotline!編集部が、秋葉原各ショップのHDD、SSD、メモリ、CPUの店頭価格を独自に調査し、価格動向をお伝えするコーナーです。PCパーツ購入時などに参考としてご活用下さい。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-13T23:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/850/2026-0926-123903.jpg"
+    },
+    {
+      "title": "Sandisk Optimusシリーズが値下がりの動き、BiwinやVerbatimの低価格SSDが出回る [10月前半のSSD価格]",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147851.html",
+      "summary": "サハロフ佐藤(佐藤 純一)とAKIBA PC Hotline!編集部が、秋葉原各ショップのHDD、SSD、メモリ、CPUの店頭価格を独自に調査し、価格動向をお伝えするコーナーです。PCパーツ購入時などに参考としてご活用下さい。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-13T22:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/851/2026-1010-134213.jpg"
+    },
+    {
+      "title": "ニンテンドーミュージアムの新たな施設「スーパーファミリーレストラン」内覧会レポート。開業に先立ち公開された内装や提供メニューを紹介しよう",
+      "url": "https://www.4gamer.net/games/991/G999105/20261013058/",
+      "summary": "任天堂は10月13日，ニンテンドーミュージアムの新たな飲食施設「スーパーファミリーレストラン」のメディア向け内覧試食会を開催した。本稿では，今秋の開業に先立ち公開された内装を，提供メニューの価格などと合わせてレポートしよう。11月より一部の来館者を対象とした試験営業も始まる予定だ。",
+      "source": "4Gamer",
+      "date": "2026-10-13T22:00:00+00:00",
+      "image": "https://www.4gamer.net/games/991/G999105/20261013058/SS/011.jpg"
+    },
     {
       "title": "年間30万件の対応を支えるマウス埼玉サポート拠点の裏側、AI活用と整備済PC再生も",
       "url": "https://pc.watch.impress.co.jp/docs/news/2145368.html",
@@ -78,56 +134,49 @@
       "url": "https://www.4gamer.net/games/963/G096371/20261013052/",
       "summary": "SaltGameStudioは本日，リズムゲーム「リズムアニマルカフェ」をSteamでリリースした。本作は，会社で働いたり料理をしたり，ときにはサボったりといった動物たちの何気ない日常をリズムゲームとして描く作品だ。",
       "source": "4Gamer",
-      "date": "2026-10-13T11:51:00+00:00",
-      "image": "https://www.4gamer.net/games/963/G096371/20261013052/SS/012.jpg"
+      "date": "2026-10-13T11:51:00+00:00"
     },
     {
       "title": "「ストリートファイター6」，Year 4追加キャラ第2弾「アルジュン」が本日参戦。設置技や飛び道具を駆使するトリッキーなファイター",
       "url": "https://www.4gamer.net/games/635/G063504/20261013053/",
       "summary": "カプコンは本日，「ストリートファイター6」にYear4追加キャラクター第2弾「アルジュン」を実装した。ヨガと呼吸法を生かした設置技や飛び道具に加え，パワフルな打撃も得意とするファイターで，アーケードモードには専用ストーリーも追加されている。",
       "source": "4Gamer",
-      "date": "2026-10-13T11:41:04+00:00",
-      "image": "https://www.4gamer.net/games/635/G063504/20261013053/SS/001.jpg"
+      "date": "2026-10-13T11:41:04+00:00"
     },
     {
       "title": "映画「アングリーバード／大奮闘！ファミリー・ミッション」，2027年1月22日に全国公開決定",
       "url": "https://www.4gamer.net/games/171/G017151/20261013051/",
       "summary": "",
       "source": "4Gamer",
-      "date": "2026-10-13T11:12:11+00:00",
-      "image": "https://www.4gamer.net/games/171/G017151/20261013051/SS/001.jpg"
+      "date": "2026-10-13T11:12:11+00:00"
     },
     {
       "title": "「プロジェクトセカイ 6th Anniversary 感謝祭」，グッズの事後物販を開始",
       "url": "https://www.4gamer.net/games/476/G047609/20261013050/",
       "summary": "",
       "source": "4Gamer",
-      "date": "2026-10-13T11:08:06+00:00",
-      "image": "https://www.4gamer.net/games/476/G047609/20261013050/SS/001.jpg"
+      "date": "2026-10-13T11:08:06+00:00"
     },
     {
       "title": "「ぷよぷよ」，サンリオキャラクターズ「はぴだんぶい」とのコラボが決定",
       "url": "https://www.4gamer.net/games/458/G045823/20261013049/",
       "summary": "",
       "source": "4Gamer",
-      "date": "2026-10-13T11:05:29+00:00",
-      "image": "https://www.4gamer.net/games/458/G045823/20261013049/SS/002.jpg"
+      "date": "2026-10-13T11:05:29+00:00"
     },
     {
       "title": "「Football Manager 27」，解説動画「トレーニングと戦術の有効性」を公開",
       "url": "https://www.4gamer.net/games/037/G103744/20261013048/",
       "summary": "",
       "source": "4Gamer",
-      "date": "2026-10-13T11:00:43+00:00",
-      "image": "https://www.4gamer.net/games/037/G103744/20261013048/SS/001.jpg"
+      "date": "2026-10-13T11:00:43+00:00"
     },
     {
       "title": "「BLEACH Mirrors High」，SPECIAL BROADCASTをYouTubeで10月27日19：00に公開。森田成一さん，折笠富美子さんらが出演",
       "url": "https://www.4gamer.net/games/970/G097078/20261013046/",
       "summary": "バンダイナムコエンターテインメントは本日，スマホゲーム「BLEACHMirrorsHigh」の番組「SPECIALBROADCAST」を2026年10月27日19：00に公開すると発表した。番組では，出演者がアプリに関する新たな情報を発表する。",
       "source": "4Gamer",
-      "date": "2026-10-13T10:37:59+00:00",
-      "image": "https://www.4gamer.net/games/970/G097078/20261013046/SS/001.jpg"
+      "date": "2026-10-13T10:37:59+00:00"
     },
     {
       "title": "スーファミ時代のRPGをローグライトに。サルヴァドールの4人が作る「Arcane Rift」［BGS2026］",
@@ -261,13 +310,6 @@
       "summary": "東京ゲームショウが終わったのは9月20日である。そしてOSAKAINDIEGAMESSUMMITが開催されたのは，10月3日である。その間，わずか2週間。いやさすがに書くものないのでは？ 遊ぶものないのでは？ と思っていた2人の予想を，軽く上回ったイベントの締めのインタビューがこちらです。",
       "source": "4Gamer",
       "date": "2026-10-13T07:45:00+00:00"
-    },
-    {
-      "title": "倒した相手の技を奪って，次の試合に持ち込む。ローグライク格闘ゲーム「Poly Fighter」［BGS2026］",
-      "url": "https://www.4gamer.net/games/049/G104971/20261013026/",
-      "summary": "2026年10月11日，BrasilGameShow2026の会場で，カナダのHeartLoopGamesが手がける「PolyFighter」を試遊した。1対1の格闘ゲームにローグライクの仕組みを組み込んだシングルプレイ専用のタイトルで，倒した相手から技を奪い，自分だけの技構成を組み上げながらリーグを勝ち上がっていく。",
-      "source": "4Gamer",
-      "date": "2026-10-13T07:36:01+00:00"
     },
     {
       "title": "ZOTAC、GeForce RTX 5080搭載で世界最小クラスをうたうミニPC",
@@ -417,13 +459,6 @@
       "date": "2026-10-13T01:50:55+00:00"
     },
     {
-      "title": "【本日みつけたお買い得品】iPad Airが1万3千円引きで購入可能！プライム感謝祭先行セール",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147491.html",
-      "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施している。Apple「11インチiPad Air(M4)」(Wi-Fiモデル)は、プライム会員限定の1万3,000円引きで、128GBストレージ版が11万6,800円、256GB版が13万3,800円、512GB版が16万8,800円にて購入可能だ。また1TB版は、非プライム会員も対象の1万3,000円引きにより、21万8,800円で購入できる。",
-      "source": "PC Watch",
-      "date": "2026-10-13T01:44:40+00:00"
-    },
-    {
       "title": "モトローラの6.7インチスマホ「moto g05」が21,800円！未使用品が大量入荷",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147331.html",
       "summary": "モトローラの6.7インチAndroidスマートフォン「moto g05（XT2523-5）」の未使用品が、イオシス各店で特価販売中。",
@@ -431,46 +466,11 @@
       "date": "2026-10-13T01:30:00+00:00"
     },
     {
-      "title": "【本日みつけたお買い得品】HPのOffice付きノートが約7万円引き！Amazonプライム感謝祭先行セール",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147482.html",
-      "summary": "Amazonでは10月16日から19日にかけて、プライム感謝祭が開催されるが、現在はその先行セールを開催している。このセールにおいて、HPのOffice搭載15.6型ノートPC「15-fd」(BJ0M5PA-AAAI)が、直近価格から7万1,669円引きとなる10万9,800円で販売されている。なお、Officeなしモデルは12万4,800円で販売されており、価格が逆転している。",
-      "source": "PC Watch",
-      "date": "2026-10-13T01:20:11+00:00"
-    },
-    {
       "title": "【プロダクトレビュー・ショーケース】USB充電式で外でも使える！火を使わないサンコーの燻製機で晩酌を楽しんでみた",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/parts_review/showcase/2146873.html",
       "summary": "筆者はほぼ毎日と言っていいほど晩酌をしている。つまみには味が濃いスナックや燻製したナッツやチーズを選びがちだ。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-13T01:05:00+00:00"
-    },
-    {
-      "title": "色が選べるカラフルなゲーミングモニターやモニターアームなどPixio製品が最大40%オフ！Amazonプライム感謝祭",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147256.html",
-      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールが開催中です。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-13T00:30:00+00:00"
-    },
-    {
-      "title": "賢者の石を探して迷宮を探索！カシオ『賢者の石』",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/column/retrosoft/2138057.html",
-      "summary": "当時の懐かしい広告とゲーム画面で、国産PCの歴史とノスタルジーに浸れる連載コーナー。今回はアクションゲームにRPGのエッセンスを加えた、MSX用の固定画面迷宮探索ゲーム『賢者の石』を取り上げます。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-13T00:05:00+00:00"
-    },
-    {
-      "title": "布・ガラスが選べるゲーミングマウスパッド「Monica Nica」",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147304.html",
-      "summary": "Monicaブランドのゲーミングマウスパッド「Nica」が、パソコンショップ アークに入荷。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-12T23:30:00+00:00"
-    },
-    {
-      "title": "9.2インチLCD搭載のフルタワー「ROG Cronox ARGB」、折りたたみガラケー風のトイカメラ、インテル日本法人50周年記念コラボPC、「秋葉原UDX」商業ゾーンが12月にリニューアル ほか 秋葉原の気になるニュース（10月5日～11日分）",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147342.html",
-      "summary": "先週の気になる記事をピックアップ。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-12T23:05:00+00:00"
     }
   ],
   "feed_count": 3,
