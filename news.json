@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-10-14T18:53:32.080961+00:00",
+  "updated_at": "2026-10-14T21:44:00.684714+00:00",
   "articles": [
+    {
+      "title": "【やじうまミニレビュー】AirPods 5のノイキャン、耳をふさがずエアコン音がほぼ消失。これは新基準になる",
+      "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147393.html",
+      "summary": "",
+      "source": "PC Watch",
+      "date": "2026-10-14T21:15:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/393/PH01.jpg"
+    },
+    {
+      "title": "ガチくんに! 第434回切り抜き「もはや珍回答にすら届かない……波乱続きの学力テスト(後編)」",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148210.html",
+      "summary": "※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchとYouTubeで配信しています。レギュラー出演者はぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードした切り抜きとアーカイブの動画を掲載しています。",
+      "source": "PC Watch",
+      "date": "2026-10-14T21:00:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/210/01.jpg"
+    },
+    {
+      "title": "【Mac Info】Safariの機能拡張が文章で作れる！macOS 27の新機能",
+      "url": "https://pc.watch.impress.co.jp/docs/column/macinfo/2148205.html",
+      "summary": "",
+      "source": "PC Watch",
+      "date": "2026-10-14T21:00:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/205/image05.png"
+    },
     {
       "title": "マレーシア産パズルアクションADV「Ondeh Ondeh カヤのうまみ大冒険」は絵柄に似合わず歯ごたえ十分。リズムに乗って絵本のような世界を冒険しよう［プレイレポ］",
       "url": "https://www.4gamer.net/games/604/G060423/20261014036/",
@@ -110,24 +134,21 @@
       "url": "https://www.4gamer.net/games/050/G105032/20261014048/",
       "summary": "NextNinjaは本日，スマホゲーム「JJK:重兵装型女子高生ワードレスレコード」を配信すると発表し，事前登録受付を開始した。本作は，neco氏が描く「重兵装型女子高生」をゲーム化した放置系RPGだ。",
       "source": "4Gamer",
-      "date": "2026-10-14T11:00:58+00:00",
-      "image": "https://www.4gamer.net/games/050/G105032/20261014048/SS/001.jpg"
+      "date": "2026-10-14T11:00:58+00:00"
     },
     {
       "title": "西美濃八十八人衆の「ベガババまんぷく忍者ポップアップストア」，2027年2月26日から都内で初開催。新作グッズの事前受注販売も開始",
       "url": "https://www.4gamer.net/games/000/G000000/20261014040/",
       "summary": "4Gamer.netの運営元であるAetasは本日，ゲーム実況集団「西美濃八十八人衆」初となるポップアップストア「ベガババまんぷく忍者ポップアップストア」を，2027年2月26日から3月7日まで東京都内で開催すると発表した。新作グッズの事前受注販売も，Aetas公式オンラインストアで始まっている。",
       "source": "4Gamer",
-      "date": "2026-10-14T11:00:00+00:00",
-      "image": "https://www.4gamer.net/games/000/G000000/20261014040/SS/001.jpg"
+      "date": "2026-10-14T11:00:00+00:00"
     },
     {
       "title": "「NGS ver.2」，新ACスクラッチ「ナイトメアカーニバル'26」を追加",
       "url": "https://www.4gamer.net/games/521/G052100/20261014054/",
       "summary": "",
       "source": "4Gamer",
-      "date": "2026-10-14T10:59:04+00:00",
-      "image": "https://www.4gamer.net/games/521/G052100/20261014054/SS/004.jpg"
+      "date": "2026-10-14T10:59:04+00:00"
     },
     {
       "title": "Switch版「ニコニコ」，2027年3月31日をもってサービス終了。約10年の提供に幕。Switch2への対応予定はなし",
@@ -450,27 +471,6 @@
       "summary": "Googleのフロンティアモデルが、有料プランとAPIの利用者向けに提供された。Googleは10月14日、大規模言語モデル「Gemini 4 Argon」の一般提供を開始した。開発者/企業向けにはAI StudioおよびGemini API、Google AI UltraユーザーにはGoogle Antigravity、Google AI UltraおよびProユーザーにはGeminiアプリとGoogle検索のAIモードを通じて順次展開する。",
       "source": "PC Watch",
       "date": "2026-10-14T01:09:14+00:00"
-    },
-    {
-      "title": "ついに買える！RTX SparkのASUSノートが予約開始、94万円台から",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2147835.html",
-      "summary": "6,144基のCUDAコアを持つGPUと20コアCPUが最大128GBのメモリを共有する構成を、最薄部12.9mmの16型ノートPCに収めた。ASUS JAPANは10月14日、この構成のNVIDIA RTX Sparkを採用した16型の「ProArt P16(H7607)」と、14型の「ProArt P14(H7407)」の予約受付を開始し、10月23日より順次発売する。価格は94万9,800円から。本体色はナノブラックとネオホワイトの2色。",
-      "source": "PC Watch",
-      "date": "2026-10-14T01:00:00+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】13万2千円引き！レノボのハイエンドゲーミングノートがセール中",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147872.html",
-      "summary": "Amazonでは10月16日から19日まで、Amazonプライム感謝祭を開催するが、現在は先行セールを開催している。セールでは、レノボのゲーミングノートPC「Lenovo Legion 7i Gen10」(83F500SNJP)が、直近価格より13万2,000円引きとなる52万5,800円で販売されている。",
-      "source": "PC Watch",
-      "date": "2026-10-14T00:59:14+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】ASUSの4K有機ELモニターが約2万円引きで11万9千円に。Amazonセール",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147867.html",
-      "summary": "Amazonにてプライム感謝祭先行セールが開催中。ASUSが展開するProArtブランドのモニターで26.5型の「PA279CDV-J」は直近価格から2万1,202円引きとなる11万9,000円で購入可能になっている。",
-      "source": "PC Watch",
-      "date": "2026-10-14T00:49:21+00:00"
     }
   ],
   "feed_count": 3,
