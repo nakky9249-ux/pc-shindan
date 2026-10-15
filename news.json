@@ -1,6 +1,110 @@
 {
-  "updated_at": "2026-10-15T06:57:00.224775+00:00",
+  "updated_at": "2026-10-15T09:46:06.593452+00:00",
   "articles": [
+    {
+      "title": "タワーディフェンスとハック＆スラッシュが見事に共演！ ローグライクアクションにまとめた「Archangel: Demon Rush」をプレイ",
+      "url": "https://www.4gamer.net/games/999/G999901/20261015032/",
+      "summary": "SAGABarcelonaGameFest2026で，Don’tKnowStudioが手がけるローグライクアクション「Archangel:DemonRush」をチェックしてきた。押し寄せるデーモン軍団を相手に，防衛施設を築くタワーディフェンスとハック＆スラッシュが盛り込まれたスピード感のある作風だ。",
+      "source": "4Gamer",
+      "date": "2026-10-15T09:29:24+00:00",
+      "image": "https://www.4gamer.net/games/999/G999901/20261015032/SS/002.jpg"
+    },
+    {
+      "title": "「桃源暗鬼 Crimson Inferno」，事前登録の受付を開始。主要キャラクターの戦闘シーンを確認できる最新映像も公開に",
+      "url": "https://www.4gamer.net/games/893/G089379/20261015034/",
+      "summary": "Com2uSJapanは本日（2026年10月15日），新作タイトル「桃源暗鬼CrimsonInferno」の事前登録受付を，ゲーム公式サイトに加えてAppStoreとGooglePlay，animateGamesOnlineで開始した。また，主人公「一ノ瀬四季」をはじめとする主要キャラクターの戦闘シーンを確認できる最新映像も公開された。",
+      "source": "4Gamer",
+      "date": "2026-10-15T09:08:58+00:00",
+      "image": "https://www.4gamer.net/games/893/G089379/20261015034/SS/001.jpg"
+    },
+    {
+      "title": "オフロード車で自然を旅するマルチプレイ対応ドライビングゲーム「over the hill」，配信開始",
+      "url": "https://www.4gamer.net/games/900/G090070/20261015033/",
+      "summary": "FunselektorLabsは本日（2026年10月15日），新作タイトル「overthehill」をリリースした。本編のリリースに合わせて，オリジナルサウンドトラックや，限定コスメティックアイテムなどを収録したサポーターエディションDLCなども販売されている。",
+      "source": "4Gamer",
+      "date": "2026-10-15T09:02:48+00:00",
+      "image": "https://www.4gamer.net/games/900/G090070/20261015033/SS/006.jpg"
+    },
+    {
+      "title": "黄泉から生還するため，禍々しい小箱に詰める“指”を集めていく。サバイバルホラー「黄泉姫ー喰の赫焉ー」発表，2026年11月にリリース予定",
+      "url": "https://www.4gamer.net/games/050/G105055/20261015031/",
+      "summary": "MimiMaxSTUDIOは，サバイバルホラー「黄泉姫ー喰の赫焉ー」を発表した。本作は，黄泉と思われる異界から生還するため，“指”を集めながら怪異に満ちた建物を探索していく作品だ。",
+      "source": "4Gamer",
+      "date": "2026-10-15T08:13:50+00:00",
+      "image": "https://www.4gamer.net/games/050/G105055/20261015031/SS/002.jpg"
+    },
+    {
+      "title": "Intel CPU搭載NASやThunderbolt 5接続SSDケースなどTERRAMASTER製品が最大35%オフ！Amazonプライム感謝祭",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147838.html",
+      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-15T08:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/838/s1.jpg"
+    },
+    {
+      "title": "経済産業省の「IP360／創風」とマーベラスの「iGi」が連携！ バルセロナで日本のインディーゲーム開発者を世界へ届ける官民連携の最前線",
+      "url": "https://www.4gamer.net/games/033/G103375/20261015028/",
+      "summary": "SAGABarcelonaGameFest2026の会場にて，マーベラスが手掛ける「iGi」と，経済産業省の「IP360」「創風」が共同ブースを出展していた。なぜスペイン・バルセロナの地で大きな規模で出展しているのか。その背景と官民連携の狙いについてレポートしよう。",
+      "source": "4Gamer",
+      "date": "2026-10-15T07:53:22+00:00",
+      "image": "https://www.4gamer.net/games/033/G103375/20261015028/SS/001.jpg"
+    },
+    {
+      "title": "アイオー、320Hz/WQHD対応でMini LED採用の27型ゲーミングモニター",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148457.html",
+      "summary": "アイオーデータは、ゲーミングモニター「GigaCrysta S」ブランドから「LCD-GDQ271ULAQシリーズ」を発表した。本体色がブラックの「LCD-GDQ271ULAQB」とホワイトの「LCD-GDQ271ULAQW」の2モデルを用意する。いずれも10月末出荷予定で、直販価格は7万8,980円。",
+      "source": "PC Watch",
+      "date": "2026-10-15T07:51:54+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/457/001.jpg"
+    },
+    {
+      "title": "死んだらデータも消える。1985年の高難度サイバーRPG「ザ・スクリーマー」，EGGコンソールで本日配信",
+      "url": "https://www.4gamer.net/games/050/G105057/20261015030/",
+      "summary": "D4エンタープライズは本日，「EGGコンソールザ・スクリーマーPC-8801」の配信を開始した。1985年発売の3Dダンジョン型サイバーRPGで，キャラクターが死亡するとデータも失われるシビアな仕様が特徴。第3次世界大戦後の199X年を舞台に，悪魔が住むと噂される塔「BIAS」の真相を追う。",
+      "source": "4Gamer",
+      "date": "2026-10-15T07:40:45+00:00",
+      "image": "https://www.4gamer.net/games/050/G105057/20261015030/SS/008.jpg"
+    },
+    {
+      "title": "ChatGPT/Codexデスクトップアプリのディスク使用量が60%削減",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148359.html",
+      "summary": "ChatGPTやCodexを使い込むほどストレージが圧迫される、という悩みが少し軽くなりそうだ。OpenAIのTibo氏は10月13日(米国時間)、ChatGPTおよびCodexのデスクトップアプリで、状態データをディスクに保存する方法を最適化したとX(旧Twitter)で明らかにした。これにより、ディスク上の保存容量を60%削減できる見込みだという。",
+      "source": "PC Watch",
+      "date": "2026-10-15T07:28:10+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/359/1.jpg"
+    },
+    {
+      "title": "「NTE」，明音凛（CV：長谷川育美）が「God knows...」をカバーしたスペシャルムービーを公開。楽曲は10月21日のVer.1.4後半で実装",
+      "url": "https://www.4gamer.net/games/817/G081722/20261015027/",
+      "summary": "PerfectWorldGamesは本日（2026年10月15日），「NTE:NevernesstoEverness」（PC/Mac/PS5/iOS/Android）で，「涼宮ハルヒの憂鬱」の劇中歌をカバーした「Godknows...（NTEカバーVer.）スペシャルムービー」を公開した。",
+      "source": "4Gamer",
+      "date": "2026-10-15T07:19:43+00:00",
+      "image": "https://www.4gamer.net/games/817/G081722/20261015027/SS/001.jpg"
+    },
+    {
+      "title": "ゲーム音楽の歴史を創ってきたレジェンド，松前真奈美氏と東野美紀氏が「ロックマン」や「幻想水滸伝」の記憶をスペインで語る",
+      "url": "https://www.4gamer.net/games/659/G065911/20261015026/",
+      "summary": "SAGABarcelonaGameFest2026のメインステージで，「ロックマン」で知られる松前真奈美氏と「幻想水滸伝」の東野美紀氏によるトークセッションが開催された。ゲーム業界の創成期から活躍する両氏の足跡を改めて振り返るとともに，セッションの模様をお届けしよう。",
+      "source": "4Gamer",
+      "date": "2026-10-15T07:16:46+00:00",
+      "image": "https://www.4gamer.net/games/659/G065911/20261015026/SS/010.jpg"
+    },
+    {
+      "title": "子供4人vs鬼1人の非対称ホラー「かくれ鬼」，体験版に2体目の鬼「口裂け」を10月20日に追加。Steam Nextフェスに参加",
+      "url": "https://www.4gamer.net/games/949/G094947/20261015024/",
+      "summary": "FORCESは，非対称マルチプレイホラー「かくれ鬼:Hide-and-SeekHorror」の体験版に，2体目の鬼「口裂け」を2026年10月20日に追加すると発表した。口裂けは，突進しながら子供を捕まえる「大頭突き」を使う鬼で，アップデート後は鬼側もキャラクターを選択できるようになる。",
+      "source": "4Gamer",
+      "date": "2026-10-15T07:01:59+00:00",
+      "image": "https://www.4gamer.net/games/949/G094947/20261015024/SS/001.jpg"
+    },
+    {
+      "title": "オンラインサッカーゲーム「FreeStyle Football 2」，12月3日に発売決定。プレオーダーもスタート",
+      "url": "https://www.4gamer.net/games/988/G098878/20261015025/",
+      "summary": "JOYCITYは2026年10月14日，「FreeStyleFootball2」を12月3日に発売すると発表し，プレオーダーを開始した。本作は，スピーディーな展開やキャラクター固有のスキルなどが魅力のオンラインサッカーゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-15T06:56:20+00:00",
+      "image": "https://www.4gamer.net/games/988/G098878/20261015025/SS/001.jpg"
+    },
     {
       "title": "耳掃除ホラーゲーム「Tiny Chills - Not From Ear」などを紹介。CRITICAL REFLEXのショーケースイベントが10月21日2：30に配信",
       "url": "https://www.4gamer.net/games/991/G999110/20261015023/",
@@ -30,104 +134,91 @@
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148057.html",
       "summary": "収納ケースとしても機能する「Nape Pro専用シェルパームレスト」がKeychronから登場。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T06:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/057/s1.jpg"
+      "date": "2026-10-15T06:05:00+00:00"
     },
     {
       "title": "「アークナイツ：エンドフィールド」，新コアバージョン「丹青渡」を配信開始。新★6オペレーター「スー」が本日から登場",
       "url": "https://www.4gamer.net/games/622/G062211/20261015016/",
       "summary": "GRYPHLINEは本日，3Dリアルタイム戦略RPG「アークナイツ：エンドフィールド」の新コアバージョン「丹青渡」の配信を開始した。本バージョンでは，新★6オペレーターの「スー」が本日から，「ミンホ」が11月5日12：00から登場する。",
       "source": "4Gamer",
-      "date": "2026-10-15T06:02:28+00:00",
-      "image": "https://www.4gamer.net/games/622/G062211/20261015016/SS/001.jpg"
+      "date": "2026-10-15T06:02:28+00:00"
     },
     {
       "title": "PS Plus 10月のゲームカタログに「マフィア：オリジン」「Horizon Forbidden West」「Tales of Arise - Beyond the Dawn Edition」などを追加",
       "url": "https://www.4gamer.net/games/129/G012999/20261015019/",
       "summary": "SIEは本日，「PlayStationPlus」のエクストラおよびプレミアムプラン加入者を対象としたゲームカタログの2026年10月追加タイトルを発表した。「マフィア：オリジン〜裏切りの祖国」「HorizonForbiddenWest」「TalesofArise-BeyondtheDawnEdition」などが追加される。",
       "source": "4Gamer",
-      "date": "2026-10-15T05:43:17+00:00",
-      "image": "https://www.4gamer.net/games/129/G012999/20261015019/SS/001.jpg"
+      "date": "2026-10-15T05:43:17+00:00"
     },
     {
       "title": "「WARDOGS」，ワイプの実施や新コンテンツの追加を行うシーズン2が本日スタート。メンテナンスは17：00から90分間を予定",
       "url": "https://www.4gamer.net/games/981/G098198/20261015018/",
       "summary": "BULKHEADは，配信中の大規模FPS「WARDOGS」にて本日（2026年10月15日）スタートするシーズン2のアップデートを，17：00から18：30まで行うと発表し，パッチノートを公開した。また，シーズン2のハイライトを収録したトレイラーもアップされている。",
       "source": "4Gamer",
-      "date": "2026-10-15T05:37:56+00:00",
-      "image": "https://www.4gamer.net/games/981/G098198/20261015018/SS/001.jpg"
+      "date": "2026-10-15T05:37:56+00:00"
     },
     {
       "title": "CORSAIRのiCUE LINK対応ファン「iCUE LINK RX II RGB」が発売、計8製品",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148182.html",
       "summary": "CORSAIRのiCUE LINK対応ケースファンに新モデルが登場。「iCUE LINK RX II RGB」シリーズが発売された。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T05:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/182/a1.jpg"
+      "date": "2026-10-15T05:30:00+00:00"
     },
     {
       "title": "「モンスターハンターワイルズ」Switch2版，序盤体験版を10月20日から配信。セーブデータは製品版に引継ぎ可能",
       "url": "https://www.4gamer.net/games/014/G101402/20261015017/",
       "summary": "任天堂は本日（2026年10月15日），NintendoSwitch2版「モンスターハンターワイルズ」の序盤体験版を10月20日から配信すると発表した。体験版は，ローカル通信でのマルチプレイにも対応し，キャラクター制作や序盤のストーリーが楽しめる。",
       "source": "4Gamer",
-      "date": "2026-10-15T05:08:28+00:00",
-      "image": "https://www.4gamer.net/games/014/G101402/20261015017/SS/001.jpg"
+      "date": "2026-10-15T05:08:28+00:00"
     },
     {
       "title": "布マウスパッド専用洗剤「Mousepad Cleaner」がHID-Labsから",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148055.html",
       "summary": "日本初の“マウスパッド専用洗剤”をうたう、布マウスパッド専用洗剤「Mousepad Cleaner」がHID-Labsから登場。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T05:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/055/s1.jpg"
+      "date": "2026-10-15T05:05:00+00:00"
     },
     {
       "title": "OpenAIオフィスに隠し録音機、設置した従業員をAIで特定し解雇",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148355.html",
       "summary": "OpenAIは10月14日、同社の従業員がオフィス内に録音機を密かに設置していたことを明かした。同社はすでにFBIに報告しており、FBIが当該の従業員を逮捕した上で、調査を進めているという。",
       "source": "PC Watch",
-      "date": "2026-10-15T04:54:48+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/355/01.jpg"
+      "date": "2026-10-15T04:54:48+00:00"
     },
     {
       "title": "名画をモチーフにした世界を旅するウォーキングシミュレータ「カタルシス〜最後のアトリエ〜」，体験版をSteamでリリース",
       "url": "https://www.4gamer.net/games/773/G077376/20261015015/",
       "summary": "講談社は2026年10月15日，新作タイトル「カタルシス〜最後のアトリエ〜」の体験版をSteamでリリースした。本作は，ゴッホやクリムト，モネらの名画をモチーフにした10の世界を旅するウォーキングシミュレータだ。体験版では2つのステージをプレイできる。",
       "source": "4Gamer",
-      "date": "2026-10-15T04:46:21+00:00",
-      "image": "https://www.4gamer.net/games/773/G077376/20261015015/SS/007.jpg"
+      "date": "2026-10-15T04:46:21+00:00"
     },
     {
       "title": "ガンダムシリーズ新作「ガンダム ブリッツオーダー」を発表。モビルスーツや戦艦を編成する放置型シミュレーション",
       "url": "https://www.4gamer.net/games/050/G105040/20261015014/",
       "summary": "バンダイナムコエンターテインメントは本日，ガンダムシリーズ新作「ガンダムブリッツオーダー」をiOS/Android向けに配信すると発表した。モビルスーツや戦艦，モビルアーマーを編成して戦う放置型シミュレーションで，2026年11月18日からネットワークテストも実施する。",
       "source": "4Gamer",
-      "date": "2026-10-15T04:41:45+00:00",
-      "image": "https://www.4gamer.net/games/050/G105040/20261015014/SS/001.jpg"
+      "date": "2026-10-15T04:41:45+00:00"
     },
     {
       "title": "Huanoのタクタイルスイッチ「Sakura Tactile」",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148111.html",
       "summary": "HuanoのCherry MX互換メカニカルキースイッチ「Sakura Tactile」が、遊舎工房に入荷。店頭価格は1個55円。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T04:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/111/s1.jpg"
+      "date": "2026-10-15T04:30:00+00:00"
     },
     {
       "title": "行方不明になった友人の捜索，頻繁に届く恋人からのメッセージへの返信，怪異への対処……複数の問題に同時に対応しなければならないサバイバルホラー「悪魔とカノジョと眠れない夜」，体験版配信開始",
       "url": "https://www.4gamer.net/games/037/G103700/20261015013/",
       "summary": "TailtoneGamesは本日，ixavonが手掛ける新作「悪魔とカノジョと眠れない夜」の体験版をSteamで配信した。本作は，行方不明になった友人の捜索や恋人への返信，怪異への対処を同時に迫られるサバイバルホラーだ。",
       "source": "4Gamer",
-      "date": "2026-10-15T04:26:51+00:00",
-      "image": "https://www.4gamer.net/games/037/G103700/20261015013/SS/006.jpg"
+      "date": "2026-10-15T04:26:51+00:00"
     },
     {
       "title": "「RTX Spark」の登場を踏まえてWindows on Arm対応を強化した「3DMark」バージョン2.32.8919リリース",
       "url": "https://www.4gamer.net/games/143/G014363/20230428058/",
       "summary": "",
       "source": "4Gamer",
-      "date": "2026-10-15T04:10:58+00:00",
-      "image": "https://www.4gamer.net/games/143/G014363/20230428058/SS/024.jpg"
+      "date": "2026-10-15T04:10:58+00:00"
     },
     {
       "title": "デュアルファンクーラー搭載の「Colorful GeForce RTX 5060 Battle AX DUO 8GB-V」",
@@ -228,13 +319,6 @@
       "date": "2026-10-15T03:00:00+00:00"
     },
     {
-      "title": "「ファイアーエムブレム ヒーローズ」，第4回 英雄総選挙で入賞した比翼英雄のディミトリ，エーデルガルト，風光英雄のグルヴェイグが10月16日に参戦",
-      "url": "https://www.4gamer.net/games/369/G036904/20261014039/",
-      "summary": "任天堂は本日（2026年10月15日），スマートフォンアプリ「ファイアーエムブレムヒーローズ」で，記念召喚「比翼ディミトリ＆比翼エーデルガルト」を10月16日16：00から11月6日15：59まで開催すると発表した。今回は「第4回英雄総選挙」で入賞した比翼英雄のディミトリ，エーデルガルト，ならびに風光英雄のグルヴェイグの3名が実装される。",
-      "source": "4Gamer",
-      "date": "2026-10-15T03:00:00+00:00"
-    },
-    {
       "title": "開けばオン、閉じれば約7cmに縮んでオフ。スライド式静音マウス",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148282.html",
       "summary": "サンワサプライは10月14日、持ち運びに便利なスライド式カバーを備えたワイヤレスマウス「MA-WBBS526」シリーズを発売した。カラーはブルーとグレーの2種類で、直販価格はいずれも4,780円。",
@@ -249,13 +333,6 @@
       "date": "2026-10-15T02:38:35+00:00"
     },
     {
-      "title": "ポケットにも楽に入るコンパクトなXBOX純正ゲームパッド「XBOX Nano Controller」が発表。税込8000円で予約受付中",
-      "url": "https://www.4gamer.net/games/437/G043761/20261015005/",
-      "summary": "米国時間2026年10月14日，Microsoftは，新型ワイヤレスゲームパッド「XBOXNanoController」を発表した。奥行き方向は標準サイズ品の半分程度しかなく，公称本体重量も約99gと軽いのが特徴だ。Windows11/10搭載PC，XBOXSeriesX|S，XBOXOne，iOS，Androidに対応する。",
-      "source": "4Gamer",
-      "date": "2026-10-15T02:35:13+00:00"
-    },
-    {
       "title": "5インチLCD搭載の簡易水冷クーラー「iCUE LINK TITAN II 360 RX LCD」がCORSAIRから",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148177.html",
       "summary": "CORSAIRの簡易水冷クーラーに新モデルが登場。5インチLCDパネルと360mmラジエーターを搭載した「iCUE LINK TITAN II 360 RX LCD」が発売された。",
@@ -263,32 +340,11 @@
       "date": "2026-10-15T02:30:00+00:00"
     },
     {
-      "title": "「グランツーリスモ7」，大型アップデート「Spec IV」第1弾を本日15：00に配信。新車6台とスポーツランド SUGOを追加",
-      "url": "https://www.4gamer.net/games/512/G051215/20261015004/",
-      "summary": "SIEは，「グランツーリスモ7」の大型アップデート「SpecIV」第1弾を本日15：00に配信すると発表した。今回のアップデートでは，「シトロエン2CV6Charleston」「ホンダシビックSi」など新車6台と「スポーツランドSUGO」を追加するほか，ブランドセントラルやガレージ，カフェなどにも新機能・新要素を実装する。",
-      "source": "4Gamer",
-      "date": "2026-10-15T02:20:01+00:00"
-    },
-    {
       "title": "NZXTのピラーレスPCケース「S5 RGB」が発売、360mm一体型RGBファン搭載で8,980円",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148162.html",
       "summary": "NZXTのピラーレスPCケース「S5 RGB」が発売された。カラーはブラック（CC-S51FB-01）とホワイト（CC-S51FW-01）の2色。ツクモパソコン本店ではブラック、TSUKUMO eX.ではホワイトが展示されている。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-15T02:05:00+00:00"
-    },
-    {
-      "title": "インディーゲームイベント「BitSummit」，一般出展者向けとなる「BitSummit Official Indie Selection」のエントリー募集を開始",
-      "url": "https://www.4gamer.net/games/991/G999110/20261014047/",
-      "summary": "BitSummit実行委員会は，インディーゲームイベント「BitSummit」を2027年5月21日〜23日に京都市勧業館みやこめっせで開催する。これに先立ち，一般出展者向けの「BitSummitOfficialIndieSelection」のエントリー募集を本日（2026年10月15日）開始した。",
-      "source": "4Gamer",
-      "date": "2026-10-15T02:00:00+00:00"
-    },
-    {
-      "title": "男色ディーノのゲイムヒヒョー ゼロ：第911回「なんだか不機嫌でした」",
-      "url": "https://www.4gamer.net/games/040/G004083/20261014028/",
-      "summary": "札幌の巡業中も「ファイアーエムブレム万紫千紅」にハマっていたというディーノ選手。今週の「男色ディーノのゲイムヒヒョーゼロ」はゲイムの話はもちろん，巡業の移動事情やペットホテルに預けていたハクのご機嫌まで，さまざまなトピックをお届けします。",
-      "source": "4Gamer",
-      "date": "2026-10-15T02:00:00+00:00"
     },
     {
       "title": "【本日みつけたお買い得品】アイオーのTV録画向けHDD 6TBが8,970円引き。大容量の外付けHDDもセール中！",
@@ -333,13 +389,6 @@
       "date": "2026-10-15T01:05:00+00:00"
     },
     {
-      "title": "かわいい猫の温泉宿。その奥に待つ宇宙的恐怖？ 宮路洋一氏＆にしだあつこ氏に聞く，ファンと共に作る「Under Mythos」の挑戦［インタビュー］",
-      "url": "https://www.4gamer.net/games/041/G104191/20261008029/",
-      "summary": "猫たちと一緒に温泉宿でのんびり暮らし，未知の世界へと足を踏み入れる。新作JRPG「UnderMythos」はどのような世界を描こうとしているのか。プロデューサーの宮路洋一氏，キャラデザインのにしだあつこ氏に話を聞くと……猫で世界を征服したい!?",
-      "source": "4Gamer",
-      "date": "2026-10-15T01:00:00+00:00"
-    },
-    {
       "title": "【本日みつけたお買い得品】13.3型有機ELで約899gの軽量モバイルノートが3万円オフ",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148235.html",
       "summary": "Amazonにおいて、13.3型ノートPCのMSI「Prestige 13 AI+ A3M」が直近価格から3万円引きで、22万9,800円にて購入できる。",
@@ -368,39 +417,11 @@
       "date": "2026-10-15T00:05:00+00:00"
     },
     {
-      "title": "スマホゲームのセルラン分析（2026年10月1日〜10月7日）。今週の1位は「Gジェネ エターナル」。7月〜9月のグローバル収益ランキングも紹介",
-      "url": "https://www.4gamer.net/games/633/G063395/20261013002/",
-      "summary": "世界有数のスマホゲーム大国である日本において，現在最も売れているタイトルをはじめ，さまざまなデータを毎週お届けする本連載。今週の国内収益ランキング1位は「SDガンダムジージェネレーションエターナル」となった。今回は，7月〜9月のグローバル収益ランキングも紹介しよう。",
-      "source": "4Gamer",
-      "date": "2026-10-15T00:00:00+00:00"
-    },
-    {
       "title": "microSD ExpressカードやM.2 SSDなどNextorage製品が最大20%オフ！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147834.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-14T23:30:00+00:00"
-    },
-    {
-      "title": "Ryzenが再び値上がり、9000シリーズを中心に30～40％前後の上昇も [10月前半のCPU価格]",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/price/monthly_repo/2148206.html",
-      "summary": "サハロフ佐藤(佐藤 純一)とAKIBA PC Hotline!編集部が、秋葉原各ショップのHDD、SSD、メモリ、CPUの店頭価格を独自に調査し、価格動向をお伝えするコーナーです。PCパーツ購入時などに参考としてご活用下さい。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T23:05:00+00:00"
-    },
-    {
-      "title": "そうだ アニメ，見よう：第270回は狂気のマネーゲームアニメ「FX戦士くるみちゃん」。萌えアニメの皮をかぶったホラー作品!?",
-      "url": "https://www.4gamer.net/games/338/G033856/20261014024/",
-      "summary": "「そうだアニメ，見よう」第270回は，原作・でむにゃん氏，作画・炭酸だいすき氏のマネーゲーム漫画をアニメ化した「FX戦士くるみちゃん」。制作はパッショーネ，シリーズ構成を猪原健太氏が担当。監督を「異修羅」や「見える子ちゃん」の小川優樹氏が務めている。",
-      "source": "4Gamer",
-      "date": "2026-10-14T23:00:00+00:00"
-    },
-    {
-      "title": "鹿児島県伊佐市が，ゲームも持たずに東京ゲームショウにやってきた5年間。田舎町にどんな変化が起きたのか，答え合わせのお時間",
-      "url": "https://www.4gamer.net/games/991/G999110/20261014016/",
-      "summary": "東京ゲームショウ2026で，鹿児島県伊佐市のブースを取材した。同自治体には2023年のこと，ちょっとした興味から取材していたのだが，今回は「TGS出展の5か年計画の“答え合わせ”はいかがでしょう？」と連絡をもらい，話を聞いてきた。",
-      "source": "4Gamer",
-      "date": "2026-10-14T22:00:00+00:00"
     },
     {
       "title": "【やじうまミニレビュー】AirPods 5のノイキャン、耳をふさがずエアコン音がほぼ消失。これは新基準になる",
@@ -422,13 +443,6 @@
       "summary": "",
       "source": "PC Watch",
       "date": "2026-10-14T21:00:00+00:00"
-    },
-    {
-      "title": "マレーシア産パズルアクションADV「Ondeh Ondeh カヤのうまみ大冒険」は絵柄に似合わず歯ごたえ十分。リズムに乗って絵本のような世界を冒険しよう［プレイレポ］",
-      "url": "https://www.4gamer.net/games/604/G060423/20261014036/",
-      "summary": "バンダイナムコエンターテインメントは，新作ソフト「OndehOndehカヤのうまみ大冒険」を2027年内にリリース予定だ。本作は，マレーシアのMetronomikが開発を手がけるリズム＆パズルアクションアドベンチャーだ。今回，同タイトルの序盤をプレイする機会を得たので，インプレッションを交えて概要をお伝えする。",
-      "source": "4Gamer",
-      "date": "2026-10-14T16:00:00+00:00"
     },
     {
       "title": "Microsoft、警察庁などと協力し中国語利用の国際的サイバー犯罪市場の解体に着手",
@@ -457,20 +471,6 @@
       "summary": "ターリン・インターナショナルは、カプセルコレクションの新製品「メーカー監修 手のひらPCパーツ」を発表した。10月21日より順次発売する。全5種類で、価格は1回500円。",
       "source": "PC Watch",
       "date": "2026-10-14T07:58:46+00:00"
-    },
-    {
-      "title": "画質か速さか、ボタン1つで選べる。ASUSの31.5型有機ELモニター",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148042.html",
-      "summary": "4K/240HzとフルHD/480Hzをボタン1つで切り替えられる超高速な31.5型有機ELゲーミングモニターが登場した。ASUS JAPANは、ゲーミングブランド「ROG」の31.5型4Kゲーミングモニター「ROG Strix OLED XG32UQWMS」と、26.5型WQHDゲーミングモニター「ROG Strix OLED XG27AQDMG Gen2(XG27AQDMGR)」の2機種を10月16日より順次発売する。価格はオープンプライス。",
-      "source": "PC Watch",
-      "date": "2026-10-14T07:49:17+00:00"
-    },
-    {
-      "title": "Perixx、人差し指で操作する40mmトラックボール搭載マウス2機種",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148068.html",
-      "summary": "Perixxは、トラックボールマウス「PERIMICE-822」「PERIMICE-522」を発表した。直販価格は順に7,999円、5,999円。",
-      "source": "PC Watch",
-      "date": "2026-10-14T07:14:57+00:00"
     }
   ],
   "feed_count": 3,
