@@ -1,6 +1,54 @@
 {
-  "updated_at": "2026-10-15T18:52:53.459804+00:00",
+  "updated_at": "2026-10-15T21:44:34.068684+00:00",
   "articles": [
+    {
+      "title": "Liquid AI、AIエージェント向け24B推論モデル「LFM2.5-24B-A2B」無償公開",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148496.html",
+      "summary": "Liquid AIは10月13日、LFM2.5シリーズの推論モデル「LFM2.5-24B-A2B」を発表した。Hugging Faceでオープンウェイト版を「LFM Open License v1.0」のもとで公開している。基本的には無償で利用でき、商用利用も可能だが、年間売上高が1,000万ドル以上の企業による商用利用は商用ライセンスの取得が必要となる。また、Liquid ConsoleでAPIも提供しており、API料金は100万トークンあたり入力0.10ドル、キャッシュ入力0.05ドル、出力1ドル。",
+      "source": "PC Watch",
+      "date": "2026-10-15T21:27:09+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/496/001.jpg"
+    },
+    {
+      "title": "日本HP、RTX Spark搭載で薄さ15.7mmの16型ノートPC",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148591.html",
+      "summary": "日本HPはRTX Spark N1X搭載16型ノート「HP OmniBook Ultra 16 AI PC」シリーズ3機種を順次発売する。直販価格は59万9,500円から。3モデルを用意しており、主な構成と発売時期、直販価格は以下の通り。",
+      "source": "PC Watch",
+      "date": "2026-10-15T21:19:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/591/01.jpg"
+    },
+    {
+      "title": "「星のカービィ」がマウスとキーボードに！コラボ製品がKensingtonから",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148468.html",
+      "summary": "アコ・ブランズ・ジャパンが展開するKensingtonブランドは、「星のカービィ」とコラボレーションした製品「星のカービィ ワイヤレス コンパクトキーボード ダッシュ(K75579JP)」と「星のカービィ ワイヤレス マウス にっこり(K75580JP)」を11月10日に発売する。実売予想価格はワイヤレスキーボードが7,980円前後、ワイヤレスマウスが4,980円前後の見込み。",
+      "source": "PC Watch",
+      "date": "2026-10-15T21:17:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/468/01.jpg"
+    },
+    {
+      "title": "【やじうまミニレビュー】アームレストの高さ問題を3千円で解決!? ノブで調節できるチェア用の神アイテム",
+      "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147395.html",
+      "summary": "",
+      "source": "PC Watch",
+      "date": "2026-10-15T21:16:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/395/01.jpg"
+    },
+    {
+      "title": "【PC短評】キーボードより静か！アルミ筐体の王道ミニPC「AOOSTAR MACO H255」を試した",
+      "url": "https://pc.watch.impress.co.jp/docs/column/short-review/2148059.html",
+      "summary": "ディスプレイ内蔵ミニPCやNASキットなど、ユニークなミニPCを送り出しているAOOSTAR。今回はそのAOOSTARが発売する、王道ミニPC「MACO H255」を紹介する。メモリ24GB/内蔵ストレージ1TBの仕様で、Amazonでの価格は10万3,120円。",
+      "source": "PC Watch",
+      "date": "2026-10-15T21:12:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/059/01.jpg"
+    },
+    {
+      "title": "ガチくんに! 第435回切り抜き「アジア大会で11歳が金メダル/SFL ASIA/ウメハラ密着映画発表」",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148596.html",
+      "summary": "※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchとYouTubeで配信しています。レギュラー出演者はぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードした切り抜きとアーカイブの動画を掲載しています。",
+      "source": "PC Watch",
+      "date": "2026-10-15T21:00:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/596/01.jpg"
+    },
     {
       "title": "アキバお買い得価格情報（速報版） 【 調査日：2026年10月15日 】",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/2148554.html",
@@ -86,48 +134,42 @@
       "url": "https://www.4gamer.net/games/668/G066882/20261015043/",
       "summary": "RemedyEntertainmentは本日，アクションアドベンチャーRPG「CONTROLResonant」のPS5/XBOXSeriesX向けパッケージ版を発売した。通常版に加え，SteelBookケースやファインアートプリント3枚，キーアートポスターを同梱するSteelBookエディションも用意されている。",
       "source": "4Gamer",
-      "date": "2026-10-15T13:00:00+00:00",
-      "image": "https://www.4gamer.net/games/668/G066882/20261015043/SS/003.jpg"
+      "date": "2026-10-15T13:00:00+00:00"
     },
     {
       "title": "「メイプルストーリーM」，7.5周年アップデートを実施",
       "url": "https://www.4gamer.net/games/324/G032445/20261015051/",
       "summary": "",
       "source": "4Gamer",
-      "date": "2026-10-15T12:15:17+00:00",
-      "image": "https://www.4gamer.net/games/324/G032445/20261015051/SS/001.jpg"
+      "date": "2026-10-15T12:15:17+00:00"
     },
     {
       "title": "「メイプルストーリー」初の劇場版アニメ「DEAR MY HERO」，特別上映会を11月7日，8日に東京・大阪で開催",
       "url": "https://www.4gamer.net/games/011/G001163/20261015053/",
       "summary": "",
       "source": "4Gamer",
-      "date": "2026-10-15T12:02:37+00:00",
-      "image": "https://www.4gamer.net/games/011/G001163/20261015053/SS/001.jpg"
+      "date": "2026-10-15T12:02:37+00:00"
     },
     {
       "title": "「信長の野望 出陣」，ご当地イベント「大関ケ原祭2026」を10月16日からスタート。関ケ原古戦場で隠しスポット探しを楽しめる",
       "url": "https://www.4gamer.net/games/696/G069666/20261015052/",
       "summary": "コーエーテクモゲームスは本日（2026年10月15日），スマートフォン向け位置情報ゲーム「信長の野望出陣」で，10月16日13：00から開催するご当地イベント「大関ケ原祭2026」の概要を公開した。今回は関ケ原古戦場に「隠しご当地スポット」が登場。パネルミッションのヒントをもとに，地図に表示されないスポットを探す。",
       "source": "4Gamer",
-      "date": "2026-10-15T12:02:10+00:00",
-      "image": "https://www.4gamer.net/games/696/G069666/20261015052/SS/007.jpg"
+      "date": "2026-10-15T12:02:10+00:00"
     },
     {
       "title": "【笠原一輝のユビキタス情報局】買ったらすぐローカルエージェント型AIが始められるRTX Spark N1Xのすべて",
       "url": "https://pc.watch.impress.co.jp/docs/column/ubiq/2148478.html",
       "summary": "",
       "source": "PC Watch",
-      "date": "2026-10-15T12:00:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/478/001.jpg"
+      "date": "2026-10-15T12:00:00+00:00"
     },
     {
       "title": "100万円でも即売り切れ。NVIDIA「RTX Spark」に触れて分かった、可能性と難しさ",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148163.html",
       "summary": "「RTX Sparkは、エージェントAI時代に求められるPCの姿を先取りしたもの」。これは、RTX Sparkの技術説明会に参加して筆者がユーザー視点で感じたことだ。しかし同時に、まったく新しい価値観、まったく新しい使い方を提案する製品であるがゆえに、記者視点では、この製品の姿を伝えるのが難しいとも感じた。",
       "source": "PC Watch",
-      "date": "2026-10-15T12:00:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/163/01.jpg"
+      "date": "2026-10-15T12:00:00+00:00"
     },
     {
       "title": "【プロダクトレビュー・ショーケース】【特別編】RTX Sparkは「AIもゲームも1台で」を狙う新世代Windows SoC。NVIDIAが示したエージェントPCの全貌RTX Spark Editor's Day & RTX Spark搭載機の最新情報をレポート text by 芹澤 正芳",
@@ -429,48 +471,6 @@
       "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施中だ。14型ゲーミングノートPCのASUS「TUF Gaming A14 FA401UM」は、プライム会員限定の7万円引きで、34万9,800円にて購入できる。",
       "source": "PC Watch",
       "date": "2026-10-15T01:06:11+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】13.3型有機ELで約899gの軽量モバイルノートが3万円オフ",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148235.html",
-      "summary": "Amazonにおいて、13.3型ノートPCのMSI「Prestige 13 AI+ A3M」が直近価格から3万円引きで、22万9,800円にて購入できる。",
-      "source": "PC Watch",
-      "date": "2026-10-15T00:50:58+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】9万円台！32GBメモリ/1TB SSDのRyzen 7搭載ミニPCが約2万6千円オフで",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148228.html",
-      "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施中だ。GMKtecのミニPC「K16」は、プライム会員限定の2万6,706円引きで、9万9,999円にて購入可能だ。",
-      "source": "PC Watch",
-      "date": "2026-10-15T00:31:35+00:00"
-    },
-    {
-      "title": "【やじうまミニレビュー】AirPods 5のノイキャン、耳をふさがずエアコン音がほぼ消失。これは新基準になる",
-      "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147393.html",
-      "summary": "",
-      "source": "PC Watch",
-      "date": "2026-10-14T21:15:00+00:00"
-    },
-    {
-      "title": "ガチくんに! 第434回切り抜き「もはや珍回答にすら届かない……波乱続きの学力テスト(後編)」",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148210.html",
-      "summary": "※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchとYouTubeで配信しています。レギュラー出演者はぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードした切り抜きとアーカイブの動画を掲載しています。",
-      "source": "PC Watch",
-      "date": "2026-10-14T21:00:00+00:00"
-    },
-    {
-      "title": "【Mac Info】Safariの機能拡張が文章で作れる！macOS 27の新機能",
-      "url": "https://pc.watch.impress.co.jp/docs/column/macinfo/2148205.html",
-      "summary": "",
-      "source": "PC Watch",
-      "date": "2026-10-14T21:00:00+00:00"
-    },
-    {
-      "title": "Microsoft、警察庁などと協力し中国語利用の国際的サイバー犯罪市場の解体に着手",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148191.html",
-      "summary": "発端になったのは、警察庁がMicrosoftに提供した情報だった。Microsoftは10月14日(現地時間)、日本の警察庁や各国の法執行機関と協力して、サイバー犯罪を支える国際的な電子市場を解体に着手したと発表。日本を含む世界中の被害を抑止するための調査結果と対策もまとめた。",
-      "source": "PC Watch",
-      "date": "2026-10-14T13:00:00+00:00"
     }
   ],
   "feed_count": 3,
