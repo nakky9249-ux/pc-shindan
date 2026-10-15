@@ -1,133 +1,322 @@
 {
-  "updated_at": "2026-10-15T00:53:59.602842+00:00",
+  "updated_at": "2026-10-15T03:45:14.028119+00:00",
   "articles": [
+    {
+      "title": "圧巻のソロメドレーも披露！ 6年の歳月を重ねた今を祝う「プロジェクトセカイ 6th Anniversary 感謝祭」初日レポート",
+      "url": "https://www.4gamer.net/games/476/G047609/20261013025/",
+      "summary": "2026年10月3日と10月4日，東京体育館にて「プロジェクトセカイ6thAnniversary感謝祭」が開催された。本稿では，10月3日に行われた公演の様子をお届けしよう。朗読劇，トークショー，音楽ライブなどが披露され，「プロセカ」の6周年を祝福するとともに，未来への道を示すような公演となっていた。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:41:23+00:00",
+      "image": "https://www.4gamer.net/games/476/G047609/20261013025/SS/018.jpg"
+    },
+    {
+      "title": "「テイルズ オブ エターニア リマスター」本日発売。インフェリアとセレスティア，2つの世界を巡る冒険が蘇る",
+      "url": "https://www.4gamer.net/games/016/G101604/20261015008/",
+      "summary": "バンダイナムコエンターテインメントは本日，RPG「テイルズオブエターニアリマスター」を発売した。本作は，PSP版をベースに，目的地アイコンの表示や各種ブースト機能，オート戦闘時の高速モードなどを追加したリマスター作品だ。リッドたちが，大晶霊の力を求めて2つの世界を巡る冒険が現行機向けに蘇る。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:38:39+00:00",
+      "image": "https://www.4gamer.net/games/016/G101604/20261015008/SS/001.jpg"
+    },
+    {
+      "title": "「学プリ」，第1弾有償ダウンロードコンテンツとして追加攻略キャラクター「越前リョーガ」の配信を開始。完全新規のシナリオなどを収録",
+      "url": "https://www.4gamer.net/games/947/G094704/20261014058/",
+      "summary": "KONAMIは本日，恋愛アドベンチャーゲーム「テニスの王子様も〜っと学園祭の王子様♡-40andmore...」の第1弾有償ダウンロードコンテンツとして，追加攻略キャラクター「越前リョーガ」の配信を開始した。価格は1980円（税込）。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:32:56+00:00",
+      "image": "https://www.4gamer.net/games/947/G094704/20261014058/SS/001.jpg"
+    },
+    {
+      "title": "デュアルファン仕様のGeForce RTX 3060がColorfulから",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148169.html",
+      "summary": "デュアルファンクーラーを搭載したGeForce RTX 3060ビデオカード「Colorful GeForce RTX 3060 Battle AX DUO 12GB V2-V」が、パソコンショップ アークに入荷。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-15T03:30:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/169/a1.jpg"
+    },
+    {
+      "title": "「蒼き雷霆 ガンヴォルト トライアングル エディション Nintendo Switch 2 Edition」，予約受付を開始",
+      "url": "https://www.4gamer.net/games/008/G100886/20261015007/",
+      "summary": "インティ・クリエイツは2026年10月15日，「蒼き雷霆ガンヴォルトトライアングルエディションNintendoSwitch2Edition」とアップグレードパスの予約受付をニンテンドーeショップで開始した。また，Switch2Editionで楽しめる追加シナリオ「蒼き雷霆ガンヴォルトGX」は，PC版とPS5版向けにDLCとしてリリースされる。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:22:13+00:00",
+      "image": "https://www.4gamer.net/games/008/G100886/20261015007/SS/001.jpg"
+    },
+    {
+      "title": "Core i5-1135G7搭載の13.3型ノートPC「dynabook G83/HS」が37,400円、Qualitの中古訳あり品セール",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/usedpc_hotline/2148183.html",
+      "summary": "Core i5-1135G7(4コア/8スレッド)を搭載したDynabook製13.3型ノートPC「dynabook G83/HS」の中古品が、横河レンタ・リースが運営する通販サイト「Qualit」で特価販売中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-15T03:00:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/183/a1.jpg"
+    },
+    {
+      "title": "好きなものを詰め込んでも，ちゃんと“自分のゲーム”になる。カナヲ氏が「DRAPLINE」に持ち込んだ，これまで使ってこなかった引き出し",
+      "url": "https://www.4gamer.net/games/921/G092147/20261007001/",
+      "summary": "7年間の連載を終えた「被虐のノエル」ののちにカナヲ氏が手がけたのは，ドラゴンの娘を育てるローグライトな育成RPGだった。予想を超える早期アクセスの反響，RPGツクールを使い続ける理由。自分の“好き”を詰め込んだ「DRAPLINE」について聞く。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:00:00+00:00",
+      "image": "https://www.4gamer.net/games/921/G092147/20261007001/SS/030.jpg"
+    },
+    {
+      "title": "ポケモン新作ボドゲ「お前、もしかしてロケット団？」を先行プレイ。バトルを通じて正体を暴く，かなり“ガチ”な正体隠匿系ゲーム",
+      "url": "https://www.4gamer.net/games/024/G102471/20261007003/",
+      "summary": "ポケモンが手掛けるボードゲーム「お前、もしかしてロケット団？」が，2026年11月12日に発売される。本作は最大6人で遊べる正体隠匿系のゲームで，ポケモンバトルを通して推理を楽しめるという。今回は本作の先行体験会に参加する機会を得たので，そのプレイレポートをお届けしていく。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:00:00+00:00",
+      "image": "https://www.4gamer.net/games/024/G102471/20261007003/SS/002.jpg"
+    },
+    {
+      "title": "給食関係のメーカーが東京ゲームショウに出展。就職にも役立つ経営シミュレーション「給食マスター！」など，本格的な取り組みでゲームを活用する",
+      "url": "https://www.4gamer.net/games/045/G104554/20260925023/",
+      "summary": "給食などで使う厨房機器メーカーの中西製作所が「東京ゲームショウ2026」に出展。完全無料のゲームを配信し，プレイ経験を就職にも活用するユニークな取り組みを展開している。ゲームで現実の課題に取り組むゲーミフィケーションの新たな形を探るべく，多くの人で賑わう同社ブースで話を聞いた。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:00:00+00:00",
+      "image": "https://www.4gamer.net/games/045/G104554/20260925023/SS/002.jpg"
+    },
+    {
+      "title": "「ジャックジャンヌ」5周年記念展レポート。舞台衣装や読切シリーズで5周年に浸る。ファン大興奮のサプライズ展示も？",
+      "url": "https://www.4gamer.net/games/458/G045806/20261013055/",
+      "summary": "「ジャックジャンヌ」の発売5周年を記念した「ジャックジャンヌ展」が，10月25日まで有楽町マルイで開催中だ。作中の公演衣装や読切シリーズ「FOLIAGE」など，5年の軌跡をたどる展示が並ぶ会場の模様をレポートする。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:00:00+00:00",
+      "image": "https://www.4gamer.net/games/458/G045806/20261013055/SS/002.jpg"
+    },
+    {
+      "title": "「ファイアーエムブレム ヒーローズ」，第4回 英雄総選挙で入賞した比翼英雄のディミトリ，エーデルガルト，風光英雄のグルヴェイグが10月16日に参戦",
+      "url": "https://www.4gamer.net/games/369/G036904/20261014039/",
+      "summary": "任天堂は本日（2026年10月15日），スマートフォンアプリ「ファイアーエムブレムヒーローズ」で，記念召喚「比翼ディミトリ＆比翼エーデルガルト」を10月16日16：00から11月6日15：59まで開催すると発表した。今回は「第4回英雄総選挙」で入賞した比翼英雄のディミトリ，エーデルガルト，ならびに風光英雄のグルヴェイグの3名が実装される。",
+      "source": "4Gamer",
+      "date": "2026-10-15T03:00:00+00:00",
+      "image": "https://www.4gamer.net/games/369/G036904/20261014039/SS/001.jpg"
+    },
+    {
+      "title": "開けばオン、閉じれば約7cmに縮んでオフ。スライド式静音マウス",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148282.html",
+      "summary": "サンワサプライは10月14日、持ち運びに便利なスライド式カバーを備えたワイヤレスマウス「MA-WBBS526」シリーズを発売した。カラーはブルーとグレーの2種類で、直販価格はいずれも4,780円。",
+      "source": "PC Watch",
+      "date": "2026-10-15T02:54:04+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/282/01.jpg"
+    },
+    {
+      "title": "「Claude Code」デスクトップ版、並列タスクごとにセッションを自動生成",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148273.html",
+      "summary": "複数のClaude Codeにタスクを並行して任せるのが、ぐっと楽になりそうだ。Anthropicは10月14日(現地時間)、エージェント型コーディングツール「Claude Code」のデスクトップアプリをアップデートし、複数セッションの並列実行を快適にする新機能を追加した。開発者向けX(旧Twitter)アカウント@ClaudeDevsで発表された。新機能は、デスクトップアプリをアップデートし、新しいセッションを開始することで利用できる。",
+      "source": "PC Watch",
+      "date": "2026-10-15T02:38:35+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/273/1.jpg"
+    },
+    {
+      "title": "ポケットにも楽に入るコンパクトなXBOX純正ゲームパッド「XBOX Nano Controller」が発表。税込8000円で予約受付中",
+      "url": "https://www.4gamer.net/games/437/G043761/20261015005/",
+      "summary": "米国時間2026年10月14日，Microsoftは，新型ワイヤレスゲームパッド「XBOXNanoController」を発表した。奥行き方向は標準サイズ品の半分程度しかなく，公称本体重量も約99gと軽いのが特徴だ。Windows11/10搭載PC，XBOXSeriesX|S，XBOXOne，iOS，Androidに対応する。",
+      "source": "4Gamer",
+      "date": "2026-10-15T02:35:13+00:00",
+      "image": "https://www.4gamer.net/games/437/G043761/20261015005/SS/002.jpg"
+    },
+    {
+      "title": "5インチLCD搭載の簡易水冷クーラー「iCUE LINK TITAN II 360 RX LCD」がCORSAIRから",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148177.html",
+      "summary": "CORSAIRの簡易水冷クーラーに新モデルが登場。5インチLCDパネルと360mmラジエーターを搭載した「iCUE LINK TITAN II 360 RX LCD」が発売された。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-15T02:30:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/177/aaa.jpg"
+    },
+    {
+      "title": "「グランツーリスモ7」，大型アップデート「Spec IV」第1弾を本日15：00に配信。新車6台とスポーツランド SUGOを追加",
+      "url": "https://www.4gamer.net/games/512/G051215/20261015004/",
+      "summary": "SIEは，「グランツーリスモ7」の大型アップデート「SpecIV」第1弾を本日15：00に配信すると発表した。今回のアップデートでは，「シトロエン2CV6Charleston」「ホンダシビックSi」など新車6台と「スポーツランドSUGO」を追加するほか，ブランドセントラルやガレージ，カフェなどにも新機能・新要素を実装する。",
+      "source": "4Gamer",
+      "date": "2026-10-15T02:20:01+00:00",
+      "image": "https://www.4gamer.net/games/512/G051215/20261015004/SS/001.jpg"
+    },
+    {
+      "title": "NZXTのピラーレスPCケース「S5 RGB」が発売、360mm一体型RGBファン搭載で8,980円",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148162.html",
+      "summary": "NZXTのピラーレスPCケース「S5 RGB」が発売された。カラーはブラック（CC-S51FB-01）とホワイト（CC-S51FW-01）の2色。ツクモパソコン本店ではブラック、TSUKUMO eX.ではホワイトが展示されている。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-15T02:05:00+00:00"
+    },
+    {
+      "title": "インディーゲームイベント「BitSummit」，一般出展者向けとなる「BitSummit Official Indie Selection」のエントリー募集を開始",
+      "url": "https://www.4gamer.net/games/991/G999110/20261014047/",
+      "summary": "BitSummit実行委員会は，インディーゲームイベント「BitSummit」を2027年5月21日〜23日に京都市勧業館みやこめっせで開催する。これに先立ち，一般出展者向けの「BitSummitOfficialIndieSelection」のエントリー募集を本日（2026年10月15日）開始した。",
+      "source": "4Gamer",
+      "date": "2026-10-15T02:00:00+00:00"
+    },
+    {
+      "title": "男色ディーノのゲイムヒヒョー ゼロ：第911回「なんだか不機嫌でした」",
+      "url": "https://www.4gamer.net/games/040/G004083/20261014028/",
+      "summary": "札幌の巡業中も「ファイアーエムブレム万紫千紅」にハマっていたというディーノ選手。今週の「男色ディーノのゲイムヒヒョーゼロ」はゲイムの話はもちろん，巡業の移動事情やペットホテルに預けていたハクのご機嫌まで，さまざまなトピックをお届けします。",
+      "source": "4Gamer",
+      "date": "2026-10-15T02:00:00+00:00"
+    },
+    {
+      "title": "【本日みつけたお買い得品】アイオーのTV録画向けHDD 6TBが8,970円引き。大容量の外付けHDDもセール中！",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148262.html",
+      "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施中だ。アイオーデータのレコーディングHDD「RECBOX HVL-RS/UE」シリーズは、プライム会員限定の値引きで、6TB版が8,970円引きの5万830円、8TB版が1万660円引きの6万4,320円。また16TB版は、9月14日の価格から4万2,414円引きで、13万5,080円(販売元:Amazon.co.jp)にて購入できる。",
+      "source": "PC Watch",
+      "date": "2026-10-15T01:52:27+00:00"
+    },
+    {
+      "title": "llama.cppのWindowsアプリ登場、RTX Sparkに初日対応",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148249.html",
+      "summary": "コマンドを打たずに、WindowsでローカルLLMを動かせるアプリが登場した。Hugging Faceは10月13日(米国時間)、ローカルLLM実行エンジン「llama.cpp」をWindows 11のタスクトレイから操作できるアプリ「Llama Windows」を公開した。無償で利用できる。",
+      "source": "PC Watch",
+      "date": "2026-10-15T01:49:36+00:00"
+    },
+    {
+      "title": "【本日みつけたお買い得品】キオクシアのGen 5 SSDが6,450円引き、Nextorage 8TBは4万500円引き",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148245.html",
+      "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施している。NVMe SSDのキオクシア「EXCERIA PLUS G4」シリーズは、プライム会員限定の値引きで、1TB版が6,450円引きの3万6,530円、2TB版が1万1,250円引きの6万3,730円にて購入可能だ。",
+      "source": "PC Watch",
+      "date": "2026-10-15T01:38:39+00:00"
+    },
+    {
+      "title": "ThunderboltドックなどOWCのPC周辺機器が最大20%オフ！Amazonプライム感謝祭",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147832.html",
+      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-15T01:30:00+00:00"
+    },
+    {
+      "title": "【本日みつけたお買い得品】7万円の大幅値引き！GeForce RTX 5060搭載ゲーミングノートが超お買い得",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148240.html",
+      "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施中だ。14型ゲーミングノートPCのASUS「TUF Gaming A14 FA401UM」は、プライム会員限定の7万円引きで、34万9,800円にて購入できる。",
+      "source": "PC Watch",
+      "date": "2026-10-15T01:06:11+00:00"
+    },
+    {
+      "title": "MSIの5K IPSパネル採用26.9インチゲーミングモニター「MAG 271KPD7」がTSUKUMOで展示スタート",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2147348.html",
+      "summary": "解像度とリフレッシュレートを切り替える「デュアルモード」を搭載したMSIの26.9インチ5Kモニター「MAG 271KPD7」が、TSUKUMO eX.とツクモパソコン本店IIで展示中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-15T01:05:00+00:00"
+    },
+    {
+      "title": "かわいい猫の温泉宿。その奥に待つ宇宙的恐怖？ 宮路洋一氏＆にしだあつこ氏に聞く，ファンと共に作る「Under Mythos」の挑戦［インタビュー］",
+      "url": "https://www.4gamer.net/games/041/G104191/20261008029/",
+      "summary": "猫たちと一緒に温泉宿でのんびり暮らし，未知の世界へと足を踏み入れる。新作JRPG「UnderMythos」はどのような世界を描こうとしているのか。プロデューサーの宮路洋一氏，キャラデザインのにしだあつこ氏に話を聞くと……猫で世界を征服したい!?",
+      "source": "4Gamer",
+      "date": "2026-10-15T01:00:00+00:00"
+    },
+    {
+      "title": "【本日みつけたお買い得品】13.3型有機ELで約899gの軽量モバイルノートが3万円オフ",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148235.html",
+      "summary": "Amazonにおいて、13.3型ノートPCのMSI「Prestige 13 AI+ A3M」が直近価格から3万円引きで、22万9,800円にて購入できる。",
+      "source": "PC Watch",
+      "date": "2026-10-15T00:50:58+00:00"
+    },
     {
       "title": "【本日みつけたお買い得品】9万円台！32GBメモリ/1TB SSDのRyzen 7搭載ミニPCが約2万6千円オフで",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148228.html",
       "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施中だ。GMKtecのミニPC「K16」は、プライム会員限定の2万6,706円引きで、9万9,999円にて購入可能だ。",
       "source": "PC Watch",
-      "date": "2026-10-15T00:31:35+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/228/01.jpg"
+      "date": "2026-10-15T00:31:35+00:00"
     },
     {
       "title": "見守りカメラやWi-Fi 7ルーターなどTP-Link製品が最大45%オフ！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147804.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T00:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/804/s1.jpg"
+      "date": "2026-10-15T00:30:00+00:00"
     },
     {
       "title": "NVIDIA製スパコン「DGX Station V100」のリフレッシュサービスがEK Japanから登場",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148124.html",
       "summary": "NVIDIA「DGX Station V100」のリフレッシュサービスをEK Japanが開始。オリオスペックでサービスの申し込みが始まっている。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T00:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/124/s1.jpg"
+      "date": "2026-10-15T00:05:00+00:00"
     },
     {
       "title": "スマホゲームのセルラン分析（2026年10月1日〜10月7日）。今週の1位は「Gジェネ エターナル」。7月〜9月のグローバル収益ランキングも紹介",
       "url": "https://www.4gamer.net/games/633/G063395/20261013002/",
       "summary": "世界有数のスマホゲーム大国である日本において，現在最も売れているタイトルをはじめ，さまざまなデータを毎週お届けする本連載。今週の国内収益ランキング1位は「SDガンダムジージェネレーションエターナル」となった。今回は，7月〜9月のグローバル収益ランキングも紹介しよう。",
       "source": "4Gamer",
-      "date": "2026-10-15T00:00:00+00:00",
-      "image": "https://www.4gamer.net/games/633/G063395/20261013002/SS/002.jpg"
+      "date": "2026-10-15T00:00:00+00:00"
     },
     {
       "title": "microSD ExpressカードやM.2 SSDなどNextorage製品が最大20%オフ！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147834.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T23:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/834/s1.jpg"
+      "date": "2026-10-14T23:30:00+00:00"
     },
     {
       "title": "Ryzenが再び値上がり、9000シリーズを中心に30～40％前後の上昇も [10月前半のCPU価格]",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/price/monthly_repo/2148206.html",
       "summary": "サハロフ佐藤(佐藤 純一)とAKIBA PC Hotline!編集部が、秋葉原各ショップのHDD、SSD、メモリ、CPUの店頭価格を独自に調査し、価格動向をお伝えするコーナーです。PCパーツ購入時などに参考としてご活用下さい。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T23:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/206/2026-1010-140834.jpg"
+      "date": "2026-10-14T23:05:00+00:00"
     },
     {
       "title": "そうだ アニメ，見よう：第270回は狂気のマネーゲームアニメ「FX戦士くるみちゃん」。萌えアニメの皮をかぶったホラー作品!?",
       "url": "https://www.4gamer.net/games/338/G033856/20261014024/",
       "summary": "「そうだアニメ，見よう」第270回は，原作・でむにゃん氏，作画・炭酸だいすき氏のマネーゲーム漫画をアニメ化した「FX戦士くるみちゃん」。制作はパッショーネ，シリーズ構成を猪原健太氏が担当。監督を「異修羅」や「見える子ちゃん」の小川優樹氏が務めている。",
       "source": "4Gamer",
-      "date": "2026-10-14T23:00:00+00:00",
-      "image": "https://www.4gamer.net/games/338/G033856/20261014024/SS/006.jpg"
+      "date": "2026-10-14T23:00:00+00:00"
     },
     {
       "title": "AVerMediaのHDMIキャプチャが最大33%オフ！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147833.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T22:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2147/833/s1.jpg"
+      "date": "2026-10-14T22:30:00+00:00"
     },
     {
       "title": "DDR5メモリの値上がりが目立つ、64GB×2枚組は約40万円に急騰 [10月前半のメモリ価格]",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/price/monthly_repo/2148207.html",
       "summary": "サハロフ佐藤(佐藤 純一)とAKIBA PC Hotline!編集部が、秋葉原各ショップのHDD、SSD、メモリ、CPUの店頭価格を独自に調査し、価格動向をお伝えするコーナーです。PCパーツ購入時などに参考としてご活用下さい。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T22:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/207/2026-1010-142054.jpg"
+      "date": "2026-10-14T22:05:00+00:00"
     },
     {
       "title": "鹿児島県伊佐市が，ゲームも持たずに東京ゲームショウにやってきた5年間。田舎町にどんな変化が起きたのか，答え合わせのお時間",
       "url": "https://www.4gamer.net/games/991/G999110/20261014016/",
       "summary": "東京ゲームショウ2026で，鹿児島県伊佐市のブースを取材した。同自治体には2023年のこと，ちょっとした興味から取材していたのだが，今回は「TGS出展の5か年計画の“答え合わせ”はいかがでしょう？」と連絡をもらい，話を聞いてきた。",
       "source": "4Gamer",
-      "date": "2026-10-14T22:00:00+00:00",
-      "image": "https://www.4gamer.net/games/991/G999110/20261014016/SS/021.jpg"
+      "date": "2026-10-14T22:00:00+00:00"
     },
     {
       "title": "【やじうまミニレビュー】AirPods 5のノイキャン、耳をふさがずエアコン音がほぼ消失。これは新基準になる",
       "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147393.html",
       "summary": "",
       "source": "PC Watch",
-      "date": "2026-10-14T21:15:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/393/PH01.jpg"
+      "date": "2026-10-14T21:15:00+00:00"
     },
     {
       "title": "ガチくんに! 第434回切り抜き「もはや珍回答にすら届かない……波乱続きの学力テスト(後編)」",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148210.html",
       "summary": "※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchとYouTubeで配信しています。レギュラー出演者はぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードした切り抜きとアーカイブの動画を掲載しています。",
       "source": "PC Watch",
-      "date": "2026-10-14T21:00:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/210/01.jpg"
+      "date": "2026-10-14T21:00:00+00:00"
     },
     {
       "title": "【Mac Info】Safariの機能拡張が文章で作れる！macOS 27の新機能",
       "url": "https://pc.watch.impress.co.jp/docs/column/macinfo/2148205.html",
       "summary": "",
       "source": "PC Watch",
-      "date": "2026-10-14T21:00:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/205/image05.png"
+      "date": "2026-10-14T21:00:00+00:00"
     },
     {
       "title": "マレーシア産パズルアクションADV「Ondeh Ondeh カヤのうまみ大冒険」は絵柄に似合わず歯ごたえ十分。リズムに乗って絵本のような世界を冒険しよう［プレイレポ］",
       "url": "https://www.4gamer.net/games/604/G060423/20261014036/",
       "summary": "バンダイナムコエンターテインメントは，新作ソフト「OndehOndehカヤのうまみ大冒険」を2027年内にリリース予定だ。本作は，マレーシアのMetronomikが開発を手がけるリズム＆パズルアクションアドベンチャーだ。今回，同タイトルの序盤をプレイする機会を得たので，インプレッションを交えて概要をお伝えする。",
       "source": "4Gamer",
-      "date": "2026-10-14T16:00:00+00:00",
-      "image": "https://www.4gamer.net/games/604/G060423/20261014036/SS/007.jpg"
+      "date": "2026-10-14T16:00:00+00:00"
     },
     {
       "title": "打越鋼太郎氏，新会社「CRASH KEYS」の設立を正式発表。「Zero Escape」シリーズをはじめ，数々の型破りなADVを手がけてきたゲームクリエイター",
       "url": "https://www.4gamer.net/games/999/G999901/20261014030/",
       "summary": "打越鋼太郎氏は本日（2026年10月15日），自身が代表取締役を務める新会社「CRASHKEYS（クラッシュキーズ）」の設立を正式発表した。打越氏は，「ZeroEscape（極限脱出）」「AI：ソムニウムファイル」シリーズなどを手掛けたゲームクリエイターだ。",
       "source": "4Gamer",
-      "date": "2026-10-14T16:00:00+00:00",
-      "image": "https://www.4gamer.net/games/999/G999901/20261014030/SS/002.jpg"
+      "date": "2026-10-14T16:00:00+00:00"
     },
     {
       "title": "レトロ風FPSアクション「Warhammer 40,000: Boltgun 2」，本日発売。ローンチトレイラーも公開に",
       "url": "https://www.4gamer.net/games/912/G091285/20261014056/",
       "summary": "BigFanGamesは本日（2026年10月15日），レトロ風FPSアクション「Warhammer40,000:Boltgun2」を発売した。本作は，AurochDigitalが手掛けた「Warhammer40,000:Boltgun」の続編で，前作から続投する「マルム・カエド」と新キャラクターのバトルシスター「ナイラ・ベイラス」が登場する。",
       "source": "4Gamer",
-      "date": "2026-10-14T16:00:00+00:00",
-      "image": "https://www.4gamer.net/games/912/G091285/20261014056/SS/001.jpg"
+      "date": "2026-10-14T16:00:00+00:00"
     },
     {
       "title": "大型OLEDディスプレイに安全機能も備えたMSIのフラグシップ水冷クーラー「MEG CORELIQUID E15 360」[Sponsored]",
@@ -214,55 +403,6 @@
       "date": "2026-10-14T11:00:00+00:00"
     },
     {
-      "title": "「NGS ver.2」，新ACスクラッチ「ナイトメアカーニバル'26」を追加",
-      "url": "https://www.4gamer.net/games/521/G052100/20261014054/",
-      "summary": "",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:59:04+00:00"
-    },
-    {
-      "title": "Switch版「ニコニコ」，2027年3月31日をもってサービス終了。約10年の提供に幕。Switch2への対応予定はなし",
-      "url": "https://www.4gamer.net/games/999/G999903/20261014053/",
-      "summary": "ドワンゴは2026年10月13日，Switch版「ニコニコ」のサービスを2027年3月31日23：59をもって終了すると発表した。2017年7月のサービス開始から約10年で提供を終える。Switch2への対応予定はなく，ソフトの新規ダウンロードは2027年2月28日23：59に停止される。",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:49:38+00:00"
-    },
-    {
-      "title": "「ぷよぷよ!!クエスト」，13.5周年記念キャンペーン第1弾を開催",
-      "url": "https://www.4gamer.net/games/202/G020261/20261014052/",
-      "summary": "",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:38:47+00:00"
-    },
-    {
-      "title": "「ソニックレーシング クロスワールド」，有償DLC第6弾「アバター伝説 パック」を発売",
-      "url": "https://www.4gamer.net/games/882/G088214/20261014051/",
-      "summary": "",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:34:59+00:00"
-    },
-    {
-      "title": "「サイマジック」，科学者タイプがわかるオリジナル性格診断を公開",
-      "url": "https://www.4gamer.net/games/043/G104312/20261014049/",
-      "summary": "",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:29:22+00:00"
-    },
-    {
-      "title": "未確認生物たちが暮らす世界を冒険するストーリー重視のADV「We Don't Exist」，アナウンストレイラーを公開",
-      "url": "https://www.4gamer.net/games/050/G105031/20261014046/",
-      "summary": "個人開発者のVersiris氏は本日（2026年10月14日），開発中の新作タイトル「WeDon'tExist」を発表し，アナウンストレイラーを公開した。本作は，さまざまな未確認生物が暮らす並行世界を探索し，次元を超えた暗い陰謀を解き明かしていくストーリー重視のアドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:20:12+00:00"
-    },
-    {
-      "title": "ベストホラー賞に輝いた期待作の舞台は城崎温泉？ スペイン産サバイバルホラー「樹海への道」では，タクシー運転手として怪異と対峙",
-      "url": "https://www.4gamer.net/games/000/G100017/20261014042/",
-      "summary": "Endflameが開発する新作サバイバルホラー「樹海への道」が，スペインのバルセロナで開催されたゲームイベント，SAGABarcelonaGameFest2026に出展されていた。日本のタクシー運転手が怪異に遭遇する姿を描く本作のロケーションは，城崎温泉にインスパイアされているという。",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:10:34+00:00"
-    },
-    {
       "title": "GeForce搭載ゲーミングノートなどMSIのノートPCがお得！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147802.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
@@ -270,60 +410,11 @@
       "date": "2026-10-14T10:05:00+00:00"
     },
     {
-      "title": "「クイズ☆正解は一年後 presents あつしの名探偵」，2026年12月30日にダウンロード販売を終了。50％オフセールを実施中",
-      "url": "https://www.4gamer.net/games/765/G076519/20261014045/",
-      "summary": "Phoenixxは本日，「クイズ☆正解は一年後presentsあつしの名探偵」のダウンロード販売を，2026年12月30日に終了すると発表した。本作は，TBSテレビの番組企画から生まれたADVで，番組MCの田村淳さんを操作し，レイザーラモンRGさん殺害事件の真相を追う。",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:02:38+00:00"
-    },
-    {
-      "title": "クラシックの名曲と一体になるような心地よさ。一風変わったリズムアドベンチャー「Sophia」のデモを体験",
-      "url": "https://www.4gamer.net/games/050/G105030/20261014044/",
-      "summary": "スペインで開催されたSAGABarcelonaGameFest2026にて，絵本のような温かみのあるビジュアルとクラシック音楽をフィーチャーしたリズムアドベンチャー「Sophia」が出展されていた。ドラムやベースによる一定のバックビートが存在しないクラシック曲を題材としながら，旋律と演奏に没入できる独特のゲームプレイが楽しめた。",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:00:50+00:00"
-    },
-    {
-      "title": "立地や商品，客層を考えて店舗を拡大。「コンソールアーカイブス ザ・ドラッグストア」を10月15日に配信",
-      "url": "https://www.4gamer.net/games/050/G105026/20261014038/",
-      "summary": "ハムスターは本日，「コンソールアーカイブスザ・ドラッグストア」を2026年10月15日にSwitch2/PS5向けに配信すると発表した。「ザ・ドラッグストア」は，1998年にヒューマンから発売された経営シミュレーションゲームだ。立地や商品構成，客層を考えながら店舗を運営し，店舗数や資本金を増やして事業の拡大を目指す。",
-      "source": "4Gamer",
-      "date": "2026-10-14T10:00:00+00:00"
-    },
-    {
-      "title": "実在した連続殺人犯H.H.ホームズと，彼をめぐる「殺人城」伝説を題材にした短編脱出ホラーADV「Murder Castle」，本日発売",
-      "url": "https://www.4gamer.net/games/050/G105029/20261014043/",
-      "summary": "MediaTaleは，短編脱出ホラーADV「MurderCastle」をSteamでリリースした。本作は，実在した連続殺人犯H.H.ホームズと，彼をめぐる「殺人城」伝説を題材に，エリザベスという女性の脱出劇を描く作品だ。",
-      "source": "4Gamer",
-      "date": "2026-10-14T09:58:51+00:00"
-    },
-    {
-      "title": "カナリア諸島発のメトロイドヴァニア「Tsukiyo: Battle Doll」は，格ゲー風の高精細ドット絵と和風スチームパンクが魅力",
-      "url": "https://www.4gamer.net/games/050/G105028/20261014041/",
-      "summary": "SAGABarcelonaGameFest2026で，スペイン・カナリア諸島のTafayaGamesが開発中の2Dアクション「Tsukiyo:BattleDoll」が出展された。1990年代の格闘ゲームに影響を受けた高精細なドット絵と，和風スチームパンクの世界観が特徴のタイトルだ。",
-      "source": "4Gamer",
-      "date": "2026-10-14T09:34:17+00:00"
-    },
-    {
-      "title": "DMM GAMES PLAYER版「モンギル：STAR DIVE」，11月の配信に先駆けて事前登録受付を開始",
-      "url": "https://www.4gamer.net/games/857/G085718/20261014037/",
-      "summary": "Netmarbleは本日（2026年10月14日），DMMGAMESPLAYER版「モンギル：STARDIVE」の事前登録受付を開始した。本作は，「タッチモンスター」を受け継ぐ新たなアクションRPGで，PCとスマホでプレイ可能だ。",
-      "source": "4Gamer",
-      "date": "2026-10-14T09:13:19+00:00"
-    },
-    {
       "title": "スティック型SSDやDVD-R、ゲーミングモニターなどアイオーデータ製品がお得！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147839.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-14T09:05:00+00:00"
-    },
-    {
-      "title": "「AVA RE:BIRTH」CBTインプレッション。日本のFPSシーンを牽引したAVAの後継作は，その伝説を受け継げるのか［プレイレポ］",
-      "url": "https://www.4gamer.net/games/030/G103096/20261014001/",
-      "summary": "2026年10月1日から7日にかけて開催された，「AVARE:BIRTH」のクローズドβテストレポートをお届けする。FPSの“原体験”への回帰を謳う本作だが，その実力はいかほどのものか。テストに参加して分かったプレイフィールやコンテンツを紹介していこう。",
-      "source": "4Gamer",
-      "date": "2026-10-14T09:00:00+00:00"
     },
     {
       "title": "Androidアプリを解析してサーバー攻撃、NICTが情報漏洩の原因と注意喚起",
@@ -340,13 +431,6 @@
       "date": "2026-10-14T08:06:33+00:00"
     },
     {
-      "title": "5G対応の6.8インチスマホ「Redmi 12 5G」の未使用品が大量入荷したニュースが注目を集める AKIBA PC Hotline! 先週のアクセスランキング 26年10月5日～26年10月14日",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/rank/access/2147882.html",
-      "summary": "(2026-10-10 06:05)",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T08:05:00+00:00"
-    },
-    {
       "title": "【やじうまPC Watch】インテルやMSIなど4社が公式監修したカプセルトイ「手のひらPCパーツ」",
       "url": "https://pc.watch.impress.co.jp/docs/news/yajiuma/2148094.html",
       "summary": "ターリン・インターナショナルは、カプセルコレクションの新製品「メーカー監修 手のひらPCパーツ」を発表した。10月21日より順次発売する。全5種類で、価格は1回500円。",
@@ -361,46 +445,11 @@
       "date": "2026-10-14T07:49:17+00:00"
     },
     {
-      "title": "ポイントスティック搭載モデルなどHHKBキーボードが最大26%オフ！Amazonプライム感謝祭",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147806.html",
-      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T07:30:00+00:00"
-    },
-    {
-      "title": "スマホ充電器などBelkinのアクセサリ製品が最大48%オフ！Amazonプライム感謝祭",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147836.html",
-      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T07:20:00+00:00"
-    },
-    {
       "title": "Perixx、人差し指で操作する40mmトラックボール搭載マウス2機種",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148068.html",
       "summary": "Perixxは、トラックボールマウス「PERIMICE-822」「PERIMICE-522」を発表した。直販価格は順に7,999円、5,999円。",
       "source": "PC Watch",
       "date": "2026-10-14T07:14:57+00:00"
-    },
-    {
-      "title": "ROGコラボモデルなどXREALのARグラスが最大15%オフ！Amazonプライム感謝祭",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147805.html",
-      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T07:10:00+00:00"
-    },
-    {
-      "title": "9.7インチタブレットが19,980円などXiaomi製品がお得！Amazonプライム感謝祭",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147841.html",
-      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T07:05:00+00:00"
-    },
-    {
-      "title": "PCパーツにもガチャ登場！基板パターンまで再現したカプセルトイ「メーカー監修 手のひらPCパーツ」が21日発売",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148029.html",
-      "summary": "メーカー各社監修で自作PCパーツを再現した「メーカー監修 手のひらPCパーツ」が、21日(水)に発売予定だ。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-14T06:07:00+00:00"
     },
     {
       "title": "ピンマイクでも手持ちでも使えるElgato初のワイヤレスマイク「Wave Go」",
@@ -422,55 +471,6 @@
       "summary": "AnthropicとCerebral Valleyは、日本在住者を対象としたオンラインハッカソン「Built with Claude: Japan 2026」を11月2日12時から10日14時まで開催する。参加者は選考制で、250名を募集する。応募締め切りは10月26日23時59分。",
       "source": "PC Watch",
       "date": "2026-10-14T05:45:31+00:00"
-    },
-    {
-      "title": "15.6型×3画面を折りたたんで持ち運べるモニター、サンコーから",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2147995.html",
-      "summary": "サンコーは、15.6型フルHD(1,920×1,080ドット)非光沢IPSパネルを3枚備えた折りたたみ式モニター「USB1本で4画面にできる縦横回転モニター(TMMS26CBK)」を発売した。価格は7万8,980円。",
-      "source": "PC Watch",
-      "date": "2026-10-14T04:34:33+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】驚異の9万5千円引き！RTX 5070のゲーミングノートがAmazonでセール中",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147986.html",
-      "summary": "Amazonで、プライム会員向けの「プライム感謝祭先行セール」が開催中。その中で、GeForce RTX 5070 Laptop GPUを搭載するレノボのゲーミングノート「Lenovo LOQ 17IRX10(83JH00EVJP)」が、直近価格から9万5,000円引きの26万4,800円で販売されている。",
-      "source": "PC Watch",
-      "date": "2026-10-14T04:02:47+00:00"
-    },
-    {
-      "title": "Apple初のスマートディスプレイ「HomeView」、Siri AI搭載で299ドル",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2147937.html",
-      "summary": "Appleは10月13日、Apple Intelligenceや7型Liquid Retinaディスプレイを搭載したスマートディスプレイ「HomeView」を発表した。米国、英国、オーストラリア、カナダ、インド、ニュージーランドでは、同日より予約受付を開始しており、11月13日に発売する。米国価格は299ドル。",
-      "source": "PC Watch",
-      "date": "2026-10-14T03:06:19+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】4万円引き！レノボの15.3型Core 5ノートが11万円台に。Amazonセール",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147899.html",
-      "summary": "Amazonにおいてプライム感謝祭先行セールが開催中。Core 5 320搭載15.3型ノートPC「Lenovo IdeaPad Slim 3i Gen 11(83RR00BYJP)」が、直近価格から4万円引きの11万4,800円にて購入可能になっている。",
-      "source": "PC Watch",
-      "date": "2026-10-14T03:01:20+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】クロレッツのボトルガム6個セットが約1,500円引きでオトク",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147925.html",
-      "summary": "Amazonは10月16日から19日にかけてAmazonプライム感謝祭を開催するが、現在はその先行セールを行なっている。セールにおいて、モンデリーズ・ジャパンが展開するクロレッツのシャープミントガムがボトルに入った「クロレッツXPシャープミントボトル」が6個セットになった「モンデリーズ クロレッツXPシャープミントボトル 140g ×6個」が10月13日頃の価格から1,407円引きとなる2,714円で販売されている。ボトル1個あたりの価格は約452円。",
-      "source": "PC Watch",
-      "date": "2026-10-14T02:34:20+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】Shokzの骨伝導ヘッドフォン「OpenRun Pro 2」が5,569円引きでタイムセール中",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147910.html",
-      "summary": "Amazonは10月16日から19日にかけてAmazonプライム感謝祭を開催するが、現在はその先行セールが行なわれている。セールにおいて、Shokzの骨伝導オープンイヤーヘッドフォン「OpenRun Pro 2」が直近価格から5,569円引きとなる2万2,311円で販売されている。こちらはプライム感謝祭先行セールとは異なる通常のタイムセールで実施されている。",
-      "source": "PC Watch",
-      "date": "2026-10-14T02:18:07+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】Xiaomiのハイエンドスマホが2万円オトクに！Amazonプライム感謝祭先行セール",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2147891.html",
-      "summary": "Amazonでは10月16日から19日までAmazonプライム感謝祭を開催するが、現在は先行セールが行なわれている。セールにおいて、XiaomiのAndroidスマートフォン「Xiaomi 17 Ultra 16GB+512GB」が直近価格から2万円引きとなる17万9,800円で販売されている。",
-      "source": "PC Watch",
-      "date": "2026-10-14T01:38:41+00:00"
     }
   ],
   "feed_count": 3,
