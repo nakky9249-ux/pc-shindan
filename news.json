@@ -1,133 +1,301 @@
 {
-  "updated_at": "2026-10-16T09:44:32.539963+00:00",
+  "updated_at": "2026-10-16T12:55:46.832762+00:00",
   "articles": [
+    {
+      "title": "「hololive Dreams」，渋谷16面ジャックの振り返り映像を公開。特別企画を収録した約10分間のフル映像と，約1分のレポートムービー",
+      "url": "https://www.4gamer.net/games/022/G102284/20261016068/",
+      "summary": "QualiArtsは本日（2026年10月16日），カバーと共同で開発・運営する「hololiveDreams」について，渋谷の大型ビジョン16面を使った広告企画の振り返り映像を公式YouTubeチャンネルで公開した。その内容は，特別企画を収録した約10分間のフル映像と，約1分のレポートムービーとなっている。",
+      "source": "4Gamer",
+      "date": "2026-10-16T12:31:07+00:00",
+      "image": "https://www.4gamer.net/games/022/G102284/20261016068/SS/002.jpg"
+    },
+    {
+      "title": "ロシアンルーレット飲酒サバイバル「PUKEY GODDESS SHOT TRICK」，体験版の一般公開を中止。AIによる模倣作品の登場などを懸念して",
+      "url": "https://www.4gamer.net/games/002/G100266/20261016067/",
+      "summary": "アライアンス・アーツは本日（2026年10月16日），10月19日に予定していた「PUKEYGODDESSSHOTTRICK」の体験版の一般公開を中止し，参加者を限定したクローズド形式の試遊へと変更すると発表した。",
+      "source": "4Gamer",
+      "date": "2026-10-16T12:20:50+00:00",
+      "image": "https://www.4gamer.net/games/002/G100266/20261016067/SS/002.jpg"
+    },
+    {
+      "title": "長期記憶でOpus 5超えをうたう「Hy-Memory-30B-A3B」、無償公開",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148974.html",
+      "summary": "AIエージェントの記憶の質は、会話のどの部分を書き残すかで決まる。その判断に特化した小型AIモデルが「Hy-Memory-30B-A3B」だ。TencentのAI開発チームTencent Hunyuanが10月16日(日本時間)、オープンウェイト(モデルの重み)としてHugging Faceで公開した。会話から記憶を作成して保存する性能の平均スコアは、同社の計測でAnthropicの「Claude Opus 5」を上回った。ライセンスはApache 2.0で、商用利用・改変・再配布が無償で認められる。",
+      "source": "PC Watch",
+      "date": "2026-10-16T12:09:10+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/974/01.png"
+    },
+    {
+      "title": "アキバお買い得価格情報（10月15日～16日調査） Core Ultra7 270K Plusが54,980円、MONTECH 360mm水冷CPUクーラーが5,480円、20.7インチ液晶モニター 中古品が4,980円 ほか",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/2148554.html",
+      "summary": "ゲーム関連商品やセール品は対象外。期間は31日(土)まで。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-16T12:07:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/554/1599ex5_s.jpg"
+    },
+    {
+      "title": "【笠原一輝のユビキタス情報局】フロンティアモデルAIを出先でも！NVIDIA RTX Spark搭載Surface実機レビュー",
+      "url": "https://pc.watch.impress.co.jp/docs/column/ubiq/2148969.html",
+      "summary": "",
+      "source": "PC Watch",
+      "date": "2026-10-16T12:00:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/969/001.jpg"
+    },
+    {
+      "title": "【Hothotレビュー】128GBの統合メモリで大型ローカルAIを動かす。RTX Spark搭載「ProArt P14」",
+      "url": "https://pc.watch.impress.co.jp/docs/column/hothot/2148879.html",
+      "summary": "",
+      "source": "PC Watch",
+      "date": "2026-10-16T12:00:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/879/001.jpg"
+    },
+    {
+      "title": "【プロダクトレビュー・ショーケース】64GBメモリで27BのAIも画像生成も。RTX Spark搭載のASUS「ProArt P16(H7607)」の実用性を試すエージェントPC時代の先駆けとなるArm+Blackwellの最新SoC搭載機 text by 芹澤 正芳",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/parts_review/showcase/2148963.html",
+      "summary": "普段のWindows作業をこなしながら、必要なときには大きなAIモデルも手元で動かす。NVIDIAの新プラットフォーム「RTX Spark」が目指す使い方を、ASUSの16型ノートPC「ProArt P16(H7607)」で試してみた。今回の構成は20コアCPUと6,144基のCUDAコアを備えるRTX Spark N1Xに、64GBのユニファイドメモリを組み合わせたものだ。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-16T12:00:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/963/top.jpg"
+    },
+    {
+      "title": "Windows PC向けNVIDIA製SoC「RTX Spark」の正体が明らかに。Microsoftと共同でゲームへの対応も進める",
+      "url": "https://www.4gamer.net/games/050/G105051/20261015021/",
+      "summary": "去る北米時間2026年10月7日，NVIDIA製のSoC「NVIDIARTXSpark」搭載PCが，MicrosoftやASUSTeKComputer，MSIなどから発表となった。その翌日にNVIDIAは，米国でRTXSparkに関する技術説明会を行った。秘密のベールに包まれていた新型SoCの内部構造とは？",
+      "source": "4Gamer",
+      "date": "2026-10-16T12:00:00+00:00",
+      "image": "https://www.4gamer.net/games/050/G105051/20261015021/SS/003.jpg"
+    },
+    {
+      "title": "開封しながら物語を読み進める対戦ボドゲ「Mālum（マールム） リンゴゲーム」が2027年2月発売へ。ゲムマ2026秋で試遊が可能",
+      "url": "https://www.4gamer.net/games/051/G105101/20261016065/",
+      "summary": "スクウェア・エニックスは本日（2026年10月16日），新作ボードゲーム「Mālum（マールム）リンゴゲーム」を2027年2月頃に発売すると発表し，公式サイトをオープンした。相手の手札から「プレイヤーカード」を引けば勝利する，1対1のシンプルな対戦型カードゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-16T11:50:00+00:00",
+      "image": "https://www.4gamer.net/games/051/G105101/20261016065/SS/002.jpg"
+    },
+    {
+      "title": "「ペルソナ5 ザ・ロイヤル」可哀想に！氏が描き起こしたLINEアニメーションスタンプを発売。グッズも販売予定",
+      "url": "https://www.4gamer.net/games/637/G063753/20261016064/",
+      "summary": "アトラスは本日（2026年10月16日），「ペルソナ5ザ・ロイヤル」より，クリエイター・可哀想に！氏が描き起こしたLINEアニメーションスタンプを発売した。描き起こしイラストを使用したコラボグッズの販売も予定されている。",
+      "source": "4Gamer",
+      "date": "2026-10-16T11:45:34+00:00",
+      "image": "https://www.4gamer.net/games/637/G063753/20261016064/SS/001.jpg"
+    },
+    {
+      "title": "鎖でつながれた4人が闘技場での戦いを生き抜く協力型ローグライトACT「Chained Beasts」，配信開始",
+      "url": "https://www.4gamer.net/games/050/G105081/20261016061/",
+      "summary": "FeatherweightGamesは本日（2026年10月16日），新作タイトル「ChainedBeasts」をリリースした。本作は，仲間とともに闘技場での混沌とした戦いに挑む，最大4人協力プレイに対応した剣闘士ローグライクアクションゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-16T11:40:17+00:00",
+      "image": "https://www.4gamer.net/games/050/G105081/20261016061/SS/001.jpg"
+    },
+    {
+      "title": "Steam実績をテーマや用途ごとに整理できる新機能「実績セット」がベータで提供開始。ゲーム本編とDLCで実績の進捗が分離され，一度達成したコンプリート状況は保持される",
+      "url": "https://www.4gamer.net/games/038/G003821/20261016063/",
+      "summary": "Steamは，クライアントベータで新機能「実績セット」の提供を開始した。ゲーム内の実績をテーマや用途ごとにグループ化する機能で，ゲーム本編と追加コンテンツの実績を整理できる。",
+      "source": "4Gamer",
+      "date": "2026-10-16T11:35:59+00:00",
+      "image": "https://www.4gamer.net/games/038/G003821/20261016063/SS/002.png"
+    },
+    {
+      "title": "Switch2 / Switch本体の修理価格を11月16日に到着した修理品から改定。修理内容によっては9900円の値上げに",
+      "url": "https://www.4gamer.net/games/999/G999903/20261016057/",
+      "summary": "任天堂は，2026年11月16日に同社に到着した修理品から，NintendoSwitch2/NintendoSwitch本体の修理価格を改定すると発表した。このたびの改定は修理部品の価格高騰によるものであり，全体的に値上げする形となった。",
+      "source": "4Gamer",
+      "date": "2026-10-16T11:05:24+00:00",
+      "image": "https://www.4gamer.net/games/999/G999903/20261016057/SS/007.png"
+    },
+    {
+      "title": "地元バルセロナのイベントで大賞を受賞した「Wilderings: The Lost Spring」は，生命の輪廻を描いたローグライト・サバイバルアドベンチャー",
+      "url": "https://www.4gamer.net/games/939/G093958/20261016052/",
+      "summary": "前作「エンドリング-エクスティンクションイズフォーエバー」で高い評価を得たHerobeatStudiosの新作「Wilderings:TheLostSpring」は，失われた“春”を取り戻すために旅するサバイバルアドベンチャーだ。SAGABarcelonaGameFest2026で大賞を受賞したことからも，今後が楽しみなタイトルとなっている。",
+      "source": "4Gamer",
+      "date": "2026-10-16T11:01:16+00:00",
+      "image": "https://www.4gamer.net/games/939/G093958/20261016052/SS/010.webp"
+    },
+    {
+      "title": "「ホロライブ甲子園 2026」開催記念グッズがGRAPHTから登場。デスク周りに置きやすいマスコットや帽子など3種類を用意",
+      "url": "https://www.4gamer.net/games/949/G094901/20261016023/",
+      "summary": "2026年10月16日，MSYは，ゲーマー向け製品ブランド「GRAPHT」から，「ホロライブ」博衣こより主催の企画「ホロライブ甲子園2026」の参加監督6名やチームをモチーフにした開催記念グッズ全3種類をGRAPHT公式ECサイトにて販売すると発表した。",
+      "source": "4Gamer",
+      "date": "2026-10-16T11:00:00+00:00",
+      "image": "https://www.4gamer.net/games/949/G094901/20261016023/SS/002.jpg"
+    },
+    {
+      "title": "「ソニックランブル パーティ」，本日から「ハロウィン2026イベント」を開催",
+      "url": "https://www.4gamer.net/games/797/G079769/20261016059/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:53:00+00:00",
+      "image": "https://www.4gamer.net/games/797/G079769/20261016059/SS/001.jpg"
+    },
+    {
+      "title": "「グリザイア 集結の百果」の事前登録受付がApp StoreとGoogle Playで開始。「グリザイア」シリーズの15周年を記念したタイトル",
+      "url": "https://www.4gamer.net/games/037/G103778/20261016050/",
+      "summary": "CLYREは本日（2026年10月16日），スマホアプリ「グリザイア集結の百果」の事前登録受付をAppStoreとGooglePlayで開始した。本作は，「グリザイア」シリーズの15周年を記念したタイトルで，2026年内のリリースが予定されている。",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:48:51+00:00"
+    },
+    {
+      "title": "「D2メガテン」，2026年10月開催！寒露の公開生放送！を10月17日14：00より配信",
+      "url": "https://www.4gamer.net/games/393/G039361/20261016056/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:42:02+00:00"
+    },
+    {
+      "title": "「SONIC THE HEDGEHOG DNA FIGURE」，受注生産の受け付けを開始",
+      "url": "https://www.4gamer.net/games/991/G999106/20261016055/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:41:49+00:00"
+    },
+    {
+      "title": "「FM27」，監督作成ツールや生成選手を紹介する機能解説ブログを公開",
+      "url": "https://www.4gamer.net/games/037/G103744/20261016054/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:37:41+00:00"
+    },
+    {
+      "title": "みんなで協力し，全力で試験のカンニングに挑むマルチプレイアクションゲーム「Finals Week」，10月29日にリリース決定",
+      "url": "https://www.4gamer.net/games/050/G105097/20261016049/",
+      "summary": "PrettySoonは2026年10月15日，DESTINYbitが開発中の新作タイトル「FinalsWeek」を，10月29日にリリースすると発表した。本作は，期末試験なのに一切勉強してこなかったプレイヤーが，あらゆるツールを駆使してカンニングを試みる，マルチプレイ対応のアクションゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:29:58+00:00"
+    },
+    {
+      "title": "「プロセカ」，Paletteをリズムゲーム楽曲に追加",
+      "url": "https://www.4gamer.net/games/476/G047609/20261016051/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:29:54+00:00"
+    },
+    {
+      "title": "ホロライブのタレントで3対3のターン制バトル。「ホロすと！」体験版をSteamで本日配信。開発中のフルバージョンを期間限定で公開",
+      "url": "https://www.4gamer.net/games/050/G105096/20261016048/",
+      "summary": "CCMCは本日，holoIndieの新作「ホロすと！」の体験版をSteamで配信開始した。ホロライブのタレントをモチーフにしたキャラクターで3人チームを組み，攻撃やアイテム，固有スキルを使って戦うターン制オンラインPvPストラテジーだ。体験版では，開発中のフルバージョンを期間限定でプレイできる。",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:22:29+00:00"
+    },
+    {
+      "title": "より高輝度になったXREALの最上位ビデオグラス「XREAL 1 Pro＋」が米国で発表に",
+      "url": "https://www.4gamer.net/games/740/G074096/20261016047/",
+      "summary": "米国時間2026年10月15日，XREALは，新型ビデオグラス「XREAL1Pro＋」を発表した。有機ELパネルがより高輝度になり，リアルタイム2D→3D変換機能の強化や鼻あての改良による安定性の向上など，細部に手を入れているのが見どころだ。米国市場での価格は599ドル。",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:19:43+00:00"
+    },
+    {
+      "title": "2つの支援プログラムによる計10チームが，自作のインディーゲームをプレゼン。「Demo Day 2026: iGi × LVLZero Tokyo」をレポート",
+      "url": "https://www.4gamer.net/games/999/G999905/20261013003/",
+      "summary": "2026年10月2日，インディーゲーム支援プログラム「iGiindieGameincubator」と「LVLZeroTokyo」の合同プレゼンテーションイベント「DemoDay2026:iGi×LVLZeroTokyo」が東京都内で開催された。両プログラムの計10チームが開発中のタイトルを披露した。その模様をレポートしよう。",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:19:18+00:00"
+    },
+    {
+      "title": "「SEGA POP-UP SHOP in 沖縄PARCO CITY」，10月30日から期間限定オープン",
+      "url": "https://www.4gamer.net/games/991/G999106/20261016046/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:09:10+00:00"
+    },
+    {
+      "title": "「P5X」，桐条美鶴が登場するVer.4.11アップデートを実施",
+      "url": "https://www.4gamer.net/games/693/G069335/20261016045/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:04:37+00:00"
+    },
+    {
+      "title": "運と集中力でカードの効果が変化するデッキ構築型ローグライク「HARMA 亡国のエデン」，Steam Nextフェスに向けて体験版がオンライン協力プレイに対応",
+      "url": "https://www.4gamer.net/games/740/G074044/20261016044/",
+      "summary": "AstrolabeGamesは，SteamNextフェスに向けて「HARMA亡国のエデン」の体験版をアップデートした。今回のアップデートでは，カードや構築要素を拡充したほか，新たにオンライン協力プレイに対応している。",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:02:35+00:00"
+    },
+    {
+      "title": "作業した時間が少女の成長につながる。育成ADV「Fenestra: my focus, her future」，体験版を本日配信",
+      "url": "https://www.4gamer.net/games/038/G103847/20261016031/",
+      "summary": "STAYRESIDENTは本日，育成アドベンチャー「Fenestra:myfocus,herfuture」の体験版の配信をSteamで開始した。本作は，プレイヤーが仕事や勉強，創作に集中した時間が少女フェネストラの成長につながる作品だ。体験版では1ルートの第5話まで遊べる。",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:00:00+00:00"
+    },
+    {
+      "title": "生徒たちの怪異体験を聞き，妻の失踪の真相を追う。オカルトホラーADV「Resequence: The Orchard」，11月20日発売",
+      "url": "https://www.4gamer.net/games/964/G096496/20261016028/",
+      "summary": "クリアレーヴは本日，オカルトホラーアドベンチャー「Resequence:TheOrchard」を2026年11月20日にPC（Steam）向けに発売すると発表した。本作は，学校カウンセラーとなった主人公が，怪異に悩む生徒たちの体験や過去を聞き出し，妻の失踪の真相に近づいていく群像劇型アドベンチャーゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-16T10:00:00+00:00"
+    },
+    {
+      "title": "セガ フェイブ，「AMUSEMENT EXPO 2026」に出展するブースの情報を公開",
+      "url": "https://www.4gamer.net/games/991/G999111/20261016043/",
+      "summary": "",
+      "source": "4Gamer",
+      "date": "2026-10-16T09:58:03+00:00"
+    },
+    {
+      "title": "MAGES.の開発チーム「未来ガジェット研究室」が「東京ゲームダンジョン14」に初出展。新作FPS「Juggernaut」を含む3作品をラインナップ",
+      "url": "https://www.4gamer.net/games/050/G105094/20261016041/",
+      "summary": "MAGES.は本日（2026年10月16日），インディーゲーム展示会「東京ゲームダンジョン14」に同社の開発チーム「未来ガジェット研究室」が初出展すると発表した。今回は，今冬の配信を予定しているハイスピードFPS「Juggernaut」，防災訓練シミュレーション「ZOMBIE防災訓練」，3Dパズル「爆盛食堂」がラインナップされる。",
+      "source": "4Gamer",
+      "date": "2026-10-16T09:42:40+00:00"
+    },
     {
       "title": "「ポケポケ」，拡張パックの追加サイクルを約4週間から約6週間に変更。イベントやミッションを拡充",
       "url": "https://www.4gamer.net/games/779/G077901/20261016038/",
       "summary": "ディー・エヌ・エーは本日（2026年10月16日），「PokémonTradingCardGamePocket（ポケポケ）」について，今後のアップデート予定を発表した。遊びのサイクルを刷新し，新たな拡張パックを約6週間ごとに追加する。",
       "source": "4Gamer",
-      "date": "2026-10-16T09:37:36+00:00",
-      "image": "https://www.4gamer.net/games/779/G077901/20261016038/TN/002.jpg"
+      "date": "2026-10-16T09:37:36+00:00"
     },
     {
       "title": "「餓狼伝説 City of the Wolves」，不知火 舞とテリー・ボガードのクラシックコスチュームを10月22日配信",
       "url": "https://www.4gamer.net/games/649/G064915/20261016039/",
       "summary": "SNKは本日，「餓狼伝説CityoftheWolves」の不知火舞とテリー・ボガードのクラシックコスチュームを，2026年10月22日に有償DLCとして配信すると発表した。不知火舞はおなじみのくノ一姿，テリーは赤ベスト＆キャップと，歴代シリーズを象徴する衣装でバトルを楽しめる。",
       "source": "4Gamer",
-      "date": "2026-10-16T09:30:36+00:00",
-      "image": "https://www.4gamer.net/games/649/G064915/20261016039/SS/001.jpg"
+      "date": "2026-10-16T09:30:36+00:00"
     },
     {
       "title": "カードでできた童話の世界が舞台のアドベンチャー「アリスと彼岸」本日発売。行動やアイテムのカードを使って，迷子のアリスを元の世界へ帰そう",
       "url": "https://www.4gamer.net/games/050/G105093/20261016036/",
       "summary": "2PGamesは本日，HanamiriroStudioが開発したPCゲーム「アリスと彼岸」を発売した。本作は，カードでできた童話の世界「彼岸」を舞台にしたアドベンチャーゲームだ。探索や交渉は，行動カードやアイテムカードを，場所やキャラクターのカードにドラッグして行う。",
       "source": "4Gamer",
-      "date": "2026-10-16T09:29:17+00:00",
-      "image": "https://www.4gamer.net/games/050/G105093/20261016036/SS/002.jpg"
-    },
-    {
-      "title": "故郷を追われたネズミがボロ船で冒険する4人協力ADV「All Rats on Deck」，デモ版を配信開始",
-      "url": "https://www.4gamer.net/games/050/G105095/20261016037/",
-      "summary": "LooprPartnersは2026年10月15日，TwinBeaconStudioが開発中の新作タイトル「AllRatsonDeck」のデモ版をリリースした。本作は，故郷を追われたネズミの仲間たちと協力して外輪蒸気船を操り危険な水域を進む，最大4人でのマルチプレイに対応したオンライン協力アドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T09:27:47+00:00",
-      "image": "https://www.4gamer.net/games/050/G105095/20261016037/SS/001.jpg"
-    },
-    {
-      "title": "ラーメン店シム「Japanese Ramen Simulator」，販売本数10万本を突破。唐揚げや屋台ラーメンの追加を予定するロードマップも公開",
-      "url": "https://www.4gamer.net/games/035/G103503/20261016033/",
-      "summary": "ワイルドドッグは本日，早期アクセス中のラーメン店経営シミュレーションゲーム「JapaneseRamenSimulator」の累計販売本数が10万本を突破したと発表した。あわせて，今後のアップデートロードマップを公開している。唐揚げやチャーハンといった新メニューに加え，屋台ラーメンなども実装される予定だ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T08:30:30+00:00",
-      "image": "https://www.4gamer.net/games/035/G103503/20261016033/SS/001.jpg"
+      "date": "2026-10-16T09:29:17+00:00"
     },
     {
       "title": "簡易水冷クーラーやPCケースなどMontech製品が最大40%オフ！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2148876.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月）に開催。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T08:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/876/s1.jpg"
+      "date": "2026-10-16T08:30:00+00:00"
     },
     {
       "title": "ゲーミングチェアが7,980円など玄人志向製品が最大42%オフ！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2148848.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月）に開催。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T08:25:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/848/s1.jpg"
+      "date": "2026-10-16T08:25:00+00:00"
     },
     {
       "title": "有機EL画面付きモデルなどTRYXのCPUクーラーが最大29%オフ！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2148864.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月）に開催。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T08:15:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/864/s1.jpg"
-    },
-    {
-      "title": "「CygamesEdge」デビュー作「崩落の国」。週末の半日でエンディングを見て，ゲームを1つクリアするという充足感を［インタビュー］",
-      "url": "https://www.4gamer.net/games/039/G103924/20261007007/",
-      "summary": "CygamesEdgeの第1弾「崩落の国」とはどんな作品か。社内コンテストに出された15分のプロトタイプが3時間の作品になった経緯や，あえて慣性を強くした狙いをプロデューサーの濱田修一郎氏に聞いた。",
-      "source": "4Gamer",
-      "date": "2026-10-16T08:15:00+00:00",
-      "image": "https://www.4gamer.net/games/039/G103924/20261007007/SS/028.jpg"
+      "date": "2026-10-16T08:15:00+00:00"
     },
     {
       "title": "「箱を開けたらAIエージェント」の時代に！PCを変えるNVIDIA RTX Sparkをライブで実機解説【10月16日(金)21時配信】",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148874.html",
       "summary": "NVIDIAが投入した高性能SoC「RTX Spark N1X」を搭載したWindows機がついに発売されます。N1XはAI処理向けに設計された仕様で、高性能GPUを統合し、メモリは最大128GB搭載可能。同時にWindows 11もAI向けに大幅なアップデートを果たし、エージェントAIが一気に身近になりました。",
       "source": "PC Watch",
-      "date": "2026-10-16T08:06:29+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/874/01.jpg"
+      "date": "2026-10-16T08:06:29+00:00"
     },
     {
       "title": "FLYDIGI初の65%ゲーミングキーボード「FS68」が発売、マルチホール磁気スイッチ搭載",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148441.html",
       "summary": "FLYDIGIのラピッドトリガー対応65%ゲーミングキーボード「FS68」が発売された。カラーはブラック（FS68-BK）とホワイト（FS68-WH）の2色。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T08:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/441/a1.jpg"
-    },
-    {
-      "title": "「3時間で終わります」と自分から言う，Cygamesの新ブランド。「CygamesEdge」の“尖り”とは何か，ブランドプロデューサーに聞いた［インタビュー］",
-      "url": "https://www.4gamer.net/games/039/G103924/20261005024/",
-      "summary": "インディーの大流行に乗ろうとする大手はたくさんあるが，その流行のコア部分を社内に取り込んで動かそうとする会社はほとんどいない。そこに真っ先に手をつけたのが，Cygamesである。新ブランド「CygamesEdge」は，どうやって生まれて，どこに向かっていくのだろうか。",
-      "source": "4Gamer",
-      "date": "2026-10-16T08:00:00+00:00",
-      "image": "https://www.4gamer.net/games/039/G103924/20261005024/SS/001.jpg"
-    },
-    {
-      "title": "ダック部隊を率いてゾンビだらけの世界を生き抜け！ 事前登録者数200万人突破のサバイバーRPG「ダックサバイバー」が本日正式リリース【PR】",
-      "url": "https://www.4gamer.net/games/050/G105062/20261015054/",
-      "summary": "JOYMOBILENETWORKは本日（2026年10月16日），ダック部隊を率いてゾンビだらけの世界を生き抜くサバイバーRPG「ダックサバイバー」の正式サービスを開始した。正式リリースに先駆けて実施されていた事前登録キャンペーンでは登録者数が200万人を突破。ゲーム内では豪華報酬の配布が行われている。",
-      "source": "4Gamer",
-      "date": "2026-10-16T08:00:00+00:00",
-      "image": "https://www.4gamer.net/games/050/G105062/20261015054/SS/002.jpg"
-    },
-    {
-      "title": "「CygamesEdge」ブランドの第1弾タイトル「崩落の国」，高難度の降下アクションに特化した体験版をSteamで公開",
-      "url": "https://www.4gamer.net/games/039/G103924/20261015055/",
-      "summary": "Cygamesは本日（2026年10月16日），11月5日に発売を予定している「CygamesEdge」ブランドの第1弾タイトル「崩落の国」の体験版をSteamで公開した。今回の体験版にはストーリー要素が含まれず，各種アクションが解放された状態からスタートする。ボリュームは約15〜30分とのこと。",
-      "source": "4Gamer",
-      "date": "2026-10-16T08:00:00+00:00",
-      "image": "https://www.4gamer.net/games/039/G103924/20261015055/SS/001.jpg"
-    },
-    {
-      "title": "にじさんじのぬいぐるみマスコット「にじたうん 9ちょうめ」発売。「える」や「花畑チャイカ」など全10種をラインナップ",
-      "url": "https://www.4gamer.net/games/004/G100451/20261016034/",
-      "summary": "2026年10月15日，ANYCOLORは，にじさんじ所属ライバーをテーマにしたぬいぐるみマスコット「にじたうん」の第9弾となる「にじたうん9ちょうめ」の全10種類を，にじさんじオフィシャルストアで10月16日19時に発売すると発表した。税込価格は2000円。",
-      "source": "4Gamer",
-      "date": "2026-10-16T07:57:59+00:00",
-      "image": "https://www.4gamer.net/games/004/G100451/20261016034/SS/002.jpg"
-    },
-    {
-      "title": "使い果たしてしまった50万円を締め切りまでに集める。2つの世界を行き来するADV「破滅のオタク」，Steamで配信開始",
-      "url": "https://www.4gamer.net/games/930/G093059/20261016030/",
-      "summary": "KiwiSaurusは本日，PC用ソフト「破滅のオタク」の配信をSteamで開始した。本作は，現実とインターネット，2つの世界を行き来しながら，さまざまな事件に巻き込まれていくストーリー中心のアドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T07:32:55+00:00",
-      "image": "https://www.4gamer.net/games/930/G093059/20261016030/SS/002.jpg"
+      "date": "2026-10-16T08:05:00+00:00"
     },
     {
       "title": "周辺機器接続に役立つUSB 2.0 Type-C to Type-Bケーブルがアイネックスから",
@@ -137,46 +305,11 @@
       "date": "2026-10-16T07:05:00+00:00"
     },
     {
-      "title": "「ディスコ エリジウム」を手掛けたZA/UMによるスパイRPG「ZERO PARADES: Director's Cut」，2026年11月3日にPS5版とNintendo Switch 2版を発売。各コンソール版の固有機能を紹介する映像も公開",
-      "url": "https://www.4gamer.net/games/050/G105084/20261016024/",
-      "summary": "ZA/UMは，スパイRPG「ZEROPARADES:Director'sCut」のPS5版とNintendoSwitch2版を2026年11月3日に発売する。あわせて，各コンソール版の固有機能を紹介する映像を公開した。",
-      "source": "4Gamer",
-      "date": "2026-10-16T07:02:43+00:00"
-    },
-    {
-      "title": "異形の生物を釣りながら水没した世界を放浪するアクションADV「DREADMOOR」，早期アクセス版を11月9日にリリース",
-      "url": "https://www.4gamer.net/games/902/G090206/20261016029/",
-      "summary": "DigitalVortexEntertainmentは2026年10月15日，新作タイトル「DREADMOOR」の早期アクセス版を11月9日にリリースすると発表した。本作は，過去の大災厄によって文明が崩壊し，陸地のほとんどが海に沈んだ世界を舞台に，漁船に乗って各地を放浪するアクションアドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T07:02:31+00:00"
-    },
-    {
-      "title": "「ブレス オブ ファイア」シリーズのキャラデザインなどで知られる吉川達哉氏の個展が渋谷にて開催中。会場の様子とミニインタビューをお届け",
-      "url": "https://www.4gamer.net/games/991/G999110/20261016025/",
-      "summary": "「ブレスオブファイア」シリーズ，「野狗子:Slitterhead」など，さまざまなゲームのキャラクターデザインを手がけた吉川達哉氏の個展「Xv-TatsuyaYoshikawaArtExhibition」が，2026年10月16日から10月19日まで開催されている。本稿ではその個展の様子と，吉川氏へのミニインタビューをお届けする。",
-      "source": "4Gamer",
-      "date": "2026-10-16T06:52:24+00:00"
-    },
-    {
-      "title": "「ポケモン」より，クリスマスをテーマにしたグッズ「クリスマスじゅんびチュウ！」が10月22日に発売",
-      "url": "https://www.4gamer.net/games/991/G999106/20261016027/",
-      "summary": "ポケモンは本日（2026年10月16日），クリスマスをテーマにしたグッズ「クリスマスじゅんびチュウ！」を，ポケモンセンターオンラインで10月22日10：00に，ポケモンセンターで10月24日に発売すると発表した。",
-      "source": "4Gamer",
-      "date": "2026-10-16T06:47:54+00:00"
-    },
-    {
       "title": "湾曲ウルトラワイドや有機ELモニターなどGIGABYTEモニターがお得！Amazonプライム感謝祭",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2148803.html",
       "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月）に開催。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-16T06:40:00+00:00"
-    },
-    {
-      "title": "ローグライクサバイバルゲーム「Amazing Slot Survivor」，体験版がSteamで公開に。10月20日に開幕する「Steam Nextフェス」への出展も決定",
-      "url": "https://www.4gamer.net/games/040/G104050/20261016026/",
-      "summary": "LINEGamesは本日（2026年10月16日），PC向け新作ゲーム「AmazingSlotSurvivor」の体験版をSteamで公開した。体験版は，9月に開催されたSteamプレイテストで寄せられたフィードバックを反映し，ゲーム性が向上しているとのこと。また，10月20日に開幕する「SteamNextフェス」への出展も発表された。",
-      "source": "4Gamer",
-      "date": "2026-10-16T06:38:43+00:00"
     },
     {
       "title": "WDのNAS向けHDDやオリジナルDDR5メモリなどCFD販売製品が最大39%オフ！Amazonプライム感謝祭",
@@ -200,81 +333,11 @@
       "date": "2026-10-16T06:05:00+00:00"
     },
     {
-      "title": "誕生日を迎えた小学生の少女が父親を探して，異変に蝕まれていく路地を彷徨う。サイコホラー謎解きADV「残影」，体験版をSteamで公開",
-      "url": "https://www.4gamer.net/games/050/G105079/20261016015/",
-      "summary": "2PGamesは本日，FerineColumbaStudioが開発しているPC用ソフト「残影」の体験版をSteamで公開した。本作は，2000年代初頭のノスタルジックな町を舞台にしたサイコホラー謎解きアドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T06:03:35+00:00"
-    },
-    {
-      "title": "「jubeat」シリーズのリブートが検討されていることが明らかに。過去作の復活を期待する声に応える",
-      "url": "https://www.4gamer.net/games/640/G064035/20261016022/",
-      "summary": "2026年10月15日に公開されたコナミグループ統合報告書2026で，コナミアーケードゲームスが「jubeat」シリーズのリブートを検討していることが明らかになった。「DJYOSHITAKA」こと西村宜隆氏は，過去作の復活を期待する声に応えるため，過去の人気作を再発掘する「リブート戦略」を進めていくとしている。",
-      "source": "4Gamer",
-      "date": "2026-10-16T05:55:08+00:00"
-    },
-    {
-      "title": "「みんなで空気読み。ワールド 韓国Ver.」，10月20日開幕のSteam Nextフェスで体験版をリリース。韓国の日常で空気を読もう",
-      "url": "https://www.4gamer.net/games/031/G103121/20261016019/",
-      "summary": "グラビティゲームアライズは本日，「みんなで空気読み。ワールド韓国Ver.」のPC版を，10月20日開幕のSteamNextフェスに出展すると発表した。期間中は体験版を遊べる。本作は，日常の「あるある」シチュエーションで「空気読めてる度」を診断する「みんなで空気読み。」シリーズの最新作で，舞台は韓国だ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T05:51:04+00:00"
-    },
-    {
-      "title": "Switch2版「バイオハザード RE:2」「RE:3」「RE:4」本日発売。3作品とも11月7日まで1000円オフ",
-      "url": "https://www.4gamer.net/games/040/G104094/20261016020/",
-      "summary": "カプコンは本日，「REENGINE」で再構築されたリメイク3作品のSwitch2版として「バイオハザードRE:2ZVersionデラックスエディション」「バイオハザードRE:3ZVersion」「バイオハザードRE:4GoldEdition」を発売した。いずれも2026年11月7日まで通常価格から1000円オフで販売される。",
-      "source": "4Gamer",
-      "date": "2026-10-16T05:39:30+00:00"
-    },
-    {
-      "title": "PC（Steam）版「ゆるキャン△ つなげるみんなのオールインワン!! ちるタイム」，価格が1300円に決定",
-      "url": "https://www.4gamer.net/games/705/G070580/20261016018/",
-      "summary": "enishは本日（2026年10月16日），PC（Steam）版「ゆるキャン△つなげるみんなのオールインワン!!ちるタイム」の価格が1300円（税込）に決定したことを発表した。また，ゲーム公式Xでは動画が3本公開されている。",
-      "source": "4Gamer",
-      "date": "2026-10-16T05:33:00+00:00"
-    },
-    {
-      "title": "Radeon RX 9000搭載カード計5製品がCrowxisから10月23日発売。RX 9060 XTには白色モデルも用意",
-      "url": "https://www.4gamer.net/games/043/G104376/20261016021/",
-      "summary": "2026年10月16日，CFD販売は，PCパーツブランド「Crowxis」から，RadeonRX9000シリーズ搭載グラフィックスカード計5製品を10月23日に発売すると発表した。搭載GPUは「RadeonRX9070XT」「RadeonRX9070GRE」「RadeonRX9060XT」の3種類だ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T05:23:42+00:00"
-    },
-    {
-      "title": "ファンタジー世界を自由に創造し，その行く末を見守ろう。「Fantasy World Manager」，10月28日に早期アクセス版をリリース",
-      "url": "https://www.4gamer.net/games/899/G089908/20261016016/",
-      "summary": "LegendaryPixelsは2026年10月15日，開発中の新作タイトル「FantasyWorldManager」の早期アクセス版を10月28日にリリースすると発表した。本作は，ピクセルで描かれた広大な世界を舞台に，ファンタジー世界を創造・シミュレーションし，観察できるサンドボックスゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T05:18:11+00:00"
-    },
-    {
-      "title": "発掘した化石の骨を持ち帰り，博物館で恐竜の全身骨格を復元するシミュレータ「穴掘り恐竜博物館」，本日発売",
-      "url": "https://www.4gamer.net/games/046/G104636/20261016017/",
-      "summary": "YagniLabは本日，発掘シム「穴掘り恐竜博物館」をSteamでリリースした。価格は880円（税込）。10月23日まではリリース記念セールにより15％オフで購入できる。本作は，地面をひたすら掘り進んで化石を発掘し，持ち帰った骨から恐竜の全身骨格を復元していく作品だ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T05:13:20+00:00"
-    },
-    {
       "title": "Pulsarの軽量ゲーミングマウス「X3 CrazyLight Medium」が発売",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148563.html",
       "summary": "軽量ワイヤレスゲーミングマウス「X3 CrazyLight Medium」がPulsar Gaming Gearsから発売された。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-16T05:05:00+00:00"
-    },
-    {
-      "title": "2000年代初期の「リネージュ」を再現。「リネージュ クラシック」日本サービス決定，10月21日から事前登録開始",
-      "url": "https://www.4gamer.net/games/579/G057943/20261016014/",
-      "summary": "エヌ・シー・ジャパンは本日，PC向けMMORPG「リネージュクラシック」を日本でサービスすると発表した。2000年代初期の「リネージュ」を原点としたタイトルで，当時の世界観や戦闘，キャラクターの成長，プレイヤー同士の交流を再現する。事前登録は10月21日12：00に開始される。",
-      "source": "4Gamer",
-      "date": "2026-10-16T04:54:14+00:00"
-    },
-    {
-      "title": "ホラー作家・雨穴氏の動画に登場した恋愛シム「おせちプリンセス」，体験版をリリース。おせちのキャラクターと恋愛するゲームを実際に遊べる",
-      "url": "https://www.4gamer.net/games/991/G999111/20261016011/",
-      "summary": "闇とバーグハンバーグバーグは本日，スマホ向けブラウザゲーム「おせちプリンセス」の体験版をリリースした。本作は，雨穴氏のYouTube動画に登場した恋愛シミュレーションゲームを，実際に遊べるようにしたものだ。シナリオは本人が新たに書き下ろしている。体験版では，3キャラクター分のシナリオを遊べる。",
-      "source": "4Gamer",
-      "date": "2026-10-16T04:43:09+00:00"
     },
     {
       "title": "パスワードも流出、ソースネクスト会員情報約2,252万件",
@@ -298,13 +361,6 @@
       "date": "2026-10-16T04:30:00+00:00"
     },
     {
-      "title": "“非常に好評”の協力型登山ゲーム「PEAK」，Switch2 / PS5 / XBOX Series X|S向けに10月22日に発売",
-      "url": "https://www.4gamer.net/games/050/G105072/20261016010/",
-      "summary": "Landfallは，「PEAK」のコンソール版をNintendoSwitch2/PS5/XBOXSeriesX|S向けに2026年10月22日に発売すると発表した。また，コンソール版のリリースにあわせて，クロスプレイに対応する。",
-      "source": "4Gamer",
-      "date": "2026-10-16T04:25:29+00:00"
-    },
-    {
       "title": "74Bが24GBに！ローカルAI向けNemotron 3.5 Bolt登場",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148734.html",
       "summary": "メモリ24GBに収まり、ローカルで動作するエージェントAI向けのモデルが登場した。NVIDIAは10月15日(米国時間)、オープンモデル「Nemotron」シリーズの新モデルとして、「Nemotron 3.5 Super VL」と「Nemotron 3.5 Bolt 74B-A9B 24GB」をオープンウェイト(モデルの重み)としてHugging Faceで公開した。より小型の「Nemotron 3.5 Bolt E4B 4GB」も10月23日に公開すると予告している。",
@@ -312,32 +368,11 @@
       "date": "2026-10-16T04:24:50+00:00"
     },
     {
-      "title": "昭和初期の寒村で死を繰り返し，大量殺人事件から生還せよ。タイムリープホラーADV「虧月の夜」，Steam版が発売決定。体験版を配信開始",
-      "url": "https://www.4gamer.net/games/050/G105073/20261016012/",
-      "summary": "エディアは本日，タイムリープサバイバルホラーアドベンチャー「虧月の夜」のPC（Steam）版を発売すると発表し，体験版の配信を開始した。本作では，昭和初期の寒村で起きる大量殺人事件に巻き込まれた主人公が，死ぬたびに同じ時間を繰り返しながら，生還につながる選択肢を探していく。",
-      "source": "4Gamer",
-      "date": "2026-10-16T04:08:49+00:00"
-    },
-    {
       "title": "「Fortnite」コラボのゲーミングデバイスがSteelSeriesとKontrolFreekから、全11製品",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148565.html",
       "summary": "人気オンラインゲーム「Fortnite」とコラボレーションしたゲーミングデバイスがSteelSeriesとKontrolFreekから登場。ラインアップはイヤホン、ヘッドセット、マウス、マウスパッド、キーキャップ、コントローラー用アクセサリーなど計11製品。",
       "source": "AKIBA PC Hotline!",
       "date": "2026-10-16T04:05:00+00:00"
-    },
-    {
-      "title": "「Warframe」，一度限りとなる大規模コミュニティイベント「一大作戦：Tauへの道」を米国時間11月17日まで開催中",
-      "url": "https://www.4gamer.net/games/172/G017216/20261016009/",
-      "summary": "DigitalExtremesが手掛ける「Warframe」で，一度限りとなる大規模コミュニティイベント「一大作戦：Tauへの道」が，米国時間2026年10月15日から11月17日まで開催されている。本イベントでは，新規からベテランまで幅広い層のプレイヤーが協力し，新たな星系への旅路を切り開いていく。",
-      "source": "4Gamer",
-      "date": "2026-10-16T04:03:21+00:00"
-    },
-    {
-      "title": "PCやゲーム機，スマートフォンで多用途に使えるワイヤレスヘッドセット「Barracuda V2 Pro」がRazerから登場",
-      "url": "https://www.4gamer.net/games/023/G002318/20261016013/",
-      "summary": "米国時間2026年10月15日，Razerは，PCやゲーム機，スマートフォンで使えるワイヤレス＆ワイヤードヘッドセット「BarracudaV2Pro」を発表した。携帯性を重視しており，公称本体重量は約285gと，ワイヤレスヘッドセットとしては軽いのがポイントだ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T04:01:43+00:00"
     },
     {
       "title": "貼り付けて使えるベアリング内蔵の回転キャスター4個セットがアイネックスから",
@@ -382,13 +417,6 @@
       "date": "2026-10-16T02:12:00+00:00"
     },
     {
-      "title": "Cooler Masterの保護機能付き12+4ピン延長ケーブル「GPU SHIELD ADAPTER CABLE」が発売",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148471.html",
-      "summary": "GPU保護機能を備えたCooler Masterの12+4ピンコネクタ電源延長ケーブル「GPU SHIELD ADAPTER CABLE（CMA-CEPC16XXBK1-GL）」が発売された。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T02:05:00+00:00"
-    },
-    {
       "title": "【本日みつけたお買い得品】XPPenの26.9型大サイズ液タブが約7万5千円引き。Amazonプライム感謝祭",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148658.html",
       "summary": "Amazonでは10月16日から19日までAmazonプライム感謝祭を開催中だ。セールにおいて、XPPenの26.9型液晶ペンタブレット(液タブ)「Artist Pro 27(Gen 2)」が、直近価格の7万4,500円引きとなる22万3,500円で販売されている。",
@@ -401,13 +429,6 @@
       "summary": "Amazonでは本日、10月16日から19日にかけて、Amazonプライム感謝祭を開催中だ。このセールにおいて、AcerのノートPC「Acer Swift Go 14 AI」(EP2-19222)が、直近価格から6万円引きとなる19万9,800円で販売されている。",
       "source": "PC Watch",
       "date": "2026-10-16T01:20:18+00:00"
-    },
-    {
-      "title": "ファミコンなどレトロゲーム機でUSB Type-C電源が利用できるケーブル「SU2-TCDC180M」",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148555.html",
-      "summary": "レトロゲーム機などをUSB Type-C充電器で動作可能にする電源ケーブル「SU2-TCDC180M」がエスエスエーサービス（SSA）から発売された。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T01:05:00+00:00"
     },
     {
       "title": "iPhoneで最大120tok/s！3値化LLM「Ternary Bonsai 2」に2B/4B/9B登場",
@@ -450,27 +471,6 @@
       "summary": "アコ・ブランズ・ジャパンが展開するKensingtonブランドは、「星のカービィ」とコラボレーションした製品「星のカービィ ワイヤレス コンパクトキーボード ダッシュ(K75579JP)」と「星のカービィ ワイヤレス マウス にっこり(K75580JP)」を11月10日に発売する。実売予想価格はワイヤレスキーボードが7,980円前後、ワイヤレスマウスが4,980円前後の見込み。",
       "source": "PC Watch",
       "date": "2026-10-15T21:17:00+00:00"
-    },
-    {
-      "title": "【やじうまミニレビュー】アームレストの高さ問題を3千円で解決!? ノブで調節できるチェア用の神アイテム",
-      "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147395.html",
-      "summary": "",
-      "source": "PC Watch",
-      "date": "2026-10-15T21:16:00+00:00"
-    },
-    {
-      "title": "【PC短評】アルミの質感がいい！王道デザインのミニPC「AOOSTAR MACO H255」を試した",
-      "url": "https://pc.watch.impress.co.jp/docs/column/short-review/2148059.html",
-      "summary": "ディスプレイ内蔵ミニPCやNASキットなど、ユニークなミニPCを送り出しているAOOSTAR。今回はそのAOOSTARが発売する、王道ミニPC「MACO H255」を紹介する。メモリ24GB/内蔵ストレージ1TBの仕様で、Amazonでの価格は10万3,120円。",
-      "source": "PC Watch",
-      "date": "2026-10-15T21:12:00+00:00"
-    },
-    {
-      "title": "ガチくんに! 第435回切り抜き「アジア大会で11歳が金メダル/SFL ASIA/ウメハラ密着映画発表」",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148596.html",
-      "summary": "※毎週木曜日にプロ格闘ゲームプレイヤーであるガチくんをパーソナリティに迎え、ストリートファイター6攻略企画「ガチくんに!」をTwitchとYouTubeで配信しています。レギュラー出演者はぷげら、奥村茉実。ここでは当日放送したおおまかな内容を紹介するとともに、YouTubeにアップロードした切り抜きとアーカイブの動画を掲載しています。",
-      "source": "PC Watch",
-      "date": "2026-10-15T21:00:00+00:00"
     }
   ],
   "feed_count": 3,
