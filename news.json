@@ -1,133 +1,280 @@
 {
-  "updated_at": "2026-10-16T00:53:12.208488+00:00",
+  "updated_at": "2026-10-16T03:45:14.636043+00:00",
   "articles": [
+    {
+      "title": "貼り付けて使えるベアリング内蔵の回転キャスター4個セットがアイネックスから",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148499.html",
+      "summary": "貼り付けて使えるベアリング内蔵の回転キャスター「CSTR-01」がアイネックスから発売された。店頭価格は980円。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-16T03:30:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/499/s1.jpg"
+    },
+    {
+      "title": "敵スパイの行方を追うエージェントAとなってそのアジトに潜入するパズルADV「Agent A - 偽装のパズル」と，1920年代アニメの不気味な魅力に着想を得たサイコホラー「Bad Cheese」がEpic Games Storeで無料配布中",
+      "url": "https://www.4gamer.net/games/881/G088110/20261016008/",
+      "summary": "EpicGamesは，PCゲーム配信プラットフォームEpicGamesStoreにて，「AgentA-偽装のパズル」と「BadCheese」の無料配布を実施している。期間は2026年10月23日0：00まで。",
+      "source": "4Gamer",
+      "date": "2026-10-16T03:25:18+00:00",
+      "image": "https://www.4gamer.net/games/881/G088110/20261016008/TN/008.gif"
+    },
+    {
+      "title": "怪物の檻の中で秘密を抱えた仲間とともに30日間を過ごす。心理ホラーゲーム「檻の詩」，Steamで配信開始",
+      "url": "https://www.4gamer.net/games/010/G101016/20261016004/",
+      "summary": "ゲーム開発者のZig氏は本日，PC用ソフト「檻の詩」の配信をSteamで開始した。本作は，怪物の檻の中で目覚めたあなたが，個性豊かな4人の“囚われの仲間”とともに過ごす，支配と救済をテーマにした心理ホラーゲームだ。",
+      "source": "4Gamer",
+      "date": "2026-10-16T03:22:02+00:00",
+      "image": "https://www.4gamer.net/games/010/G101016/20261016004/SS/001.jpg"
+    },
+    {
+      "title": "SFミステリーADV「ステラーコード」，コンシューマ版発売。人工衛星を研究する大学生と天才科学者の義妹が，宇宙からもたらされた謎の物体に挑む",
+      "url": "https://www.4gamer.net/games/050/G105064/20261016005/",
+      "summary": "KEMCOは本日，「ステラーコード」のコンシューマ版（Switch2/PS5/Switch/PS4）を発売した。本作は，2025年8月にPC向けに発売されたSFミステリーノベルアドベンチャーゲームの移植作だ。人工衛星を研究する大学生とノーベル賞級の天才科学者である義妹が，地球の命運を左右する謎に挑む。",
+      "source": "4Gamer",
+      "date": "2026-10-16T03:16:59+00:00",
+      "image": "https://www.4gamer.net/games/050/G105064/20261016005/SS/002.jpg"
+    },
+    {
+      "title": "爽快なアクションで押し寄せる敵を一掃。「Ember and Blade」，2027年1月8日にSteam/Epic Games Storeで早期アクセス開始",
+      "url": "https://www.4gamer.net/games/900/G090038/20261016007/",
+      "summary": "LINEGamesは本日，サバイバーライク「EmberandBlade」の早期アクセスを2027年1月8日にSteam/EpicGamesStoreで開始すると発表した。本作は，押し寄せる敵をテンポよく一掃するアクションと，色彩豊かなビジュアルを特徴とする作品だ。プレイヤーの意見をもとに戦闘システムの再設計が行われている。",
+      "source": "4Gamer",
+      "date": "2026-10-16T03:11:57+00:00",
+      "image": "https://www.4gamer.net/games/900/G090038/20261016007/SS/001.jpg"
+    },
+    {
+      "title": "天面6ボタン搭載の格闘ゲーム向けコントローラー「Omni 6 for PC」がGRAPHTから、カラーは5種類",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148513.html",
+      "summary": "GRAPHTの格闘ゲーム向けコントローラー「Omni 6 for PC」が発売された。カラーはLimit Break、Frosted Black、Frosted Red、Frosted Purple、Frosted Whiteの5種類が用意される。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-16T03:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/513/a1.jpg"
+    },
+    {
+      "title": "「テイルズ オブ エターニア」のここを知ってほしい！ 当時やり込んだファンが語る，リマスター版をもっと楽しむために押さえておきたいポイント",
+      "url": "https://www.4gamer.net/games/016/G101606/20261014007/",
+      "summary": "バンダイナムコエンターテインメントから2026年10月15日に発売された「テイルズオブエターニアリマスター」。本稿では現行機で遊べるようになった名作について，これから始める人に向けて，当時やり込んだ筆者が「ここに注目すると，もっと楽しめる」というポイントを3つの視点から紹介したい。",
+      "source": "4Gamer",
+      "date": "2026-10-16T03:00:00+00:00",
+      "image": "https://www.4gamer.net/games/016/G101606/20261014007/SS/025.jpg"
+    },
+    {
+      "title": "4秒以内に敵を食べて生き残るローグライトアクションゲーム「4DEAD」，2027年1月にリリース。体験版も公開に",
+      "url": "https://www.4gamer.net/games/964/G096472/20261015044/",
+      "summary": "講談社ゲームラボは，「4DEAD」を2027年1月にSteamで配信する。本作は，宇宙人から人類を救うために生み出された最強の生物「42号」になり，敵を食べまくるローグライトアクションゲームだ。体験版も公開されている。",
+      "source": "4Gamer",
+      "date": "2026-10-16T03:00:00+00:00",
+      "image": "https://www.4gamer.net/games/964/G096472/20261015044/SS/007.jpg"
+    },
+    {
+      "title": "「007 First Light」「ARC Raiders」「バトルフィールド6」などがお得なPS Storeセールは10月21日23：59まで！「今週のすべり込みセール情報」",
+      "url": "https://www.4gamer.net/games/484/G048410/20261015003/",
+      "summary": "セール終了間際のタイトルから，名作や特にお買い得なタイトルを厳選して紹介する連載「今週のすべり込みセール情報」。今週は「007FirstLight」がPlayStationStoreで30％オフの6237円，「OrbitalBullet」がNintendoStoreで94％オフの100円と，お買い得になっています！",
+      "source": "4Gamer",
+      "date": "2026-10-16T03:00:00+00:00",
+      "image": "https://www.4gamer.net/games/484/G048410/20261015003/SS/001.jpg"
+    },
+    {
+      "title": "【本日みつけたお買い得品】約5千円引き！老舗「澤井珈琲」厳選のコーヒー豆2種セットがAmazonプライム感謝祭で販売中",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148699.html",
+      "summary": "Amazonでは10月16日から19日にかけてAmazonプライム感謝祭を実施中。セールにおいて、老舗コーヒー専門店「澤井珈琲」が厳選した2種のコーヒー豆4袋セット「澤井珈琲 コーヒー豆 2種(ソルブレンド/ルナブレンド) 飲み比べ 1.6kg (400g×4)」が、直近価格の5,141円引きとなる5,354円で販売されている。",
+      "source": "PC Watch",
+      "date": "2026-10-16T02:55:43+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/699/05.jpg"
+    },
+    {
+      "title": "「トワイライト・インペリウム: 第4版」が「ボードゲームアリーナ」に正式実装。艦隊を率い，外交と戦争で銀河の覇権を競う超重量級SFボドゲ",
+      "url": "https://www.4gamer.net/games/639/G063965/20261016006/",
+      "summary": "AsmodeeDigitalは2026年10月14日，オンラインボードゲームサイト「ボードゲームアリーナ」で，FantasyFlightGamesのボードゲーム「TwilightImperium:FourthEdition」（トワイライト・インペリウム:第4版）を正式実装した。無料会員でもプレイできるが，種族選択には制限がある。",
+      "source": "4Gamer",
+      "date": "2026-10-16T02:49:37+00:00",
+      "image": "https://www.4gamer.net/games/639/G063965/20261016006/SS/004.jpg"
+    },
+    {
+      "title": "【本日みつけたお買い得品】Ninja製ノンフライヤーが約7千円オトク。Amazonプライム感謝祭",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148678.html",
+      "summary": "Amazonでは10月16日から19日にかけてAmazonプライム感謝祭を開催している。セールにて、Ninjaのノンフライヤー「Crispi FN100JGYNR」が、直近価格から6,750円引きとなる1万8,000円で販売されている。",
+      "source": "PC Watch",
+      "date": "2026-10-16T02:28:43+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/678/04.jpg"
+    },
+    {
+      "title": "【本日みつけたお買い得品】CMF by Nothingブランドのスマートウォッチが9,980円！Amazonプライム感謝祭",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148668.html",
+      "summary": "Amazonでは、10月16日から19日までAmazonプライム感謝祭を開催している。セールでは、CMF by Nothingブランドのスマートウォッチ「CMF by Nothing Watch 3 Pro」が、直近価格から3,820円引きとなる9,980円で販売されている。",
+      "source": "PC Watch",
+      "date": "2026-10-16T02:13:30+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/668/03.jpg"
+    },
+    {
+      "title": "西部劇×ソウルライクFPS「ガンズ・オブ・エスカトン」，12月8日発売決定。銃撃，パリィ，オカルト能力を駆使して終末世界を生き抜く",
+      "url": "https://www.4gamer.net/games/022/G102216/20261016003/",
+      "summary": "4DivinityとEschatologyEntertainmentは本日，ソウルライクFPS「ガンズ・オブ・エスカトン」を2026年12月8日に発売すると発表した。本作は，終末を迎えた19世紀のアメリカ西部を舞台に，銃撃やパリィ，オカルト能力を駆使して戦う作品だ。2人協力プレイにも対応する。",
+      "source": "4Gamer",
+      "date": "2026-10-16T02:12:17+00:00",
+      "image": "https://www.4gamer.net/games/022/G102216/20261016003/SS/001.jpg"
+    },
+    {
+      "title": "Windows 11で画面真っ暗、デスクトップにたどり着けない不具合が解消",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2148643.html",
+      "summary": "Microsoftは10月13日、サインイン後に画面が真っ暗になるWindows 11の不具合に対し、修正パッチの提供を開始した。この不具合は、Windows 11バージョン26H2へのアップデートおよびその後の更新プログラムの適用後に発生していたもの。",
+      "source": "PC Watch",
+      "date": "2026-10-16T02:12:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/643/01.jpg"
+    },
+    {
+      "title": "Cooler Masterの保護機能付き12+4ピン延長ケーブル「GPU SHIELD ADAPTER CABLE」が発売",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148471.html",
+      "summary": "GPU保護機能を備えたCooler Masterの12+4ピンコネクタ電源延長ケーブル「GPU SHIELD ADAPTER CABLE（CMA-CEPC16XXBK1-GL）」が発売された。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-16T02:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/471/a1.jpg"
+    },
+    {
+      "title": "【本日みつけたお買い得品】XPPenの26.9型大サイズ液タブが約7万5千円引き。Amazonプライム感謝祭",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148658.html",
+      "summary": "Amazonでは10月16日から19日までAmazonプライム感謝祭を開催中だ。セールにおいて、XPPenの26.9型液晶ペンタブレット(液タブ)「Artist Pro 27(Gen 2)」が、直近価格の7万4,500円引きとなる22万3,500円で販売されている。",
+      "source": "PC Watch",
+      "date": "2026-10-16T02:00:02+00:00"
+    },
+    {
+      "title": "【本日みつけたお買い得品】6万円引き！メモリ32GBの14型ノートがAmazonでセール中",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148632.html",
+      "summary": "Amazonでは本日、10月16日から19日にかけて、Amazonプライム感謝祭を開催中だ。このセールにおいて、AcerのノートPC「Acer Swift Go 14 AI」(EP2-19222)が、直近価格から6万円引きとなる19万9,800円で販売されている。",
+      "source": "PC Watch",
+      "date": "2026-10-16T01:20:18+00:00"
+    },
+    {
+      "title": "ファミコンなどレトロゲーム機でUSB Type-C電源が利用できるケーブル「SU2-TCDC180M」",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148555.html",
+      "summary": "レトロゲーム機などをUSB Type-C充電器で動作可能にする電源ケーブル「SU2-TCDC180M」がエスエスエーサービス（SSA）から発売された。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-16T01:05:00+00:00"
+    },
+    {
+      "title": "扱いやすく多機能な4ベイNAS「UGREEN NASync DXP4800 GT」。データを“安全に保持する”ことを改めて考える[Sponsored]",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/topic/special/2147670.html",
+      "summary": "一般的なホームユースやオフィスワーク、さらにはクリエイティブなホビーやビジネスにおいて、「データを安全に保存すること」は非常に重要な要素。テクノロジーが急激に進化する現在においては、より本質的な用途に手間や時間を費やすために、データの安全な保存は、より安全で確実に、かつ便利で煩わしさのないものであってほしい。そのための方策のひとつが“最新のNASの導入”だ。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-16T01:00:00+00:00"
+    },
+    {
+      "title": "「ペンギン・コロニー」は人間たちの狂気と自滅をペンギン視点で傍観するコズミックホラーADV。しかし，そこには予想外の問いかけが待っていた［プレイレポ］",
+      "url": "https://www.4gamer.net/games/001/G100114/20261015011/",
+      "summary": "オーストラリアを拠点とするORIGAMEDIGITALが手がける「ペンギン・コロニー」が10月16日に発売される。本作はH.P.ラヴクラフトの代表作「狂気の山脈にて」などに着想を得たコズミックホラー・アドベンチャーだ。南極に暮らす「ペンギン」となって，人間たちの狂気と自滅を「傍観」していく。",
+      "source": "4Gamer",
+      "date": "2026-10-16T01:00:00+00:00"
+    },
     {
       "title": "iPhoneで最大120tok/s！3値化LLM「Ternary Bonsai 2」に2B/4B/9B登場",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148621.html",
       "summary": "フル精度の9分の1以下のサイズで、元モデルに近い性能を保つ小型LLMが登場した。PrismMLは10月15日(現地時間)、重みを3値化した言語モデル「Ternary Bonsai 2」シリーズに、パラメータ数2B(20億)、4B(40億)、9B(90億)の3モデルを追加した。Apache 2.0ライセンスのもと、オープンウェイト(モデルの重み)をHugging Faceで公開している。",
       "source": "PC Watch",
-      "date": "2026-10-16T00:43:09+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/621/1.jpg"
+      "date": "2026-10-16T00:43:09+00:00"
     },
     {
       "title": "ポータブルゲーミングPCをSwitchのようなゲーム機として使うには？「ROG XBOX Ally X20」で試してみた【石田賀津男の『酒の肴にPCゲーム』】",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/column/sspcgame/2148102.html",
       "summary": "ASUSのポータブルゲーミングPC「ROG XBOX Ally X20」が10月16日に発売される。マイクロソフトのお墨付きモデルの最新型で、気になっている方も多いのではないかと思う。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T00:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/102/01.jpg"
+      "date": "2026-10-16T00:05:00+00:00"
     },
     {
       "title": "省電力RyzenのミニPCが3万7,998円で購入可能。4万9千円引きモデルも！ [Sponsored]",
       "url": "https://pc.watch.impress.co.jp/docs/topic/special/2147887.html",
       "summary": "Amazonでプライム感謝祭先行セールが開催されており、NiPoGiのミニPCが割引価格となっている。Ryzen 3 7330Uを搭載する「P2」は、直近価格から2万7,000円引きで、4万3,998円にて販売中だ(プライム会員の場合)。加えて決済時に使えるクーポンコード「8LL31R02」の適用で、プライム会員は6,000円引き、非プライム会員は3万3,000円引きされ、最終的に3万7,998円にて購入できる。コードの期限は10月19日まで。",
       "source": "PC Watch",
-      "date": "2026-10-16T00:04:17+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/887/01.jpg"
+      "date": "2026-10-16T00:04:17+00:00"
     },
     {
       "title": "Switch2向け2人プレイ専用ホラーゲーム「Beyond the Dark:ナイトウォッチ」，10月22日に発売",
       "url": "https://www.4gamer.net/games/050/G105042/20261015020/",
       "summary": "Q-Gamesは本日（2026年10月16日），NintendoSwitch2用ソフト「BeyondtheDark:ナイトウォッチ」を10月22日に発売すると発表した。本作は，フランスのAtlantisStudioが手掛けた2人プレイ専用のホラーゲームだ。Q-Gamesはアジア地域でのパブリッシングを担当する。",
       "source": "4Gamer",
-      "date": "2026-10-16T00:00:00+00:00",
-      "image": "https://www.4gamer.net/games/050/G105042/20261015020/SS/005.jpg"
+      "date": "2026-10-16T00:00:00+00:00"
     },
     {
       "title": "ASUS ROG 20周年記念のキーキャップ「ROG KEYCAP MYSTERY BOX EDITION 20」が入荷",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148562.html",
       "summary": "歴代ROG製品をモチーフにした限定コレクターズキーキャップ「ROG KEYCAP MYSTERY BOX EDITION 20」が秋葉原の一部ショップに入荷。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T23:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/562/a1.jpg"
+      "date": "2026-10-15T23:30:00+00:00"
     },
     {
       "title": "「ゲームつまませてLIVE」10月12日号レポート。ブラジルやバルセロナのイベントから，4Gamer一押しの新作3タイトルまで。注目ゲーム情報をまとめてお届け【PR】",
       "url": "https://www.4gamer.net/games/988/G098872/20261013030/",
       "summary": "トーク番組「おれっち＆こーすけのゲームつまませてLIVE」。2026年10月12日号では，ブラジルやスペインで開かれたゲームイベントの話題から，4Gamerが一押しする新作3タイトルのPV紹介まで，幅広い話題が飛び交った。",
       "source": "4Gamer",
-      "date": "2026-10-15T23:30:00+00:00",
-      "image": "https://www.4gamer.net/games/988/G098872/20261013030/SS/001.png"
+      "date": "2026-10-15T23:30:00+00:00"
     },
     {
       "title": "選手サイン入りカードなどを収録したVCT Pacific公認トレーディングカードパックが発売",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148559.html",
       "summary": "VCT Pacific公認のトレーディングカードパック「Bault Lineage Series One」が登場。店頭価格は1パックが1,050円、ボックス（20パック入り）が21,000円。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T23:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/559/s1.jpg"
+      "date": "2026-10-15T23:05:00+00:00"
     },
     {
       "title": "これはローグライトなスター・ウォーズ版「バーンアウト」じゃ！（あかねのSteam Pick Up！）",
       "url": "https://www.4gamer.net/games/968/G096885/20261015009/",
       "summary": "本日の「あかねのSteamPickUp！」では，「スター・ウォーズ：ギャラクティック・レーサー」を紹介。ライバルを壁に押しやるレースに，枝分かれするマップを進むローグライトの構造を組み合わせた作品で，負けても強化の一部を次のツアーに持ち越せるから，周回そのものを楽しめる。",
       "source": "4Gamer",
-      "date": "2026-10-15T23:00:00+00:00",
-      "image": "https://www.4gamer.net/games/968/G096885/20261015009/SS/003.jpg"
+      "date": "2026-10-15T23:00:00+00:00"
     },
     {
       "title": "「Jev 1.14.0」登場。実験機能開放で画像入力やコンテキスト長の拡張も可能に",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148603.html",
       "summary": "TypeSafe AIは10月14日、System One Modelと呼ばれる自動化向けAIモデル「Jev」シリーズの新バージョン「Jev 1.14.0」を発表した。モデルIDは「jev-1.14.0」で、エイリアス「jev-preview」から利用できる。API料金は入力100万トークンあたり0.042ドルで、出力トークンは無料。",
       "source": "PC Watch",
-      "date": "2026-10-15T22:18:35+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/603/001.jpg"
+      "date": "2026-10-15T22:18:35+00:00"
     },
     {
       "title": "専用設計のTMRスティックを採用したゲームパッド「STORM」に白色モデル、2Kポーリング対応",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148434.html",
       "summary": "2,000Hzのポーリングレートに対応したMOJHON（BIGBIG WON）ブランドのゲームパッド「STORM White」が発売された。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T22:05:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/434/a1.jpg"
+      "date": "2026-10-15T22:05:00+00:00"
     },
     {
       "title": "「ドラゴンクエストモンスターズ4」，オンライン共闘やランクマッチ，闘技場の詳細を公開。全50試合に挑むローグライク要素も",
       "url": "https://www.4gamer.net/games/010/G101055/20261006046/",
       "summary": "スクウェア・エニックスは本日，「ドラゴンクエストモンスターズ4 枯れ木の国のビアンカ・フローラ」の最新情報を公開した。今回は，最大4人で巨大モンスターに挑む「オンライン共闘」やランクマッチ，闘技場に加え，全50試合を勝ち抜くローグライクな「真モンスターマスターへの道」が明らかになっている。",
       "source": "4Gamer",
-      "date": "2026-10-15T22:00:00+00:00",
-      "image": "https://www.4gamer.net/games/010/G101055/20261006046/SS/004.jpg"
+      "date": "2026-10-15T22:00:00+00:00"
     },
     {
       "title": "Liquid AI、AIエージェント向け24B推論モデル「LFM2.5-24B-A2B」無償公開",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148496.html",
       "summary": "Liquid AIは10月13日、LFM2.5シリーズの推論モデル「LFM2.5-24B-A2B」を発表した。Hugging Faceでオープンウェイト版を「LFM Open License v1.0」のもとで公開している。基本的には無償で利用でき、商用利用も可能だが、年間売上高が1,000万ドル以上の企業による商用利用は商用ライセンスの取得が必要となる。また、Liquid ConsoleでAPIも提供しており、API料金は100万トークンあたり入力0.10ドル、キャッシュ入力0.05ドル、出力1ドル。",
       "source": "PC Watch",
-      "date": "2026-10-15T21:27:09+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/496/001.jpg"
+      "date": "2026-10-15T21:27:09+00:00"
     },
     {
       "title": "日本HP、RTX Spark搭載で薄さ15.7mmの16型ノートPC",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148591.html",
       "summary": "日本HPはRTX Spark N1X搭載16型ノート「HP OmniBook Ultra 16 AI PC」シリーズ3機種を順次発売する。直販価格は59万9,500円から。3モデルを用意しており、主な構成と発売時期、直販価格は以下の通り。",
       "source": "PC Watch",
-      "date": "2026-10-15T21:19:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/591/01.jpg"
+      "date": "2026-10-15T21:19:00+00:00"
     },
     {
       "title": "「星のカービィ」がマウスとキーボードに！コラボ製品がKensingtonから",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148468.html",
       "summary": "アコ・ブランズ・ジャパンが展開するKensingtonブランドは、「星のカービィ」とコラボレーションした製品「星のカービィ ワイヤレス コンパクトキーボード ダッシュ(K75579JP)」と「星のカービィ ワイヤレス マウス にっこり(K75580JP)」を11月10日に発売する。実売予想価格はワイヤレスキーボードが7,980円前後、ワイヤレスマウスが4,980円前後の見込み。",
       "source": "PC Watch",
-      "date": "2026-10-15T21:17:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/468/01.jpg"
+      "date": "2026-10-15T21:17:00+00:00"
     },
     {
       "title": "【やじうまミニレビュー】アームレストの高さ問題を3千円で解決!? ノブで調節できるチェア用の神アイテム",
       "url": "https://pc.watch.impress.co.jp/docs/column/yajiuma-mini-review/2147395.html",
       "summary": "",
       "source": "PC Watch",
-      "date": "2026-10-15T21:16:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2147/395/01.jpg"
+      "date": "2026-10-15T21:16:00+00:00"
     },
     {
       "title": "【PC短評】キーボードより静か！アルミ筐体の王道ミニPC「AOOSTAR MACO H255」を試した",
       "url": "https://pc.watch.impress.co.jp/docs/column/short-review/2148059.html",
       "summary": "ディスプレイ内蔵ミニPCやNASキットなど、ユニークなミニPCを送り出しているAOOSTAR。今回はそのAOOSTARが発売する、王道ミニPC「MACO H255」を紹介する。メモリ24GB/内蔵ストレージ1TBの仕様で、Amazonでの価格は10万3,120円。",
       "source": "PC Watch",
-      "date": "2026-10-15T21:12:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/059/01.jpg"
+      "date": "2026-10-15T21:12:00+00:00"
     },
     {
       "title": "ガチくんに! 第435回切り抜き「アジア大会で11歳が金メダル/SFL ASIA/ウメハラ密着映画発表」",
@@ -312,83 +459,6 @@
       "date": "2026-10-15T11:19:47+00:00"
     },
     {
-      "title": "魔法のパンで人々の心を癒すアドベンチャーゲーム「The Witch's Bakery」，配信開始",
-      "url": "https://www.4gamer.net/games/985/G098537/20261015045/",
-      "summary": "SilverLiningInteractiveは2026年10月14日，SunnyLabが開発した新作タイトル「TheWitch'sBakery」をリリースした。本作は，憧れの街・パリにやってきた若き魔法使い「ルネ」が，魔法のパンで街の人たちの元気を取り戻す2Dアドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-15T11:17:49+00:00"
-    },
-    {
-      "title": "［インタビュー］いよいよ正式サービスを迎えた「AION2」は，どこを目指すのか。NCの開発陣に，課金や今後の運営方針を聞いてみた",
-      "url": "https://www.4gamer.net/games/440/G044032/20261006001/",
-      "summary": "広大な世界を自由に飛び，仲間と冒険に旅立つ。「AION2」グローバル版正式サービスが，2026年10月5日にスタートした。本稿では，そんな本作の事業・開発チームへのメールインタビューをお届けする。質問に答えてくれたのは，NCの事業室長であるソ・インソップ氏と，開発PDのキム・ナムジュン氏だ。",
-      "source": "4Gamer",
-      "date": "2026-10-15T11:00:00+00:00"
-    },
-    {
-      "title": "わしゃがなTVの最新動画では，声優の最上嗣生さんのレポートで紹介する「TGS出張版」の後編をお届け。最新ゲームの試遊に挑戦",
-      "url": "https://www.4gamer.net/games/991/G999110/20261015029/",
-      "summary": "本日，声優の中村悠一さんと，フリーライターのマフィア梶田さんによるWeb番組「わしゃがなTV」の最新動画が公開された。今回は，東京ゲームショウ2026の模様を，声優の最上嗣生さんのレポートで紹介する「わしゃがなTV出張版最上嗣生と行く東京ゲームショウ2026」の後編をお届けする。",
-      "source": "4Gamer",
-      "date": "2026-10-15T11:00:00+00:00"
-    },
-    {
-      "title": "崩壊した研究施設で目覚めた少女が寄生生命体の力を借りて脱出を目指す「Shadow mate 〜小さな竜と適合者〜」，体験版をSteamで公開",
-      "url": "https://www.4gamer.net/games/873/G087383/20261015040/",
-      "summary": "SpringGuildは本日，PC用ソフト「Shadowmate〜小さな竜と適合者〜」の体験版をSteamで公開した。本作は，崩壊した研究施設で目覚めた少女「シンシア」が惨劇の真実を追い，脱出への道を探していくホラーアクションアドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-15T10:33:52+00:00"
-    },
-    {
-      "title": "牧羊犬として農場と飼い主を守るアクションADV「Hubert」，Steam版が本日リリース",
-      "url": "https://www.4gamer.net/games/034/G103468/20261015038/",
-      "summary": "BrocapStudioは2026年10月14日，新作タイトル「Hubert」のPC（Steam）版をリリースした。本作は，北方の未開の荒野を旅する牧羊犬「ヒューバート」として，羊の群れを導き，厳しい天候や険しい地形，隠れた危険に立ち向かっていくアクションアドベンチャーゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-15T10:13:39+00:00"
-    },
-    {
-      "title": "世界は滅んだ。それでも片付けは終わらない。終末世界が舞台の整理整頓シミュレータ「Sort of the Apocalypse」発表，2026年12月にリリース予定",
-      "url": "https://www.4gamer.net/games/050/G105060/20261015039/",
-      "summary": "FortifiedStudiosは，PC向け新作「SortoftheApocalypse」を発表した。本作は，文明崩壊後の地下シェルターを舞台に，6000点を超える物資をひたすら片付けていく整理整頓シミュレーションゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-15T10:06:25+00:00"
-    },
-    {
-      "title": "「ARC SYSTEM WORKS TOKYO STUDIO \"TAKUMI\"」，11月2日付で開設",
-      "url": "https://www.4gamer.net/games/999/G999903/20261015037/",
-      "summary": "アークシステムワークスは本日（2026年10月15日），新たな開発拠点「ARCSYSTEMWORKSTOKYOSTUDIO\"TAKUMI\"」を11月2日付で東京都新宿区に開設すると発表した。",
-      "source": "4Gamer",
-      "date": "2026-10-15T09:54:24+00:00"
-    },
-    {
-      "title": "「ぷちホロの村 - 剣とお店と田舎暮らし」Switch2版，10月22日に発売。本日予約受付を開始",
-      "url": "https://www.4gamer.net/games/050/G105059/20261015035/",
-      "summary": "CCMCは本日（2026年10月15日），「ぷちホロの村-剣とお店と田舎暮らし」のNintendoSwitch2版を10月22日に発売すると発表した。ニンテンドーeショップで予約を受け付けている。",
-      "source": "4Gamer",
-      "date": "2026-10-15T09:50:27+00:00"
-    },
-    {
-      "title": "タワーディフェンスとハック＆スラッシュが見事に共演！ ローグライクアクションにまとめた「Archangel: Demon Rush」をプレイ",
-      "url": "https://www.4gamer.net/games/999/G999901/20261015032/",
-      "summary": "SAGABarcelonaGameFest2026で，Don’tKnowStudioが手がけるローグライクアクション「Archangel:DemonRush」をチェックしてきた。押し寄せるデーモン軍団を相手に，防衛施設を築くタワーディフェンスとハック＆スラッシュが盛り込まれたスピード感のある作風だ。",
-      "source": "4Gamer",
-      "date": "2026-10-15T09:29:24+00:00"
-    },
-    {
-      "title": "「桃源暗鬼 Crimson Inferno」，事前登録の受付を開始。主要キャラクターの戦闘シーンを確認できる最新映像も公開に",
-      "url": "https://www.4gamer.net/games/893/G089379/20261015034/",
-      "summary": "Com2uSJapanは本日（2026年10月15日），新作タイトル「桃源暗鬼CrimsonInferno」の事前登録受付を，ゲーム公式サイトに加えてAppStoreとGooglePlay，animateGamesOnlineで開始した。また，主人公「一ノ瀬四季」をはじめとする主要キャラクターの戦闘シーンを確認できる最新映像も公開された。",
-      "source": "4Gamer",
-      "date": "2026-10-15T09:08:58+00:00"
-    },
-    {
-      "title": "Intel CPU搭載NASやThunderbolt 5接続SSDケースなどTERRAMASTER製品が最大35%オフ！Amazonプライム感謝祭",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/online_shopping/2147838.html",
-      "summary": "Amazon.co.jpにて、「プライム感謝祭」が10月16日（金）～10月19日（月） に開催予定。13日（火）より先行セールも開催中です。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T08:05:00+00:00"
-    },
-    {
       "title": "アイオー、320Hz/WQHD対応でMini LED採用の27型ゲーミングモニター",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148457.html",
       "summary": "アイオーデータは、ゲーミングモニター「GigaCrysta S」ブランドから「LCD-GDQ271ULAQシリーズ」を発表した。本体色がブラックの「LCD-GDQ271ULAQB」とホワイトの「LCD-GDQ271ULAQW」の2モデルを用意する。いずれも10月末出荷予定で、直販価格は7万8,980円。",
@@ -401,76 +471,6 @@
       "summary": "ChatGPTやCodexを使い込むほどストレージが圧迫される、という悩みが少し軽くなりそうだ。OpenAIのTibo氏は10月13日(米国時間)、ChatGPTおよびCodexのデスクトップアプリで、状態データをディスクに保存する方法を最適化したとX(旧Twitter)で明らかにした。これにより、ディスク上の保存容量を60%削減できる見込みだという。",
       "source": "PC Watch",
       "date": "2026-10-15T07:28:10+00:00"
-    },
-    {
-      "title": "ChatGPTがまたリセット、15日16時頃までに利用枠回復。1日おきに3回目",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148428.html",
-      "summary": "1日おきに3回目のリセットだ。OpenAIでCodexとChatGPTを担当するThibault Sottiaux(ティボー・ソティオ)氏が10月15日(日本時間)、X(旧Twitter)に投稿した。全ユーザーの利用枠リセットを同日中に実施するという告知だ。今回の投稿文は、マーク・トウェイン氏の「私の死亡報道は大げさだ」をもじった言い回しで、リセットボタンの紛失説を自ら打ち消した。",
-      "source": "PC Watch",
-      "date": "2026-10-15T06:50:00+00:00"
-    },
-    {
-      "title": "ケース兼用の「Nape Pro専用シェルパームレスト」がKeychronから",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148057.html",
-      "summary": "収納ケースとしても機能する「Nape Pro専用シェルパームレスト」がKeychronから登場。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T06:05:00+00:00"
-    },
-    {
-      "title": "CORSAIRのiCUE LINK対応ファン「iCUE LINK RX II RGB」が発売、計8製品",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148182.html",
-      "summary": "CORSAIRのiCUE LINK対応ケースファンに新モデルが登場。「iCUE LINK RX II RGB」シリーズが発売された。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T05:30:00+00:00"
-    },
-    {
-      "title": "布マウスパッド専用洗剤「Mousepad Cleaner」がHID-Labsから",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148055.html",
-      "summary": "日本初の“マウスパッド専用洗剤”をうたう、布マウスパッド専用洗剤「Mousepad Cleaner」がHID-Labsから登場。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T05:05:00+00:00"
-    },
-    {
-      "title": "OpenAIオフィスに隠し録音機、設置した従業員をAIで特定し解雇",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148355.html",
-      "summary": "OpenAIは10月14日、同社の従業員がオフィス内に録音機を密かに設置していたことを明かした。同社はすでにFBIに報告しており、FBIが当該の従業員を逮捕した上で、調査を進めているという。",
-      "source": "PC Watch",
-      "date": "2026-10-15T04:54:48+00:00"
-    },
-    {
-      "title": "Huanoのタクタイルスイッチ「Sakura Tactile」",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148111.html",
-      "summary": "HuanoのCherry MX互換メカニカルキースイッチ「Sakura Tactile」が、遊舎工房に入荷。店頭価格は1個55円。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-15T04:30:00+00:00"
-    },
-    {
-      "title": "AIに“生命”宿る。IoT家電で自己複製し始める可能性が急浮上",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148329.html",
-      "summary": "安いAndroid TVのようなセットトップボックスが、AIの「培養地」になる日が来るかもしれない。Anthropicは10月12日(米国時間)、小規模なAIモデルがこのまま改善し続ければ、数カ月以内にも、データセンターを使わずに安価なAndroid TVボックスといったIoT機器上で自己複製できるようになる可能性がある、という衝撃の研究結果を公開した。",
-      "source": "PC Watch",
-      "date": "2026-10-15T03:50:29+00:00"
-    },
-    {
-      "title": "開けばオン、閉じれば約7cmに縮んでオフ。スライド式静音マウス",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148282.html",
-      "summary": "サンワサプライは10月14日、持ち運びに便利なスライド式カバーを備えたワイヤレスマウス「MA-WBBS526」シリーズを発売した。カラーはブルーとグレーの2種類で、直販価格はいずれも4,780円。",
-      "source": "PC Watch",
-      "date": "2026-10-15T02:54:04+00:00"
-    },
-    {
-      "title": "「Claude Code」デスクトップ版、並列タスクごとにセッションを自動生成",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148273.html",
-      "summary": "複数のClaude Codeにタスクを並行して任せるのが、ぐっと楽になりそうだ。Anthropicは10月14日(現地時間)、エージェント型コーディングツール「Claude Code」のデスクトップアプリをアップデートし、複数セッションの並列実行を快適にする新機能を追加した。開発者向けX(旧Twitter)アカウント@ClaudeDevsで発表された。新機能は、デスクトップアプリをアップデートし、新しいセッションを開始することで利用できる。",
-      "source": "PC Watch",
-      "date": "2026-10-15T02:38:35+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】アイオーのTV録画向けHDD 6TBが8,970円引き。大容量の外付けHDDもセール中！",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148262.html",
-      "summary": "Amazonは10月13日から15日にかけて、プライム感謝祭先行セールを実施中だ。アイオーデータのレコーディングHDD「RECBOX HVL-RS/UE」シリーズは、プライム会員限定の値引きで、6TB版が8,970円引きの5万830円、8TB版が1万660円引きの6万4,320円。また16TB版は、9月14日の価格から4万2,414円引きで、13万5,080円(販売元:Amazon.co.jp)にて購入できる。",
-      "source": "PC Watch",
-      "date": "2026-10-15T01:52:27+00:00"
     }
   ],
   "feed_count": 3,
