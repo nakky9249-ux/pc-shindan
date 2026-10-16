@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-10-16T18:50:04.627109+00:00",
+  "updated_at": "2026-10-16T21:42:43.336799+00:00",
   "articles": [
+    {
+      "title": "【今すぐ読みたい！人気記事】まるで成長していない。「USB4」になっても呼び名が混乱している件。Gen 2とか相変わらず分かりにくいまま - PC Watch",
+      "url": "https://pc.watch.impress.co.jp/docs/topic/readitnow/2148995.html",
+      "summary": "USBという規格が複雑怪奇であることは、PCやスマホに詳しいユーザーに限らず、いまや一般の人にも知れ渡りつつある。誰にでも使いやすいことを目指して策定され、頭文字に「ユニバーサル」の「U」を据える業界標準規格が、ややこしいものの代表格として認知されているのは、非常に残念なことと言えよう。",
+      "source": "PC Watch",
+      "date": "2026-10-16T21:13:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/995/1.jpg"
+    },
+    {
+      "title": "【今すぐ読みたい！人気記事】地味にスゴイ。「脚が階段にめり込んで興ざめ」を防ぐ3D技術 - PC Watch",
+      "url": "https://pc.watch.impress.co.jp/docs/topic/readitnow/2148994.html",
+      "summary": "PC Watch編集部の担当者から、ゲームグラフィックス技術において、「歩行アニメーション技術について解説してほしい」という打診があった。担当編集者は、このあたりの話題を取り扱った下記の動画を見て大きな関心を抱いたようだ。",
+      "source": "PC Watch",
+      "date": "2026-10-16T21:06:00+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/994/1.jpg"
+    },
+    {
+      "title": "Core i5-10210Uや16GBメモリ搭載の13.3型「ThinkPad X13 Gen1」が34,800円、中古PCセール",
+      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148955.html",
+      "summary": "Core i5-10210U（4コア/8スレッド）を搭載した13.3インチノートPC「ThinkPad X13 Gen1」の中古品が、PCコンフル 秋葉原3号店でセール中。",
+      "source": "AKIBA PC Hotline!",
+      "date": "2026-10-16T21:05:00+00:00",
+      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/955/a1.jpg"
+    },
     {
       "title": "7日目の脱線事故を防ぐため，何度も同じ旅を繰り返す。「クワイエット急行909号室」，体験版をSteamで配信開始",
       "url": "https://www.4gamer.net/games/943/G094358/20261016062/",
@@ -110,24 +134,21 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/2148974.html",
       "summary": "AIエージェントの記憶の質は、会話のどの部分を書き残すかで決まる。その判断に特化した小型AIモデルが「Hy-Memory-30B-A3B」だ。TencentのAI開発チームTencent Hunyuanが10月16日(日本時間)、オープンウェイト(モデルの重み)としてHugging Faceで公開した。会話から記憶を作成して保存する性能の平均スコアは、同社の計測でAnthropicの「Claude Opus 5」を上回った。ライセンスはApache 2.0で、商用利用・改変・再配布が無償で認められる。",
       "source": "PC Watch",
-      "date": "2026-10-16T12:09:10+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/974/01.png"
+      "date": "2026-10-16T12:09:10+00:00"
     },
     {
       "title": "アキバお買い得価格情報（10月15日～16日調査） Core Ultra7 270K Plusが54,980円、MONTECH 360mm水冷CPUクーラーが5,480円、20.7インチ液晶モニター 中古品が4,980円 ほか",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/sale/2148554.html",
       "summary": "ゲーム関連商品やセール品は対象外。期間は31日(土)まで。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T12:07:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/554/1599ex5_s.jpg"
+      "date": "2026-10-16T12:07:00+00:00"
     },
     {
       "title": "【笠原一輝のユビキタス情報局】フロンティアモデルAIを出先でも！NVIDIA RTX Spark搭載Surface実機レビュー",
       "url": "https://pc.watch.impress.co.jp/docs/column/ubiq/2148969.html",
       "summary": "",
       "source": "PC Watch",
-      "date": "2026-10-16T12:00:00+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2148/969/001.jpg"
+      "date": "2026-10-16T12:00:00+00:00"
     },
     {
       "title": "【Hothotレビュー】128GBの統合メモリで大型ローカルAIを動かす。RTX Spark搭載「ProArt P14」",
@@ -361,13 +382,6 @@
       "date": "2026-10-16T06:12:24+00:00"
     },
     {
-      "title": "ロジクールGの新製品が発売、75%キーボード「G316 X 75」や人気マウスの新色など多数",
-      "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148573.html",
-      "summary": "ロジクールのゲーミングブランド「ロジクールG」から、新ゲーミングデバイスが複数登場。15日（木）から販売が始まっている。",
-      "source": "AKIBA PC Hotline!",
-      "date": "2026-10-16T06:05:00+00:00"
-    },
-    {
       "title": "パスワードも流出、ソースネクスト会員情報約2,252万件",
       "url": "https://pc.watch.impress.co.jp/docs/news/2148747.html",
       "summary": "ソースネクストは10月15日、同社が管理する会員情報に対して第三者による不正アクセスが行なわれ、会員の個人情報が外部に流出したと発表した。流出した可能性がある件数は2,251万9,960件に上る。",
@@ -457,20 +471,6 @@
       "summary": "Liquid AIは10月13日、LFM2.5シリーズの推論モデル「LFM2.5-24B-A2B」を発表した。Hugging Faceでオープンウェイト版を「LFM Open License v1.0」のもとで公開している。基本的には無償で利用でき、商用利用も可能だが、年間売上高が1,000万ドル以上の企業による商用利用は商用ライセンスの取得が必要となる。また、Liquid ConsoleでAPIも提供しており、API料金は100万トークンあたり入力0.10ドル、キャッシュ入力0.05ドル、出力1ドル。",
       "source": "PC Watch",
       "date": "2026-10-15T21:27:09+00:00"
-    },
-    {
-      "title": "日本HP、RTX Spark搭載で薄さ15.7mmの16型ノートPC",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148591.html",
-      "summary": "日本HPはRTX Spark N1X搭載16型ノート「HP OmniBook Ultra 16 AI PC」シリーズ3機種を順次発売する。直販価格は59万9,500円から。3モデルを用意しており、主な構成と発売時期、直販価格は以下の通り。",
-      "source": "PC Watch",
-      "date": "2026-10-15T21:19:00+00:00"
-    },
-    {
-      "title": "「星のカービィ」がマウスとキーボードに！コラボ製品がKensingtonから",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2148468.html",
-      "summary": "アコ・ブランズ・ジャパンが展開するKensingtonブランドは、「星のカービィ」とコラボレーションした製品「星のカービィ ワイヤレス コンパクトキーボード ダッシュ(K75579JP)」と「星のカービィ ワイヤレス マウス にっこり(K75580JP)」を11月10日に発売する。実売予想価格はワイヤレスキーボードが7,980円前後、ワイヤレスマウスが4,980円前後の見込み。",
-      "source": "PC Watch",
-      "date": "2026-10-15T21:17:00+00:00"
     }
   ],
   "feed_count": 3,
