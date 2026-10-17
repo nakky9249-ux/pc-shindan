@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-10-17T06:52:01.571721+00:00",
+  "updated_at": "2026-10-17T09:41:41.548934+00:00",
   "articles": [
+    {
+      "title": "週刊Steam広場 第175号：「Warhammer 40,000: Boltgun 2」や「Planet Zoo 2」が発売に",
+      "url": "https://www.4gamer.net/games/038/G003821/20261017005/",
+      "summary": "今週発売されたSteamの注目タイトルやセール情報をお届けする「週刊Steam広場」。今週は，自分だけの動物園を設計＆運営していく「PlanetZoo2」や，ミニチュアゲーム「Warhammer40,000」の世界を舞台とする「Warhammer40,000:Boltgun2」がリリースされた。",
+      "source": "4Gamer",
+      "date": "2026-10-17T09:00:00+00:00",
+      "image": "https://www.4gamer.net/games/038/G003821/20261017005/TN/006.jpg"
+    },
     {
       "title": "【本日みつけたお買い得品】7千円オフ！Fire TV Stick 4K Maxが8,980円に",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2149017.html",
@@ -126,8 +134,7 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2149004.html",
       "summary": "Amazonは10月16日から19日にかけて、プライム感謝祭を実施している。GMKtecのミニPC「M7 Ultra」は、プライム会員限定の2万1,489円引きで、9万9,749円にて購入可能だ。",
       "source": "PC Watch",
-      "date": "2026-10-17T00:37:23+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2149/004/01.jpg"
+      "date": "2026-10-17T00:37:23+00:00"
     },
     {
       "title": "【本日みつけたお買い得品】MSIのGeForce RTX 5060ビデオカードが約1万5千円引き",
@@ -422,13 +429,6 @@
       "summary": "",
       "source": "4Gamer",
       "date": "2026-10-16T10:37:41+00:00"
-    },
-    {
-      "title": "みんなで協力し，全力で試験のカンニングに挑むマルチプレイアクションゲーム「Finals Week」，10月29日にリリース決定",
-      "url": "https://www.4gamer.net/games/050/G105097/20261016049/",
-      "summary": "PrettySoonは2026年10月15日，DESTINYbitが開発中の新作タイトル「FinalsWeek」を，10月29日にリリースすると発表した。本作は，期末試験なのに一切勉強してこなかったプレイヤーが，あらゆるツールを駆使してカンニングを試みる，マルチプレイ対応のアクションゲームだ。",
-      "source": "4Gamer",
-      "date": "2026-10-16T10:29:58+00:00"
     },
     {
       "title": "「箱を開けたらAIエージェント」の時代に！PCを変えるNVIDIA RTX Sparkをライブで実機解説【10月16日(金)21時配信】",
