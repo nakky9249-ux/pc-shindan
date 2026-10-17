@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-17T03:43:26.987811+00:00",
+  "updated_at": "2026-10-17T06:52:01.571721+00:00",
   "articles": [
+    {
+      "title": "【本日みつけたお買い得品】7千円オフ！Fire TV Stick 4K Maxが8,980円に",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2149017.html",
+      "summary": "Amazonにてプライム感謝祭セールが開催中。ストリーミングデバイスのFire TVシリーズがセール対象となっており、プライム会員価格で購入できる。",
+      "source": "PC Watch",
+      "date": "2026-10-17T05:38:48+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2149/017/01.jpg"
+    },
+    {
+      "title": "【本日みつけたお買い得品】「Kindle Scribe Colorsoft」が2万2千円引き！カラー表示対応",
+      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2149016.html",
+      "summary": "Amazonにてプライム感謝祭セールが開催中。電子書籍リーダのKindleシリーズがセール対象となっている。ノート機能を搭載し、カラー表示に対応する11型サイズの「Kindle Scribe Colorsoft(32GB)」は2万2,000円引きの8万4,980円で購入できる。",
+      "source": "PC Watch",
+      "date": "2026-10-17T04:07:45+00:00",
+      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2149/016/01.jpg"
+    },
     {
       "title": "【本日みつけたお買い得品】エルゴトロンのモニターアーム「LX Pro」が2,180円引き、プライム感謝祭",
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2149015.html",
@@ -118,16 +134,14 @@
       "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2149003.html",
       "summary": "Amazonは10月16日から19日にかけて、プライム感謝祭を実施中だ。MSIのビデオカード「GeForce RTX 5060 8G VENTUS 2X OC V1」は、プライム会員限定の1万5,803円引きで、7万4,800円にて購入できる。",
       "source": "PC Watch",
-      "date": "2026-10-17T00:33:47+00:00",
-      "image": "https://pc.watch.impress.co.jp/img/pcw/list/2149/003/01.jpg"
+      "date": "2026-10-17T00:33:47+00:00"
     },
     {
       "title": "第8世代Core/16GBメモリ/512GB SSD搭載の「Mac mini」が29,800円、中古セール",
       "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/2148960.html",
       "summary": "第8世代Core搭載の「Mac mini(2018)」のセールが、秋葉館で実施中。今回入荷したのは「中古Bランク品」で、価格は29,800円。30日間の店頭保証が付帯します。",
       "source": "AKIBA PC Hotline!",
-      "date": "2026-10-17T00:30:00+00:00",
-      "image": "https://akiba-pc.watch.impress.co.jp/img/ah/list/2148/960/a2.jpg"
+      "date": "2026-10-17T00:30:00+00:00"
     },
     {
       "title": "4K解像度の法人向けVRヘッドセット「Pico neo 3 Pro」が27,980円！上級者向けの中古品セール",
@@ -457,20 +471,6 @@
       "summary": "Amazonでは10月16日から19日にかけてAmazonプライム感謝祭を実施中。セールにおいて、老舗コーヒー専門店「澤井珈琲」が厳選した2種のコーヒー豆4袋セット「澤井珈琲 コーヒー豆 2種(ソルブレンド/ルナブレンド) 飲み比べ 1.6kg (400g×4)」が、直近価格の5,141円引きとなる5,354円で販売されている。",
       "source": "PC Watch",
       "date": "2026-10-16T02:55:43+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】Ninja製ノンフライヤーが約7千円オトク。Amazonプライム感謝祭",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148678.html",
-      "summary": "Amazonでは10月16日から19日にかけてAmazonプライム感謝祭を開催している。セールにて、Ninjaのノンフライヤー「Crispi FN100JGYNR」が、直近価格から6,750円引きとなる1万8,000円で販売されている。",
-      "source": "PC Watch",
-      "date": "2026-10-16T02:28:43+00:00"
-    },
-    {
-      "title": "【本日みつけたお買い得品】CMF by Nothingブランドのスマートウォッチが9,980円！Amazonプライム感謝祭",
-      "url": "https://pc.watch.impress.co.jp/docs/news/todays_sales/2148668.html",
-      "summary": "Amazonでは、10月16日から19日までAmazonプライム感謝祭を開催している。セールでは、CMF by Nothingブランドのスマートウォッチ「CMF by Nothing Watch 3 Pro」が、直近価格から3,820円引きとなる9,980円で販売されている。",
-      "source": "PC Watch",
-      "date": "2026-10-16T02:13:30+00:00"
     }
   ],
   "feed_count": 3,
